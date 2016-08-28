@@ -1,0 +1,62 @@
+//
+//  KDYDemo-Prefix.pch
+//  KDYDemo
+//
+//  Created by kaideyi on 15/12/26.
+//  Copyright © 2015年 kaideyi.com. All rights reserved.
+//
+
+#ifndef KDYDemo_Prefix_pch
+#define KDYDemo_Prefix_pch
+
+#ifdef __OBJC__
+    #import "YYKit.h"
+    #import "Masonry.h"
+    #import "PureLayout.h"
+    #import "UITableView+FDTemplateLayoutCell.h"
+    #import "MBProgressHUD.h"
+    #import "MJExtension.h"
+    #import "MJRefresh.h"
+    #import "KDNetworking.h"
+    #import "ZYNavigationController.h"
+    #import "ConvertLayoutConstraint.h"
+    #import "KDYDemo-swift.h"
+    #import "KDUIKitExtension.h"
+    #import "KDFoundationExtension.h"
+    #import "WeiboSDK.h"
+    #import "UIImageView+WebCache.h"
+    #import "BlocksKit.h"
+    #import "BlocksKit+UIKit.h"
+    #import "FMDB.h"
+#endif
+
+#define RGB(r, g, b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0]
+
+#define WeakSelf(toName, instance)   __weak typeof(&*instance)toName = instance
+#define StrongSelf(toName, instance)   __strong typeof(&*instance)toName = instance
+
+#define KiOSVersion [[[UIDevice currentDevice] systemVersion] floatValue]
+#define kAppWindow  [UIApplication sharedApplication].keyWindow
+
+//布局字体
+#define TITLE_FONT_SIZE [UIFont systemFontOfSize:15.f]
+#define SUBTITLE_FONT_SIZE [UIFont systemFontOfSize:12.f]
+#define BUTTON_FONT_SIZE [UIFont systemFontOfSize:13.f]
+
+// Cell布局相关
+#define CELL_PADDING_8 8    //距离上面
+#define CELL_PADDING_6 6    //距离左边
+#define CELL_SIDEMARGIN 12  //侧边缘
+
+//头部固定高度
+#define HEAD_HEIGHT  55.0f
+#define HEAD_CONTACTAVATARVIEW_HEIGHT 40.0f
+#define HEAD_IAMGE_HEIGHT  34.0f
+
+//自定义链接协议
+#define PROTOCOL_AT_SOMEONE @"at://"
+#define PROTOCOL_SHARP_TREND @"sharptrend://"
+#define PROTOCOL_HTTP_URL @"http://"
+
+#endif /* KDYDemo_Prefix_pch */
+
