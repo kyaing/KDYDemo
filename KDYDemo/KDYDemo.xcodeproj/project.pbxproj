@@ -175,8 +175,6 @@
 		1691D6351C3284BD00F35781 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1691D6301C3284BD00F35781 /* AppDelegate.m */; };
 		1691D6361C3284BD00F35781 /* KDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1691D6321C3284BD00F35781 /* KDViewController.m */; };
 		1691D6371C3284BD00F35781 /* ZYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1691D6341C3284BD00F35781 /* ZYNavigationController.m */; };
-		16A99A021C561E5500028E44 /* MyTestStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16A999FD1C561E5500028E44 /* MyTestStoryboard.storyboard */; };
-		16A99A031C561E5500028E44 /* MyTestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16A999FE1C561E5500028E44 /* MyTestView.xib */; };
 		16A99A041C561E5500028E44 /* KDLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A99A001C561E5500028E44 /* KDLayoutViewController.m */; };
 		16A99A0A1C561FEC00028E44 /* KDMasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A99A091C561FEC00028E44 /* KDMasonryViewController.m */; };
 		16B8FFB81C2BE5140083D25E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B8FFB71C2BE5140083D25E /* UIKit.framework */; };
@@ -841,8 +839,6 @@
 		1691D6321C3284BD00F35781 /* KDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDViewController.m; sourceTree = "<group>"; };
 		1691D6331C3284BD00F35781 /* ZYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNavigationController.h; sourceTree = "<group>"; };
 		1691D6341C3284BD00F35781 /* ZYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNavigationController.m; sourceTree = "<group>"; };
-		16A999FD1C561E5500028E44 /* MyTestStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyTestStoryboard.storyboard; sourceTree = "<group>"; };
-		16A999FE1C561E5500028E44 /* MyTestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTestView.xib; sourceTree = "<group>"; };
 		16A999FF1C561E5500028E44 /* KDLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDLayoutViewController.h; sourceTree = "<group>"; };
 		16A99A001C561E5500028E44 /* KDLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDLayoutViewController.m; sourceTree = "<group>"; };
 		16A99A081C561FEC00028E44 /* KDMasonryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDMasonryViewController.h; sourceTree = "<group>"; };
@@ -2612,8 +2608,6 @@
 				16C525E61C57380A0015C7BD /* KDAutolayoutViewController.h */,
 				16C525E71C57380A0015C7BD /* KDAutolayoutViewController.m */,
 				16C525E81C57380A0015C7BD /* KDAutolayoutViewController.xib */,
-				16A999FD1C561E5500028E44 /* MyTestStoryboard.storyboard */,
-				16A999FE1C561E5500028E44 /* MyTestView.xib */,
 				16C525EB1C5872060015C7BD /* KDSizeClassViewController.h */,
 				16C525EC1C5872060015C7BD /* KDSizeClassViewController.m */,
 				16C525ED1C5872060015C7BD /* KDSizeClassViewController.xib */,
@@ -3894,7 +3888,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1842332C1C9164BB002BFB1C /* 150511_JiveBike.mov in Resources */,
-				16A99A031C561E5500028E44 /* MyTestView.xib in Resources */,
 				164FC92C1C7ED8F8004CEA04 /* BoAssetsPickerChecked@2x.png in Resources */,
 				164FC7471C75C07C004CEA04 /* WeiboSDK.bundle in Resources */,
 				1895ADBA1C47D87100AFBDC4 /* PinterestViewCell.xib in Resources */,
@@ -3910,7 +3903,6 @@
 				1834E79D1C95981700CBC640 /* kr-video-player-pause@2x.png in Resources */,
 				168E8B911C34F45F005668C3 /* WeiboMeCell.xib in Resources */,
 				1834E7A71C95981700CBC640 /* slider@2x.png in Resources */,
-				16A99A021C561E5500028E44 /* MyTestStoryboard.storyboard in Resources */,
 				16F297811C70685700DE82F9 /* Info.plist in Resources */,
 				16C525EA1C57380A0015C7BD /* KDAutolayoutViewController.xib in Resources */,
 				16F297751C70685700DE82F9 /* SinaWeibo.bundle in Resources */,
