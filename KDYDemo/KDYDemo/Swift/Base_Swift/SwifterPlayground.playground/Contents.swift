@@ -326,6 +326,212 @@ class A2 {
 let b = A2()
 print("32345")
 
+/**
+ *  31 final
+ *  - final可以用在class, func或者var前面进行修饰，表示不允许被继承或重写操作。
+ *  - 这个下面所说的tips还是不太理解！
+ */
+
+//@ 权限控制
+
+//@ 类或者方法的功能已经完备了
+
+//@ 子类继承和修改是一件危险的事情
+
+//@ 为了父类中某些代码一定会被执行
+class Parent {
+    final func method() {
+        print("开始配置")
+        
+        methodImpl()
+        
+        print("结束配置")
+    }
+    
+    func methodImpl() {
+        fatalError("子类必须要实现这个方法")
+    }
+}
+
+class Child: Parent {
+    override func methodImpl() {
+        
+    }
+}
+
+
+/**
+ *  32 lazy修饰符 和 lazy方法
+ */
+class ClassAA {
+    lazy var str: String = {
+        let str = "Hello"
+        print("只在首次访问输出")
+        return str
+    }()
+    
+    init() {}
+}
+
+
+/**
+ *  33 Reflection 和 Mirror
+ */
+
+
+/**
+ *  34 隐式解包 Optional
+ *  - 这里就要区分两个操作符的意思了：？和 ！
+ *  - 相对于普通的Optional，Swift中还有一种特殊的Optional，在对它的成员或方法进行访问时，编译器会自动进行解包。
+ *  - 声明变量的时候，可以在类型后加上(!)来告诉编译器我们需要一个可以隐式解包的Optional值。
+ *  - 隐式解包不意味着"这个变量不会是nil, 你可以放心使用"
+ */
+
+var maybeObject: ClassAA! = ClassAA()
+
+
+/**
+ *  35 多重 Optional
+ */
+
+var str2: String? = "String"
+var anotherStr2: String?? = str2   // Optional<Optional<String>>
+
+
+/**
+ *  36 Optional Map
+ */
+
+let arr = [1,2,3]
+let doubled = arr.map { $0 * 2 }
+print("doubled = \(doubled)")
+
+
+/**
+ *  37 Protocol Extension
+ */
+
+protocol MyProtocol {
+    func method()
+}
+
+extension MyProtocol {
+    func method() {
+        print("Method Called!")
+    }
+}
+
+struct MyStruct: MyProtocol {
+    func method() {
+        print("Struct method called!")
+    }
+}
+
+
+/**
+ *  38 where 和模式匹配
+ *  - where在Swift中很强大，但容易被忽略，以下列出几个常用的场景。
+ */
+
+//@ 在switch中使用
+let names = ["王小二","张三","李四","王二小"]
+
+//使用for-in
+for name in names {
+    switch name {
+    case let name where name.hasPrefix("王"):
+        print("\(name)，姓王")
+    default:
+        print("你好，\(name)")
+    }
+}
+
+//使用forEach
+names.forEach {
+    switch $0 {
+    case let x where x.hasPrefix("王"):
+        print("\(x)，姓王")
+    default:
+        print("你好，\(x)")
+    }
+}
+
+//@ if let 或 for 使用 where
+let scores: [Int?] = [48, 60, 88, 90, nil]
+scores.forEach {
+    if let score = $0 where score > 60 {
+        print("及格了 - \(score)")
+    } else {
+        print(":(")
+    }
+}
+
+for score in scores where score > 60 {
+    print("及格了 - \(score)")
+}
+
+//@ 某些接口扩展的默认实现只在某些特定的条件下适用
+extension SequenceType where Self.Generator.Element: Comparable {
+    
+}
+
+
+/**
+ *  39 indirect 和嵌套 enum
+ *  - 涉及到数据结构的经典理论和模型(链表、树和图)，我们会用到嵌套类型。
+ */
+
+
+////////////////////////////////////////////////////////////////////////
+
+
+/**
+ *  40 Selector
+ */
+
+func callMe() {
+    print("callMe")
+}
+
+func callMeWithParam(obj: AnyObject!) {
+    print("callMeWithParam")
+}
+
+//let someMethod = Selector("callMe")
+//let anotherMethod = Selector("callMeWithParam:")
+
+
+/**
+ *  41 实例方法的动态调用
+ */
+
+class MyClasss {
+    func method(number: Int) -> Int {
+        return number + 1
+    }
+}
+
+//@ 基本的是通过类实例来调用类中的方法
+let obj = MyClasss()
+let result = obj.method(2)
+
+//@ 动态调用，还得是实例方法
+let f = MyClasss.method  //Swift中可以直接用 (Type.instanceMethod) 的语法来生成一个柯里化的方法
+let object = MyClasss()
+let res = f(object)(2)
+
+
+/**
+ *  42 单例
+ */
+
+class MyManager {
+    private static let sharedInstance = MyManager()
+    class var sharedManager: MyManager {
+        return sharedInstance
+    }
+}
+
 
 
 
