@@ -15,6 +15,9 @@ PODS:
   - BlocksKit/UIKit (2.2.5):
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
+  - JSPatch (1.0):
+    - JSPatch/Core (= 1.0)
+  - JSPatch/Core (1.0)
   - Kingfisher (2.4.1)
   - KVOController (1.1.0)
   - RxSwift (2.5.0)
@@ -23,6 +26,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 3.4.0)
   - BlocksKit
+  - JSPatch (~> 1.0)
   - Kingfisher (~> 2.4.1)
   - KVOController
   - RxSwift (~> 2.5.0)
@@ -31,6 +35,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  JSPatch: c689ea4dde17441f2f4a95d40dfedb8900c20099
   Kingfisher: 41aed5b6c1ed8fa98cf6d75283ce89cf7890f517
   KVOController: 321b5fc59300fcaabd42c0f679baa7a27efbb2fd
   RxSwift: 402b41a50e922a0368fc14cb3bc9f4427920e8ae

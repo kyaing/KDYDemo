@@ -8,8 +8,9 @@ use_frameworks!
 
 pod 'BlocksKit'
 pod 'KVOController'
+pod 'SwiftyJSON'
 pod 'RxSwift', '~> 2.5.0'
 pod 'Alamofire', '~> 3.4.0'
 pod 'Kingfisher', '~> 2.4.1'
-pod 'SwiftyJSON'
+pod 'JSPatch', '~> 1.0'
 

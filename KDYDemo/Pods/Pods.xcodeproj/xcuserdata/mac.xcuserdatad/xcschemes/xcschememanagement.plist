@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>JSPatch.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>KVOController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,17 +52,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>32703FCCE0B739D351122DC069CCA2FE</key>
+		<key>5F644A3227985E456E4331FFA61F7E62</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>523A1B1A6D6EC4173A4B1653828C2363</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>64536162E07C66BE4E7971D0883DD609</key>
+		<key>7482FB20E136FF7107E63959071C0A09</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -68,6 +68,16 @@
 			<true/>
 		</dict>
 		<key>993873D0B5A72018C078B68756896F1F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B13574E17EED8AAA9A85CE67AD5B4570</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B6848B25E474CB38ED56D62EFE48E283</key>
 		<dict>
 			<key>primary</key>
 			<true/>
