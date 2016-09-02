@@ -11,6 +11,7 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 import Kingfisher
+import RxSwift
 
 // MARK: - PhotoInfo
 class PhotoInfo {

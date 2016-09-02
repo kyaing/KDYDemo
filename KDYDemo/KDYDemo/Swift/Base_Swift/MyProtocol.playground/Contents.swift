@@ -266,26 +266,26 @@ class SomeMyClass: SomeClassOnlyProtocol {
  *  - 需要同时采纳多个协议时，可以将多个协议采用 protocol<SomeProtocol, AnotherProtocol>
  */
 
-protocol Named {
-    var name: String { get }
-}
-
-protocol Aged {
-    var age: Int { get }
-}
-
-struct PersonTwo: Named, Aged {
-    var name: String
-    var age: Int
-}
-
-//Named和Aged两个协议合成一个协议，作为函数形参
-func wishHappyBirthday(celebrator: protocol<Named, Aged>) {
-    print("Happy birthday \(celebrator.name), you're \(celebrator.age)")
-}
-
-let birthdayPerson = PersonTwo(name: "David", age: 21)
-wishHappyBirthday(birthdayPerson)
+//protocol Named {
+//    var name: String { get }
+//}
+//
+//protocol Aged {
+//    var age: Int { get }
+//}
+//
+//struct PersonTwo: Named, Aged {
+//    var name: String
+//    var age: Int
+//}
+//
+////Named和Aged两个协议合成一个协议，作为函数形参
+//func wishHappyBirthday(celebrator: protocol<Named, Aged>) {
+//    print("Happy birthday \(celebrator.name), you're \(celebrator.age)")
+//}
+//
+//let birthdayPerson = PersonTwo(name: "David", age: 21)
+//wishHappyBirthday(birthdayPerson)
 
 /**
  *  13 检查协议一致性
@@ -442,5 +442,38 @@ class MyTableViewController2: CommonController {
 
 //...
 //以上的做法就完全就可以增加代码结构性！
+
+//@ CustomStringConvertible
+struct MyPerson: CustomStringConvertible {
+    var firstName: String
+    var lastName: String
+    
+    var description: String {
+        return ("\(lastName) \(firstName)")
+    }
+}
+
+var person = MyPerson(firstName: "cook", lastName: "tim")
+print(person)
+
+//@ 用协议扩展，来统一处理页面错误的方法
+protocol ErrorPopoverRenderer {
+    func presentError(message message: String)
+}
+
+extension ErrorPopoverRenderer where Self: UIViewController {
+    func presentError(message message: String) {
+        //...
+    }
+}
+
+class CustomViewController: UIViewController, ErrorPopoverRenderer {
+    func method() {
+        //...
+        
+        presentError(message: "handle some fail.")
+    }
+}
+
 
 
