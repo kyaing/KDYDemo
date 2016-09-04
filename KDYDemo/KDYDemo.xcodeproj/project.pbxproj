@@ -268,19 +268,6 @@
 		16F297761C70685700DE82F9 /* SinaWeibo.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F2965E1C70685700DE82F9 /* SinaWeibo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		16F297771C70685700DE82F9 /* SinaWeiboAuthorizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F296601C70685700DE82F9 /* SinaWeiboAuthorizeView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		16F297781C70685700DE82F9 /* SinaWeiboRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F296631C70685700DE82F9 /* SinaWeiboRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		16F297791C70685700DE82F9 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F296651C70685700DE82F9 /* Constraint.swift */; };
-		16F2977A1C70685700DE82F9 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F296661C70685700DE82F9 /* ConstraintAttributes.swift */; };
-		16F2977B1C70685700DE82F9 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F296671C70685700DE82F9 /* ConstraintDescription.swift */; };
-		16F2977C1C70685700DE82F9 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F296681C70685700DE82F9 /* ConstraintItem.swift */; };
-		16F2977D1C70685700DE82F9 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F296691C70685700DE82F9 /* ConstraintMaker.swift */; };
-		16F2977E1C70685700DE82F9 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F2966A1C70685700DE82F9 /* ConstraintRelation.swift */; };
-		16F2977F1C70685700DE82F9 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F2966B1C70685700DE82F9 /* Debugging.swift */; };
-		16F297801C70685700DE82F9 /* EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F2966C1C70685700DE82F9 /* EdgeInsets.swift */; };
-		16F297811C70685700DE82F9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16F2966D1C70685700DE82F9 /* Info.plist */; };
-		16F297821C70685700DE82F9 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F2966E1C70685700DE82F9 /* LayoutConstraint.swift */; };
-		16F297831C70685700DE82F9 /* SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F296701C70685700DE82F9 /* SnapKit.swift */; };
-		16F297841C70685700DE82F9 /* View+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F296711C70685700DE82F9 /* View+SnapKit.swift */; };
-		16F297851C70685700DE82F9 /* ViewController+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F296721C70685700DE82F9 /* ViewController+SnapKit.swift */; };
 		16F297861C70685700DE82F9 /* NSArray+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F296771C70685700DE82F9 /* NSArray+YYAdd.m */; };
 		16F297871C70685700DE82F9 /* NSBundle+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F296791C70685700DE82F9 /* NSBundle+YYAdd.m */; };
 		16F297881C70685700DE82F9 /* NSData+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F2967B1C70685700DE82F9 /* NSData+YYAdd.m */; };
@@ -427,10 +414,13 @@
 		1842333A1C9166C5002BFB1C /* KDPlayerMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184233371C9166C5002BFB1C /* KDPlayerMaskView.m */; };
 		1842333B1C9166C5002BFB1C /* KDPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184233391C9166C5002BFB1C /* KDPlayerView.m */; };
 		1842333E1C9166F1002BFB1C /* KDNewPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842333D1C9166F1002BFB1C /* KDNewPlayerViewController.m */; };
+		1847EEEC1D7C0E1C00272FD0 /* KDRxSwiftTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1847EEEB1D7C0E1C00272FD0 /* KDRxSwiftTableController.swift */; };
 		1863BCB71C0443AE00451F99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1863BCB61C0443AE00451F99 /* main.m */; };
 		1863BCC21C0443AE00451F99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1863BCC11C0443AE00451F99 /* Assets.xcassets */; };
 		1863BCD01C0443AE00451F99 /* KDYDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1863BCCF1C0443AE00451F99 /* KDYDemoTests.m */; };
 		1863BCDB1C0443AE00451F99 /* KDYDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1863BCDA1C0443AE00451F99 /* KDYDemoUITests.m */; };
+		1867E21F1D7C49B800153306 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867E21E1D7C49B800153306 /* UserModel.swift */; };
+		1867E2231D7C4A1400153306 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867E2221D7C4A1400153306 /* ViewModel.swift */; };
 		189521AA1C5CB1DC008FEBB6 /* ShowPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 189521A91C5CB1DC008FEBB6 /* ShowPhotoView.m */; };
 		189521AE1C5E0790008FEBB6 /* KDFDChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189521AD1C5E0790008FEBB6 /* KDFDChatViewController.m */; };
 		189521C31C5E1EA0008FEBB6 /* ChatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 189521C21C5E1EA0008FEBB6 /* ChatModel.m */; };
@@ -1023,20 +1013,6 @@
 		16F296611C70685700DE82F9 /* SinaWeiboConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinaWeiboConstants.h; sourceTree = "<group>"; };
 		16F296621C70685700DE82F9 /* SinaWeiboRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinaWeiboRequest.h; sourceTree = "<group>"; };
 		16F296631C70685700DE82F9 /* SinaWeiboRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinaWeiboRequest.m; sourceTree = "<group>"; };
-		16F296651C70685700DE82F9 /* Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
-		16F296661C70685700DE82F9 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintAttributes.swift; sourceTree = "<group>"; };
-		16F296671C70685700DE82F9 /* ConstraintDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintDescription.swift; sourceTree = "<group>"; };
-		16F296681C70685700DE82F9 /* ConstraintItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintItem.swift; sourceTree = "<group>"; };
-		16F296691C70685700DE82F9 /* ConstraintMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMaker.swift; sourceTree = "<group>"; };
-		16F2966A1C70685700DE82F9 /* ConstraintRelation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintRelation.swift; sourceTree = "<group>"; };
-		16F2966B1C70685700DE82F9 /* Debugging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debugging.swift; sourceTree = "<group>"; };
-		16F2966C1C70685700DE82F9 /* EdgeInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdgeInsets.swift; sourceTree = "<group>"; };
-		16F2966D1C70685700DE82F9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		16F2966E1C70685700DE82F9 /* LayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraint.swift; sourceTree = "<group>"; };
-		16F2966F1C70685700DE82F9 /* SnapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapKit.h; sourceTree = "<group>"; };
-		16F296701C70685700DE82F9 /* SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKit.swift; sourceTree = "<group>"; };
-		16F296711C70685700DE82F9 /* View+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+SnapKit.swift"; sourceTree = "<group>"; };
-		16F296721C70685700DE82F9 /* ViewController+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+SnapKit.swift"; sourceTree = "<group>"; };
 		16F296761C70685700DE82F9 /* NSArray+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+YYAdd.h"; sourceTree = "<group>"; };
 		16F296771C70685700DE82F9 /* NSArray+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+YYAdd.m"; sourceTree = "<group>"; };
 		16F296781C70685700DE82F9 /* NSBundle+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+YYAdd.h"; sourceTree = "<group>"; };
@@ -1312,6 +1288,7 @@
 		184233391C9166C5002BFB1C /* KDPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDPlayerView.m; sourceTree = "<group>"; };
 		1842333C1C9166F1002BFB1C /* KDNewPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDNewPlayerViewController.h; sourceTree = "<group>"; };
 		1842333D1C9166F1002BFB1C /* KDNewPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDNewPlayerViewController.m; sourceTree = "<group>"; };
+		1847EEEB1D7C0E1C00272FD0 /* KDRxSwiftTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDRxSwiftTableController.swift; sourceTree = "<group>"; };
 		1863BCB21C0443AE00451F99 /* KDYDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KDYDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1863BCB61C0443AE00451F99 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1863BCC11C0443AE00451F99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -1322,6 +1299,8 @@
 		1863BCD61C0443AE00451F99 /* KDYDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KDYDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1863BCDA1C0443AE00451F99 /* KDYDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KDYDemoUITests.m; sourceTree = "<group>"; };
 		1863BCDC1C0443AE00451F99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1867E21E1D7C49B800153306 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		1867E2221D7C4A1400153306 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		189521A81C5CB1DC008FEBB6 /* ShowPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShowPhotoView.h; path = KDYDemo/UIComponent/Layout/FDTemplateLayout/ShowPhotoView.h; sourceTree = SOURCE_ROOT; };
 		189521A91C5CB1DC008FEBB6 /* ShowPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShowPhotoView.m; path = KDYDemo/UIComponent/Layout/FDTemplateLayout/ShowPhotoView.m; sourceTree = SOURCE_ROOT; };
 		189521AC1C5E0790008FEBB6 /* KDFDChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDFDChatViewController.h; sourceTree = "<group>"; };
@@ -1551,13 +1530,6 @@
 				04943F1D1D504C3B000989F4 /* PhotoTableCell.xib */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		04943F171D504229000989F4 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		0497A02F1D618EAF00620B58 /* Functional_Swift */ = {
@@ -2421,8 +2393,9 @@
 			children = (
 				04943F191D5043C3000989F4 /* KDYDemo-Bridging-Header.h */,
 				04943F1A1D504751000989F4 /* KDSwiftViewController.swift */,
+				1867E21D1D7C499200153306 /* Model */,
 				04943F131D504229000989F4 /* View */,
-				04943F171D504229000989F4 /* Model */,
+				1847EED81D7BFBEC00272FD0 /* Controller */,
 				049412041D5980B7006DC57B /* Advanced_Swift */,
 				049412051D5980B7006DC57B /* Base_Swift */,
 				0497A02F1D618EAF00620B58 /* Functional_Swift */,
@@ -2795,7 +2768,6 @@
 				16F296291C70685700DE82F9 /* PureLayout */,
 				16F296331C70685700DE82F9 /* SDWebImage */,
 				16F296591C70685700DE82F9 /* sinaweibo_sdk */,
-				16F296641C70685700DE82F9 /* SnapKit */,
 				164FC6C61C74157F004CEA04 /* SnapKitAutoCellHeight */,
 				164FC7161C75B891004CEA04 /* TYAttributedLabel */,
 				164FC73F1C75C07C004CEA04 /* Weibo */,
@@ -2990,27 +2962,6 @@
 				16F296631C70685700DE82F9 /* SinaWeiboRequest.m */,
 			);
 			path = sinaweibo_sdk;
-			sourceTree = "<group>";
-		};
-		16F296641C70685700DE82F9 /* SnapKit */ = {
-			isa = PBXGroup;
-			children = (
-				16F296651C70685700DE82F9 /* Constraint.swift */,
-				16F296661C70685700DE82F9 /* ConstraintAttributes.swift */,
-				16F296671C70685700DE82F9 /* ConstraintDescription.swift */,
-				16F296681C70685700DE82F9 /* ConstraintItem.swift */,
-				16F296691C70685700DE82F9 /* ConstraintMaker.swift */,
-				16F2966A1C70685700DE82F9 /* ConstraintRelation.swift */,
-				16F2966B1C70685700DE82F9 /* Debugging.swift */,
-				16F2966C1C70685700DE82F9 /* EdgeInsets.swift */,
-				16F2966D1C70685700DE82F9 /* Info.plist */,
-				16F2966E1C70685700DE82F9 /* LayoutConstraint.swift */,
-				16F2966F1C70685700DE82F9 /* SnapKit.h */,
-				16F296701C70685700DE82F9 /* SnapKit.swift */,
-				16F296711C70685700DE82F9 /* View+SnapKit.swift */,
-				16F296721C70685700DE82F9 /* ViewController+SnapKit.swift */,
-			);
-			path = SnapKit;
 			sourceTree = "<group>";
 		};
 		16F296731C70685700DE82F9 /* YYKit */ = {
@@ -3511,6 +3462,14 @@
 			path = KDPlayerView;
 			sourceTree = "<group>";
 		};
+		1847EED81D7BFBEC00272FD0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1847EEEB1D7C0E1C00272FD0 /* KDRxSwiftTableController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		1863BCA91C0443AE00451F99 = {
 			isa = PBXGroup;
 			children = (
@@ -3577,6 +3536,15 @@
 				1863BCDC1C0443AE00451F99 /* Info.plist */,
 			);
 			path = KDYDemoUITests;
+			sourceTree = "<group>";
+		};
+		1867E21D1D7C499200153306 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1867E21E1D7C49B800153306 /* UserModel.swift */,
+				1867E2221D7C4A1400153306 /* ViewModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		189521AB1C5E075D008FEBB6 /* Chat */ = {
@@ -3913,7 +3881,6 @@
 				1834E79D1C95981700CBC640 /* kr-video-player-pause@2x.png in Resources */,
 				168E8B911C34F45F005668C3 /* WeiboMeCell.xib in Resources */,
 				1834E7A71C95981700CBC640 /* slider@2x.png in Resources */,
-				16F297811C70685700DE82F9 /* Info.plist in Resources */,
 				16C525EA1C57380A0015C7BD /* KDAutolayoutViewController.xib in Resources */,
 				16F297751C70685700DE82F9 /* SinaWeibo.bundle in Resources */,
 				1863BCC21C0443AE00451F99 /* Assets.xcassets in Resources */,
@@ -4022,7 +3989,6 @@
 				1842331B1C8C1465002BFB1C /* CollectionAnimaLayout.m in Sources */,
 				16F297B61C70685700DE82F9 /* YYClassInfo.m in Sources */,
 				163158B01C8D2DDC0056A624 /* AniOneToViewController.m in Sources */,
-				16F2977D1C70685700DE82F9 /* ConstraintMaker.swift in Sources */,
 				18AEAFB81C2D7366003B4C53 /* WBStatusLayout.m in Sources */,
 				16F297661C70685700DE82F9 /* SDWebImageDecoder.m in Sources */,
 				16F297641C70685700DE82F9 /* SDImageCache.m in Sources */,
@@ -4035,6 +4001,7 @@
 				164FC9001C7D837D004CEA04 /* UITextView+Placeholder.m in Sources */,
 				16C4C5B91C8695C50047C845 /* KDDataStoreViewController.m in Sources */,
 				16A99A041C561E5500028E44 /* KDLayoutViewController.m in Sources */,
+				1867E2231D7C4A1400153306 /* ViewModel.swift in Sources */,
 				164FC78E1C76EAF0004CEA04 /* WBImageContentView.m in Sources */,
 				04943F1E1D504C3B000989F4 /* PhotoTableCell.swift in Sources */,
 				164FC7321C75B891004CEA04 /* TYTextStorage.m in Sources */,
@@ -4056,6 +4023,7 @@
 				181C571E1C54AE85007F84DC /* QQHeaderView.m in Sources */,
 				164FC9571C803BE7004CEA04 /* User.m in Sources */,
 				164FC8891C7ACEA8004CEA04 /* AFSecurityPolicy.m in Sources */,
+				1867E21F1D7C49B800153306 /* UserModel.swift in Sources */,
 				1834E7AC1C9843FE00CBC640 /* StatusHelper.m in Sources */,
 				040619D81CC8C4490085104B /* TestViewModel.m in Sources */,
 				16F297B51C70685700DE82F9 /* NSObject+YYModel.m in Sources */,
@@ -4096,11 +4064,9 @@
 				164FC7881C76E4ED004CEA04 /* WBUSerModel.m in Sources */,
 				040619D51CC8C28A0085104B /* KDBaseViewModel.m in Sources */,
 				168E8B901C34F45F005668C3 /* WeiboMeCell.m in Sources */,
-				16F297831C70685700DE82F9 /* SnapKit.swift in Sources */,
 				16F2973E1C70685700DE82F9 /* FDStackViewLayoutArrangement.m in Sources */,
 				16F297CD1C70685700DE82F9 /* YYFileHash.m in Sources */,
 				164FC80E1C770F61004CEA04 /* MJRefreshConst.m in Sources */,
-				16F297801C70685700DE82F9 /* EdgeInsets.swift in Sources */,
 				181C57361C54AE85007F84DC /* KDWheelViewController.m in Sources */,
 				1668D4031C8FBF71007DE398 /* NSObject+Swizzling.m in Sources */,
 				181C571F1C54AE85007F84DC /* ContactModel.m in Sources */,
@@ -4119,6 +4085,7 @@
 				181C57281C54AE85007F84DC /* KDContextViewController.m in Sources */,
 				16F297C11C70685700DE82F9 /* NSParagraphStyle+YYText.m in Sources */,
 				1631589E1C8D2D930056A624 /* CircleLoaderView.m in Sources */,
+				1847EEEC1D7C0E1C00272FD0 /* KDRxSwiftTableController.swift in Sources */,
 				16C4C5C71C8697130047C845 /* FMDatabase.m in Sources */,
 				1668D4211C97A516007DE398 /* CellHeightModel.m in Sources */,
 				16F297491C70685700DE82F9 /* MASViewConstraint.m in Sources */,
@@ -4137,7 +4104,6 @@
 				16F297981C70685700DE82F9 /* UIBezierPath+YYAdd.m in Sources */,
 				164FC9231C7ED556004CEA04 /* PhotoListCollectionView.m in Sources */,
 				16F297BA1C70685700DE82F9 /* YYTextInput.m in Sources */,
-				16F2977C1C70685700DE82F9 /* ConstraintItem.swift in Sources */,
 				1691D6371C3284BD00F35781 /* ZYNavigationController.m in Sources */,
 				164FC9171C7EC34B004CEA04 /* NSArray+Block.m in Sources */,
 				164FC80C1C770F61004CEA04 /* MJRefreshStateHeader.m in Sources */,
@@ -4210,7 +4176,6 @@
 				164FC6D11C741C55004CEA04 /* UIImage+ImageScale.m in Sources */,
 				164FC80B1C770F61004CEA04 /* MJRefreshNormalHeader.m in Sources */,
 				1668D40F1C9285B6007DE398 /* UILabel+Create.m in Sources */,
-				16F2977A1C70685700DE82F9 /* ConstraintAttributes.swift in Sources */,
 				16F297A81C70685700DE82F9 /* _YYWebImageSetter.m in Sources */,
 				181C57321C54AE85007F84DC /* KDDisplayViewController.m in Sources */,
 				164FC72C1C75B891004CEA04 /* NSMutableAttributedString+TY.m in Sources */,
@@ -4223,7 +4188,6 @@
 				16F297711C70685700DE82F9 /* UIImageView+MJWebCache.m in Sources */,
 				16F297BD1C70685700DE82F9 /* YYTextLine.m in Sources */,
 				16F297731C70685700DE82F9 /* UIView+WebCacheOperation.m in Sources */,
-				16F2977E1C70685700DE82F9 /* ConstraintRelation.swift in Sources */,
 				181C57231C54AE85007F84DC /* KDQuartz2DViewController.m in Sources */,
 				16F2976A1C70685700DE82F9 /* SDWebImageManager.m in Sources */,
 				18AEAFB71C2D7366003B4C53 /* WBModel.m in Sources */,
@@ -4250,8 +4214,6 @@
 				164FC8DC1C7C52CD004CEA04 /* UIButton+Indicator.m in Sources */,
 				18F8094C1C79ACDD003669A2 /* KDNeedLogViewController.m in Sources */,
 				164FC8001C770F61004CEA04 /* MJRefreshBackFooter.m in Sources */,
-				16F297791C70685700DE82F9 /* Constraint.swift in Sources */,
-				16F2977B1C70685700DE82F9 /* ConstraintDescription.swift in Sources */,
 				181C57311C54AE85007F84DC /* KDChildViewController.m in Sources */,
 				164FC8871C7ACEA8004CEA04 /* AFHTTPSessionManager.m in Sources */,
 				16FB42B61C47805500E95D94 /* KDCollectionDemoViewController.m in Sources */,
@@ -4341,7 +4303,6 @@
 				16F2975F1C70685700DE82F9 /* ALView+PureLayout.m in Sources */,
 				181C57261C54AE85007F84DC /* QuartzImageView.m in Sources */,
 				164FC8881C7ACEA8004CEA04 /* AFNetworkReachabilityManager.m in Sources */,
-				16F297851C70685700DE82F9 /* ViewController+SnapKit.swift in Sources */,
 				16F297601C70685700DE82F9 /* NSArray+PureLayout.m in Sources */,
 				16F297381C70685700DE82F9 /* FDGapLayoutGuide.m in Sources */,
 				0406198D1CC7299F0085104B /* KDMVVMDemoController.m in Sources */,
@@ -4359,7 +4320,6 @@
 				16F297951C70685700DE82F9 /* YYCGUtilities.m in Sources */,
 				164FC8071C770F61004CEA04 /* MJRefreshBackGifFooter.m in Sources */,
 				16F297A31C70685700DE82F9 /* UIView+YYAdd.m in Sources */,
-				16F2977F1C70685700DE82F9 /* Debugging.swift in Sources */,
 				189521AA1C5CB1DC008FEBB6 /* ShowPhotoView.m in Sources */,
 				18308F4A1D71D21C00657CB9 /* TestConvertViewController.m in Sources */,
 				189522551C633471008FEBB6 /* ImageChatTableCell.m in Sources */,
@@ -4377,7 +4337,6 @@
 				1668D4081C9022A1007DE398 /* KDVideoPlayerViewController.m in Sources */,
 				16F297391C70685700DE82F9 /* FDLayoutSpacer.m in Sources */,
 				16F297461C70685700DE82F9 /* MASConstraintMaker.m in Sources */,
-				16F297821C70685700DE82F9 /* LayoutConstraint.swift in Sources */,
 				181C57341C54AE85007F84DC /* KDTXViewController.m in Sources */,
 				16F297BC1C70685700DE82F9 /* YYTextLayout.m in Sources */,
 				16F2974C1C70685700DE82F9 /* View+MASAdditions.m in Sources */,
@@ -4399,7 +4358,6 @@
 				16F297BB1C70685700DE82F9 /* YYTextKeyboardManager.m in Sources */,
 				164FC8281C7AAE36004CEA04 /* CircleFriendModel.m in Sources */,
 				040619911CC733EF0085104B /* TestModel.m in Sources */,
-				16F297841C70685700DE82F9 /* View+SnapKit.swift in Sources */,
 				181C57331C54AE85007F84DC /* KDJRViewController.m in Sources */,
 				164FC7951C7703E6004CEA04 /* WBCommentModel.m in Sources */,
 				16F297931C70685700DE82F9 /* NSTimer+YYAdd.m in Sources */,
@@ -4556,12 +4514,13 @@
 					"-framework",
 					Reveal,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.haodai.flashLoan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaideyi.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "KDYDemo/Swift/KDYDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCRoot}";
 			};
 			name = Debug;
 		};
@@ -4593,12 +4552,13 @@
 					"-framework",
 					Reveal,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.haodai.flashLoan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaideyi.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "KDYDemo/Swift/KDYDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCRoot}";
 			};
 			name = Release;
 		};

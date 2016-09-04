@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Foundation
+import SnapKit
 import Alamofire
 import SwiftyJSON
 import Kingfisher
@@ -123,6 +123,10 @@ extension KDSwiftViewController: UITableViewDataSource {
 extension KDSwiftViewController: UITableViewDelegate {
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 80
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.navigationController?.pushViewController(KDRxSwiftTableController(), animated: true)
     }
 }
 

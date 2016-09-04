@@ -6,7 +6,11 @@ import RxSwift
 var str = "RxSwift"
 
 // Observable<Element>：是观察者模式中被观察的对象，相当于一个事件序列
-// ObservableType & Obser
+// .Next
+// .Completed
+// .Error
+
+// ObservableType & ObserverType
 
 public func example(description: String, action: () -> ()) {
     print("\n--- \(description) example ---")
