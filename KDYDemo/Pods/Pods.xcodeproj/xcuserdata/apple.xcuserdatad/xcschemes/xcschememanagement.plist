@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
+		<key>JSPatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 		<key>KVOController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -80,7 +85,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>5F644A3227985E456E4331FFA61F7E62</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>64536162E07C66BE4E7971D0883DD609</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7482FB20E136FF7107E63959071C0A09</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -96,6 +111,16 @@
 			<true/>
 		</dict>
 		<key>9C0711F688DB53106CFCF11F35D73906</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B13574E17EED8AAA9A85CE67AD5B4570</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B6848B25E474CB38ED56D62EFE48E283</key>
 		<dict>
 			<key>primary</key>
 			<true/>

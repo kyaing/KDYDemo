@@ -2673,6 +2673,7 @@
 		16C14E4A1C152E620068802C /* UIComponent(组件) */ = {
 			isa = PBXGroup;
 			children = (
+				1631587D1C8D2D930056A624 /* Animation(动画) */,
 				16A999FB1C561E5500028E44 /* Layout */,
 				181C56D81C54AE85007F84DC /* Contact */,
 				181C570A1C54AE85007F84DC /* TopScrollView */,
@@ -3537,7 +3538,6 @@
 			children = (
 				1691D62E1C3284BD00F35781 /* Main(主要) */,
 				165992341C9943CA0039760A /* Swift(练习) */,
-				1631587D1C8D2D930056A624 /* Animation(动画) */,
 				16C14E4A1C152E620068802C /* UIComponent(组件) */,
 				1681E17A1C21589100A3F7B0 /* Other(高级) */,
 				164FC6301C707EFE004CEA04 /* MyLib(轮子) */,
