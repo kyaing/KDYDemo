@@ -14,6 +14,7 @@
 		0406199A1CC876BB0085104B /* TestViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 040619991CC876BB0085104B /* TestViewManager.m */; };
 		040619D51CC8C28A0085104B /* KDBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 040619D41CC8C28A0085104B /* KDBaseViewModel.m */; };
 		040619D81CC8C4490085104B /* TestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 040619D71CC8C4490085104B /* TestViewModel.m */; };
+		045383381D7D4A8200B02A95 /* KDMoyaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045383371D7D4A8200B02A95 /* KDMoyaViewController.swift */; };
 		049163CB1CE2DD6B00A359DF /* CTDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 049163CA1CE2DD6B00A359DF /* CTDisplayView.m */; };
 		049163CE1CE2DDF700A359DF /* CTFrameParseConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 049163CD1CE2DDF700A359DF /* CTFrameParseConfig.m */; };
 		049163D11CE2DE0F00A359DF /* CTFrameParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 049163D01CE2DE0F00A359DF /* CTFrameParse.m */; };
@@ -485,6 +486,7 @@
 		040619D41CC8C28A0085104B /* KDBaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDBaseViewModel.m; sourceTree = "<group>"; };
 		040619D61CC8C4490085104B /* TestViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewModel.h; sourceTree = "<group>"; };
 		040619D71CC8C4490085104B /* TestViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewModel.m; sourceTree = "<group>"; };
+		045383371D7D4A8200B02A95 /* KDMoyaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDMoyaViewController.swift; sourceTree = "<group>"; };
 		048606A61D79644500AEA7EF /* RxSwift.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RxSwift.playground; sourceTree = "<group>"; };
 		049163C91CE2DD6B00A359DF /* CTDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTDisplayView.h; sourceTree = "<group>"; };
 		049163CA1CE2DD6B00A359DF /* CTDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTDisplayView.m; sourceTree = "<group>"; };
@@ -3466,6 +3468,7 @@
 			isa = PBXGroup;
 			children = (
 				1847EEEB1D7C0E1C00272FD0 /* KDRxSwiftTableController.swift */,
+				045383371D7D4A8200B02A95 /* KDMoyaViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -3828,7 +3831,6 @@
 				TargetAttributes = {
 					1863BCB11C0443AE00451F99 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = AF4QG744FE;
 					};
 					1863BCCA1C0443AE00451F99 = {
 						CreatedOnToolsVersion = 7.1;
@@ -4228,6 +4230,7 @@
 				163158A11C8D2D930056A624 /* QQMsgViewController.m in Sources */,
 				164FC8061C770F61004CEA04 /* MJRefreshAutoStateFooter.m in Sources */,
 				164FC63E1C707EFE004CEA04 /* KDImageBrowserViewController.m in Sources */,
+				045383381D7D4A8200B02A95 /* KDMoyaViewController.swift in Sources */,
 				1631589F1C8D2D930056A624 /* KDLoadingViewController.m in Sources */,
 				181C57251C54AE85007F84DC /* QuartzGradientView.m in Sources */,
 				164FC72F1C75B891004CEA04 /* TYLinkTextStorage.m in Sources */,
@@ -4417,8 +4420,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: ZHIGUANG LI (5593V67DUV)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: ZHIGUANG LI (5593V67DUV)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -4463,8 +4466,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: ZHIGUANG LI (5593V67DUV)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: ZHIGUANG LI (5593V67DUV)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;

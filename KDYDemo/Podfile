@@ -16,6 +16,8 @@ pod 'Alamofire', '~> 3.4.0'
 pod 'Kingfisher', '~> 2.4.1'
 
 # Rx
+pod 'Moya'
+pod 'Moya/RxSwift'
 pod 'RxSwift', '~> 2.5.0'
 pod 'RxCocoa', '~> 2.5.0'
 pod 'RxDataSources', '~> 0.8.1'
