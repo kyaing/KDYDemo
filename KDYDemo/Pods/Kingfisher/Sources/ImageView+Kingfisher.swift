@@ -56,14 +56,13 @@ extension ImageView {
      The `CallbackDispatchQueue` specified in `optionsInfo` will not be used in callbacks of this method.
      */
     
-    public func kf_setImageWithURL(URL: NSURL?,
+    public func kf_setImageWithURL(URL: NSURL,
                                    placeholderImage: Image? = nil,
                                    optionsInfo: KingfisherOptionsInfo? = nil,
                                    progressBlock: DownloadProgressBlock? = nil,
                                    completionHandler: CompletionHandler? = nil) -> RetrieveImageTask
     {
-        let resource = URL.map { Resource(downloadURL: $0) }
-        return kf_setImageWithResource(resource,
+        return kf_setImageWithResource(Resource(downloadURL: URL),
                                        placeholderImage: placeholderImage,
                                        optionsInfo: optionsInfo,
                                        progressBlock: progressBlock,
@@ -85,19 +84,12 @@ extension ImageView {
     - note: Both the `progressBlock` and `completionHandler` will be invoked in main thread. 
      The `CallbackDispatchQueue` specified in `optionsInfo` will not be used in callbacks of this method.
     */
-    public func kf_setImageWithResource(resource: Resource?,
+    public func kf_setImageWithResource(resource: Resource,
                                 placeholderImage: Image? = nil,
                                      optionsInfo: KingfisherOptionsInfo? = nil,
                                    progressBlock: DownloadProgressBlock? = nil,
                                completionHandler: CompletionHandler? = nil) -> RetrieveImageTask
     {
-        image = placeholderImage
-        
-        guard let resource = resource else {
-            completionHandler?(image: nil, error: nil, cacheType: .None, imageURL: nil)
-            return RetrieveImageTask.emptyTask
-        }
-        
         let showIndicatorWhenLoading = kf_showIndicatorWhenLoading
         var indicator: IndicatorView? = nil
         if showIndicatorWhenLoading {
@@ -105,6 +97,8 @@ extension ImageView {
             indicator?.hidden = false
             indicator?.kf_startAnimating()
         }
+        
+        image = placeholderImage
         
         kf_setWebURL(resource.downloadURL)
         
@@ -123,6 +117,7 @@ extension ImageView {
                 
                 dispatch_async_safely_to_main_queue {
                     guard let sSelf = self where imageURL == sSelf.kf_webURL else {
+                        completionHandler?(image: image, error: error, cacheType: cacheType, imageURL: imageURL)
                         return
                     }
                     

@@ -80,14 +80,11 @@ The error code.
 
 - BadData: The downloaded data is not an image or the data is corrupted.
 - NotModified: The remote server responsed a 304 code. No image data downloaded.
-- NotCached: The image rquested is not in cache but OnlyFromCache is activated.
 - InvalidURL: The URL is invalid.
 */
 public enum KingfisherError: Int {
     case BadData = 10000
     case NotModified = 10001
-    case InvalidStatusCode = 10002
-    case NotCached = 10003
     case InvalidURL = 20000
 }
 
@@ -116,12 +113,12 @@ public protocol AuthenticationChallengeResponable: class {
      
      - Note: This method is a forward from `URLSession(:didReceiveChallenge:completionHandler:)`. Please refer to the document of it in `NSURLSessionDelegate`.
      */
-    func downloader(downloader: ImageDownloader, didReceiveChallenge challenge: NSURLAuthenticationChallenge, completionHandler: (NSURLSessionAuthChallengeDisposition, NSURLCredential?) -> Void)
+    func downloder(downloader: ImageDownloader, didReceiveChallenge challenge: NSURLAuthenticationChallenge, completionHandler: (NSURLSessionAuthChallengeDisposition, NSURLCredential?) -> Void)
 }
 
 extension AuthenticationChallengeResponable {
     
-    func downloader(downloader: ImageDownloader, didReceiveChallenge challenge: NSURLAuthenticationChallenge, completionHandler: (NSURLSessionAuthChallengeDisposition, NSURLCredential?) -> Void) {
+    func downloder(downloader: ImageDownloader, didReceiveChallenge challenge: NSURLAuthenticationChallenge, completionHandler: (NSURLSessionAuthChallengeDisposition, NSURLCredential?) -> Void) {
     
         if challenge.protectionSpace.authenticationMethod == NSURLAuthenticationMethodServerTrust {
             if let trustedHosts = downloader.trustedHosts where trustedHosts.contains(challenge.protectionSpace.host) {
@@ -272,7 +269,7 @@ extension ImageDownloader {
                            progressBlock: ImageDownloaderProgressBlock?,
                        completionHandler: ImageDownloaderCompletionHandler?) -> RetrieveImageDownloadTask?
     {
-        if let retrieveImageTask = retrieveImageTask where retrieveImageTask.cancelledBeforeDownloadStarting {
+        if let retrieveImageTask = retrieveImageTask where retrieveImageTask.cancelledBeforeDownlodStarting {
             return nil
         }
         
@@ -368,12 +365,6 @@ class ImageDownloaderSessionHandler: NSObject, NSURLSessionDataDelegate, Authent
     */
     internal func URLSession(session: NSURLSession, dataTask: NSURLSessionDataTask, didReceiveResponse response: NSURLResponse, completionHandler: (NSURLSessionResponseDisposition) -> Void) {
         
-        // If server response is not 200,201 or 304, inform the callback handler with InvalidStatusCode error.
-        // InvalidStatusCode error has userInfo which include statusCode and localizedString.
-        if let statusCode = (response as? NSHTTPURLResponse)?.statusCode, let URL = dataTask.originalRequest?.URL where statusCode != 200 && statusCode != 201 && statusCode != 304 {
-            callbackWithImage(nil, error: NSError(domain: KingfisherErrorDomain, code: KingfisherError.InvalidStatusCode.rawValue, userInfo: ["statusCode": statusCode, "localizedStringForStatusCode": NSHTTPURLResponse.localizedStringForStatusCode(statusCode)]), imageURL: URL, originalData: nil)
-        }
-        
         completionHandler(NSURLSessionResponseDisposition.Allow)
     }
     
@@ -420,7 +411,7 @@ class ImageDownloaderSessionHandler: NSObject, NSURLSessionDataDelegate, Authent
             return
         }
         
-        downloader.authenticationChallengeResponder?.downloader(downloader, didReceiveChallenge: challenge, completionHandler: completionHandler)
+        downloader.authenticationChallengeResponder?.downloder(downloader, didReceiveChallenge: challenge, completionHandler: completionHandler)
     }
     
     private func callbackWithImage(image: Image?, error: NSError?, imageURL: NSURL, originalData: NSData?) {

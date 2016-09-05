@@ -15,7 +15,6 @@
 /*!
  @method
  @discussion start the JSPatch engine, execute only once.
- !Deprecated! will be call automatically before evaluate script
  */
 + (void)startEngine;
 
@@ -63,7 +62,6 @@
  */
 + (void)defineStruct:(NSDictionary *)defineDict;
 
-+ (void)handleException:(void (^)(NSString *msg))exceptionBlock;
 @end
 
 
@@ -89,18 +87,5 @@
 + (NSMutableDictionary *)registeredStruct;
 
 + (NSDictionary *)overideMethods;
-+ (NSMutableSet *)includedScriptPaths;
 @end
 
-
-
-@interface JPBoxing : NSObject
-@property (nonatomic) id obj;
-@property (nonatomic) void *pointer;
-@property (nonatomic) Class cls;
-@property (nonatomic, weak) id weakObj;
-@property (nonatomic, assign) id assignObj;
-- (id)unbox;
-- (void *)unboxPointer;
-- (Class)unboxClass;
-@end
