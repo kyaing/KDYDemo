@@ -20,6 +20,7 @@ class KDRxSwiftTableController: UIViewController {
         return tableView
     }()
     
+    // 用RxDataSources为tableView作数据源
     let dataSource = RxTableViewSectionedReloadDataSource<SectionModel<String, UserModel>>()
     let viewModel = ViewModel()
     let disposeBag = DisposeBag()

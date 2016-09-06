@@ -17,7 +17,8 @@ public enum ApiService {
 }
 
 // 创建Provider，并发起请求
-let apiProvider = RxMoyaProvider<ApiService>()
+let apiProvider   = MoyaProvider<ApiService>()
+let rxApiProvider = RxMoyaProvider<ApiService>()
 
 // 满足 TargetType协议
 extension ApiService: TargetType {
@@ -37,9 +38,8 @@ extension ApiService: TargetType {
         case .GetRank(let area):
         return [
             "area": nil == area ? "" : area!,
-            // 这里是我的测试 key，理论上是免费的，如果失效，请自行申请替换
             // 接口详情地址: https://www.juhe.cn/docs/api/id/44
-            "key": "e8ec41002b1441dc9126d7bbf259b747"
+            "key": "c4356125b8472bd265a0691789d114b3"
             ]
         }
     }

@@ -126,7 +126,7 @@ extension KDSwiftViewController: UITableViewDelegate {
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.navigationController?.pushViewController(KDRxSwiftTableController(), animated: true)
+        self.navigationController?.pushViewController(KDMoyaViewController(), animated: true)
     }
 }
 

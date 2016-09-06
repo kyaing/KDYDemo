@@ -14,6 +14,7 @@
 		0406199A1CC876BB0085104B /* TestViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 040619991CC876BB0085104B /* TestViewManager.m */; };
 		040619D51CC8C28A0085104B /* KDBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 040619D41CC8C28A0085104B /* KDBaseViewModel.m */; };
 		040619D81CC8C4490085104B /* TestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 040619D71CC8C4490085104B /* TestViewModel.m */; };
+		041A5F511D7E9D4A00734BF7 /* RxMoyaMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041A5F501D7E9D4A00734BF7 /* RxMoyaMapper.swift */; };
 		045383381D7D4A8200B02A95 /* KDMoyaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045383371D7D4A8200B02A95 /* KDMoyaViewController.swift */; };
 		049163CB1CE2DD6B00A359DF /* CTDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 049163CA1CE2DD6B00A359DF /* CTDisplayView.m */; };
 		049163CE1CE2DDF700A359DF /* CTFrameParseConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 049163CD1CE2DDF700A359DF /* CTFrameParseConfig.m */; };
@@ -487,6 +488,7 @@
 		040619D41CC8C28A0085104B /* KDBaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDBaseViewModel.m; sourceTree = "<group>"; };
 		040619D61CC8C4490085104B /* TestViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewModel.h; sourceTree = "<group>"; };
 		040619D71CC8C4490085104B /* TestViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewModel.m; sourceTree = "<group>"; };
+		041A5F501D7E9D4A00734BF7 /* RxMoyaMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxMoyaMapper.swift; sourceTree = "<group>"; };
 		045383371D7D4A8200B02A95 /* KDMoyaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDMoyaViewController.swift; sourceTree = "<group>"; };
 		048606A61D79644500AEA7EF /* RxSwift.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RxSwift.playground; sourceTree = "<group>"; };
 		049163C91CE2DD6B00A359DF /* CTDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTDisplayView.h; sourceTree = "<group>"; };
@@ -3549,6 +3551,7 @@
 				1867E21E1D7C49B800153306 /* UserModel.swift */,
 				1867E2221D7C4A1400153306 /* ViewModel.swift */,
 				1867E2241D7DA6EB00153306 /* ApiService.swift */,
+				041A5F501D7E9D4A00734BF7 /* RxMoyaMapper.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -4347,6 +4350,7 @@
 				181C57341C54AE85007F84DC /* KDTXViewController.m in Sources */,
 				16F297BC1C70685700DE82F9 /* YYTextLayout.m in Sources */,
 				16F2974C1C70685700DE82F9 /* View+MASAdditions.m in Sources */,
+				041A5F511D7E9D4A00734BF7 /* RxMoyaMapper.swift in Sources */,
 				164FC7351C75B891004CEA04 /* TYImageCache.m in Sources */,
 				16F297B11C70685700DE82F9 /* YYImageCoder.m in Sources */,
 				16F297581C70685700DE82F9 /* NSObject+MJCoding.m in Sources */,
