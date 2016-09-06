@@ -424,6 +424,7 @@
 		1867E21F1D7C49B800153306 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867E21E1D7C49B800153306 /* UserModel.swift */; };
 		1867E2231D7C4A1400153306 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867E2221D7C4A1400153306 /* ViewModel.swift */; };
 		1867E2251D7DA6EB00153306 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867E2241D7DA6EB00153306 /* ApiService.swift */; };
+		1867E2271D7F024D00153306 /* BoxofficeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867E2261D7F024D00153306 /* BoxofficeModel.swift */; };
 		189521AA1C5CB1DC008FEBB6 /* ShowPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 189521A91C5CB1DC008FEBB6 /* ShowPhotoView.m */; };
 		189521AE1C5E0790008FEBB6 /* KDFDChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189521AD1C5E0790008FEBB6 /* KDFDChatViewController.m */; };
 		189521C31C5E1EA0008FEBB6 /* ChatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 189521C21C5E1EA0008FEBB6 /* ChatModel.m */; };
@@ -1307,6 +1308,7 @@
 		1867E21E1D7C49B800153306 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		1867E2221D7C4A1400153306 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		1867E2241D7DA6EB00153306 /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		1867E2261D7F024D00153306 /* BoxofficeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxofficeModel.swift; sourceTree = "<group>"; };
 		189521A81C5CB1DC008FEBB6 /* ShowPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShowPhotoView.h; path = KDYDemo/UIComponent/Layout/FDTemplateLayout/ShowPhotoView.h; sourceTree = SOURCE_ROOT; };
 		189521A91C5CB1DC008FEBB6 /* ShowPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShowPhotoView.m; path = KDYDemo/UIComponent/Layout/FDTemplateLayout/ShowPhotoView.m; sourceTree = SOURCE_ROOT; };
 		189521AC1C5E0790008FEBB6 /* KDFDChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDFDChatViewController.h; sourceTree = "<group>"; };
@@ -3549,6 +3551,7 @@
 			isa = PBXGroup;
 			children = (
 				1867E21E1D7C49B800153306 /* UserModel.swift */,
+				1867E2261D7F024D00153306 /* BoxofficeModel.swift */,
 				1867E2221D7C4A1400153306 /* ViewModel.swift */,
 				1867E2241D7DA6EB00153306 /* ApiService.swift */,
 				041A5F501D7E9D4A00734BF7 /* RxMoyaMapper.swift */,
@@ -4080,6 +4083,7 @@
 				1668D4031C8FBF71007DE398 /* NSObject+Swizzling.m in Sources */,
 				181C571F1C54AE85007F84DC /* ContactModel.m in Sources */,
 				164FC8931C7ACEA8004CEA04 /* UIButton+AFNetworking.m in Sources */,
+				1867E2271D7F024D00153306 /* BoxofficeModel.swift in Sources */,
 				163158B21C8D2DDC0056A624 /* PingPushTransition.m in Sources */,
 				189522541C633471008FEBB6 /* BaseChatTableCell.m in Sources */,
 				1668D40B1C9022C8007DE398 /* KDMediaViewController.m in Sources */,

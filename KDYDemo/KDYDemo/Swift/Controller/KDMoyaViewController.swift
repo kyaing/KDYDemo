@@ -11,22 +11,6 @@ import Moya
 import SwiftyJSON
 import RxSwift
 
-struct BoxofficeModel: Mapable {
-    let rid: String?
-    let name: String?
-    let wk: String?
-    let wboxoffice: String?
-    let tboxoffice: String?
-    
-    init?(jsonData: JSON) {
-        self.rid        = jsonData["rid"].string
-        self.name       = jsonData["name"].string
-        self.wk         = jsonData["wk"].string
-        self.wboxoffice = jsonData["wboxoffice"].string
-        self.tboxoffice = jsonData["tboxoffice"].string
-    }
-}
-
 /// Moya + RxSwift + SwiftyJSON
 class KDMoyaViewController: UIViewController {
 
@@ -72,7 +56,7 @@ class KDMoyaViewController: UIViewController {
         //    }
         //}
  
-        // 2 用RxMoyaProvider来请求
+        // 2 用RxMoyaProvider来请求(怎么用到 MVVM中呢？)
         rxApiProvider.request(ApiService.GetRank(area: "CN"))
             .mapResponseToArray(BoxofficeModel)
             .subscribe(

@@ -35,7 +35,7 @@ class KDRxSwiftTableController: UIViewController {
             make.edges.equalTo(view)
         }
         
-        //配置Cell
+        // 配置Cell
         dataSource.configureCell = {
             _, tableView, indexPath, user in
             let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
@@ -45,7 +45,7 @@ class KDRxSwiftTableController: UIViewController {
             return cell
         }
         
-        //绑定数据
+        // 绑定数据
         viewModel.getUsers()
             .bindTo(myTableView.rx_itemsWithDataSource(dataSource))
             .addDisposableTo(disposeBag)

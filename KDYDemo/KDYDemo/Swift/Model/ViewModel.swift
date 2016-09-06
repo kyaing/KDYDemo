@@ -10,6 +10,7 @@ import RxSwift
 import RxDataSources
 
 class ViewModel: NSObject {
+    // 模拟请求数据
     func getUsers() -> Observable<[SectionModel<String, UserModel>]> {
         return Observable
             .create{ observable -> Disposable in
@@ -26,6 +27,11 @@ class ViewModel: NSObject {
                 
                 return AnonymousDisposable{}
             }
+    }
+    
+    // 请求真实数据(电影排名接口)
+    func getNetworkData() {
+    
     }
 }
 
