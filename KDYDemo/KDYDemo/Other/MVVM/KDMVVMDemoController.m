@@ -46,7 +46,8 @@
 - (NSMutableArray *)dataArr {
     if (!_dataArr) {
         _dataArr = [[NSMutableArray alloc] initWithObjects:@"1. MVVM实践",
-                    @"2. ReactiveCocoa实践",
+                    @"2. KVOController",
+                    @"2. ReactiveCocoa",
                     nil];
     }
     

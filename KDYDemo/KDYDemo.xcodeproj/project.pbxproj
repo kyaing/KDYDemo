@@ -1411,6 +1411,7 @@
 				040619821CC7299F0085104B /* KDMVVMDemoController.h */,
 				040619831CC7299F0085104B /* KDMVVMDemoController.m */,
 				040619841CC7299F0085104B /* MVVM */,
+				04B28EE71D8261EF00A3AD85 /* KVO */,
 				04A14FDA1D461D4600C4F382 /* RAC */,
 			);
 			path = MVVM;
@@ -1566,6 +1567,45 @@
 			children = (
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		04B28EE71D8261EF00A3AD85 /* KVO */ = {
+			isa = PBXGroup;
+			children = (
+				04B28EE91D8261EF00A3AD85 /* Model */,
+				04B28EEA1D8261EF00A3AD85 /* View */,
+				04B28EEC1D8261EF00A3AD85 /* ViewModel */,
+				04B28EE81D8261EF00A3AD85 /* Controller */,
+			);
+			path = KVO;
+			sourceTree = "<group>";
+		};
+		04B28EE81D8261EF00A3AD85 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04B28EE91D8261EF00A3AD85 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04B28EEA1D8261EF00A3AD85 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04B28EEC1D8261EF00A3AD85 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		04C0AAF61D77FC5B00521BB7 /* AutoLayout */ = {
