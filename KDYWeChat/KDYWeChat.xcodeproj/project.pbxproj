@@ -1,1121 +1,712 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>00FFCC3D78DD6BC9A83E2F8A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-KDYWeChat.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-KDYWeChat/Pods-KDYWeChat.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F14BC22BF7D951731B7F2E7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E8489D9432F2FD343DF22B8D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>16CA1DDC17CA1B044E7B84D5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-KDYWeChat.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-KDYWeChat/Pods-KDYWeChat.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>18452C9A1D819E9100D4B2BE</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>18452CA51D819E9100D4B2BE</string>
-				<string>18452CBA1D819E9100D4B2BE</string>
-				<string>18452CC51D819E9100D4B2BE</string>
-				<string>18452CA41D819E9100D4B2BE</string>
-				<string>8DA673FE61945A2F0443F78F</string>
-				<string>67602AFFD9847F1AC4068B5A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>18452C9B1D819E9100D4B2BE</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0730</string>
-				<key>LastUpgradeCheck</key>
-				<string>0730</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>kaideyi.com</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>18452CA21D819E9100D4B2BE</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3.1</string>
-					</dict>
-					<key>18452CB61D819E9100D4B2BE</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3.1</string>
-						<key>TestTargetID</key>
-						<string>18452CA21D819E9100D4B2BE</string>
-					</dict>
-					<key>18452CC11D819E9100D4B2BE</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3.1</string>
-						<key>TestTargetID</key>
-						<string>18452CA21D819E9100D4B2BE</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>18452C9E1D819E9100D4B2BE</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>18452C9A1D819E9100D4B2BE</string>
-			<key>productRefGroup</key>
-			<string>18452CA41D819E9100D4B2BE</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>18452CA21D819E9100D4B2BE</string>
-				<string>18452CB61D819E9100D4B2BE</string>
-				<string>18452CC11D819E9100D4B2BE</string>
-			</array>
-		</dict>
-		<key>18452C9E1D819E9100D4B2BE</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>18452CC91D819E9100D4B2BE</string>
-				<string>18452CCA1D819E9100D4B2BE</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>18452C9F1D819E9100D4B2BE</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>18452CA91D819E9100D4B2BE</string>
-				<string>18452CA71D819E9100D4B2BE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>18452CA01D819E9100D4B2BE</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>0F14BC22BF7D951731B7F2E7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>18452CA11D819E9100D4B2BE</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>18452CB11D819E9100D4B2BE</string>
-				<string>18452CAE1D819E9100D4B2BE</string>
-				<string>18452CAC1D819E9100D4B2BE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>18452CA21D819E9100D4B2BE</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>18452CCB1D819E9100D4B2BE</string>
-			<key>buildPhases</key>
-			<array>
-				<string>A4C26CB0EE869A1C5017A6CB</string>
-				<string>18452C9F1D819E9100D4B2BE</string>
-				<string>18452CA01D819E9100D4B2BE</string>
-				<string>18452CA11D819E9100D4B2BE</string>
-				<string>BEBDF5A6CB34790A07E974F8</string>
-				<string>7EDBA34280B1E62794266B19</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>KDYWeChat</string>
-			<key>productName</key>
-			<string>KDYWeChat</string>
-			<key>productReference</key>
-			<string>18452CA31D819E9100D4B2BE</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>18452CA31D819E9100D4B2BE</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>KDYWeChat.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>18452CA41D819E9100D4B2BE</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>18452CA31D819E9100D4B2BE</string>
-				<string>18452CB71D819E9100D4B2BE</string>
-				<string>18452CC21D819E9100D4B2BE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>18452CA51D819E9100D4B2BE</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>18452CA61D819E9100D4B2BE</string>
-				<string>18452CA81D819E9100D4B2BE</string>
-				<string>18452CAA1D819E9100D4B2BE</string>
-				<string>18452CAD1D819E9100D4B2BE</string>
-				<string>18452CAF1D819E9100D4B2BE</string>
-				<string>18452CB21D819E9100D4B2BE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>KDYWeChat</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>18452CA61D819E9100D4B2BE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AppDelegate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>18452CA71D819E9100D4B2BE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>18452CA61D819E9100D4B2BE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>18452CA81D819E9100D4B2BE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>18452CA91D819E9100D4B2BE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>18452CA81D819E9100D4B2BE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>18452CAA1D819E9100D4B2BE</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>18452CAB1D819E9100D4B2BE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>18452CAB1D819E9100D4B2BE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>18452CAC1D819E9100D4B2BE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>18452CAA1D819E9100D4B2BE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>18452CAD1D819E9100D4B2BE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>18452CAE1D819E9100D4B2BE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>18452CAD1D819E9100D4B2BE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>18452CAF1D819E9100D4B2BE</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>18452CB01D819E9100D4B2BE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>18452CB01D819E9100D4B2BE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>18452CB11D819E9100D4B2BE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>18452CAF1D819E9100D4B2BE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>18452CB21D819E9100D4B2BE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>18452CB31D819E9100D4B2BE</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>18452CBC1D819E9100D4B2BE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>18452CB41D819E9100D4B2BE</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>18452CB51D819E9100D4B2BE</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>18452CB61D819E9100D4B2BE</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>18452CCE1D819E9100D4B2BE</string>
-			<key>buildPhases</key>
-			<array>
-				<string>18452CB31D819E9100D4B2BE</string>
-				<string>18452CB41D819E9100D4B2BE</string>
-				<string>18452CB51D819E9100D4B2BE</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>18452CB91D819E9100D4B2BE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>KDYWeChatTests</string>
-			<key>productName</key>
-			<string>KDYWeChatTests</string>
-			<key>productReference</key>
-			<string>18452CB71D819E9100D4B2BE</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>18452CB71D819E9100D4B2BE</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>KDYWeChatTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>18452CB81D819E9100D4B2BE</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>18452C9B1D819E9100D4B2BE</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>18452CA21D819E9100D4B2BE</string>
-			<key>remoteInfo</key>
-			<string>KDYWeChat</string>
-		</dict>
-		<key>18452CB91D819E9100D4B2BE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>18452CA21D819E9100D4B2BE</string>
-			<key>targetProxy</key>
-			<string>18452CB81D819E9100D4B2BE</string>
-		</dict>
-		<key>18452CBA1D819E9100D4B2BE</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>18452CBB1D819E9100D4B2BE</string>
-				<string>18452CBD1D819E9100D4B2BE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>KDYWeChatTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>18452CBB1D819E9100D4B2BE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>KDYWeChatTests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>18452CBC1D819E9100D4B2BE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>18452CBB1D819E9100D4B2BE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>18452CBD1D819E9100D4B2BE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>18452CBE1D819E9100D4B2BE</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>18452CC71D819E9100D4B2BE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>18452CBF1D819E9100D4B2BE</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>18452CC01D819E9100D4B2BE</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>18452CC11D819E9100D4B2BE</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>18452CD11D819E9100D4B2BE</string>
-			<key>buildPhases</key>
-			<array>
-				<string>18452CBE1D819E9100D4B2BE</string>
-				<string>18452CBF1D819E9100D4B2BE</string>
-				<string>18452CC01D819E9100D4B2BE</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>18452CC41D819E9100D4B2BE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>KDYWeChatUITests</string>
-			<key>productName</key>
-			<string>KDYWeChatUITests</string>
-			<key>productReference</key>
-			<string>18452CC21D819E9100D4B2BE</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.ui-testing</string>
-		</dict>
-		<key>18452CC21D819E9100D4B2BE</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>KDYWeChatUITests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>18452CC31D819E9100D4B2BE</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>18452C9B1D819E9100D4B2BE</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>18452CA21D819E9100D4B2BE</string>
-			<key>remoteInfo</key>
-			<string>KDYWeChat</string>
-		</dict>
-		<key>18452CC41D819E9100D4B2BE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>18452CA21D819E9100D4B2BE</string>
-			<key>targetProxy</key>
-			<string>18452CC31D819E9100D4B2BE</string>
-		</dict>
-		<key>18452CC51D819E9100D4B2BE</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>18452CC61D819E9100D4B2BE</string>
-				<string>18452CC81D819E9100D4B2BE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>KDYWeChatUITests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>18452CC61D819E9100D4B2BE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>KDYWeChatUITests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>18452CC71D819E9100D4B2BE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>18452CC61D819E9100D4B2BE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>18452CC81D819E9100D4B2BE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>18452CC91D819E9100D4B2BE</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>18452CCA1D819E9100D4B2BE</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>18452CCB1D819E9100D4B2BE</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>18452CCC1D819E9100D4B2BE</string>
-				<string>18452CCD1D819E9100D4B2BE</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>18452CCC1D819E9100D4B2BE</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>00FFCC3D78DD6BC9A83E2F8A</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>KDYWeChat/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>kaideyi.com.KDYWeChat</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>18452CCD1D819E9100D4B2BE</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>16CA1DDC17CA1B044E7B84D5</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>KDYWeChat/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>kaideyi.com.KDYWeChat</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>18452CCE1D819E9100D4B2BE</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>18452CCF1D819E9100D4B2BE</string>
-				<string>18452CD01D819E9100D4B2BE</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>18452CCF1D819E9100D4B2BE</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>KDYWeChatTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>kaideyi.com.KDYWeChatTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/KDYWeChat.app/KDYWeChat</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>18452CD01D819E9100D4B2BE</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>KDYWeChatTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>kaideyi.com.KDYWeChatTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/KDYWeChat.app/KDYWeChat</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>18452CD11D819E9100D4B2BE</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>18452CD21D819E9100D4B2BE</string>
-				<string>18452CD31D819E9100D4B2BE</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>18452CD21D819E9100D4B2BE</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>KDYWeChatUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>kaideyi.com.KDYWeChatUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>KDYWeChat</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>18452CD31D819E9100D4B2BE</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>KDYWeChatUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>kaideyi.com.KDYWeChatUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>KDYWeChat</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>67602AFFD9847F1AC4068B5A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E8489D9432F2FD343DF22B8D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7EDBA34280B1E62794266B19</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-KDYWeChat/Pods-KDYWeChat-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>8DA673FE61945A2F0443F78F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>00FFCC3D78DD6BC9A83E2F8A</string>
-				<string>16CA1DDC17CA1B044E7B84D5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A4C26CB0EE869A1C5017A6CB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>BEBDF5A6CB34790A07E974F8</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-KDYWeChat/Pods-KDYWeChat-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>E8489D9432F2FD343DF22B8D</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_KDYWeChat.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>18452C9B1D819E9100D4B2BE</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F14BC22BF7D951731B7F2E7 /* Pods_KDYWeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8489D9432F2FD343DF22B8D /* Pods_KDYWeChat.framework */; };
+		18452CA71D819E9100D4B2BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18452CA61D819E9100D4B2BE /* AppDelegate.swift */; };
+		18452CBC1D819E9100D4B2BE /* KDYWeChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18452CBB1D819E9100D4B2BE /* KDYWeChatTests.swift */; };
+		18452CC71D819E9100D4B2BE /* KDYWeChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18452CC61D819E9100D4B2BE /* KDYWeChatUITests.swift */; };
+		1845A94C1D83D1AB008BD883 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1845A9461D83D1AB008BD883 /* LaunchScreen.storyboard */; };
+		1845A94D1D83D1AB008BD883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1845A9481D83D1AB008BD883 /* Main.storyboard */; };
+		1845A94E1D83D1AB008BD883 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1845A94A1D83D1AB008BD883 /* Info.plist */; };
+		1845A94F1D83D1AB008BD883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1845A94B1D83D1AB008BD883 /* Assets.xcassets */; };
+		1845A9531D83D2FC008BD883 /* KDChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845A9521D83D2FC008BD883 /* KDChatViewController.swift */; };
+		1845A9551D83D33D008BD883 /* KDContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845A9541D83D33D008BD883 /* KDContactsViewController.swift */; };
+		1845A9571D83DD86008BD883 /* KDDiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845A9561D83DD86008BD883 /* KDDiscoveryViewController.swift */; };
+		1845A9591D83DE36008BD883 /* KDMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845A9581D83DE36008BD883 /* KDMeViewController.swift */; };
+		1845A95D1D83E05A008BD883 /* KDTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845A95C1D83E05A008BD883 /* KDTabBarController.swift */; };
+		1845A9601D83E99B008BD883 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845A95F1D83E99B008BD883 /* UIViewController+Extension.swift */; };
+		1845A9621D83E9BA008BD883 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845A9611D83E9BA008BD883 /* UIView+Extension.swift */; };
+		1845A9641D83E9F0008BD883 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845A9631D83E9F0008BD883 /* UIColor+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18452CB81D819E9100D4B2BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18452C9B1D819E9100D4B2BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18452CA21D819E9100D4B2BE;
+			remoteInfo = KDYWeChat;
+		};
+		18452CC31D819E9100D4B2BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18452C9B1D819E9100D4B2BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18452CA21D819E9100D4B2BE;
+			remoteInfo = KDYWeChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00FFCC3D78DD6BC9A83E2F8A /* Pods-KDYWeChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KDYWeChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KDYWeChat/Pods-KDYWeChat.debug.xcconfig"; sourceTree = "<group>"; };
+		16CA1DDC17CA1B044E7B84D5 /* Pods-KDYWeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KDYWeChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-KDYWeChat/Pods-KDYWeChat.release.xcconfig"; sourceTree = "<group>"; };
+		18452CA31D819E9100D4B2BE /* KDYWeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KDYWeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18452CA61D819E9100D4B2BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18452CB71D819E9100D4B2BE /* KDYWeChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KDYWeChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18452CBB1D819E9100D4B2BE /* KDYWeChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDYWeChatTests.swift; sourceTree = "<group>"; };
+		18452CBD1D819E9100D4B2BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18452CC21D819E9100D4B2BE /* KDYWeChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KDYWeChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18452CC61D819E9100D4B2BE /* KDYWeChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDYWeChatUITests.swift; sourceTree = "<group>"; };
+		18452CC81D819E9100D4B2BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1845A9471D83D1AB008BD883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1845A9491D83D1AB008BD883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		1845A94A1D83D1AB008BD883 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1845A94B1D83D1AB008BD883 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1845A9521D83D2FC008BD883 /* KDChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDChatViewController.swift; sourceTree = "<group>"; };
+		1845A9541D83D33D008BD883 /* KDContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDContactsViewController.swift; sourceTree = "<group>"; };
+		1845A9561D83DD86008BD883 /* KDDiscoveryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDDiscoveryViewController.swift; sourceTree = "<group>"; };
+		1845A9581D83DE36008BD883 /* KDMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDMeViewController.swift; sourceTree = "<group>"; };
+		1845A95C1D83E05A008BD883 /* KDTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDTabBarController.swift; sourceTree = "<group>"; };
+		1845A95F1D83E99B008BD883 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		1845A9611D83E9BA008BD883 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		1845A9631D83E9F0008BD883 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		E8489D9432F2FD343DF22B8D /* Pods_KDYWeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KDYWeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18452CA01D819E9100D4B2BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F14BC22BF7D951731B7F2E7 /* Pods_KDYWeChat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18452CB41D819E9100D4B2BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18452CBF1D819E9100D4B2BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18452C9A1D819E9100D4B2BE = {
+			isa = PBXGroup;
+			children = (
+				18452CA51D819E9100D4B2BE /* KDYWeChat */,
+				18452CBA1D819E9100D4B2BE /* KDYWeChatTests */,
+				18452CC51D819E9100D4B2BE /* KDYWeChatUITests */,
+				18452CA41D819E9100D4B2BE /* Products */,
+				8DA673FE61945A2F0443F78F /* Pods */,
+				67602AFFD9847F1AC4068B5A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		18452CA41D819E9100D4B2BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18452CA31D819E9100D4B2BE /* KDYWeChat.app */,
+				18452CB71D819E9100D4B2BE /* KDYWeChatTests.xctest */,
+				18452CC21D819E9100D4B2BE /* KDYWeChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18452CA51D819E9100D4B2BE /* KDYWeChat */ = {
+			isa = PBXGroup;
+			children = (
+				18452CA61D819E9100D4B2BE /* AppDelegate.swift */,
+				1845A9351D83D127008BD883 /* BizClass */,
+				1845A9501D83D223008BD883 /* Helpers */,
+				1845A95A1D83DE88008BD883 /* Manager */,
+				1845A9511D83D223008BD883 /* Vendor */,
+				1845A9451D83D1AB008BD883 /* Base.lproj */,
+				1845A94A1D83D1AB008BD883 /* Info.plist */,
+				1845A94B1D83D1AB008BD883 /* Assets.xcassets */,
+			);
+			path = KDYWeChat;
+			sourceTree = "<group>";
+		};
+		18452CBA1D819E9100D4B2BE /* KDYWeChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				18452CBB1D819E9100D4B2BE /* KDYWeChatTests.swift */,
+				18452CBD1D819E9100D4B2BE /* Info.plist */,
+			);
+			path = KDYWeChatTests;
+			sourceTree = "<group>";
+		};
+		18452CC51D819E9100D4B2BE /* KDYWeChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18452CC61D819E9100D4B2BE /* KDYWeChatUITests.swift */,
+				18452CC81D819E9100D4B2BE /* Info.plist */,
+			);
+			path = KDYWeChatUITests;
+			sourceTree = "<group>";
+		};
+		1845A9351D83D127008BD883 /* BizClass */ = {
+			isa = PBXGroup;
+			children = (
+				1845A95B1D83E034008BD883 /* Base */,
+				1845A9361D83D127008BD883 /* Chat */,
+				1845A9371D83D127008BD883 /* Contacts */,
+				1845A9381D83D127008BD883 /* Discovery */,
+				1845A9391D83D127008BD883 /* Me */,
+			);
+			path = BizClass;
+			sourceTree = "<group>";
+		};
+		1845A9361D83D127008BD883 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				1845A9521D83D2FC008BD883 /* KDChatViewController.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		1845A9371D83D127008BD883 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				1845A9541D83D33D008BD883 /* KDContactsViewController.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		1845A9381D83D127008BD883 /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				1845A9561D83DD86008BD883 /* KDDiscoveryViewController.swift */,
+			);
+			path = Discovery;
+			sourceTree = "<group>";
+		};
+		1845A9391D83D127008BD883 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				1845A9581D83DE36008BD883 /* KDMeViewController.swift */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		1845A9451D83D1AB008BD883 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				1845A9481D83D1AB008BD883 /* Main.storyboard */,
+				1845A9461D83D1AB008BD883 /* LaunchScreen.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		1845A9501D83D223008BD883 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1845A95E1D83E956008BD883 /* Extension */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1845A9511D83D223008BD883 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		1845A95A1D83DE88008BD883 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		1845A95B1D83E034008BD883 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				1845A95C1D83E05A008BD883 /* KDTabBarController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		1845A95E1D83E956008BD883 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1845A9611D83E9BA008BD883 /* UIView+Extension.swift */,
+				1845A9631D83E9F0008BD883 /* UIColor+Extension.swift */,
+				1845A95F1D83E99B008BD883 /* UIViewController+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		67602AFFD9847F1AC4068B5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8489D9432F2FD343DF22B8D /* Pods_KDYWeChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8DA673FE61945A2F0443F78F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00FFCC3D78DD6BC9A83E2F8A /* Pods-KDYWeChat.debug.xcconfig */,
+				16CA1DDC17CA1B044E7B84D5 /* Pods-KDYWeChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18452CA21D819E9100D4B2BE /* KDYWeChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18452CCB1D819E9100D4B2BE /* Build configuration list for PBXNativeTarget "KDYWeChat" */;
+			buildPhases = (
+				A4C26CB0EE869A1C5017A6CB /* Check Pods Manifest.lock */,
+				18452C9F1D819E9100D4B2BE /* Sources */,
+				18452CA01D819E9100D4B2BE /* Frameworks */,
+				18452CA11D819E9100D4B2BE /* Resources */,
+				BEBDF5A6CB34790A07E974F8 /* Embed Pods Frameworks */,
+				7EDBA34280B1E62794266B19 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KDYWeChat;
+			productName = KDYWeChat;
+			productReference = 18452CA31D819E9100D4B2BE /* KDYWeChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18452CB61D819E9100D4B2BE /* KDYWeChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18452CCE1D819E9100D4B2BE /* Build configuration list for PBXNativeTarget "KDYWeChatTests" */;
+			buildPhases = (
+				18452CB31D819E9100D4B2BE /* Sources */,
+				18452CB41D819E9100D4B2BE /* Frameworks */,
+				18452CB51D819E9100D4B2BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18452CB91D819E9100D4B2BE /* PBXTargetDependency */,
+			);
+			name = KDYWeChatTests;
+			productName = KDYWeChatTests;
+			productReference = 18452CB71D819E9100D4B2BE /* KDYWeChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18452CC11D819E9100D4B2BE /* KDYWeChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18452CD11D819E9100D4B2BE /* Build configuration list for PBXNativeTarget "KDYWeChatUITests" */;
+			buildPhases = (
+				18452CBE1D819E9100D4B2BE /* Sources */,
+				18452CBF1D819E9100D4B2BE /* Frameworks */,
+				18452CC01D819E9100D4B2BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18452CC41D819E9100D4B2BE /* PBXTargetDependency */,
+			);
+			name = KDYWeChatUITests;
+			productName = KDYWeChatUITests;
+			productReference = 18452CC21D819E9100D4B2BE /* KDYWeChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18452C9B1D819E9100D4B2BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = kaideyi.com;
+				TargetAttributes = {
+					18452CA21D819E9100D4B2BE = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = VXQWC7SN3H;
+					};
+					18452CB61D819E9100D4B2BE = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 18452CA21D819E9100D4B2BE;
+					};
+					18452CC11D819E9100D4B2BE = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 18452CA21D819E9100D4B2BE;
+					};
+				};
+			};
+			buildConfigurationList = 18452C9E1D819E9100D4B2BE /* Build configuration list for PBXProject "KDYWeChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18452C9A1D819E9100D4B2BE;
+			productRefGroup = 18452CA41D819E9100D4B2BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18452CA21D819E9100D4B2BE /* KDYWeChat */,
+				18452CB61D819E9100D4B2BE /* KDYWeChatTests */,
+				18452CC11D819E9100D4B2BE /* KDYWeChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18452CA11D819E9100D4B2BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1845A94C1D83D1AB008BD883 /* LaunchScreen.storyboard in Resources */,
+				1845A94D1D83D1AB008BD883 /* Main.storyboard in Resources */,
+				1845A94F1D83D1AB008BD883 /* Assets.xcassets in Resources */,
+				1845A94E1D83D1AB008BD883 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18452CB51D819E9100D4B2BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18452CC01D819E9100D4B2BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7EDBA34280B1E62794266B19 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KDYWeChat/Pods-KDYWeChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4C26CB0EE869A1C5017A6CB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BEBDF5A6CB34790A07E974F8 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KDYWeChat/Pods-KDYWeChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18452C9F1D819E9100D4B2BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1845A9571D83DD86008BD883 /* KDDiscoveryViewController.swift in Sources */,
+				18452CA71D819E9100D4B2BE /* AppDelegate.swift in Sources */,
+				1845A9621D83E9BA008BD883 /* UIView+Extension.swift in Sources */,
+				1845A9641D83E9F0008BD883 /* UIColor+Extension.swift in Sources */,
+				1845A9531D83D2FC008BD883 /* KDChatViewController.swift in Sources */,
+				1845A9551D83D33D008BD883 /* KDContactsViewController.swift in Sources */,
+				1845A9601D83E99B008BD883 /* UIViewController+Extension.swift in Sources */,
+				1845A95D1D83E05A008BD883 /* KDTabBarController.swift in Sources */,
+				1845A9591D83DE36008BD883 /* KDMeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18452CB31D819E9100D4B2BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18452CBC1D819E9100D4B2BE /* KDYWeChatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18452CBE1D819E9100D4B2BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18452CC71D819E9100D4B2BE /* KDYWeChatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18452CB91D819E9100D4B2BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18452CA21D819E9100D4B2BE /* KDYWeChat */;
+			targetProxy = 18452CB81D819E9100D4B2BE /* PBXContainerItemProxy */;
+		};
+		18452CC41D819E9100D4B2BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18452CA21D819E9100D4B2BE /* KDYWeChat */;
+			targetProxy = 18452CC31D819E9100D4B2BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1845A9461D83D1AB008BD883 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1845A9471D83D1AB008BD883 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1845A9481D83D1AB008BD883 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1845A9491D83D1AB008BD883 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18452CC91D819E9100D4B2BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18452CCA1D819E9100D4B2BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18452CCC1D819E9100D4B2BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00FFCC3D78DD6BC9A83E2F8A /* Pods-KDYWeChat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = KDYWeChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kaideyi.com.KDYWeChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		18452CCD1D819E9100D4B2BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16CA1DDC17CA1B044E7B84D5 /* Pods-KDYWeChat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = KDYWeChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kaideyi.com.KDYWeChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		18452CCF1D819E9100D4B2BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KDYWeChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kaideyi.com.KDYWeChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KDYWeChat.app/KDYWeChat";
+			};
+			name = Debug;
+		};
+		18452CD01D819E9100D4B2BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KDYWeChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kaideyi.com.KDYWeChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KDYWeChat.app/KDYWeChat";
+			};
+			name = Release;
+		};
+		18452CD21D819E9100D4B2BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KDYWeChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kaideyi.com.KDYWeChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KDYWeChat;
+			};
+			name = Debug;
+		};
+		18452CD31D819E9100D4B2BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KDYWeChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kaideyi.com.KDYWeChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KDYWeChat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18452C9E1D819E9100D4B2BE /* Build configuration list for PBXProject "KDYWeChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18452CC91D819E9100D4B2BE /* Debug */,
+				18452CCA1D819E9100D4B2BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18452CCB1D819E9100D4B2BE /* Build configuration list for PBXNativeTarget "KDYWeChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18452CCC1D819E9100D4B2BE /* Debug */,
+				18452CCD1D819E9100D4B2BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18452CCE1D819E9100D4B2BE /* Build configuration list for PBXNativeTarget "KDYWeChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18452CCF1D819E9100D4B2BE /* Debug */,
+				18452CD01D819E9100D4B2BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18452CD11D819E9100D4B2BE /* Build configuration list for PBXNativeTarget "KDYWeChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18452CD21D819E9100D4B2BE /* Debug */,
+				18452CD31D819E9100D4B2BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18452C9B1D819E9100D4B2BE /* Project object */;
+}
