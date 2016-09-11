@@ -9,7 +9,17 @@
 import UIKit
 import Foundation
 
+typealias KDYColor = UIColor.AppColorName
+
 extension UIColor {
+    enum AppColorName: String {
+        case barTintColor            = "#1A1A1A"
+        case tabbarSelectedTextColor = "#68BB1E"
+        case navigationItemTextColor = ""
+    }
     
+    convenience init(colorHex name: AppColorName) {
+        self.init(rgba: name.rawValue)
+    }
 }
 

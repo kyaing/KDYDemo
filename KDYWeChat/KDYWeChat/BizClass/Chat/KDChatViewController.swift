@@ -10,6 +10,9 @@ import UIKit
 
 /// 聊天界面
 final class KDChatViewController: UIViewController {
-
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
 }
 

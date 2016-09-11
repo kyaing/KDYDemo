@@ -94,7 +94,6 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-KDYWeChat/SVProgressHUD.framework"
   install_framework "Pods-KDYWeChat/SnapKit.framework"
   install_framework "Pods-KDYWeChat/SwiftyJSON.framework"
-  install_framework "Pods-KDYWeChat/UIColor_Hex_Swift.framework"
   install_framework "Pods-KDYWeChat/YYText.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -108,6 +107,5 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-KDYWeChat/SVProgressHUD.framework"
   install_framework "Pods-KDYWeChat/SnapKit.framework"
   install_framework "Pods-KDYWeChat/SwiftyJSON.framework"
-  install_framework "Pods-KDYWeChat/UIColor_Hex_Swift.framework"
   install_framework "Pods-KDYWeChat/YYText.framework"
 fi

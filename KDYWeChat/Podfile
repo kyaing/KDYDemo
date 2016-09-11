@@ -2,25 +2,25 @@
 # platform :ios, '8.0'
 # Uncomment this line if you're using Swift
 use_frameworks!
+platform:ios, '8.0'
 
 target 'KDYWeChat' do
 
 #Swift
-pod 'SnapKit'
-pod 'SwiftyJSON'
-pod 'Alamofire', '~> 3.4.0'
-pod 'Kingfisher'
-pod 'UIColor_Hex_Swift', '~> 2.1'
+    pod 'SnapKit'
+    pod 'SwiftyJSON'
+    pod 'Alamofire', '~> 3.4.0'
+    pod 'Kingfisher'
 
-pod 'Moya'
-pod 'Moya/RxSwift'
-pod 'RxSwift', '~> 2.5.0'
-pod 'RxCocoa', '~> 2.5.0'
-pod 'RxDataSources', '~> 0.8.1'
+    pod 'Moya'
+    pod 'Moya/RxSwift'
+    pod 'RxSwift', '~> 2.5.0'
+    pod 'RxCocoa', '~> 2.5.0'
+    pod 'RxDataSources', '~> 0.8.1'
 
 #OC
-pod 'SVProgressHUD'
-pod 'YYText'
+    pod 'SVProgressHUD'
+    pod 'YYText'
 
 end
 

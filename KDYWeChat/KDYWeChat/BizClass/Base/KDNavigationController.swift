@@ -7,7 +7,9 @@
 //
 
 import UIKit
+import UIColor_Hex_Swift
 
+/// 导航栏
 class KDNavigationController: UINavigationController {
 
     override func viewDidLoad() {
@@ -17,14 +19,17 @@ class KDNavigationController: UINavigationController {
     }
     
     func initNavigationBar() {
-        UINavigationBar.appearance().barTintColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.5)
+        UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
+        
+        UINavigationBar.appearance().barTintColor = UIColor(colorHex: KDYColor.barTintColor)
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         
         UINavigationBar.appearance().translucent = true
         let attributes = [
-            NSFontAttributeName: UIFont.systemFontOfSize(19.0),
+            NSFontAttributeName: UIFont.systemFontOfSize(19),
             NSForegroundColorAttributeName: UIColor.whiteColor()
         ]
+        
         UINavigationBar.appearance().titleTextAttributes = attributes
     }
 }
