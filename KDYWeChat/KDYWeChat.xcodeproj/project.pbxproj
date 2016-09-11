@@ -11,7 +11,6 @@
 		18452CA71D819E9100D4B2BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18452CA61D819E9100D4B2BE /* AppDelegate.swift */; };
 		18452CBC1D819E9100D4B2BE /* KDYWeChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18452CBB1D819E9100D4B2BE /* KDYWeChatTests.swift */; };
 		18452CC71D819E9100D4B2BE /* KDYWeChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18452CC61D819E9100D4B2BE /* KDYWeChatUITests.swift */; };
-		1845A94C1D83D1AB008BD883 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1845A9461D83D1AB008BD883 /* LaunchScreen.storyboard */; };
 		1845A94D1D83D1AB008BD883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1845A9481D83D1AB008BD883 /* Main.storyboard */; };
 		1845A94E1D83D1AB008BD883 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1845A94A1D83D1AB008BD883 /* Info.plist */; };
 		1845A94F1D83D1AB008BD883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1845A94B1D83D1AB008BD883 /* Assets.xcassets */; };
@@ -23,6 +22,9 @@
 		1845A9601D83E99B008BD883 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845A95F1D83E99B008BD883 /* UIViewController+Extension.swift */; };
 		1845A9621D83E9BA008BD883 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845A9611D83E9BA008BD883 /* UIView+Extension.swift */; };
 		1845A9641D83E9F0008BD883 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845A9631D83E9F0008BD883 /* UIColor+Extension.swift */; };
+		188B05611D85306200393752 /* KDNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B05601D85306200393752 /* KDNavigationController.swift */; };
+		188B05641D85316800393752 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188B05621D85316800393752 /* Launch Screen.storyboard */; };
+		188B05661D8531C800393752 /* AppDelegate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B05651D8531C800393752 /* AppDelegate+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +55,6 @@
 		18452CC21D819E9100D4B2BE /* KDYWeChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KDYWeChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18452CC61D819E9100D4B2BE /* KDYWeChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDYWeChatUITests.swift; sourceTree = "<group>"; };
 		18452CC81D819E9100D4B2BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1845A9471D83D1AB008BD883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1845A9491D83D1AB008BD883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		1845A94A1D83D1AB008BD883 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1845A94B1D83D1AB008BD883 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,6 +66,9 @@
 		1845A95F1D83E99B008BD883 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		1845A9611D83E9BA008BD883 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		1845A9631D83E9F0008BD883 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		188B05601D85306200393752 /* KDNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDNavigationController.swift; sourceTree = "<group>"; };
+		188B05631D85316800393752 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		188B05651D8531C800393752 /* AppDelegate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Extension.swift"; sourceTree = "<group>"; };
 		E8489D9432F2FD343DF22B8D /* Pods_KDYWeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KDYWeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -120,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				18452CA61D819E9100D4B2BE /* AppDelegate.swift */,
+				188B05651D8531C800393752 /* AppDelegate+Extension.swift */,
 				1845A9351D83D127008BD883 /* BizClass */,
 				1845A9501D83D223008BD883 /* Helpers */,
 				1845A95A1D83DE88008BD883 /* Manager */,
@@ -197,7 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				1845A9481D83D1AB008BD883 /* Main.storyboard */,
-				1845A9461D83D1AB008BD883 /* LaunchScreen.storyboard */,
+				188B05621D85316800393752 /* Launch Screen.storyboard */,
 			);
 			path = Base.lproj;
 			sourceTree = "<group>";
@@ -228,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				1845A95C1D83E05A008BD883 /* KDTabBarController.swift */,
+				188B05601D85306200393752 /* KDNavigationController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -367,9 +373,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1845A94C1D83D1AB008BD883 /* LaunchScreen.storyboard in Resources */,
 				1845A94D1D83D1AB008BD883 /* Main.storyboard in Resources */,
 				1845A94F1D83D1AB008BD883 /* Assets.xcassets in Resources */,
+				188B05641D85316800393752 /* Launch Screen.storyboard in Resources */,
 				1845A94E1D83D1AB008BD883 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,9 +455,11 @@
 				1845A9641D83E9F0008BD883 /* UIColor+Extension.swift in Sources */,
 				1845A9531D83D2FC008BD883 /* KDChatViewController.swift in Sources */,
 				1845A9551D83D33D008BD883 /* KDContactsViewController.swift in Sources */,
+				188B05661D8531C800393752 /* AppDelegate+Extension.swift in Sources */,
 				1845A9601D83E99B008BD883 /* UIViewController+Extension.swift in Sources */,
 				1845A95D1D83E05A008BD883 /* KDTabBarController.swift in Sources */,
 				1845A9591D83DE36008BD883 /* KDMeViewController.swift in Sources */,
+				188B05611D85306200393752 /* KDNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,20 +495,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1845A9461D83D1AB008BD883 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1845A9471D83D1AB008BD883 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 		1845A9481D83D1AB008BD883 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				1845A9491D83D1AB008BD883 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		188B05621D85316800393752 /* Launch Screen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				188B05631D85316800393752 /* Base */,
+			);
+			name = "Launch Screen.storyboard";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

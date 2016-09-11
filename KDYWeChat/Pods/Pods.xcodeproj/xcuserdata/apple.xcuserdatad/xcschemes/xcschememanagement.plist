@@ -59,30 +59,35 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>UIColor_Hex_Swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>YYText.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1701317CF6342A3FB468584FA23370F7</key>
+		<key>03462A423BECC9C083E38B7207204DD3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2CB1861B9050258F64202D2F97D3DFA9</key>
+		<key>0522143AAAE61537AA96DFE4119D335B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2F41277A38912BCA93994FBC89E3401A</key>
+		<key>6FBD63E8A7806BD34D92E2E2DA83901C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4897384810D6A46A8EEA22E4687499C8</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>75B1D0B99DA7EFF0FABE0066BE1620B2</key>
+		<key>710C13B758618F5644221513E7971326</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -92,17 +97,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>8155F0D8A89A29393A632E9EA7F1F94F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>93DDB4D07205258016E6779F2667E665</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A0933FC1307AD48F89C9FB7CEA3C29C5</key>
+		<key>9C1BB388D00709223AFD6BED7C1236B8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D54FFBC0EE22FA35DA8743EA1968D7BD</key>
+		<key>A0933FC1307AD48F89C9FB7CEA3C29C5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -113,6 +123,16 @@
 			<true/>
 		</dict>
 		<key>E96E13C4D3B5B5FC0651440734C2BF4D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EFAB549ACAB790B08E68FB3677DA6997</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FDD28DC74866DDA0CCAECA16B4D24BDD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
