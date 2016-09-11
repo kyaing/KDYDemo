@@ -15,6 +15,10 @@ final class KDMessageViewController: UIViewController {
     
     lazy var chatTableView: UITableView = {
         let tableView = UITableView(frame: self.view.bounds, style: .Plain)
+        tableView.backgroundColor = UIColor(colorHex: KDYColor.tableViewBackgroundColor)
+        tableView.registerNib(UINib(nibName: "MessageTableCell", bundle: nil), forCellReuseIdentifier: messageIdentifier)
+        tableView.separatorInset = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 0)
+        tableView.tableFooterView = UIView()
         tableView.dataSource = self
         tableView.delegate = self
         
@@ -26,9 +30,6 @@ final class KDMessageViewController: UIViewController {
         super.viewDidLoad()
         
         view.addSubview(chatTableView)
-        chatTableView.backgroundColor = UIColor(colorHex: KDYColor.tableViewBackgroundColor)
-        chatTableView.registerNib(UINib(nibName: "MessageTableCell", bundle: nil), forCellReuseIdentifier: messageIdentifier)
-        chatTableView.tableFooterView = UIView()
     }
 }
 
