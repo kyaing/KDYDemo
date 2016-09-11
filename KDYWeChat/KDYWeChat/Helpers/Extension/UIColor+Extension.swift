@@ -13,9 +13,10 @@ typealias KDYColor = UIColor.AppColorName
 
 extension UIColor {
     enum AppColorName: String {
-        case barTintColor            = "#1A1A1A"
-        case tabbarSelectedTextColor = "#68BB1E"
-        case navigationItemTextColor = ""
+        case barTintColor             = "#1A1A1A"
+        case tabbarSelectedTextColor  = "#68BB1E"
+        case navigationItemTextColor  = ""
+        case tableViewBackgroundColor = "#f3f3f3"
     }
     
     convenience init(colorHex name: AppColorName) {

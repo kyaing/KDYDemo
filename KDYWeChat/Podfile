@@ -21,6 +21,7 @@ target 'KDYWeChat' do
 #OC
     pod 'SVProgressHUD'
     pod 'YYText'
+    pod 'KVOController'
 
 end
 

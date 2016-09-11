@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>KVOController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Kingfisher.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -67,22 +72,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>136C7D6DCAFA926F1F842DB3132EB1F0</key>
+		<key>153761C84E3A539D0E066DABD58B75DC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>359DE770E4500CE4106DEC73F3A2A5B8</key>
+		<key>1C2E15C9A6751804874AE4B60DF68B7A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>42E056B83128D2D8472B9D1A3D4C85BF</key>
+		<key>3EAE11B111DCCB93B64362F00009F495</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>60FCE158D10687C8B01D26A4C41A98E2</key>
+		<key>40B74E7B23FEFE306E3AAE85C53F1ED5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4A8CD83669756C51D760D772DD627CE6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -92,12 +102,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>880D8FABC08FD8FB48B5539CE86D3B78</key>
+		<key>93DDB4D07205258016E6779F2667E665</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>93DDB4D07205258016E6779F2667E665</key>
+		<key>9E33E8C69083A37FB7B7ACD850A00D61</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -107,7 +117,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A325DE2F92FFBF24F23DFFC3E0DD28C1</key>
+		<key>A60678ADF946DF47B04E0136CDBC35EE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -122,7 +132,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EDC42522CCFD583713910D54F7A7531C</key>
+		<key>F7AA744E66D58E111F46CE190165362A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

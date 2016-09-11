@@ -37,7 +37,7 @@ final class KDTabBarController: UITabBarController {
                                  "tabbar_meHL"]
         // 控制器
         let controllerArray = [
-            KDChatViewController(),
+            KDMessageViewController(),
             KDContactsViewController(),
             KDDiscoveryViewController(),
             KDMeViewController()

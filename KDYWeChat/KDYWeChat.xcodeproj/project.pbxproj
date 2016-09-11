@@ -14,7 +14,6 @@
 		1845A94D1D83D1AB008BD883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1845A9481D83D1AB008BD883 /* Main.storyboard */; };
 		1845A94E1D83D1AB008BD883 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1845A94A1D83D1AB008BD883 /* Info.plist */; };
 		1845A94F1D83D1AB008BD883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1845A94B1D83D1AB008BD883 /* Assets.xcassets */; };
-		1845A9531D83D2FC008BD883 /* KDChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845A9521D83D2FC008BD883 /* KDChatViewController.swift */; };
 		1845A9551D83D33D008BD883 /* KDContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845A9541D83D33D008BD883 /* KDContactsViewController.swift */; };
 		1845A9571D83DD86008BD883 /* KDDiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845A9561D83DD86008BD883 /* KDDiscoveryViewController.swift */; };
 		1845A9591D83DE36008BD883 /* KDMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845A9581D83DE36008BD883 /* KDMeViewController.swift */; };
@@ -25,6 +24,12 @@
 		188B05611D85306200393752 /* KDNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B05601D85306200393752 /* KDNavigationController.swift */; };
 		188B05641D85316800393752 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188B05621D85316800393752 /* Launch Screen.storyboard */; };
 		188B05661D8531C800393752 /* AppDelegate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B05651D8531C800393752 /* AppDelegate+Extension.swift */; };
+		18EA8CB01D8552BA00B4E274 /* KDChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EA8CAD1D8552BA00B4E274 /* KDChatViewController.swift */; };
+		18EA8CB81D85533100B4E274 /* ChatTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EA8CB61D85533100B4E274 /* ChatTableCell.swift */; };
+		18EA8CB91D85533100B4E274 /* ChatTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18EA8CB71D85533100B4E274 /* ChatTableCell.xib */; };
+		18EA8CC61D8553EF00B4E274 /* KDMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EA8CBF1D8553EF00B4E274 /* KDMessageViewController.swift */; };
+		18EA8CCB1D8555F600B4E274 /* MessageTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EA8CC91D8555F600B4E274 /* MessageTableCell.swift */; };
+		18EA8CCC1D8555F600B4E274 /* MessageTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18EA8CCA1D8555F600B4E274 /* MessageTableCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +63,6 @@
 		1845A9491D83D1AB008BD883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		1845A94A1D83D1AB008BD883 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1845A94B1D83D1AB008BD883 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1845A9521D83D2FC008BD883 /* KDChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDChatViewController.swift; sourceTree = "<group>"; };
 		1845A9541D83D33D008BD883 /* KDContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDContactsViewController.swift; sourceTree = "<group>"; };
 		1845A9561D83DD86008BD883 /* KDDiscoveryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDDiscoveryViewController.swift; sourceTree = "<group>"; };
 		1845A9581D83DE36008BD883 /* KDMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDMeViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +73,12 @@
 		188B05601D85306200393752 /* KDNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDNavigationController.swift; sourceTree = "<group>"; };
 		188B05631D85316800393752 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		188B05651D8531C800393752 /* AppDelegate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Extension.swift"; sourceTree = "<group>"; };
+		18EA8CAD1D8552BA00B4E274 /* KDChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDChatViewController.swift; sourceTree = "<group>"; };
+		18EA8CB61D85533100B4E274 /* ChatTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableCell.swift; sourceTree = "<group>"; };
+		18EA8CB71D85533100B4E274 /* ChatTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatTableCell.xib; sourceTree = "<group>"; };
+		18EA8CBF1D8553EF00B4E274 /* KDMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDMessageViewController.swift; sourceTree = "<group>"; };
+		18EA8CC91D8555F600B4E274 /* MessageTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableCell.swift; sourceTree = "<group>"; };
+		18EA8CCA1D8555F600B4E274 /* MessageTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageTableCell.xib; sourceTree = "<group>"; };
 		E8489D9432F2FD343DF22B8D /* Pods_KDYWeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KDYWeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -158,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				1845A95B1D83E034008BD883 /* Base */,
+				18EA8CBD1D8553EF00B4E274 /* Message */,
 				1845A9361D83D127008BD883 /* Chat */,
 				1845A9371D83D127008BD883 /* Contacts */,
 				1845A9381D83D127008BD883 /* Discovery */,
@@ -169,7 +180,10 @@
 		1845A9361D83D127008BD883 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
-				1845A9521D83D2FC008BD883 /* KDChatViewController.swift */,
+				18EA8CAE1D8552BA00B4E274 /* Model */,
+				18EA8CAF1D8552BA00B4E274 /* ViewModel */,
+				18EA8CAB1D85528300B4E274 /* View */,
+				18EA8CAC1D8552BA00B4E274 /* Controller */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -246,6 +260,95 @@
 				1845A95F1D83E99B008BD883 /* UIViewController+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		18EA8CAB1D85528300B4E274 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18EA8CB51D85533100B4E274 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18EA8CAC1D8552BA00B4E274 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18EA8CAD1D8552BA00B4E274 /* KDChatViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18EA8CAE1D8552BA00B4E274 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18EA8CAF1D8552BA00B4E274 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		18EA8CB51D85533100B4E274 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				18EA8CB61D85533100B4E274 /* ChatTableCell.swift */,
+				18EA8CB71D85533100B4E274 /* ChatTableCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		18EA8CBD1D8553EF00B4E274 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				18EA8CC01D8553EF00B4E274 /* Model */,
+				18EA8CC11D8553EF00B4E274 /* View */,
+				18EA8CC51D8553EF00B4E274 /* ViewModel */,
+				18EA8CBE1D8553EF00B4E274 /* Controller */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		18EA8CBE1D8553EF00B4E274 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18EA8CBF1D8553EF00B4E274 /* KDMessageViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18EA8CC01D8553EF00B4E274 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18EA8CC11D8553EF00B4E274 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18EA8CC21D8553EF00B4E274 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18EA8CC21D8553EF00B4E274 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				18EA8CC91D8555F600B4E274 /* MessageTableCell.swift */,
+				18EA8CCA1D8555F600B4E274 /* MessageTableCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		18EA8CC51D8553EF00B4E274 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		67602AFFD9847F1AC4068B5A /* Frameworks */ = {
@@ -373,9 +476,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18EA8CCC1D8555F600B4E274 /* MessageTableCell.xib in Resources */,
 				1845A94D1D83D1AB008BD883 /* Main.storyboard in Resources */,
 				1845A94F1D83D1AB008BD883 /* Assets.xcassets in Resources */,
 				188B05641D85316800393752 /* Launch Screen.storyboard in Resources */,
+				18EA8CB91D85533100B4E274 /* ChatTableCell.xib in Resources */,
 				1845A94E1D83D1AB008BD883 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,16 +554,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18EA8CB01D8552BA00B4E274 /* KDChatViewController.swift in Sources */,
 				1845A9571D83DD86008BD883 /* KDDiscoveryViewController.swift in Sources */,
+				18EA8CB81D85533100B4E274 /* ChatTableCell.swift in Sources */,
 				18452CA71D819E9100D4B2BE /* AppDelegate.swift in Sources */,
 				1845A9621D83E9BA008BD883 /* UIView+Extension.swift in Sources */,
 				1845A9641D83E9F0008BD883 /* UIColor+Extension.swift in Sources */,
-				1845A9531D83D2FC008BD883 /* KDChatViewController.swift in Sources */,
 				1845A9551D83D33D008BD883 /* KDContactsViewController.swift in Sources */,
+				18EA8CC61D8553EF00B4E274 /* KDMessageViewController.swift in Sources */,
 				188B05661D8531C800393752 /* AppDelegate+Extension.swift in Sources */,
 				1845A9601D83E99B008BD883 /* UIViewController+Extension.swift in Sources */,
 				1845A95D1D83E05A008BD883 /* KDTabBarController.swift in Sources */,
 				1845A9591D83DE36008BD883 /* KDMeViewController.swift in Sources */,
+				18EA8CCB1D8555F600B4E274 /* MessageTableCell.swift in Sources */,
 				188B05611D85306200393752 /* KDNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
