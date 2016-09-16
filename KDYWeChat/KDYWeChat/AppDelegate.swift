@@ -19,9 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // 设置根视图
         setupRootController()
         
-        // 第三方管理
-        setupManager()
-        
         return true
     }
     

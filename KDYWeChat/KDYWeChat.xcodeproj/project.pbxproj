@@ -33,7 +33,7 @@
 		1845A9641D83E9F0008BD883 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845A9631D83E9F0008BD883 /* UIColor+Extension.swift */; };
 		188B05611D85306200393752 /* KDNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B05601D85306200393752 /* KDNavigationController.swift */; };
 		188B05641D85316800393752 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188B05621D85316800393752 /* Launch Screen.storyboard */; };
-		188B05661D8531C800393752 /* AppDelegate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B05651D8531C800393752 /* AppDelegate+Extension.swift */; };
+		188B05661D8531C800393752 /* AppDelegate+EMSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B05651D8531C800393752 /* AppDelegate+EMSDK.swift */; };
 		18EA8CB01D8552BA00B4E274 /* KDChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EA8CAD1D8552BA00B4E274 /* KDChatViewController.swift */; };
 		18EA8CB81D85533100B4E274 /* ChatTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EA8CB61D85533100B4E274 /* ChatTableCell.swift */; };
 		18EA8CB91D85533100B4E274 /* ChatTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18EA8CB71D85533100B4E274 /* ChatTableCell.xib */; };
@@ -130,7 +130,7 @@
 		1845A9631D83E9F0008BD883 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		188B05601D85306200393752 /* KDNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDNavigationController.swift; sourceTree = "<group>"; };
 		188B05631D85316800393752 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		188B05651D8531C800393752 /* AppDelegate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Extension.swift"; sourceTree = "<group>"; };
+		188B05651D8531C800393752 /* AppDelegate+EMSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+EMSDK.swift"; sourceTree = "<group>"; };
 		18EA8CAD1D8552BA00B4E274 /* KDChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDChatViewController.swift; sourceTree = "<group>"; };
 		18EA8CB61D85533100B4E274 /* ChatTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableCell.swift; sourceTree = "<group>"; };
 		18EA8CB71D85533100B4E274 /* ChatTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatTableCell.xib; sourceTree = "<group>"; };
@@ -264,7 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				18452CA61D819E9100D4B2BE /* AppDelegate.swift */,
-				188B05651D8531C800393752 /* AppDelegate+Extension.swift */,
+				188B05651D8531C800393752 /* AppDelegate+EMSDK.swift */,
 				1845A9351D83D127008BD883 /* BizClass */,
 				1845A9501D83D223008BD883 /* Helpers */,
 				1845A95A1D83DE88008BD883 /* Manager */,
@@ -702,7 +702,7 @@
 				1845A9641D83E9F0008BD883 /* UIColor+Extension.swift in Sources */,
 				1845A9551D83D33D008BD883 /* KDContactsViewController.swift in Sources */,
 				18EA8CC61D8553EF00B4E274 /* KDMessageViewController.swift in Sources */,
-				188B05661D8531C800393752 /* AppDelegate+Extension.swift in Sources */,
+				188B05661D8531C800393752 /* AppDelegate+EMSDK.swift in Sources */,
 				1845A9601D83E99B008BD883 /* UIViewController+Extension.swift in Sources */,
 				1845A95D1D83E05A008BD883 /* KDTabBarController.swift in Sources */,
 				1845A9591D83DE36008BD883 /* KDMeViewController.swift in Sources */,
