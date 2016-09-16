@@ -6,7 +6,7 @@ platform:ios, '8.0'
 
 target 'KDYWeChat' do
 
-#Swift
+# Swift
     pod 'SnapKit'
     pod 'SwiftyJSON'
     pod 'Alamofire', '~> 3.4.0'
@@ -18,7 +18,7 @@ target 'KDYWeChat' do
     pod 'RxCocoa', '~> 2.5.0'
     pod 'RxDataSources', '~> 0.8.1'
 
-#OC
+# Objective-C
     pod 'SVProgressHUD'
     pod 'YYText'
     pod 'KVOController'

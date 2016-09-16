@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		0F14BC22BF7D951731B7F2E7 /* Pods_KDYWeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8489D9432F2FD343DF22B8D /* Pods_KDYWeChat.framework */; };
+		180F3BC71D8BDB7100D79668 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180F3BC61D8BDB7100D79668 /* CoreMedia.framework */; };
+		180F3BC91D8BDB8E00D79668 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180F3BC81D8BDB8E00D79668 /* AudioToolbox.framework */; };
+		180F3BCB1D8BDBA200D79668 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180F3BCA1D8BDBA200D79668 /* AVFoundation.framework */; };
+		180F3BCD1D8BDBAC00D79668 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180F3BCC1D8BDBAC00D79668 /* MobileCoreServices.framework */; };
+		180F3BCF1D8BDBB500D79668 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180F3BCE1D8BDBB500D79668 /* ImageIO.framework */; };
+		180F3BD11D8BDBBE00D79668 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 180F3BD01D8BDBBE00D79668 /* libz.tbd */; };
+		180F3BD31D8BDBD400D79668 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 180F3BD21D8BDBD400D79668 /* libc++.tbd */; };
+		180F3BD51D8BDBDB00D79668 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 180F3BD41D8BDBDB00D79668 /* libstdc++.6.0.9.tbd */; };
+		180F3BD71D8BDBE400D79668 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 180F3BD61D8BDBE400D79668 /* libsqlite3.tbd */; };
+		180F3C021D8BDC6300D79668 /* libHyphenateFullSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 180F3C011D8BDC6300D79668 /* libHyphenateFullSDK.a */; };
 		18452CA71D819E9100D4B2BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18452CA61D819E9100D4B2BE /* AppDelegate.swift */; };
 		18452CBC1D819E9100D4B2BE /* KDYWeChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18452CBB1D819E9100D4B2BE /* KDYWeChatTests.swift */; };
 		18452CC71D819E9100D4B2BE /* KDYWeChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18452CC61D819E9100D4B2BE /* KDYWeChatUITests.swift */; };
@@ -52,6 +62,54 @@
 /* Begin PBXFileReference section */
 		00FFCC3D78DD6BC9A83E2F8A /* Pods-KDYWeChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KDYWeChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KDYWeChat/Pods-KDYWeChat.debug.xcconfig"; sourceTree = "<group>"; };
 		16CA1DDC17CA1B044E7B84D5 /* Pods-KDYWeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KDYWeChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-KDYWeChat/Pods-KDYWeChat.release.xcconfig"; sourceTree = "<group>"; };
+		180F3BC61D8BDB7100D79668 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		180F3BC81D8BDB8E00D79668 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		180F3BCA1D8BDBA200D79668 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		180F3BCC1D8BDBAC00D79668 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		180F3BCE1D8BDBB500D79668 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		180F3BD01D8BDBBE00D79668 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		180F3BD21D8BDBD400D79668 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		180F3BD41D8BDBDB00D79668 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		180F3BD61D8BDBE400D79668 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		180F3BDA1D8BDC6300D79668 /* EMCallLocalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCallLocalView.h; sourceTree = "<group>"; };
+		180F3BDB1D8BDC6300D79668 /* EMCallManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCallManagerDelegate.h; sourceTree = "<group>"; };
+		180F3BDC1D8BDC6300D79668 /* EMCallRemoteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCallRemoteView.h; sourceTree = "<group>"; };
+		180F3BDD1D8BDC6300D79668 /* EMCallSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCallSession.h; sourceTree = "<group>"; };
+		180F3BDE1D8BDC6300D79668 /* EMChatManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMChatManagerDelegate.h; sourceTree = "<group>"; };
+		180F3BDF1D8BDC6300D79668 /* EMChatroom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMChatroom.h; sourceTree = "<group>"; };
+		180F3BE01D8BDC6300D79668 /* EMChatroomManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMChatroomManagerDelegate.h; sourceTree = "<group>"; };
+		180F3BE11D8BDC6300D79668 /* EMClient+Call.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EMClient+Call.h"; sourceTree = "<group>"; };
+		180F3BE21D8BDC6300D79668 /* EMClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMClient.h; sourceTree = "<group>"; };
+		180F3BE31D8BDC6300D79668 /* EMClientDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMClientDelegate.h; sourceTree = "<group>"; };
+		180F3BE41D8BDC6300D79668 /* EMCmdMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCmdMessageBody.h; sourceTree = "<group>"; };
+		180F3BE51D8BDC6300D79668 /* EMContactManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMContactManagerDelegate.h; sourceTree = "<group>"; };
+		180F3BE61D8BDC6300D79668 /* EMConversation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMConversation.h; sourceTree = "<group>"; };
+		180F3BE71D8BDC6300D79668 /* EMCursorResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCursorResult.h; sourceTree = "<group>"; };
+		180F3BE81D8BDC6300D79668 /* EMError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMError.h; sourceTree = "<group>"; };
+		180F3BE91D8BDC6300D79668 /* EMErrorCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMErrorCode.h; sourceTree = "<group>"; };
+		180F3BEA1D8BDC6300D79668 /* EMFileMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMFileMessageBody.h; sourceTree = "<group>"; };
+		180F3BEB1D8BDC6300D79668 /* EMGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMGroup.h; sourceTree = "<group>"; };
+		180F3BEC1D8BDC6300D79668 /* EMGroupManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMGroupManagerDelegate.h; sourceTree = "<group>"; };
+		180F3BED1D8BDC6300D79668 /* EMGroupOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMGroupOptions.h; sourceTree = "<group>"; };
+		180F3BEE1D8BDC6300D79668 /* EMImageMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMImageMessageBody.h; sourceTree = "<group>"; };
+		180F3BEF1D8BDC6300D79668 /* EMLocationMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMLocationMessageBody.h; sourceTree = "<group>"; };
+		180F3BF01D8BDC6300D79668 /* EMMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMessage.h; sourceTree = "<group>"; };
+		180F3BF11D8BDC6300D79668 /* EMMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMessageBody.h; sourceTree = "<group>"; };
+		180F3BF21D8BDC6300D79668 /* EMOptions+PrivateDeploy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EMOptions+PrivateDeploy.h"; sourceTree = "<group>"; };
+		180F3BF31D8BDC6300D79668 /* EMOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMOptions.h; sourceTree = "<group>"; };
+		180F3BF41D8BDC6300D79668 /* EMPushOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMPushOptions.h; sourceTree = "<group>"; };
+		180F3BF51D8BDC6300D79668 /* EMSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMSDK.h; sourceTree = "<group>"; };
+		180F3BF61D8BDC6300D79668 /* EMSDKFull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMSDKFull.h; sourceTree = "<group>"; };
+		180F3BF71D8BDC6300D79668 /* EMTextMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMTextMessageBody.h; sourceTree = "<group>"; };
+		180F3BF81D8BDC6300D79668 /* EMVideoMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMVideoMessageBody.h; sourceTree = "<group>"; };
+		180F3BF91D8BDC6300D79668 /* EMVoiceMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMVoiceMessageBody.h; sourceTree = "<group>"; };
+		180F3BFA1D8BDC6300D79668 /* IEMCallManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEMCallManager.h; sourceTree = "<group>"; };
+		180F3BFB1D8BDC6300D79668 /* IEMChatManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEMChatManager.h; sourceTree = "<group>"; };
+		180F3BFC1D8BDC6300D79668 /* IEMChatroomManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEMChatroomManager.h; sourceTree = "<group>"; };
+		180F3BFD1D8BDC6300D79668 /* IEMContactManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEMContactManager.h; sourceTree = "<group>"; };
+		180F3BFE1D8BDC6300D79668 /* IEMGroupManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEMGroupManager.h; sourceTree = "<group>"; };
+		180F3BFF1D8BDC6300D79668 /* OpenGLView20.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLView20.h; sourceTree = "<group>"; };
+		180F3C011D8BDC6300D79668 /* libHyphenateFullSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libHyphenateFullSDK.a; sourceTree = "<group>"; };
 		18452CA31D819E9100D4B2BE /* KDYWeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KDYWeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18452CA61D819E9100D4B2BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18452CB71D819E9100D4B2BE /* KDYWeChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KDYWeChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +145,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				180F3BD71D8BDBE400D79668 /* libsqlite3.tbd in Frameworks */,
+				180F3BD51D8BDBDB00D79668 /* libstdc++.6.0.9.tbd in Frameworks */,
+				180F3BD31D8BDBD400D79668 /* libc++.tbd in Frameworks */,
+				180F3BD11D8BDBBE00D79668 /* libz.tbd in Frameworks */,
+				180F3BCF1D8BDBB500D79668 /* ImageIO.framework in Frameworks */,
+				180F3C021D8BDC6300D79668 /* libHyphenateFullSDK.a in Frameworks */,
+				180F3BCD1D8BDBAC00D79668 /* MobileCoreServices.framework in Frameworks */,
+				180F3BCB1D8BDBA200D79668 /* AVFoundation.framework in Frameworks */,
+				180F3BC91D8BDB8E00D79668 /* AudioToolbox.framework in Frameworks */,
+				180F3BC71D8BDB7100D79668 /* CoreMedia.framework in Frameworks */,
 				0F14BC22BF7D951731B7F2E7 /* Pods_KDYWeChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,6 +176,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180F3BD81D8BDC6300D79668 /* HyphenateFullSDK */ = {
+			isa = PBXGroup;
+			children = (
+				180F3BD91D8BDC6300D79668 /* include */,
+				180F3C001D8BDC6300D79668 /* lib */,
+			);
+			path = HyphenateFullSDK;
+			sourceTree = "<group>";
+		};
+		180F3BD91D8BDC6300D79668 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				180F3BDA1D8BDC6300D79668 /* EMCallLocalView.h */,
+				180F3BDB1D8BDC6300D79668 /* EMCallManagerDelegate.h */,
+				180F3BDC1D8BDC6300D79668 /* EMCallRemoteView.h */,
+				180F3BDD1D8BDC6300D79668 /* EMCallSession.h */,
+				180F3BDE1D8BDC6300D79668 /* EMChatManagerDelegate.h */,
+				180F3BDF1D8BDC6300D79668 /* EMChatroom.h */,
+				180F3BE01D8BDC6300D79668 /* EMChatroomManagerDelegate.h */,
+				180F3BE11D8BDC6300D79668 /* EMClient+Call.h */,
+				180F3BE21D8BDC6300D79668 /* EMClient.h */,
+				180F3BE31D8BDC6300D79668 /* EMClientDelegate.h */,
+				180F3BE41D8BDC6300D79668 /* EMCmdMessageBody.h */,
+				180F3BE51D8BDC6300D79668 /* EMContactManagerDelegate.h */,
+				180F3BE61D8BDC6300D79668 /* EMConversation.h */,
+				180F3BE71D8BDC6300D79668 /* EMCursorResult.h */,
+				180F3BE81D8BDC6300D79668 /* EMError.h */,
+				180F3BE91D8BDC6300D79668 /* EMErrorCode.h */,
+				180F3BEA1D8BDC6300D79668 /* EMFileMessageBody.h */,
+				180F3BEB1D8BDC6300D79668 /* EMGroup.h */,
+				180F3BEC1D8BDC6300D79668 /* EMGroupManagerDelegate.h */,
+				180F3BED1D8BDC6300D79668 /* EMGroupOptions.h */,
+				180F3BEE1D8BDC6300D79668 /* EMImageMessageBody.h */,
+				180F3BEF1D8BDC6300D79668 /* EMLocationMessageBody.h */,
+				180F3BF01D8BDC6300D79668 /* EMMessage.h */,
+				180F3BF11D8BDC6300D79668 /* EMMessageBody.h */,
+				180F3BF21D8BDC6300D79668 /* EMOptions+PrivateDeploy.h */,
+				180F3BF31D8BDC6300D79668 /* EMOptions.h */,
+				180F3BF41D8BDC6300D79668 /* EMPushOptions.h */,
+				180F3BF51D8BDC6300D79668 /* EMSDK.h */,
+				180F3BF61D8BDC6300D79668 /* EMSDKFull.h */,
+				180F3BF71D8BDC6300D79668 /* EMTextMessageBody.h */,
+				180F3BF81D8BDC6300D79668 /* EMVideoMessageBody.h */,
+				180F3BF91D8BDC6300D79668 /* EMVoiceMessageBody.h */,
+				180F3BFA1D8BDC6300D79668 /* IEMCallManager.h */,
+				180F3BFB1D8BDC6300D79668 /* IEMChatManager.h */,
+				180F3BFC1D8BDC6300D79668 /* IEMChatroomManager.h */,
+				180F3BFD1D8BDC6300D79668 /* IEMContactManager.h */,
+				180F3BFE1D8BDC6300D79668 /* IEMGroupManager.h */,
+				180F3BFF1D8BDC6300D79668 /* OpenGLView20.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		180F3C001D8BDC6300D79668 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				180F3C011D8BDC6300D79668 /* libHyphenateFullSDK.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
 		18452C9A1D819E9100D4B2BE = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +362,7 @@
 		1845A9511D83D223008BD883 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				180F3BD81D8BDC6300D79668 /* HyphenateFullSDK */,
 			);
 			path = Vendor;
 			sourceTree = "<group>";
@@ -354,6 +485,15 @@
 		67602AFFD9847F1AC4068B5A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				180F3BD61D8BDBE400D79668 /* libsqlite3.tbd */,
+				180F3BD41D8BDBDB00D79668 /* libstdc++.6.0.9.tbd */,
+				180F3BD21D8BDBD400D79668 /* libc++.tbd */,
+				180F3BD01D8BDBBE00D79668 /* libz.tbd */,
+				180F3BCE1D8BDBB500D79668 /* ImageIO.framework */,
+				180F3BCC1D8BDBAC00D79668 /* MobileCoreServices.framework */,
+				180F3BCA1D8BDBA200D79668 /* AVFoundation.framework */,
+				180F3BC81D8BDB8E00D79668 /* AudioToolbox.framework */,
+				180F3BC61D8BDB7100D79668 /* CoreMedia.framework */,
 				E8489D9432F2FD343DF22B8D /* Pods_KDYWeChat.framework */,
 			);
 			name = Frameworks;
@@ -714,9 +854,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = KDYWeChat/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KDYWeChat/Vendor/HyphenateFullSDK/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = kaideyi.com.KDYWeChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -730,9 +875,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = KDYWeChat/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KDYWeChat/Vendor/HyphenateFullSDK/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = kaideyi.com.KDYWeChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
