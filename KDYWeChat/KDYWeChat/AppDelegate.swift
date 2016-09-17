@@ -14,6 +14,9 @@ let emClinetId       = "YXA6Y7mEEHfkEeaj5e2MKO4LDw"
 let emClientSecret   = "YXA6s_ZXqJD7UKFkvubKfv1_9BXDIKI"
 let emApnsDevCerName = "kdychat_devleop"
 
+let emUserName       = "kdy"
+let emPassword       = "121307"
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -27,11 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         setupRootController()
         
         // 配置环信
-        // 注册的 AppKey，和推送证书名
-        let options = EMOptions(appkey: emAppKey)
-        options.apnsCertName = emApnsDevCerName
-        
-        EMClient.sharedClient().initializeSDKWithOptions(options)
+        setupEmSDK()
         
         return true
     }
@@ -54,6 +53,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.tabbarController = KDTabBarController()
         window?.rootViewController = self.tabbarController
         window?.makeKeyAndVisible()
+    }
+    
+    func setupEmSDK() {
+        // 注册的 AppKey，和推送证书名
+        let options = EMOptions(appkey: emAppKey)
+        options.apnsCertName = emApnsDevCerName
+        
+        EMClient.sharedClient().initializeSDKWithOptions(options)
+        
+        // 登录环信
+        loginEmSDK(emUserName, password: emPassword)
+    }
+    
+    func loginEmSDK(userName: NSString, password: NSString) {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
+            dispatch_async(dispatch_get_main_queue()) {
+                let error = EMClient.sharedClient().loginWithUsername(emUserName, password: emPassword)
+                if error == nil {
+                    // 设置自动登录
+                    EMClient.sharedClient().options.isAutoLogin = true
+                } else {
+                    print(">>环信登录成功<<")
+                }
+            }
+        }
     }
 }
 

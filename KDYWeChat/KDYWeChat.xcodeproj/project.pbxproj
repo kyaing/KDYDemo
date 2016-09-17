@@ -17,7 +17,6 @@
 		180F3BD31D8BDBD400D79668 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 180F3BD21D8BDBD400D79668 /* libc++.tbd */; };
 		180F3BD51D8BDBDB00D79668 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 180F3BD41D8BDBDB00D79668 /* libstdc++.6.0.9.tbd */; };
 		180F3BD71D8BDBE400D79668 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 180F3BD61D8BDBE400D79668 /* libsqlite3.tbd */; };
-		180F3C021D8BDC6300D79668 /* libHyphenateFullSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 180F3C011D8BDC6300D79668 /* libHyphenateFullSDK.a */; };
 		18452CA71D819E9100D4B2BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18452CA61D819E9100D4B2BE /* AppDelegate.swift */; };
 		18452CBC1D819E9100D4B2BE /* KDYWeChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18452CBB1D819E9100D4B2BE /* KDYWeChatTests.swift */; };
 		18452CC71D819E9100D4B2BE /* KDYWeChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18452CC61D819E9100D4B2BE /* KDYWeChatUITests.swift */; };
@@ -33,6 +32,11 @@
 		1845A9641D83E9F0008BD883 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845A9631D83E9F0008BD883 /* UIColor+Extension.swift */; };
 		188B05611D85306200393752 /* KDNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B05601D85306200393752 /* KDNavigationController.swift */; };
 		188B05641D85316800393752 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188B05621D85316800393752 /* Launch Screen.storyboard */; };
+		189E885C1D8D65F30007C9A5 /* EMClient.h in Sources */ = {isa = PBXBuildFile; fileRef = 180F3BE21D8BDC6300D79668 /* EMClient.h */; };
+		189E885D1D8D65F30007C9A5 /* EMOptions.h in Sources */ = {isa = PBXBuildFile; fileRef = 180F3BF31D8BDC6300D79668 /* EMOptions.h */; };
+		189E885E1D8D665E0007C9A5 /* libHyphenateFullSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 180F3C011D8BDC6300D79668 /* libHyphenateFullSDK.a */; };
+		189E88601D8D66C50007C9A5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189E885F1D8D66C50007C9A5 /* SystemConfiguration.framework */; };
+		189E88621D8D66DD0007C9A5 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 189E88611D8D66DD0007C9A5 /* libiconv.tbd */; };
 		18EA8CB01D8552BA00B4E274 /* KDChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EA8CAD1D8552BA00B4E274 /* KDChatViewController.swift */; };
 		18EA8CB81D85533100B4E274 /* ChatTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EA8CB61D85533100B4E274 /* ChatTableCell.swift */; };
 		18EA8CB91D85533100B4E274 /* ChatTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18EA8CB71D85533100B4E274 /* ChatTableCell.xib */; };
@@ -130,6 +134,8 @@
 		1869968E1D8D3DC5008D57B1 /* KDYWeChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KDYWeChat-Bridging-Header.h"; sourceTree = "<group>"; };
 		188B05601D85306200393752 /* KDNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDNavigationController.swift; sourceTree = "<group>"; };
 		188B05631D85316800393752 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		189E885F1D8D66C50007C9A5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		189E88611D8D66DD0007C9A5 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		18EA8CAD1D8552BA00B4E274 /* KDChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDChatViewController.swift; sourceTree = "<group>"; };
 		18EA8CB61D85533100B4E274 /* ChatTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableCell.swift; sourceTree = "<group>"; };
 		18EA8CB71D85533100B4E274 /* ChatTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatTableCell.xib; sourceTree = "<group>"; };
@@ -144,7 +150,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				180F3C021D8BDC6300D79668 /* libHyphenateFullSDK.a in Frameworks */,
+				189E88621D8D66DD0007C9A5 /* libiconv.tbd in Frameworks */,
+				189E88601D8D66C50007C9A5 /* SystemConfiguration.framework in Frameworks */,
+				189E885E1D8D665E0007C9A5 /* libHyphenateFullSDK.a in Frameworks */,
 				180F3BD71D8BDBE400D79668 /* libsqlite3.tbd in Frameworks */,
 				180F3BD51D8BDBDB00D79668 /* libstdc++.6.0.9.tbd in Frameworks */,
 				180F3BD31D8BDBD400D79668 /* libc++.tbd in Frameworks */,
@@ -484,6 +492,8 @@
 		67602AFFD9847F1AC4068B5A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				189E88611D8D66DD0007C9A5 /* libiconv.tbd */,
+				189E885F1D8D66C50007C9A5 /* SystemConfiguration.framework */,
 				180F3BD61D8BDBE400D79668 /* libsqlite3.tbd */,
 				180F3BD41D8BDBDB00D79668 /* libstdc++.6.0.9.tbd */,
 				180F3BD21D8BDBD400D79668 /* libc++.tbd */,
@@ -693,6 +703,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				189E885C1D8D65F30007C9A5 /* EMClient.h in Sources */,
+				189E885D1D8D65F30007C9A5 /* EMOptions.h in Sources */,
 				18EA8CB01D8552BA00B4E274 /* KDChatViewController.swift in Sources */,
 				1845A9571D83DD86008BD883 /* KDDiscoveryViewController.swift in Sources */,
 				18EA8CB81D85533100B4E274 /* ChatTableCell.swift in Sources */,

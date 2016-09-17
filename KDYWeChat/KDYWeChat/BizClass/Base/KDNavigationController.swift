@@ -14,13 +14,11 @@ class KDNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         self.initNavigationBar()
     }
     
     func initNavigationBar() {
         UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
-        
         UINavigationBar.appearance().barTintColor = UIColor(colorHex: KDYColor.barTintColor)
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         
@@ -28,8 +26,8 @@ class KDNavigationController: UINavigationController {
         let attributes = [
             NSFontAttributeName: UIFont.systemFontOfSize(19),
             NSForegroundColorAttributeName: UIColor.whiteColor()
-        ]
-        
+            ]
         UINavigationBar.appearance().titleTextAttributes = attributes
     }
 }
+

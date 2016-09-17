@@ -13,6 +13,8 @@ let messageIdentifier: String = "messageCell"
 /// 消息界面
 final class KDMessageViewController: UIViewController {
     
+    var msgDataArray = NSArray()
+    
     lazy var chatTableView: UITableView = {
         let tableView = UITableView(frame: self.view.bounds, style: .Plain)
         tableView.backgroundColor = UIColor(colorHex: KDYColor.tableViewBackgroundColor)
@@ -30,6 +32,10 @@ final class KDMessageViewController: UIViewController {
         super.viewDidLoad()
         
         view.addSubview(chatTableView)
+        
+        // 获取用户的所有会话
+        self.msgDataArray = EMClient.sharedClient().chatManager.getAllConversations()
+        chatTableView.reloadData()
     }
 }
 
@@ -40,11 +46,12 @@ extension KDMessageViewController: UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return self.msgDataArray.count > 0 ? self.msgDataArray.count : 0
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let messageCell = tableView.dequeueReusableCellWithIdentifier(messageIdentifier, forIndexPath: indexPath) as! MessageTableCell
+
         
         return messageCell
     }
@@ -54,7 +61,7 @@ extension KDMessageViewController: UITableViewDataSource {
 extension KDMessageViewController: UITableViewDelegate {
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        
+        self.ky_pushAndHideTabbar(KDChatViewController())
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {

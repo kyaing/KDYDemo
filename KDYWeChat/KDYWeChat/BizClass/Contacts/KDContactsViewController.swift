@@ -12,3 +12,4 @@ import UIKit
 final class KDContactsViewController: UIViewController {
 
 }
+

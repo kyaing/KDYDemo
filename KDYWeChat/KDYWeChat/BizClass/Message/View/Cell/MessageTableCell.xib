@@ -34,20 +34,20 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="用户名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Too-CW-TBe" userLabel="userNameLabel">
-                        <rect key="frame" x="67" y="15" width="48" height="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="用户名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Too-CW-TBe" userLabel="userNameLabel">
+                        <rect key="frame" x="67" y="15" width="48" height="19.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最后一条用户的消息信息..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3M1-oB-fim" userLabel="lastMessageLabel">
-                        <rect key="frame" x="67" y="35" width="243" height="16"/>
+                        <rect key="frame" x="67" y="37.5" width="243" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="2016-9-10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lt8-w5-iaZ" userLabel="lastMsgDateLabel">
-                        <rect key="frame" x="202" y="13" width="123" height="22"/>
+                        <rect key="frame" x="251.5" y="13" width="73.5" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -57,20 +57,21 @@
                     <constraint firstItem="Too-CW-TBe" firstAttribute="leading" secondItem="4qz-V4-8tf" secondAttribute="trailing" constant="2" id="2yt-ST-j6y"/>
                     <constraint firstAttribute="trailingMargin" secondItem="3M1-oB-fim" secondAttribute="trailing" constant="20" id="404-Bg-70o"/>
                     <constraint firstItem="3M1-oB-fim" firstAttribute="leading" secondItem="4Hx-Vm-Q7b" secondAttribute="trailing" constant="9" id="5ce-Yd-Blb"/>
-                    <constraint firstItem="4Hx-Vm-Q7b" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-1" id="6pq-pl-URa"/>
-                    <constraint firstItem="3M1-oB-fim" firstAttribute="top" secondItem="Lt8-w5-iaZ" secondAttribute="bottom" id="78w-Xr-Xu7"/>
                     <constraint firstItem="4Hx-Vm-Q7b" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7.5" id="7qa-kw-jBC"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="3M1-oB-fim" secondAttribute="bottom" constant="5" id="BQc-gB-nGV"/>
                     <constraint firstItem="4Hx-Vm-Q7b" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="GVJ-U9-bAJ"/>
                     <constraint firstItem="4qz-V4-8tf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="35" id="QQ2-GB-kNN"/>
                     <constraint firstItem="Too-CW-TBe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="Te6-HO-qBP"/>
                     <constraint firstItem="4qz-V4-8tf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-5" id="VST-6K-QS6"/>
-                    <constraint firstItem="Lt8-w5-iaZ" firstAttribute="leading" secondItem="Too-CW-TBe" secondAttribute="trailing" constant="87" id="We6-NL-8jU"/>
                     <constraint firstAttribute="bottom" secondItem="4Hx-Vm-Q7b" secondAttribute="bottom" constant="7.5" id="bdM-S7-mjF"/>
                     <constraint firstItem="Lt8-w5-iaZ" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-5" id="f1B-H2-zHI"/>
                     <constraint firstItem="3M1-oB-fim" firstAttribute="top" secondItem="Too-CW-TBe" secondAttribute="bottom" constant="3" id="nOs-Qw-WnQ"/>
                     <constraint firstItem="Lt8-w5-iaZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="oQO-Rk-GmX"/>
                 </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="bdM-S7-mjF"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
             <point key="canvasLocation" x="209" y="139"/>
         </tableViewCell>
