@@ -9,13 +9,20 @@
 import UIKit
 
 class MessageTableCell: UITableViewCell {
-
+    
+    @IBOutlet weak var avatorImage: UIImageView!
+    @IBOutlet weak var unReadMsgLabel: UILabel!
+    @IBOutlet weak var userNameLabel: UILabel!
+    
+    @IBOutlet weak var lastMessageLabel: UILabel!
+    @IBOutlet weak var lastMsgDateLabel: UILabel!
     
     // MARK: - Life Cycle
     override func awakeFromNib() {
         super.awakeFromNib()
-    
         
+        lastMessageLabel.textColor = UIColor.grayColor()
+        lastMsgDateLabel.textColor = UIColor.grayColor()
     }
 }
 

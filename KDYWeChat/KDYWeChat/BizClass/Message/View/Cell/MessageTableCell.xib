@@ -35,20 +35,20 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="用户名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Too-CW-TBe" userLabel="userNameLabel">
-                        <rect key="frame" x="67" y="15" width="48" height="19.5"/>
+                        <rect key="frame" x="67" y="13" width="48" height="19.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最后一条用户的消息信息..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3M1-oB-fim" userLabel="lastMessageLabel">
-                        <rect key="frame" x="67" y="37.5" width="243" height="16"/>
+                        <rect key="frame" x="67" y="35" width="243" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="2016-9-10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lt8-w5-iaZ" userLabel="lastMsgDateLabel">
-                        <rect key="frame" x="251.5" y="13" width="73.5" height="18"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <rect key="frame" x="260.5" y="13" width="64.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -60,7 +60,7 @@
                     <constraint firstItem="4Hx-Vm-Q7b" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7.5" id="7qa-kw-jBC"/>
                     <constraint firstItem="4Hx-Vm-Q7b" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="GVJ-U9-bAJ"/>
                     <constraint firstItem="4qz-V4-8tf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="35" id="QQ2-GB-kNN"/>
-                    <constraint firstItem="Too-CW-TBe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="Te6-HO-qBP"/>
+                    <constraint firstItem="Too-CW-TBe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="Te6-HO-qBP"/>
                     <constraint firstItem="4qz-V4-8tf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-5" id="VST-6K-QS6"/>
                     <constraint firstAttribute="bottom" secondItem="4Hx-Vm-Q7b" secondAttribute="bottom" constant="7.5" id="bdM-S7-mjF"/>
                     <constraint firstItem="Lt8-w5-iaZ" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-5" id="f1B-H2-zHI"/>
@@ -73,6 +73,13 @@
                     </mask>
                 </variation>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="avatorImage" destination="4Hx-Vm-Q7b" id="WgN-Oy-wQ3"/>
+                <outlet property="lastMessageLabel" destination="3M1-oB-fim" id="Pnz-4a-ogF"/>
+                <outlet property="lastMsgDateLabel" destination="Lt8-w5-iaZ" id="FnJ-rO-1Hs"/>
+                <outlet property="unReadMsgLabel" destination="4qz-V4-8tf" id="XaE-75-kZw"/>
+                <outlet property="userNameLabel" destination="Too-CW-TBe" id="cZ2-1M-SjU"/>
+            </connections>
             <point key="canvasLocation" x="209" y="139"/>
         </tableViewCell>
     </objects>

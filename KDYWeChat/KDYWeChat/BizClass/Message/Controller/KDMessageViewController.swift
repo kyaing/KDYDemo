@@ -13,7 +13,7 @@ let messageIdentifier: String = "messageCell"
 /// 消息界面
 final class KDMessageViewController: UIViewController {
     
-    var msgDataArray = NSArray()
+    var msgDataArray = NSMutableArray()
     
     lazy var chatTableView: UITableView = {
         let tableView = UITableView(frame: self.view.bounds, style: .Plain)
@@ -33,8 +33,29 @@ final class KDMessageViewController: UIViewController {
         
         view.addSubview(chatTableView)
         
-        // 获取用户的所有会话
-        self.msgDataArray = EMClient.sharedClient().chatManager.getAllConversations()
+        // 获取用户会话
+        getAllConversation()
+    }
+    
+    func getAllConversation() {
+        // 获取用户所有会话，并排序
+        let conversations: NSArray = EMClient.sharedClient().chatManager.getAllConversations()
+        let sortedConversations: NSArray = conversations.sortedArrayUsingComparator { (Obj1, Obj2) -> NSComparisonResult in
+            let message1: EMMessage = Obj1.latestMessage
+            let message2: EMMessage = Obj2.latestMessage
+            
+            if message1.timestamp > message2.timestamp {
+                return .OrderedAscending
+            } else {
+                return .OrderedDescending
+            }
+        }
+        
+        msgDataArray.removeAllObjects()
+        for conversation in sortedConversations as! [EMConversation] {
+            msgDataArray.addObject(conversation)
+        }
+        
         chatTableView.reloadData()
     }
 }
@@ -51,7 +72,9 @@ extension KDMessageViewController: UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let messageCell = tableView.dequeueReusableCellWithIdentifier(messageIdentifier, forIndexPath: indexPath) as! MessageTableCell
-
+        
+        let conversation = msgDataArray.objectAtIndex(indexPath.row) as! EMConversation
+        messageCell.userNameLabel.text = conversation.conversationId
         
         return messageCell
     }
@@ -61,7 +84,10 @@ extension KDMessageViewController: UITableViewDataSource {
 extension KDMessageViewController: UITableViewDelegate {
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        self.ky_pushAndHideTabbar(KDChatViewController())
+        
+        let chatController = KDChatViewController()
+        chatController.title = "消息"
+        self.ky_pushAndHideTabbar(chatController)
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
