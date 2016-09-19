@@ -8,8 +8,6 @@
 
 import UIKit
 
-let chatIdentifier: String = "chatCell"
-
 /// 聊天界面
 final class KDChatViewController: UIViewController {
     

@@ -25,7 +25,7 @@ class KDNavigationController: UINavigationController {
             // 自定义返回按钮
             let button = UIButton()
             button.setBackgroundImage(UIImage(named: "main_back"), forState: .Normal)
-            button.addTarget(self, action: #selector(self.backAction), forControlEvents: .TouchUpInside)
+            button.addTarget(self, action: #selector(self.backItemAction), forControlEvents: .TouchUpInside)
             button.frame.size = (button.currentBackgroundImage?.size)!
             
             viewController.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: button)
@@ -47,7 +47,7 @@ class KDNavigationController: UINavigationController {
         UINavigationBar.appearance().titleTextAttributes = attributes
     }
     
-    func backAction() {
+    func backItemAction() {
         self.popViewControllerAnimated(true)
     }
 }
