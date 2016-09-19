@@ -14,10 +14,27 @@ class KDNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.initNavigationBar()
+        setupNavigationBar()
     }
-    
-    func initNavigationBar() {
+
+    override func pushViewController(viewController: UIViewController, animated: Bool) {
+        
+        if self.viewControllers.count > 0 {
+            viewController.hidesBottomBarWhenPushed = true
+            
+            // 自定义返回按钮
+            let button = UIButton()
+            button.setBackgroundImage(UIImage(named: "main_back"), forState: .Normal)
+            button.addTarget(self, action: #selector(self.backAction), forControlEvents: .TouchUpInside)
+            button.frame.size = (button.currentBackgroundImage?.size)!
+            
+            viewController.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: button)
+        }
+        
+        super.pushViewController(viewController, animated: animated)
+    }
+
+    func setupNavigationBar() {
         UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
         UINavigationBar.appearance().barTintColor = UIColor(colorHex: KDYColor.barTintColor)
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
@@ -26,8 +43,12 @@ class KDNavigationController: UINavigationController {
         let attributes = [
             NSFontAttributeName: UIFont.systemFontOfSize(19),
             NSForegroundColorAttributeName: UIColor.whiteColor()
-            ]
+        ]
         UINavigationBar.appearance().titleTextAttributes = attributes
+    }
+    
+    func backAction() {
+        self.popViewControllerAnimated(true)
     }
 }
 

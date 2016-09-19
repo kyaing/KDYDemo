@@ -16,12 +16,11 @@ extension UIViewController {
     }
     
     private func ky_pushViewController(viewController: UIViewController, animated: Bool, hideTabbar: Bool) {
-        viewController.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(viewController, animated: animated)
     }
     
     // Pop 
-    public func ky_popController(viewController: UIViewController) {
+    public func ky_popController() {
         self.navigationController?.popViewControllerAnimated(true)
     }
 }
