@@ -47,7 +47,7 @@
 		1845A9591D83DE36008BD883 /* KDMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845A9581D83DE36008BD883 /* KDMeViewController.swift */; };
 		1845A95D1D83E05A008BD883 /* KDTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845A95C1D83E05A008BD883 /* KDTabBarController.swift */; };
 		1845A9601D83E99B008BD883 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845A95F1D83E99B008BD883 /* UIViewController+Extension.swift */; };
-		1845A9621D83E9BA008BD883 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845A9611D83E9BA008BD883 /* UIView+Extension.swift */; };
+		1845A9621D83E9BA008BD883 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845A9611D83E9BA008BD883 /* UIView+Frame.swift */; };
 		1845A9641D83E9F0008BD883 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845A9631D83E9F0008BD883 /* UIColor+Extension.swift */; };
 		188B05611D85306200393752 /* KDNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B05601D85306200393752 /* KDNavigationController.swift */; };
 		188B05641D85316800393752 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188B05621D85316800393752 /* Launch Screen.storyboard */; };
@@ -57,6 +57,7 @@
 		189E88601D8D66C50007C9A5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189E885F1D8D66C50007C9A5 /* SystemConfiguration.framework */; };
 		189E88621D8D66DD0007C9A5 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 189E88611D8D66DD0007C9A5 /* libiconv.tbd */; };
 		189E88641D8ED3700007C9A5 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E88631D8ED3700007C9A5 /* MessageModel.swift */; };
+		189E88661D9028090007C9A5 /* UIView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E88651D9028090007C9A5 /* UIView+Nib.swift */; };
 		18EA8CB01D8552BA00B4E274 /* KDChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EA8CAD1D8552BA00B4E274 /* KDChatViewController.swift */; };
 		18EA8CC61D8553EF00B4E274 /* KDMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EA8CBF1D8553EF00B4E274 /* KDMessageViewController.swift */; };
 		18EA8CCB1D8555F600B4E274 /* MessageTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EA8CC91D8555F600B4E274 /* MessageTableCell.swift */; };
@@ -166,7 +167,7 @@
 		1845A9581D83DE36008BD883 /* KDMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDMeViewController.swift; sourceTree = "<group>"; };
 		1845A95C1D83E05A008BD883 /* KDTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDTabBarController.swift; sourceTree = "<group>"; };
 		1845A95F1D83E99B008BD883 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
-		1845A9611D83E9BA008BD883 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		1845A9611D83E9BA008BD883 /* UIView+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
 		1845A9631D83E9F0008BD883 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		1869968E1D8D3DC5008D57B1 /* KDYWeChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KDYWeChat-Bridging-Header.h"; sourceTree = "<group>"; };
 		188B05601D85306200393752 /* KDNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDNavigationController.swift; sourceTree = "<group>"; };
@@ -174,6 +175,7 @@
 		189E885F1D8D66C50007C9A5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		189E88611D8D66DD0007C9A5 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		189E88631D8ED3700007C9A5 /* MessageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
+		189E88651D9028090007C9A5 /* UIView+Nib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Nib.swift"; sourceTree = "<group>"; };
 		18EA8CAD1D8552BA00B4E274 /* KDChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDChatViewController.swift; sourceTree = "<group>"; };
 		18EA8CBF1D8553EF00B4E274 /* KDMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDMessageViewController.swift; sourceTree = "<group>"; };
 		18EA8CC91D8555F600B4E274 /* MessageTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableCell.swift; sourceTree = "<group>"; };
@@ -442,7 +444,8 @@
 		1845A95E1D83E956008BD883 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				1845A9611D83E9BA008BD883 /* UIView+Extension.swift */,
+				189E88651D9028090007C9A5 /* UIView+Nib.swift */,
+				1845A9611D83E9BA008BD883 /* UIView+Frame.swift */,
 				1845A9631D83E9F0008BD883 /* UIColor+Extension.swift */,
 				1845A95F1D83E99B008BD883 /* UIViewController+Extension.swift */,
 			);
@@ -783,7 +786,7 @@
 				049CCDAE1D8F92C400CC6394 /* ChatBaseTableCell.swift in Sources */,
 				049CCDB01D8F931400CC6394 /* ChatTextTableCell.swift in Sources */,
 				18452CA71D819E9100D4B2BE /* AppDelegate.swift in Sources */,
-				1845A9621D83E9BA008BD883 /* UIView+Extension.swift in Sources */,
+				1845A9621D83E9BA008BD883 /* UIView+Frame.swift in Sources */,
 				1845A9641D83E9F0008BD883 /* UIColor+Extension.swift in Sources */,
 				047263311D8FCAB600D9380C /* ChatShareCollectionCell.swift in Sources */,
 				1845A9551D83D33D008BD883 /* KDContactsViewController.swift in Sources */,
@@ -791,6 +794,7 @@
 				049CCDB81D8F93E200CC6394 /* ChatAudioTableCell.swift in Sources */,
 				1845A9601D83E99B008BD883 /* UIViewController+Extension.swift in Sources */,
 				1845A95D1D83E05A008BD883 /* KDTabBarController.swift in Sources */,
+				189E88661D9028090007C9A5 /* UIView+Nib.swift in Sources */,
 				047263281D8FC43D00D9380C /* ChatShareMoreView.swift in Sources */,
 				049CCDBC1D8F945400CC6394 /* ChatLocationTableCell.swift in Sources */,
 				1845A9591D83DE36008BD883 /* KDMeViewController.swift in Sources */,

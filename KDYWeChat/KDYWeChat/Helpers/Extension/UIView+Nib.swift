@@ -1,12 +1,11 @@
 //
-//  UIView+Extension.swift
+//  UIView+Nib.swift
 //  KDYWeChat
 //
-//  Created by kaideyi on 16/9/10.
+//  Created by kaideyi on 16/9/19.
 //  Copyright © 2016年 kaideyi.com. All rights reserved.
 //
 
-import UIKit
 import Foundation
 
 extension UIView {
