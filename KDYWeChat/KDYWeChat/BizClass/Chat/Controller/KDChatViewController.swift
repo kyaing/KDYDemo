@@ -7,22 +7,68 @@
 //
 
 import UIKit
+import SnapKit
+
+let kBarViewHeight = 50
+let kShowHeight    = 216
 
 /// 聊天界面
 final class KDChatViewController: UIViewController {
     
     lazy var chatTableView: UITableView = {
-        let tableView = UITableView(frame: self.view.bounds, style: .Plain)
-        tableView.dataSource = self
-        tableView.delegate = self
-        
-        return tableView
+        let chatTableView = UITableView(frame: self.view.bounds, style: .Plain)
+        chatTableView.backgroundColor = UIColor.clearColor()
+        chatTableView.tableFooterView = UIView()
+        chatTableView.separatorStyle = .None
+        chatTableView.dataSource = self
+        chatTableView.delegate = self
+    
+        return chatTableView
     }()
     
+    var chatBottomBarView: ChatBottomBarView!
+    var chatBarPaddingBottomConstranit: Constraint?
+    
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // 注册Cell
+        chatTableView.registerNib(UINib.init(nibName: NSStringFromClass(ChatTextTableCell), bundle: nil), forCellReuseIdentifier: "ChatTextTableCell")
+        chatTableView.registerNib(UINib.init(nibName: NSStringFromClass(ChatImageTableCell), bundle: nil), forCellReuseIdentifier: "ChatImageTableCell")
+        chatTableView.registerNib(UINib.init(nibName: NSStringFromClass(ChatAudioTableCell), bundle: nil), forCellReuseIdentifier: "ChatAudioTableCell")
+        chatTableView.registerNib(UINib.init(nibName: NSStringFromClass(ChatLocationTableCell), bundle: nil), forCellReuseIdentifier: "ChatLocationTableCell")
+        chatTableView.registerNib(UINib.init(nibName: NSStringFromClass(ChatRedEnvelopeCell), bundle: nil), forCellReuseIdentifier: "ChatRedEnvelopeCell")
+        
+        // 创建子视图
+        setupSubViews()
+    }
+    
+    func setupSubViews() {
+        // 底部条视图
+        setupBottomBarView()
+
+        setupChatTableView()
+    }
+    
+    func setupBottomBarView() {
+        chatBottomBarView = NSBundle.mainBundle().loadNibNamed("ChatBottomBarView", owner: nil, options: nil).last as! ChatBottomBarView
+        view.addSubview(chatBottomBarView)
+        
+        chatBottomBarView.snp_makeConstraints { (make) in
+            make.left.right.equalTo(view)
+            make.height.equalTo(kBarViewHeight)
+            chatBarPaddingBottomConstranit = make.bottom.equalTo(view.snp_bottom).constraint
+        }
+    }
+    
+    func setupChatTableView() {
         view.addSubview(chatTableView)
+        
+        chatTableView.snp_makeConstraints { (make) in
+            make.top.left.right.equalTo(view)
+            make.bottom.equalTo(chatBottomBarView.snp_top)
+        }
     }
 }
 
@@ -38,6 +84,7 @@ extension KDChatViewController: UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         return UITableViewCell()
+
     }
 }
 

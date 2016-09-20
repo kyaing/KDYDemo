@@ -486,8 +486,8 @@
 		18EA8CB51D85533100B4E274 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				049CCDB71D8F93E200CC6394 /* ChatAudioTableCell.swift */,
 				049CCDAD1D8F92C400CC6394 /* ChatBaseTableCell.swift */,
+				049CCDB71D8F93E200CC6394 /* ChatAudioTableCell.swift */,
 				049CCDB31D8F939200CC6394 /* ChatImageTableCell.swift */,
 				049CCDBB1D8F945400CC6394 /* ChatLocationTableCell.swift */,
 				049CCDBF1D8F94FC00CC6394 /* ChatRedEnvelopeCell.swift */,

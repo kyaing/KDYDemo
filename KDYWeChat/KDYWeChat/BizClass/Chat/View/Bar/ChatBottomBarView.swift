@@ -18,7 +18,7 @@ final class ChatBottomBarView: UIView {
             inputTextView.layer.borderColor   = UIColor(rgba: "#C2C3C7").CGColor
             inputTextView.layer.cornerRadius  = 5.0
             inputTextView.layer.masksToBounds = true
-            inputTextView.textContainerInset  = UIEdgeInsetsMake(5, 5, 5, 5)
+            inputTextView.textContainerInset  = UIEdgeInsetsMake(10, 5, 5, 5)
             inputTextView.returnKeyType       = .Send
             inputTextView.font                = UIFont.systemFontOfSize(17)
             inputTextView.backgroundColor     = UIColor(rgba: "#f8fefb")
@@ -51,8 +51,12 @@ final class ChatBottomBarView: UIView {
         super.init(frame: frame)
     }
     
+    convenience init () {
+        self.init(frame: CGRect.zero)
+    }
+    
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
     }
     
     override func awakeFromNib() {
