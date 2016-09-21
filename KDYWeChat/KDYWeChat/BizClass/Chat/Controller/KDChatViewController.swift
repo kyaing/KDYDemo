@@ -9,10 +9,10 @@
 import UIKit
 import SnapKit
 
-let kBarViewHeight = 50
-let kShowHeight    = 216
+let kBarViewHeight       = 50
+let kInputKeyboardHeight = 216
 
-/// 聊天界面
+/// 聊天界面(学习TSWeChat)
 final class KDChatViewController: UIViewController, UITextViewDelegate {
     
     lazy var chatTableView: UITableView = {
@@ -26,53 +26,18 @@ final class KDChatViewController: UIViewController, UITextViewDelegate {
         return chatTableView
     }()
     
-    var chatBottomBarView: ChatBottomBarView!
-    var chatBarPaddingBottomConstranit: Constraint?
+    var bottomBarView: ChatBottomBarView!
+    var barPaddingBottomConstranit: Constraint?
+    
+    var emotionView: ChatEmotionView!
+    var shareView: ChatShareMoreView!
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // 注册Cell
-        chatTableView.registerNib(UINib.init(nibName: NSStringFromClass(ChatTextTableCell), bundle: nil), forCellReuseIdentifier: "ChatTextTableCell")
-        chatTableView.registerNib(UINib.init(nibName: NSStringFromClass(ChatImageTableCell), bundle: nil), forCellReuseIdentifier: "ChatImageTableCell")
-        chatTableView.registerNib(UINib.init(nibName: NSStringFromClass(ChatAudioTableCell), bundle: nil), forCellReuseIdentifier: "ChatAudioTableCell")
-        chatTableView.registerNib(UINib.init(nibName: NSStringFromClass(ChatLocationTableCell), bundle: nil), forCellReuseIdentifier: "ChatLocationTableCell")
-        chatTableView.registerNib(UINib.init(nibName: NSStringFromClass(ChatRedEnvelopeCell), bundle: nil), forCellReuseIdentifier: "ChatRedEnvelopeCell")
-        
-        // 创建子视图
-        setupSubViews()
-    }
-    
-    func setupSubViews() {
-        setupBottomBarView()
-        setupChatTableView()
-    }
-    
-    // 底部条视图
-    func setupBottomBarView() {
-        chatBottomBarView = NSBundle.mainBundle().loadNibNamed("ChatBottomBarView", owner: nil, options: nil).last as! ChatBottomBarView
-        chatBottomBarView.delegate = self
-        chatBottomBarView.inputTextView.delegate = self
-        view.addSubview(chatBottomBarView)
-        
-        chatBottomBarView.snp_makeConstraints { (make) in
-            make.left.right.equalTo(view)
-            make.height.equalTo(kBarViewHeight)
-            
-            // BarView底部的约束
-            chatBarPaddingBottomConstranit = make.bottom.equalTo(view.snp_bottom).constraint
-        }
-    }
-    
-    // chatTableView
-    func setupChatTableView() {
-        view.addSubview(chatTableView)
-        
-        chatTableView.snp_makeConstraints { (make) in
-            make.top.left.right.equalTo(view)
-            make.bottom.equalTo(chatBottomBarView.snp_top)
-        }
+        // 添加子视图
+        setupAllChildViews()
     }
 }
 

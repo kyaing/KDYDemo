@@ -1,6 +1,6 @@
 PODS:
   - Alamofire (3.4.2)
-  - Kingfisher (2.5.0)
+  - Kingfisher (2.5.1)
   - KVOController (1.1.0)
   - Moya (7.0.0):
     - Moya/Core (= 7.0.0)
@@ -42,7 +42,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: 6aa33201d20d069e1598891cf928883ff1888c7a
-  Kingfisher: d467bd710907ec9aa94aaddecaa5390aa3559819
+  Kingfisher: 9b82e0e1f1a296f149a50bbc2214532eaa4df4f1
   KVOController: 321b5fc59300fcaabd42c0f679baa7a27efbb2fd
   Moya: f004b82418fb8165ee1fc9f86190db4b3611fda9
   ObjectMapper: a07ad0462c5adf014adc0f89ef04c29b626e855e
