@@ -13,7 +13,7 @@ let kBarViewHeight = 50
 let kShowHeight    = 216
 
 /// 聊天界面
-final class KDChatViewController: UIViewController {
+final class KDChatViewController: UIViewController, UITextViewDelegate {
     
     lazy var chatTableView: UITableView = {
         let chatTableView = UITableView(frame: self.view.bounds, style: .Plain)
@@ -45,23 +45,27 @@ final class KDChatViewController: UIViewController {
     }
     
     func setupSubViews() {
-        // 底部条视图
         setupBottomBarView()
-
         setupChatTableView()
     }
     
+    // 底部条视图
     func setupBottomBarView() {
         chatBottomBarView = NSBundle.mainBundle().loadNibNamed("ChatBottomBarView", owner: nil, options: nil).last as! ChatBottomBarView
+        chatBottomBarView.delegate = self
+        chatBottomBarView.inputTextView.delegate = self
         view.addSubview(chatBottomBarView)
         
         chatBottomBarView.snp_makeConstraints { (make) in
             make.left.right.equalTo(view)
             make.height.equalTo(kBarViewHeight)
+            
+            // BarView底部的约束
             chatBarPaddingBottomConstranit = make.bottom.equalTo(view.snp_bottom).constraint
         }
     }
     
+    // chatTableView
     func setupChatTableView() {
         view.addSubview(chatTableView)
         

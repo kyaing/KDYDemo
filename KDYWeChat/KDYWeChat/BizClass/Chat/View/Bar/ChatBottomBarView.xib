@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -11,7 +11,7 @@
             <rect key="frame" x="0.0" y="0.0" width="340" height="50"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87B-US-70U" userLabel="audioButton">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87B-US-70U" userLabel="audioButton" customClass="ChatBarButton" customModule="KDYWeChat" customModuleProvider="target">
                     <rect key="frame" x="5" y="8" width="35" height="35"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="35" id="IP4-fo-fFj"/>
@@ -27,7 +27,7 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xg-Wj-EkV" userLabel="shareButton">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xg-Wj-EkV" userLabel="shareButton" customClass="ChatBarButton" customModule="KDYWeChat" customModuleProvider="target">
                     <rect key="frame" x="300" y="8" width="35" height="35"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="35" id="L65-NL-fQK"/>
@@ -35,7 +35,7 @@
                     </constraints>
                     <state key="normal" title="Button" image="tool_share_1"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Vv-vT-fpR" userLabel="emotionButton">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Vv-vT-fpR" userLabel="emotionButton" customClass="ChatBarButton" customModule="KDYWeChat" customModuleProvider="target">
                     <rect key="frame" x="265" y="8" width="35" height="35"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="35" id="Efy-Ne-dFB"/>
@@ -50,7 +50,7 @@
                         <constraint firstAttribute="height" constant="38" id="zk6-XS-vdT"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <state key="normal" title="按住说话">
+                    <state key="normal" title="按住 说话">
                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                 </button>
@@ -83,11 +83,11 @@
                 </mask>
             </variation>
             <connections>
-                <outlet property="audioButton" destination="87B-US-70U" id="Qat-4I-Hkh"/>
-                <outlet property="emotionButton" destination="7Vv-vT-fpR" id="kbQ-Zg-Hbz"/>
+                <outlet property="audioButton" destination="87B-US-70U" id="x2V-rx-lBt"/>
+                <outlet property="emotionButton" destination="7Vv-vT-fpR" id="ENQ-bm-TY1"/>
                 <outlet property="inputTextView" destination="qWW-ux-Xv4" id="REL-0O-6m2"/>
                 <outlet property="recordButton" destination="F32-0Y-Pcz" id="TNt-ww-vU1"/>
-                <outlet property="shareButton" destination="8xg-Wj-EkV" id="78L-bp-D9f"/>
+                <outlet property="shareButton" destination="8xg-Wj-EkV" id="JLL-nL-lYl"/>
             </connections>
             <point key="canvasLocation" x="151" y="234"/>
         </view>
