@@ -55,6 +55,8 @@
 		1845A9641D83E9F0008BD883 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845A9631D83E9F0008BD883 /* UIColor+Extension.swift */; };
 		188B05611D85306200393752 /* KDNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B05601D85306200393752 /* KDNavigationController.swift */; };
 		188B05641D85316800393752 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188B05621D85316800393752 /* Launch Screen.storyboard */; };
+		18953D201D941E9900F52F1E /* KDChatViewController+ChatBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18953D1F1D941E9900F52F1E /* KDChatViewController+ChatBarView.swift */; };
+		18953D221D94268600F52F1E /* ChatBarButton+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18953D211D94268600F52F1E /* ChatBarButton+UI.swift */; };
 		189E885C1D8D65F30007C9A5 /* EMClient.h in Sources */ = {isa = PBXBuildFile; fileRef = 180F3BE21D8BDC6300D79668 /* EMClient.h */; };
 		189E885D1D8D65F30007C9A5 /* EMOptions.h in Sources */ = {isa = PBXBuildFile; fileRef = 180F3BF31D8BDC6300D79668 /* EMOptions.h */; };
 		189E885E1D8D665E0007C9A5 /* libHyphenateFullSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 180F3C011D8BDC6300D79668 /* libHyphenateFullSDK.a */; };
@@ -180,6 +182,8 @@
 		1869968E1D8D3DC5008D57B1 /* KDYWeChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KDYWeChat-Bridging-Header.h"; sourceTree = "<group>"; };
 		188B05601D85306200393752 /* KDNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDNavigationController.swift; sourceTree = "<group>"; };
 		188B05631D85316800393752 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		18953D1F1D941E9900F52F1E /* KDChatViewController+ChatBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KDChatViewController+ChatBarView.swift"; sourceTree = "<group>"; };
+		18953D211D94268600F52F1E /* ChatBarButton+UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ChatBarButton+UI.swift"; sourceTree = "<group>"; };
 		189E885F1D8D66C50007C9A5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		189E88611D8D66DD0007C9A5 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		189E88631D8ED3700007C9A5 /* MessageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
@@ -233,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				04109BA31D92569200E5F6F7 /* ChatBarButton.swift */,
+				18953D211D94268600F52F1E /* ChatBarButton+UI.swift */,
 				049CCDC71D8F95E300CC6394 /* ChatBottomBarView.swift */,
 				0472632B1D8FC64200D9380C /* ChatEmotionView.swift */,
 				047263271D8FC43D00D9380C /* ChatShareMoreView.swift */,
@@ -474,8 +479,9 @@
 			isa = PBXGroup;
 			children = (
 				18EA8CAD1D8552BA00B4E274 /* KDChatViewController.swift */,
-				04109BA51D92658400E5F6F7 /* KDChatViewController+Keyboard.swift */,
 				04109BA71D9265C100E5F6F7 /* KDChatViewController+SubViews.swift */,
+				18953D1F1D941E9900F52F1E /* KDChatViewController+ChatBarView.swift */,
+				04109BA51D92658400E5F6F7 /* KDChatViewController+Keyboard.swift */,
 				04109BA91D9265F300E5F6F7 /* KDChatViewController+ChatCells.swift */,
 			);
 			path = Controller;
@@ -602,6 +608,7 @@
 			buildConfigurationList = 18452CCB1D819E9100D4B2BE /* Build configuration list for PBXNativeTarget "KDYWeChat" */;
 			buildPhases = (
 				A4C26CB0EE869A1C5017A6CB /* Check Pods Manifest.lock */,
+				189E88CA1D941B930007C9A5 /* ShellScript */,
 				18452C9F1D819E9100D4B2BE /* Sources */,
 				18452CA01D819E9100D4B2BE /* Frameworks */,
 				18452CA11D819E9100D4B2BE /* Resources */,
@@ -736,6 +743,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		189E88CA1D941B930007C9A5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"\"$PODS_ROOT/R.swift/rswift\" \"$SRCROOT\"",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
 		7EDBA34280B1E62794266B19 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -799,6 +820,7 @@
 				049CCDAE1D8F92C400CC6394 /* ChatBaseTableCell.swift in Sources */,
 				04109BA61D92658400E5F6F7 /* KDChatViewController+Keyboard.swift in Sources */,
 				049CCDB01D8F931400CC6394 /* ChatTextTableCell.swift in Sources */,
+				18953D221D94268600F52F1E /* ChatBarButton+UI.swift in Sources */,
 				04109BAA1D9265F300E5F6F7 /* KDChatViewController+ChatCells.swift in Sources */,
 				18452CA71D819E9100D4B2BE /* AppDelegate.swift in Sources */,
 				1845A9621D83E9BA008BD883 /* UIView+Frame.swift in Sources */,
@@ -815,6 +837,7 @@
 				049CCDBC1D8F945400CC6394 /* ChatLocationTableCell.swift in Sources */,
 				1845A9591D83DE36008BD883 /* KDMeViewController.swift in Sources */,
 				18EA8CCB1D8555F600B4E274 /* MessageTableCell.swift in Sources */,
+				18953D201D941E9900F52F1E /* KDChatViewController+ChatBarView.swift in Sources */,
 				049CCDB41D8F939200CC6394 /* ChatImageTableCell.swift in Sources */,
 				0472632C1D8FC64200D9380C /* ChatEmotionView.swift in Sources */,
 				188B05611D85306200393752 /* KDNavigationController.swift in Sources */,

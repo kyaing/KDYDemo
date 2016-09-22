@@ -52,7 +52,7 @@ class ChatBottomBarView: UIView {
             inputTextView.layer.masksToBounds = true
             inputTextView.textContainerInset  = UIEdgeInsetsMake(10, 5, 5, 5)
             inputTextView.returnKeyType       = .Send
-            inputTextView.font = UIFont.systemFontOfSize(17)
+            inputTextView.font = UIFont.systemFontOfSize(16)
             inputTextView.hidden = false
         }
     }
@@ -107,7 +107,7 @@ class ChatBottomBarView: UIView {
 // MARK: - ChatBottomBarView Extension
 extension ChatBottomBarView {
     // 改变按钮状态
-    func setupBtnStatus() {
+    func setupBtnUIStatus() {
         audioButton.setImage(UIImage(named: "tool_voice_1"), forState: .Normal)
         audioButton.setImage(UIImage(named: "tool_voice_2"), forState: .Highlighted)
         

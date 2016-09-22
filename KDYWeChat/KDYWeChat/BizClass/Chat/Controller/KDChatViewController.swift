@@ -8,6 +8,7 @@
 
 import UIKit
 import SnapKit
+import RxSwift
 
 let kBarViewHeight       = 50
 let kInputKeyboardHeight = 216
@@ -32,9 +33,12 @@ final class KDChatViewController: UIViewController, UITextViewDelegate {
     var emotionView: ChatEmotionView!
     var shareView: ChatShareMoreView!
     
+    let disposeBag = DisposeBag()
+    
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor.whiteColor()
         
         // 添加子视图
         setupAllChildViews()

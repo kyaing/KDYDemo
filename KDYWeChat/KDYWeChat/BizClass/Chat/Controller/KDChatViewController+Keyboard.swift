@@ -13,20 +13,4 @@ extension KDChatViewController {
     
 }
 
-// MARK: - ChatBarViewDelegate
-extension KDChatViewController: ChatBarViewDelegate {
-    
-    func bottomBarViewShowEmotionKeyboard() {
-        
-    }
-    
-    func bottomBarViewShowShareKeyboard() {
-        
-    }
-    
-    func bottomBarViewHideKeyboardWhenRecord() {
-        
-    }
-
-}
 

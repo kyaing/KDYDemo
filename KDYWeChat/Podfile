@@ -12,7 +12,6 @@ target 'KDYWeChat' do
     pod 'Alamofire', '~> 3.4.0'
     pod 'Kingfisher'
     pod 'UIColor_Hex_Swift', '~> 2.0'
-    pod 'R.swift', '~> 2.5.0'
 
     pod 'Moya'
     pod 'Moya/RxSwift'
