@@ -11,6 +11,9 @@
 		04109BA61D92658400E5F6F7 /* KDChatViewController+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04109BA51D92658400E5F6F7 /* KDChatViewController+Keyboard.swift */; };
 		04109BA81D9265C100E5F6F7 /* KDChatViewController+SubViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04109BA71D9265C100E5F6F7 /* KDChatViewController+SubViews.swift */; };
 		04109BAA1D9265F300E5F6F7 /* KDChatViewController+ChatCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04109BA91D9265F300E5F6F7 /* KDChatViewController+ChatCells.swift */; };
+		04109BC81D952B1900E5F6F7 /* NSNotificationCenter+Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04109BC71D952B1900E5F6F7 /* NSNotificationCenter+Block.swift */; };
+		04109BCA1D9531E400E5F6F7 /* UITableView+ChatAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04109BC91D9531E400E5F6F7 /* UITableView+ChatAdditions.swift */; };
+		04109BCC1D9534F200E5F6F7 /* UIScrollView+ChatAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04109BCB1D9534F200E5F6F7 /* UIScrollView+ChatAdditions.swift */; };
 		047263281D8FC43D00D9380C /* ChatShareMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047263271D8FC43D00D9380C /* ChatShareMoreView.swift */; };
 		0472632A1D8FC60100D9380C /* ChatShareMoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047263291D8FC60100D9380C /* ChatShareMoreView.xib */; };
 		0472632C1D8FC64200D9380C /* ChatEmotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472632B1D8FC64200D9380C /* ChatEmotionView.swift */; };
@@ -93,6 +96,9 @@
 		04109BA51D92658400E5F6F7 /* KDChatViewController+Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KDChatViewController+Keyboard.swift"; sourceTree = "<group>"; };
 		04109BA71D9265C100E5F6F7 /* KDChatViewController+SubViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KDChatViewController+SubViews.swift"; sourceTree = "<group>"; };
 		04109BA91D9265F300E5F6F7 /* KDChatViewController+ChatCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KDChatViewController+ChatCells.swift"; sourceTree = "<group>"; };
+		04109BC71D952B1900E5F6F7 /* NSNotificationCenter+Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSNotificationCenter+Block.swift"; sourceTree = "<group>"; };
+		04109BC91D9531E400E5F6F7 /* UITableView+ChatAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+ChatAdditions.swift"; sourceTree = "<group>"; };
+		04109BCB1D9534F200E5F6F7 /* UIScrollView+ChatAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+ChatAdditions.swift"; sourceTree = "<group>"; };
 		047263271D8FC43D00D9380C /* ChatShareMoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatShareMoreView.swift; sourceTree = "<group>"; };
 		047263291D8FC60100D9380C /* ChatShareMoreView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatShareMoreView.xib; sourceTree = "<group>"; };
 		0472632B1D8FC64200D9380C /* ChatEmotionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatEmotionView.swift; sourceTree = "<group>"; };
@@ -462,6 +468,9 @@
 				1845A9611D83E9BA008BD883 /* UIView+Frame.swift */,
 				1845A9631D83E9F0008BD883 /* UIColor+Extension.swift */,
 				1845A95F1D83E99B008BD883 /* UIViewController+Extension.swift */,
+				04109BC91D9531E400E5F6F7 /* UITableView+ChatAdditions.swift */,
+				04109BCB1D9534F200E5F6F7 /* UIScrollView+ChatAdditions.swift */,
+				04109BC71D952B1900E5F6F7 /* NSNotificationCenter+Block.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -814,6 +823,7 @@
 				189E885D1D8D65F30007C9A5 /* EMOptions.h in Sources */,
 				18EA8CB01D8552BA00B4E274 /* KDChatViewController.swift in Sources */,
 				189E88641D8ED3700007C9A5 /* MessageModel.swift in Sources */,
+				04109BCA1D9531E400E5F6F7 /* UITableView+ChatAdditions.swift in Sources */,
 				1845A9571D83DD86008BD883 /* KDDiscoveryViewController.swift in Sources */,
 				049CCDC81D8F95E300CC6394 /* ChatBottomBarView.swift in Sources */,
 				049CCDC01D8F94FC00CC6394 /* ChatRedEnvelopeCell.swift in Sources */,
@@ -825,6 +835,7 @@
 				18452CA71D819E9100D4B2BE /* AppDelegate.swift in Sources */,
 				1845A9621D83E9BA008BD883 /* UIView+Frame.swift in Sources */,
 				1845A9641D83E9F0008BD883 /* UIColor+Extension.swift in Sources */,
+				04109BCC1D9534F200E5F6F7 /* UIScrollView+ChatAdditions.swift in Sources */,
 				04109BA41D92569200E5F6F7 /* ChatBarButton.swift in Sources */,
 				047263311D8FCAB600D9380C /* ChatShareCollectionCell.swift in Sources */,
 				1845A9551D83D33D008BD883 /* KDContactsViewController.swift in Sources */,
@@ -832,6 +843,7 @@
 				049CCDB81D8F93E200CC6394 /* ChatAudioTableCell.swift in Sources */,
 				1845A9601D83E99B008BD883 /* UIViewController+Extension.swift in Sources */,
 				1845A95D1D83E05A008BD883 /* KDTabBarController.swift in Sources */,
+				04109BC81D952B1900E5F6F7 /* NSNotificationCenter+Block.swift in Sources */,
 				189E88661D9028090007C9A5 /* UIView+Nib.swift in Sources */,
 				047263281D8FC43D00D9380C /* ChatShareMoreView.swift in Sources */,
 				049CCDBC1D8F945400CC6394 /* ChatLocationTableCell.swift in Sources */,

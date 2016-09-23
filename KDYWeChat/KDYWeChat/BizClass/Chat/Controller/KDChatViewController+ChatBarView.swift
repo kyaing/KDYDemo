@@ -14,24 +14,29 @@ import RxCocoa
 extension KDChatViewController {
     
     /**
-     *  处理ChatBatView各个按钮，如语音，表情，扩展及录音按钮的点击和交互
+     * 处理各个按钮即语音，表情，扩展及录音按钮的点击和交互
      */
     func setupBarViewInteraction() {
-        let audioButton: ChatBarButton   = bottomBarView.audioButton
+        let voiceButton: ChatBarButton   = bottomBarView.audioButton
         let emotionButton: ChatBarButton = bottomBarView.emotionButton
         let shareButton: ChatBarButton   = bottomBarView.shareButton
         let recordButton: UIButton       = bottomBarView.recordButton
+        let inputTextView: UITextView    = bottomBarView.inputTextView
         
         // 点击语音按钮
-        audioButton.rx_tap.subscribeNext { [weak self] _ in
+        voiceButton.rx_tap.subscribeNext { [weak self] _ in
             guard let strongSelf = self else { return }
             strongSelf.bottomBarView.setupBtnUIStatus()
             
+            // 根据录音按钮是否显示判断键盘的不同状态
             let showRecording = strongSelf.bottomBarView.recordButton.hidden
-            if showRecording {
+            if showRecording {  // 录音按钮隐藏
+                strongSelf.bottomBarView.showAudioRecording()
+                voiceButton.voiceButtonChangeToKeyboardUI(showKeyboard: true)
                 
             } else {
-                
+                strongSelf.bottomBarView.showTypingKeyboard()
+                voiceButton.voiceButtonChangeToKeyboardUI(showKeyboard: false)
             }
             
         }.addDisposableTo(disposeBag)
@@ -41,6 +46,15 @@ extension KDChatViewController {
             guard let strongSelf = self else { return }
             strongSelf.bottomBarView.setupBtnUIStatus()
             
+            // 改变表情按钮UI
+            emotionButton.emotionButtonChangeToKeyboardUI(showKeyboard: !emotionButton.showTypingKeyboard)
+            
+            if emotionButton.showTypingKeyboard {  // 显示表情键盘了
+                strongSelf.bottomBarView.showTypingKeyboard()
+                
+            } else {
+                strongSelf.bottomBarView.showEmotionKeyboard()
+            }
             
         }.addDisposableTo(disposeBag)
         
@@ -49,15 +63,37 @@ extension KDChatViewController {
             guard let strongSelf = self else { return }
             strongSelf.bottomBarView.setupBtnUIStatus()
             
+            if shareButton.showTypingKeyboard {
+                strongSelf.bottomBarView.showTypingKeyboard()
+            } else {
+                strongSelf.bottomBarView.showShardKeyboard()
+            }
             
         }.addDisposableTo(disposeBag)
         
-        // 按着录音按钮(为此加长按手势)
+        // 按着录音按钮(添加长按手势)
         let longPressGesture = UILongPressGestureRecognizer()
         recordButton.addGestureRecognizer(longPressGesture)
-        longPressGesture.rx_event.subscribeNext { [weak self] _ in
-            guard let strongSelf = self else { return }
+        longPressGesture.rx_event.subscribeNext { event in
+
+            let state = event.state
+            if state == .Began {
+                
+            } else if state == .Changed {
+                
+            } else if state == .Cancelled {
+                
+            } else if state == .Ended {
+                
+            }
             
+        }.addDisposableTo(disposeBag)
+        
+        // 点击文本框(添加点击手势)
+        let tapGesture = UITapGestureRecognizer()
+        inputTextView.addGestureRecognizer(tapGesture)
+        tapGesture.rx_event.subscribeNext { (event) in
+            inputTextView.becomeFirstResponder()
             
         }.addDisposableTo(disposeBag)
     }
@@ -66,16 +102,62 @@ extension KDChatViewController {
 // MARK: - ChatBarViewDelegate
 extension KDChatViewController: ChatBarViewDelegate {
     
+    /**
+     * 显示表情键盘
+     */
     func bottomBarViewShowEmotionKeyboard() {
+        // 更新BarView和表情键盘的布局
+        let emoHeight = bottomBarView.height
+        barPaddingBottomConstranit?.updateOffset(-emoHeight)
         
+        // 动画显示表情键盘
+        UIView.animateWithDuration(
+            0.25,
+            delay: 0,
+            options: .CurveEaseInOut,
+            animations: {
+                self.emotionView.snp_updateConstraints() { (make) in
+                    make.top.equalTo(self.bottomBarView.snp_bottom)
+                }
+                
+                // 同时隐藏扩展键盘
+                self.shareView.snp_updateConstraints() { (make) in
+                    make.top.equalTo(self.bottomBarView.snp_bottom).offset(self.view.height)
+                }
+                
+                self.view.layoutIfNeeded()
+                
+            }) { (bool) in
+        }
     }
     
+    /**
+     * 显示扩展键盘
+     */
     func bottomBarViewShowShareKeyboard() {
+        let shareHeight = bottomBarView.height
+        barPaddingBottomConstranit?.updateOffset(-shareHeight)
         
+        UIView.animateWithDuration(
+            0.25,
+            delay: 0,
+            options: .CurveEaseInOut,
+            animations: {
+                // 直接显示扩展键盘，覆盖在表情键盘之上
+                self.shareView.snp_updateConstraints() { (make) in
+                    make.top.equalTo(self.bottomBarView.snp_bottom)
+                }
+                self.view.layoutIfNeeded()
+                
+            }) { (bool) in
+        }
     }
     
-    func bottomBarViewHideKeyboardWhenRecord() {
-        
+    /**
+     * 点语音时隐藏自定义键盘
+     */
+    func bottomBarViewHideKeyboardWhenVoice() {
+        s
     }
 }
 

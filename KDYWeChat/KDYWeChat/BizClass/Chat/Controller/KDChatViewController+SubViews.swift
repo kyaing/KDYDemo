@@ -18,7 +18,9 @@ extension KDChatViewController {
         setupShareKeyboard()
     }
     
-    // 初始化底部视图
+    /**
+     * 初始化底部视图
+     */
     func setupBottomBarView() {
         bottomBarView = NSBundle.mainBundle().loadNibNamed("ChatBottomBarView", owner: nil, options: nil).last as! ChatBottomBarView
         bottomBarView.backgroundColor = UIColor.redColor()
@@ -35,7 +37,9 @@ extension KDChatViewController {
         }
     }
     
-    // 初始化表格视图
+    /**
+     * 初始化表格视图
+     */
     func setupChatTableView() {
         chatTableView.backgroundColor = UIColor.greenColor()
         view.addSubview(chatTableView)
@@ -53,7 +57,9 @@ extension KDChatViewController {
         }
     }
     
-    // 初始化表情键盘
+    /**
+     * 初始化表情键盘
+     */
     func setupEmotionKeyboard() {
         emotionView = NSBundle.mainBundle().loadNibNamed("ChatEmotionView", owner: nil, options: nil).last as! ChatEmotionView
         emotionView.backgroundColor = UIColor.yellowColor()
@@ -66,7 +72,9 @@ extension KDChatViewController {
         }
     }
     
-    // 初始化扩展键盘
+    /**
+     * 初始化扩展键盘
+     */
     func setupShareKeyboard() {
         shareView = NSBundle.mainBundle().loadNibNamed("ChatShareMoreView", owner: nil, options: nil).last as! ChatShareMoreView
         shareView.backgroundColor = UIColor.blueColor()

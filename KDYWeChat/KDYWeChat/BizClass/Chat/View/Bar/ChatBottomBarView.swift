@@ -16,8 +16,8 @@ protocol ChatBarViewDelegate: class {
     // 显示扩展键盘
     func bottomBarViewShowShareKeyboard()
     
-    // 隐藏
-    func bottomBarViewHideKeyboardWhenRecord()
+    // 隐藏所有自定义键盘当语音时
+    func bottomBarViewHideKeyboardWhenVoice()
 }
 
 // MARK: - ChatBottomBarView

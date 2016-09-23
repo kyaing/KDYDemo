@@ -13,7 +13,7 @@ import RxSwift
 let kBarViewHeight       = 50
 let kInputKeyboardHeight = 216
 
-/// 聊天界面(学习TSWeChat)
+/// 聊天界面 (学习TSWeChat)
 final class KDChatViewController: UIViewController, UITextViewDelegate {
     
     lazy var chatTableView: UITableView = {
@@ -42,6 +42,12 @@ final class KDChatViewController: UIViewController, UITextViewDelegate {
         
         // 添加子视图
         setupAllChildViews()
+        
+        // 处理BarView的交互
+        setupBarViewInteraction()
+        
+        // 键盘控制
+        keyboardControl()
     }
 }
 

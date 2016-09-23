@@ -1,16 +1,104 @@
 //
-//  KDChatViewController+Keyboard.swift
-//  KDYWeChat
+//  TSChatViewController+Keyboard.swift
+//  TSWeChat
 //
-//  Created by mac on 16/9/21.
-//  Copyright © 2016年 kaideyi.com. All rights reserved.
+//  Created by Hilen on 12/18/15.
+//  Copyright © 2015 Hilen. All rights reserved.
 //
 
 import Foundation
 
+/**
+ * 所有的键盘动画都是控制 chatBarView 的 bottomConstraint。
+ * 表情键盘和分享键盘的约束都是依赖 chatBarView
+ */
+
 // MARK: - Keyboard
 extension KDChatViewController {
     
-}
+    /**
+     * 键盘控制
+     */
+    func keyboardControl() {
+        let notificationCenter = NSNotificationCenter.defaultCenter()
+        
+        // 系统键盘显示的通知
+        notificationCenter.addObserver(
+            self,
+            name: UIKeyboardWillShowNotification,
+            object: nil) { (observer, notification) in
+                self.chatTableView.scrollToBottom(animated: false)
+                self.keyboardControl(notification, isShowkeyboard: true)
+            }
+        
+        notificationCenter.addObserver(
+            self,
+            name: UIKeyboardDidShowNotification,
+            object: nil) { (observer, notification) in
+                
+            }
+        
+        // 系统键盘隐藏的通知
+        notificationCenter.addObserver(
+            self,
+            name: UIKeyboardWillHideNotification,
+            object: nil) { (observer, notification) in
+            
+            }
+        
+        notificationCenter.addObserver(
+            self,
+            name: UIKeyboardDidHideNotification,
+            object: nil) { (observer, notification) in
+                
+            }
+    }
+    
+    /**
+     键盘控制
+     
+     - parameter notification:   通知对象
+     - parameter isShowkeyboard: 是否显示键盘
+     */
+    func keyboardControl(notification: NSNotification, isShowkeyboard: Bool) {
+        /*
+         如果是表情键盘或者 分享键盘 ，走自己 delegate 的处理键盘事件。
+         
+         因为：当点击唤起自定义键盘时，操作栏的输入框需要 resignFirstResponder，这时候会给键盘发送通知。
+         通知中需要对 actionbar frame 进行重置位置计算, 在 delegate 回调中进行计算。所以在这里进行拦截。
+         Button 的点击方法中已经处理了 delegate。
+         */
+        
+        let keyboardType = bottomBarView.keyboardType
+        if keyboardType == .Emotion || keyboardType == .Share {
+            return
+        }
+        
+        // 处理系统键盘 .Default, .Text
+        var userInfo       = notification.userInfo!
+        let keyboardRect   = userInfo[UIKeyboardFrameEndUserInfoKey]!.CGRectValue
+        let curve          = userInfo[UIKeyboardAnimationCurveUserInfoKey]!.unsignedIntValue
+        let duration       = userInfo[UIKeyboardAnimationDurationUserInfoKey]!.doubleValue
 
+        let convertedFrame = self.view.convertRect(keyboardRect, fromView: nil)
+        let heightOffset   = self.view.bounds.size.height - convertedFrame.origin.y
+        let options        = UIViewAnimationOptions(rawValue: UInt(curve) << 16 | UIViewAnimationOptions.BeginFromCurrentState.rawValue)
+        
+        self.chatTableView.stopScrolling()
+        self.barPaddingBottomConstranit?.updateOffset(-heightOffset)
+        
+        UIView.animateWithDuration(
+            duration,
+            delay: 0,
+            options: options,
+            animations: {
+                self.view.layoutIfNeeded()
+                if isShowkeyboard {
+                    self.chatTableView.scrollToBottom(animated: false)
+                }
+            },
+            completion: { bool in
+        })
+    }
+}
 
