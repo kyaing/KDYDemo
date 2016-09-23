@@ -30,13 +30,15 @@ extension KDChatViewController {
             
             // 根据录音按钮是否显示判断键盘的不同状态
             let showRecording = strongSelf.bottomBarView.recordButton.hidden
-            if showRecording {  // 录音按钮隐藏
+            if showRecording {  // 当录音按钮隐藏
                 strongSelf.bottomBarView.showAudioRecording()
                 voiceButton.voiceButtonChangeToKeyboardUI(showKeyboard: true)
+                strongSelf.controlExpandableInputView(showExpandable: false)
                 
             } else {
                 strongSelf.bottomBarView.showTypingKeyboard()
                 voiceButton.voiceButtonChangeToKeyboardUI(showKeyboard: false)
+                strongSelf.controlExpandableInputView(showExpandable: true)
             }
             
         }.addDisposableTo(disposeBag)
@@ -56,6 +58,8 @@ extension KDChatViewController {
                 strongSelf.bottomBarView.showEmotionKeyboard()
             }
             
+            strongSelf.controlExpandableInputView(showExpandable: true)
+            
         }.addDisposableTo(disposeBag)
         
         // 点击扩展按钮
@@ -68,6 +72,8 @@ extension KDChatViewController {
             } else {
                 strongSelf.bottomBarView.showShardKeyboard()
             }
+            
+            strongSelf.controlExpandableInputView(showExpandable: true)
             
         }.addDisposableTo(disposeBag)
         
@@ -156,8 +162,29 @@ extension KDChatViewController: ChatBarViewDelegate {
     /**
      * 点语音时隐藏自定义键盘
      */
-    func bottomBarViewHideKeyboardWhenVoice() {
-        s
+    func bottomBarViewHideAllKeyboardWhenVoice() {
+        self.hideCustomKeyboard()
+    }
+    
+    /**
+     Control the actionBarView height:
+     We should make actionBarView's height to original value when the user wants to show recording keyboard.
+     Otherwise we should make actionBarView's height to currentHeight
+     
+     - parameter showExpandable: show or hide expandable inputTextView
+     */
+    func controlExpandableInputView(showExpandable showExpandable: Bool) {
+        let textView = self.bottomBarView.inputTextView
+        let currentTextHeight = self.bottomBarView.inputTextViewCurrentHeight
+        UIView.animateWithDuration(0.3) { () -> Void in
+            let textHeight = showExpandable ? currentTextHeight : kBarViewHeight
+            self.bottomBarView.snp_updateConstraints { (make) -> Void in
+                make.height.equalTo(textHeight)
+            }
+            self.view.layoutIfNeeded()
+            self.chatTableView.scrollBottomToLastRow()
+            textView.contentOffset = CGPoint.zero
+        }
     }
 }
 

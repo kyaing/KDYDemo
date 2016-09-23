@@ -17,7 +17,7 @@ protocol ChatBarViewDelegate: class {
     func bottomBarViewShowShareKeyboard()
     
     // 隐藏所有自定义键盘当语音时
-    func bottomBarViewHideKeyboardWhenVoice()
+    func bottomBarViewHideAllKeyboardWhenVoice()
 }
 
 // MARK: - ChatBottomBarView
@@ -63,6 +63,7 @@ class ChatBottomBarView: UIView {
     
     weak var delegate: ChatBarViewDelegate?
     var keyboardType: ChatBarKeyboardType? = .Default
+    var inputTextViewCurrentHeight: CGFloat = kBarViewHeight
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -124,6 +125,10 @@ extension ChatBottomBarView {
         
         inputTextView.hidden = true
         inputTextView.resignFirstResponder()
+        
+        if let delegate = delegate {
+            delegate.bottomBarViewHideAllKeyboardWhenVoice()
+        }
         
         recordButton.hidden = false
         audioButton.showTypingKeyboard   = true

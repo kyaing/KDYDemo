@@ -35,7 +35,9 @@ extension KDChatViewController {
             self,
             name: UIKeyboardDidShowNotification,
             object: nil) { (observer, notification) in
-                
+                if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue() {
+                    _ = UIEdgeInsets(top: 0, left: 0, bottom: keyboardSize.height, right: 0)
+                }
             }
         
         // 系统键盘隐藏的通知
@@ -43,7 +45,8 @@ extension KDChatViewController {
             self,
             name: UIKeyboardWillHideNotification,
             object: nil) { (observer, notification) in
-            
+                self.chatTableView.scrollToBottom(animated: true)
+                self.keyboardControl(notification, isShowkeyboard: false)
             }
         
         notificationCenter.addObserver(
@@ -99,6 +102,33 @@ extension KDChatViewController {
             },
             completion: { bool in
         })
+    }
+    
+    /**
+     *  当唤起自定义键盘时，此时点击语音按钮，需要隐藏全部自定义键盘
+     */
+    func hideCustomKeyboard() {
+        let heightOffset: CGFloat = 0
+        barPaddingBottomConstranit?.updateOffset(heightOffset)
+        
+        UIView.animateWithDuration(
+            0.25,
+            delay: 0,
+            options: .CurveEaseInOut,
+            animations: { 
+                self.view.layoutIfNeeded()
+                
+            }) { (bool) in
+                
+            }
+    }
+    
+    /**
+     *  隐藏所有的键盘
+     */
+    func hideAllKeyboard() {
+        hideCustomKeyboard()
+        bottomBarView.resignKeyboardInput()
     }
 }
 
