@@ -19,7 +19,7 @@ extension KDChatViewController {
     }
     
     /**
-     * 初始化底部视图
+     *  初始化底部视图
      */
     func setupBottomBarView() {
         self.bottomBarView = NSBundle.mainBundle().loadNibNamed("ChatBottomBarView", owner: nil, options: nil).last as! ChatBottomBarView
@@ -36,6 +36,9 @@ extension KDChatViewController {
         }
     }
     
+    /**
+     *  初始化表格视图
+     */
     func setupChatTableView() {
         view.addSubview(self.chatTableView)
         
@@ -63,26 +66,26 @@ extension KDChatViewController {
     }
     
     /**
-     * 初始化表情键盘
+     *  初始化表情键盘
      */
     func setupEmotionKeyboard() {
         self.emotionView = NSBundle.mainBundle().loadNibNamed("ChatEmotionView", owner: nil, options: nil).last as! ChatEmotionView
-        self.emotionView.backgroundColor = UIColor.yellowColor()
-        view.addSubview(self.emotionView)
+        self.view.addSubview(self.emotionView)
         
-        self.emotionView.snp_makeConstraints { (make) in
-            make.left.right.equalTo(view)
-            make.top.equalTo(self.bottomBarView.snp_bottom)
+        self.emotionView.snp_makeConstraints { [weak self] (make) in
+            guard let strongSelf = self else { return }
+            make.left.equalTo(strongSelf.view.snp_left)
+            make.right.equalTo(strongSelf.view.snp_right)
+            make.top.equalTo(strongSelf.bottomBarView.snp_bottom)
             make.height.equalTo(kCustomKeyboardHeight)
         }
     }
     
     /**
-     * 初始化扩展键盘
+     *  初始化扩展键盘
      */
     func setupShareKeyboard() {
         self.shareView = NSBundle.mainBundle().loadNibNamed("ChatShareMoreView", owner: nil, options: nil).last as! ChatShareMoreView
-        self.shareView.backgroundColor = UIColor.blueColor()
         view.addSubview(self.shareView)
         
         self.shareView.snp_makeConstraints { (make) in

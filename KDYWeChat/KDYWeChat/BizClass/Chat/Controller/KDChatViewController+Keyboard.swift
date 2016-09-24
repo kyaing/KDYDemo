@@ -17,7 +17,7 @@ import Foundation
 extension KDChatViewController {
     
     /**
-     * 键盘控制
+     *  键盘控制
      */
     func keyboardControl() {
         let notificationCenter = NSNotificationCenter.defaultCenter()
@@ -110,6 +110,9 @@ extension KDChatViewController {
     func hideCustomKeyboard() {
         let heightOffset: CGFloat = 0
         barPaddingBottomConstranit?.updateOffset(heightOffset)
+        
+        // 同时要恢复表情按钮图标
+        self.bottomBarView.emotionButton.emotionButtonChangeToKeyboardUI(showKeyboard: false)
         
         UIView.animateWithDuration(
             0.25,

@@ -14,14 +14,15 @@ let kBarViewHeight: CGFloat        = 50
 let kCustomKeyboardHeight: CGFloat = 216
 
 /// 聊天界面 (学习TSWeChat)
-final class KDChatViewController: UIViewController, UITextViewDelegate {
+final class KDChatViewController: UIViewController {
     
     lazy var chatTableView: UITableView = {
         let chatTableView = UITableView(frame: CGRect.zero, style: .Plain)
         chatTableView.backgroundColor = UIColor.clearColor()
+        chatTableView.showsVerticalScrollIndicator = false
+        chatTableView.separatorStyle = .None
         chatTableView.dataSource = self
         chatTableView.delegate = self
-        chatTableView.separatorStyle = .SingleLine
         
         return chatTableView
     }()

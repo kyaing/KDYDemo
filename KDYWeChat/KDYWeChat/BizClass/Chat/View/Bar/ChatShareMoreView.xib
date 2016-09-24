@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -10,34 +10,7 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ChatShareMoreView" customModule="KDYWeChat" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="340" height="216"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <subviews>
-                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="hns-2D-Ila" userLabel="pageControl">
-                    <rect key="frame" x="141" y="186" width="59" height="37"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="37" id="aGJ-qt-eGn"/>
-                    </constraints>
-                    <color key="pageIndicatorTintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
-                </pageControl>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="eOt-L5-YTh" userLabel="shareCollectionView">
-                    <rect key="frame" x="0.0" y="0.0" width="340" height="196"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="AGe-S3-vWC">
-                        <size key="itemSize" width="60" height="90"/>
-                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    </collectionViewFlowLayout>
-                </collectionView>
-            </subviews>
-            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-            <constraints>
-                <constraint firstAttribute="trailing" secondItem="hns-2D-Ila" secondAttribute="trailing" constant="140" id="1cO-rb-waj"/>
-                <constraint firstAttribute="trailing" secondItem="eOt-L5-YTh" secondAttribute="trailing" id="9Sy-Ih-J2m"/>
-                <constraint firstAttribute="bottom" secondItem="eOt-L5-YTh" secondAttribute="bottom" constant="20" id="9cl-A8-GoG"/>
-                <constraint firstItem="hns-2D-Ila" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="141" id="gOt-K4-NDA"/>
-                <constraint firstItem="eOt-L5-YTh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="joa-dG-r7F"/>
-                <constraint firstItem="hns-2D-Ila" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="186" id="wcS-Ej-RjJ"/>
-                <constraint firstItem="eOt-L5-YTh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xk7-q2-Q3Q"/>
-            </constraints>
+            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

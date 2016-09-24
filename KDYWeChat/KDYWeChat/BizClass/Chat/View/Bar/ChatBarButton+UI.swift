@@ -8,8 +8,8 @@
 
 import Foundation
 
-// 按钮改变的状态
-extension ChatBarButton {
+// MARK: - 按钮状态的改变
+extension UIButton {
     // 控制语音按钮切换成键盘图标
     func voiceButtonChangeToKeyboardUI(showKeyboard showKeyboard: Bool) {
         if showKeyboard {
@@ -31,6 +31,17 @@ extension ChatBarButton {
         } else {
             self.setImage(UIImage(named: "tool_emotion_1"), forState: .Normal)
             self.setImage(UIImage(named: "tool_emotion_2"), forState: .Highlighted)
+        }
+    }
+    
+    // 控制录音按钮的UI
+    func replaceRecordButtonUI(isRecording isRecording: Bool) {
+        if isRecording {
+            self.setBackgroundImage(UIImage.imageWithColor(UIColor(rgba: "#C6C7CB")), forState: .Normal)
+            self.setBackgroundImage(UIImage.imageWithColor(UIColor(rgba: "#F3F4F8")), forState: .Highlighted)
+        } else {
+            self.setBackgroundImage(UIImage.imageWithColor(UIColor(rgba: "#F3F4F8")), forState: .Normal)
+            self.setBackgroundImage(UIImage.imageWithColor(UIColor(rgba: "#C6C7CB")), forState: .Highlighted)
         }
     }
 }
