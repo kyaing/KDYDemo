@@ -20,7 +20,7 @@ final class KDChatViewController: UIViewController {
         let chatTableView = UITableView(frame: CGRect.zero, style: .Plain)
         chatTableView.backgroundColor = UIColor.clearColor()
         chatTableView.showsVerticalScrollIndicator = false
-        chatTableView.separatorStyle = .None
+        chatTableView.separatorStyle = .SingleLine
         chatTableView.dataSource = self
         chatTableView.delegate = self
         
@@ -65,7 +65,6 @@ extension KDChatViewController: UITableViewDataSource {
         var cell = tableView.dequeueReusableCellWithIdentifier("cell")
         if cell == nil {
             cell = UITableViewCell(style: .Default, reuseIdentifier: "cell")
-            cell?.backgroundColor = UIColor.redColor()
         }
         cell?.textLabel?.text = NSString(string: "\(indexPath.row)") as String
         

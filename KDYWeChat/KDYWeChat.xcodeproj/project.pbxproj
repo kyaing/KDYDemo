@@ -21,8 +21,6 @@
 		047263311D8FCAB600D9380C /* ChatShareCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472632F1D8FCAB600D9380C /* ChatShareCollectionCell.swift */; };
 		047263321D8FCAB600D9380C /* ChatShareCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047263301D8FCAB600D9380C /* ChatShareCollectionCell.xib */; };
 		049CCDAE1D8F92C400CC6394 /* ChatBaseTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049CCDAD1D8F92C400CC6394 /* ChatBaseTableCell.swift */; };
-		049CCDB01D8F931400CC6394 /* ChatTextTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049CCDAF1D8F931400CC6394 /* ChatTextTableCell.swift */; };
-		049CCDB21D8F933800CC6394 /* ChatTextTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049CCDB11D8F933800CC6394 /* ChatTextTableCell.xib */; };
 		049CCDB41D8F939200CC6394 /* ChatImageTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049CCDB31D8F939200CC6394 /* ChatImageTableCell.swift */; };
 		049CCDB61D8F939F00CC6394 /* ChatImageTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049CCDB51D8F939F00CC6394 /* ChatImageTableCell.xib */; };
 		049CCDB81D8F93E200CC6394 /* ChatAudioTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049CCDB71D8F93E200CC6394 /* ChatAudioTableCell.swift */; };
@@ -69,6 +67,8 @@
 		189E88641D8ED3700007C9A5 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E88631D8ED3700007C9A5 /* MessageModel.swift */; };
 		189E88661D9028090007C9A5 /* UIView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E88651D9028090007C9A5 /* UIView+Nib.swift */; };
 		18ABF80B1D96C61200F305EB /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ABF80A1D96C61200F305EB /* UIImage+Extension.swift */; };
+		18ABF8151D981C3000F305EB /* ChatTextTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ABF8141D981C3000F305EB /* ChatTextTableCell.swift */; };
+		18ABF8171D981C4600F305EB /* ChatTextTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18ABF8161D981C4600F305EB /* ChatTextTableCell.xib */; };
 		18EA8CB01D8552BA00B4E274 /* KDChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EA8CAD1D8552BA00B4E274 /* KDChatViewController.swift */; };
 		18EA8CC61D8553EF00B4E274 /* KDMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EA8CBF1D8553EF00B4E274 /* KDMessageViewController.swift */; };
 		18EA8CCB1D8555F600B4E274 /* MessageTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EA8CC91D8555F600B4E274 /* MessageTableCell.swift */; };
@@ -108,8 +108,6 @@
 		0472632F1D8FCAB600D9380C /* ChatShareCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatShareCollectionCell.swift; sourceTree = "<group>"; };
 		047263301D8FCAB600D9380C /* ChatShareCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatShareCollectionCell.xib; sourceTree = "<group>"; };
 		049CCDAD1D8F92C400CC6394 /* ChatBaseTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatBaseTableCell.swift; sourceTree = "<group>"; };
-		049CCDAF1D8F931400CC6394 /* ChatTextTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTextTableCell.swift; sourceTree = "<group>"; };
-		049CCDB11D8F933800CC6394 /* ChatTextTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatTextTableCell.xib; sourceTree = "<group>"; };
 		049CCDB31D8F939200CC6394 /* ChatImageTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatImageTableCell.swift; sourceTree = "<group>"; };
 		049CCDB51D8F939F00CC6394 /* ChatImageTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatImageTableCell.xib; sourceTree = "<group>"; };
 		049CCDB71D8F93E200CC6394 /* ChatAudioTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatAudioTableCell.swift; sourceTree = "<group>"; };
@@ -198,6 +196,8 @@
 		189E88631D8ED3700007C9A5 /* MessageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
 		189E88651D9028090007C9A5 /* UIView+Nib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Nib.swift"; sourceTree = "<group>"; };
 		18ABF80A1D96C61200F305EB /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		18ABF8141D981C3000F305EB /* ChatTextTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTextTableCell.swift; sourceTree = "<group>"; };
+		18ABF8161D981C4600F305EB /* ChatTextTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatTextTableCell.xib; sourceTree = "<group>"; };
 		18EA8CAD1D8552BA00B4E274 /* KDChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDChatViewController.swift; sourceTree = "<group>"; };
 		18EA8CBF1D8553EF00B4E274 /* KDMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDMessageViewController.swift; sourceTree = "<group>"; };
 		18EA8CC91D8555F600B4E274 /* MessageTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableCell.swift; sourceTree = "<group>"; };
@@ -525,8 +525,8 @@
 				049CCDBB1D8F945400CC6394 /* ChatLocationTableCell.swift */,
 				049CCDBF1D8F94FC00CC6394 /* ChatRedEnvelopeCell.swift */,
 				0472632F1D8FCAB600D9380C /* ChatShareCollectionCell.swift */,
-				049CCDAF1D8F931400CC6394 /* ChatTextTableCell.swift */,
-				049CCDB11D8F933800CC6394 /* ChatTextTableCell.xib */,
+				18ABF8141D981C3000F305EB /* ChatTextTableCell.swift */,
+				18ABF8161D981C4600F305EB /* ChatTextTableCell.xib */,
 				049CCDB91D8F941900CC6394 /* ChatAudioTableCell.xib */,
 				049CCDB51D8F939F00CC6394 /* ChatImageTableCell.xib */,
 				049CCDBD1D8F948E00CC6394 /* ChatLocationTableCell.xib */,
@@ -732,8 +732,8 @@
 				1845A94F1D83D1AB008BD883 /* Assets.xcassets in Resources */,
 				049CCDC21D8F951A00CC6394 /* ChatRedEnvelopeCell.xib in Resources */,
 				0472632A1D8FC60100D9380C /* ChatShareMoreView.xib in Resources */,
-				049CCDB21D8F933800CC6394 /* ChatTextTableCell.xib in Resources */,
 				188B05641D85316800393752 /* Launch Screen.storyboard in Resources */,
+				18ABF8171D981C4600F305EB /* ChatTextTableCell.xib in Resources */,
 				0472632E1D8FC66A00D9380C /* ChatEmotionView.xib in Resources */,
 				047263321D8FCAB600D9380C /* ChatShareCollectionCell.xib in Resources */,
 				1845A94E1D83D1AB008BD883 /* Info.plist in Resources */,
@@ -835,7 +835,6 @@
 				049CCDC01D8F94FC00CC6394 /* ChatRedEnvelopeCell.swift in Sources */,
 				049CCDAE1D8F92C400CC6394 /* ChatBaseTableCell.swift in Sources */,
 				04109BA61D92658400E5F6F7 /* KDChatViewController+Keyboard.swift in Sources */,
-				049CCDB01D8F931400CC6394 /* ChatTextTableCell.swift in Sources */,
 				18953D221D94268600F52F1E /* ChatBarButton+UI.swift in Sources */,
 				04109BAA1D9265F300E5F6F7 /* KDChatViewController+ChatCells.swift in Sources */,
 				18452CA71D819E9100D4B2BE /* AppDelegate.swift in Sources */,
@@ -846,6 +845,7 @@
 				047263311D8FCAB600D9380C /* ChatShareCollectionCell.swift in Sources */,
 				1845A9551D83D33D008BD883 /* KDContactsViewController.swift in Sources */,
 				18EA8CC61D8553EF00B4E274 /* KDMessageViewController.swift in Sources */,
+				18ABF8151D981C3000F305EB /* ChatTextTableCell.swift in Sources */,
 				184D71471D96B7C30000B923 /* KDChatViewController+Delegate.swift in Sources */,
 				049CCDB81D8F93E200CC6394 /* ChatAudioTableCell.swift in Sources */,
 				1845A9601D83E99B008BD883 /* UIViewController+Extension.swift in Sources */,
