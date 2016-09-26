@@ -62,13 +62,15 @@ extension KDChatViewController: UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("cell")
-        if cell == nil {
-            cell = UITableViewCell(style: .Default, reuseIdentifier: "cell")
-        }
-        cell?.textLabel?.text = NSString(string: "\(indexPath.row)") as String
+        let cell = tableView.dequeueReusableCellWithIdentifier("ChatTextTableCell", forIndexPath: indexPath) as! ChatTextTableCell
         
-        return cell!
+        let model = ChatModel(text: "我是测试，哈哈...")
+        cell.model = model
+        
+//        let cell = UITableViewCell()
+//        cell.textLabel?.text = "--\(indexPath.row)--"
+        
+        return cell
     }
 }
 
@@ -76,7 +78,6 @@ extension KDChatViewController: UITableViewDataSource {
 extension KDChatViewController: UITableViewDelegate {
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {

@@ -55,14 +55,15 @@ extension KDChatViewController {
         self.chatTableView.addGestureRecognizer(tapGesture)
         tapGesture.rx_event.subscribeNext { _ in
             self.hideAllKeyboard()
-            }.addDisposableTo(self.disposeBag)
+        }
+        .addDisposableTo(self.disposeBag)
         
         // 注册Cell
-        self.chatTableView.registerNib(UINib.init(nibName: NSStringFromClass(ChatTextTableCell), bundle: nil), forCellReuseIdentifier: "ChatTextTableCell")
-        self.chatTableView.registerNib(UINib.init(nibName: NSStringFromClass(ChatImageTableCell), bundle: nil), forCellReuseIdentifier: "ChatImageTableCell")
-        self.chatTableView.registerNib(UINib.init(nibName: NSStringFromClass(ChatAudioTableCell), bundle: nil), forCellReuseIdentifier: "ChatAudioTableCell")
-        self.chatTableView.registerNib(UINib.init(nibName: NSStringFromClass(ChatLocationTableCell), bundle: nil), forCellReuseIdentifier: "ChatLocationTableCell")
-        self.chatTableView.registerNib(UINib.init(nibName: NSStringFromClass(ChatRedEnvelopeCell), bundle: nil), forCellReuseIdentifier: "ChatRedEnvelopeCell")
+        self.chatTableView.registerNib(UINib.init(nibName: "ChatTextTableCell", bundle: nil), forCellReuseIdentifier: "ChatTextTableCell")
+        self.chatTableView.registerNib(UINib.init(nibName: "ChatImageTableCell", bundle: nil), forCellReuseIdentifier: "ChatImageTableCell")
+        self.chatTableView.registerNib(UINib.init(nibName: "ChatAudioTableCell", bundle: nil), forCellReuseIdentifier: "ChatAudioTableCell")
+        self.chatTableView.registerNib(UINib.init(nibName: "ChatLocationTableCell", bundle: nil), forCellReuseIdentifier: "ChatLocationTableCell")
+        self.chatTableView.registerNib(UINib.init(nibName: "ChatRedEnvelopeCell", bundle: nil), forCellReuseIdentifier: "ChatRedEnvelopeCell")
     }
     
     /**
