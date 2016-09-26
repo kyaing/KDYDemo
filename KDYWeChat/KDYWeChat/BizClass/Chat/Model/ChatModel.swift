@@ -16,7 +16,7 @@ import YYText
  2 - 语音
  3 - 群组提示信息，例如:高必梵邀请白琳,彭莹加入群聊
  4 - 文件
- 110 - 时间（客户端生成数据）
+ 5 - 时间（客户端生成数据）
  */
 enum MessageContentType: String {
     case Text   = "0"
@@ -24,7 +24,7 @@ enum MessageContentType: String {
     case Voice  = "2"
     case System = "3"
     case File   = "4"
-    case Time   = "110"
+    case Time   = "5"
 }
 
 // 服务器返回的是字符串
@@ -39,15 +39,22 @@ enum MessageFromType: String {
 
 /// 聊天数据模型
 class ChatModel: NSObject {
+    
     var chatSendId : String?        // 发送人 ID
     var chatReceiveId : String?     // 接受人 ID
     var messageContent : String?    // 消息内容
     var messageId : String?         // 消息 ID
     var messageContentType : MessageContentType = .Text //消息内容的类型
     var timestamp : String?         // 同 publishTimestamp
-    var messageFromType : MessageFromType = MessageFromType.Group
-    
+    var messageFromType : MessageFromType = .Group
     var fromMe : Bool = true        // 区分发送者接收者
+    
+    // 富文本相关(YYLabel)
+    var textLayout: YYTextLayout?
+    var textLinePositionModifier: TSYYTextLinePositionModifier?
+    var textAttributedString: NSMutableAttributedString?
+    
+    var cellHeight: CGFloat = 0     // 缓存高度
     
     required override init() {
         

@@ -9,7 +9,15 @@
 import Foundation
 
 // MARK: - 聊天Cells
-extension KDChatViewController {
-    
+extension MessageContentType {
+    func chatCellHeight(model: ChatModel) -> CGFloat {
+        switch self {
+        case .Text:
+            return ChatTextTableCell.layoutCellHeigth(model)
+            
+        default:
+            return 40
+        }
+    }
 }
 

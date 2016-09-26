@@ -45,11 +45,6 @@ class ChatBaseTableCell: UITableViewCell {
         self.backgroundColor = UIColor.clearColor()
     }
     
-    override func prepareForReuse() {
-//        self.avatarImageView.image = nil
-//        self.nicknameLabel.text = nil
-    }
-    
     func setupCellContent(model: ChatModel) {
         self.model = model
         if model.fromMe {
@@ -64,17 +59,17 @@ class ChatBaseTableCell: UITableViewCell {
         self.setNeedsLayout()
     }
     
-    // MARK: - LayoutSubViews
+    // MARK: - Layout
     override func layoutSubviews() {
         super.layoutSubviews()
         
         guard let model = self.model else { return }
         
-        if model.fromMe {  // 自己发送，在右边
+        if model.fromMe {  // 自己发送的消息，在右边
             self.nicknameLabel.height = 0
             self.avatarImageView.left = UIScreen.width - kChatAvatarWidth - kChatAvatarMarginLeft
             
-        } else {  // 接收别人，在左边
+        } else {  // 接收别人的消息，在左边
             self.nicknameLabel.height = 0
             self.avatarImageView.left = kChatAvatarMarginLeft
         }

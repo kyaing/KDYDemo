@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -11,7 +11,7 @@
             <rect key="frame" x="0.0" y="0.0" width="347" height="130"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="347" height="129"/>
+                <rect key="frame" x="0.0" y="0.0" width="347" height="129.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatorImage" id="HIu-yW-sXy" userLabel="avatorImageView">
@@ -30,20 +30,17 @@
                         <rect key="frame" x="60" y="25" width="222" height="100"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1e1-Xd-oaN" userLabel="contentLabel">
-                        <rect key="frame" x="67" y="31" width="208" height="88"/>
+                    <view contentMode="scaleToFill" id="rc7-xp-MQ7" userLabel="contentLabel" customClass="YYLabel">
+                        <rect key="frame" x="65" y="30" width="212" height="89"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    </view>
                 </subviews>
             </tableViewCellContentView>
             <connections>
                 <outlet property="avatarImageView" destination="HIu-yW-sXy" id="je8-Vp-zQJ"/>
                 <outlet property="bubbleImageView" destination="wxj-7T-aQU" id="Wcd-Lz-PDJ"/>
-                <outlet property="contentLabel" destination="1e1-Xd-oaN" id="xmU-yt-zNJ"/>
+                <outlet property="contentLabel" destination="rc7-xp-MQ7" id="bnZ-zL-lna"/>
                 <outlet property="nicknameLabel" destination="eO3-80-BQY" id="Env-h6-neb"/>
             </connections>
             <point key="canvasLocation" x="107.5" y="65"/>

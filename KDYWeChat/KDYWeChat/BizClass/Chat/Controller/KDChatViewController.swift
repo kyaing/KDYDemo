@@ -67,9 +67,6 @@ extension KDChatViewController: UITableViewDataSource {
         let model = ChatModel(text: "我是测试，哈哈...")
         cell.model = model
         
-//        let cell = UITableViewCell()
-//        cell.textLabel?.text = "--\(indexPath.row)--"
-        
         return cell
     }
 }
