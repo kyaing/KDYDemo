@@ -64,6 +64,7 @@ extension KDChatViewController {
         self.chatTableView.registerNib(UINib.init(nibName: "ChatAudioTableCell", bundle: nil), forCellReuseIdentifier: "ChatAudioTableCell")
         self.chatTableView.registerNib(UINib.init(nibName: "ChatLocationTableCell", bundle: nil), forCellReuseIdentifier: "ChatLocationTableCell")
         self.chatTableView.registerNib(UINib.init(nibName: "ChatRedEnvelopeCell", bundle: nil), forCellReuseIdentifier: "ChatRedEnvelopeCell")
+        self.chatTableView.registerNib(UINib.init(nibName: "ChatTimeTableCell", bundle: nil), forCellReuseIdentifier: "ChatTimeTableCell")
     }
     
     /**

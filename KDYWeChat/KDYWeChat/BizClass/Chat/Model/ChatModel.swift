@@ -54,7 +54,7 @@ class ChatModel: NSObject {
     var textLinePositionModifier: TSYYTextLinePositionModifier?
     var textAttributedString: NSMutableAttributedString?
     
-    var cellHeight: CGFloat = 0     // 缓存高度
+    var cellHeight: CGFloat = 0     // 缓存的高度
     
     required override init() {
         
@@ -64,7 +64,7 @@ class ChatModel: NSObject {
     init(timestamp: String) {
         super.init()
         self.timestamp = timestamp
-        self.messageContent = ""
+        self.messageContent = "2016-9-27"
         self.messageContentType = .Time
     }
     

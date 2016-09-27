@@ -20,7 +20,7 @@ class ChatBaseTableCell: UITableViewCell {
 
     @IBOutlet weak var avatarImageView: UIImageView! {
         didSet {
-            avatarImageView.backgroundColor = UIColor.clearColor()
+            avatarImageView.backgroundColor = UIColor.blueColor()
             avatarImageView.width = kChatAvatarWidth
             avatarImageView.height = kChatAvatarWidth
         }
