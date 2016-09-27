@@ -67,15 +67,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func loginEmSDK(userName: NSString, password: NSString) {
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
-            dispatch_async(dispatch_get_main_queue()) {
-                let error = EMClient.sharedClient().loginWithUsername(emUserName, password: emPassword)
-                if error == nil {
-                    // 设置自动登录
-                    EMClient.sharedClient().options.isAutoLogin = true
-                } else {
-                    print(">>环信登录成功<<")
-                }
+        EMClient.sharedClient().loginWithUsername(emUserName, password: emPassword) { (name, error) in
+            if (error != nil) {
+                EMClient.sharedClient().options.isAutoLogin = true
+            } else {
+                print(">>环信登录成功<<")
             }
         }
     }
