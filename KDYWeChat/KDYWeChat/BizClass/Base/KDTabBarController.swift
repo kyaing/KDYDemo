@@ -8,8 +8,9 @@
 
 import UIKit
 
-/// TabBar栏
+/// TabBar
 final class KDTabBarController: UITabBarController {
+    
     
     var navigationControllers: NSMutableArray = []
     

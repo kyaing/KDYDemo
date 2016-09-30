@@ -20,6 +20,9 @@
 		0472632E1D8FC66A00D9380C /* ChatEmotionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0472632D1D8FC66A00D9380C /* ChatEmotionView.xib */; };
 		047263311D8FCAB600D9380C /* ChatShareCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472632F1D8FCAB600D9380C /* ChatShareCollectionCell.swift */; };
 		047263321D8FCAB600D9380C /* ChatShareCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047263301D8FCAB600D9380C /* ChatShareCollectionCell.xib */; };
+		047F8EF41D9E187000022544 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047F8EF31D9E187000022544 /* AppDelegate.swift */; };
+		047F8EF61D9E188500022544 /* AppDelegate+LeanCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047F8EF51D9E188500022544 /* AppDelegate+LeanCloud.swift */; };
+		047F8EF81D9E189200022544 /* AppDelegate+EaseSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047F8EF71D9E189200022544 /* AppDelegate+EaseSDK.swift */; };
 		048559191D99273B001A076A /* UIScreen+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048559181D99273B001A076A /* UIScreen+Frame.swift */; };
 		0485591B1D9A0B81001A076A /* TSChatTextParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0485591A1D9A0B81001A076A /* TSChatTextParser.swift */; };
 		0485591D1D9A0BBB001A076A /* TSChatEmojiDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0485591C1D9A0BBB001A076A /* TSChatEmojiDictionary.swift */; };
@@ -50,7 +53,6 @@
 		180F3BD31D8BDBD400D79668 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 180F3BD21D8BDBD400D79668 /* libc++.tbd */; };
 		180F3BD51D8BDBDB00D79668 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 180F3BD41D8BDBDB00D79668 /* libstdc++.6.0.9.tbd */; };
 		180F3BD71D8BDBE400D79668 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 180F3BD61D8BDBE400D79668 /* libsqlite3.tbd */; };
-		18452CA71D819E9100D4B2BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18452CA61D819E9100D4B2BE /* AppDelegate.swift */; };
 		18452CBC1D819E9100D4B2BE /* KDYWeChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18452CBB1D819E9100D4B2BE /* KDYWeChatTests.swift */; };
 		18452CC71D819E9100D4B2BE /* KDYWeChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18452CC61D819E9100D4B2BE /* KDYWeChatUITests.swift */; };
 		1845A94D1D83D1AB008BD883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1845A9481D83D1AB008BD883 /* Main.storyboard */; };
@@ -115,6 +117,9 @@
 		0472632D1D8FC66A00D9380C /* ChatEmotionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatEmotionView.xib; sourceTree = "<group>"; };
 		0472632F1D8FCAB600D9380C /* ChatShareCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatShareCollectionCell.swift; sourceTree = "<group>"; };
 		047263301D8FCAB600D9380C /* ChatShareCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatShareCollectionCell.xib; sourceTree = "<group>"; };
+		047F8EF31D9E187000022544 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		047F8EF51D9E188500022544 /* AppDelegate+LeanCloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+LeanCloud.swift"; sourceTree = "<group>"; };
+		047F8EF71D9E189200022544 /* AppDelegate+EaseSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+EaseSDK.swift"; sourceTree = "<group>"; };
 		048559181D99273B001A076A /* UIScreen+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Frame.swift"; sourceTree = "<group>"; };
 		0485591A1D9A0B81001A076A /* TSChatTextParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSChatTextParser.swift; sourceTree = "<group>"; };
 		0485591C1D9A0BBB001A076A /* TSChatEmojiDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSChatEmojiDictionary.swift; sourceTree = "<group>"; };
@@ -185,7 +190,6 @@
 		180F3BFF1D8BDC6300D79668 /* OpenGLView20.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLView20.h; sourceTree = "<group>"; };
 		180F3C011D8BDC6300D79668 /* libHyphenateFullSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libHyphenateFullSDK.a; sourceTree = "<group>"; };
 		18452CA31D819E9100D4B2BE /* KDYWeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KDYWeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		18452CA61D819E9100D4B2BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18452CB71D819E9100D4B2BE /* KDYWeChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KDYWeChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18452CBB1D819E9100D4B2BE /* KDYWeChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDYWeChatTests.swift; sourceTree = "<group>"; };
 		18452CBD1D819E9100D4B2BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -259,6 +263,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		047F8EF21D9E187000022544 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				047F8EF31D9E187000022544 /* AppDelegate.swift */,
+				047F8EF71D9E189200022544 /* AppDelegate+EaseSDK.swift */,
+				047F8EF51D9E188500022544 /* AppDelegate+LeanCloud.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		049CCDC61D8F95E300CC6394 /* Bar */ = {
 			isa = PBXGroup;
 			children = (
@@ -361,7 +375,7 @@
 		18452CA51D819E9100D4B2BE /* KDYWeChat */ = {
 			isa = PBXGroup;
 			children = (
-				18452CA61D819E9100D4B2BE /* AppDelegate.swift */,
+				047F8EF21D9E187000022544 /* Main */,
 				1845A9351D83D127008BD883 /* BizClass */,
 				1845A9501D83D223008BD883 /* Helpers */,
 				1845A95A1D83DE88008BD883 /* Manager */,
@@ -858,6 +872,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047F8EF41D9E187000022544 /* AppDelegate.swift in Sources */,
+				047F8EF81D9E189200022544 /* AppDelegate+EaseSDK.swift in Sources */,
 				189E885C1D8D65F30007C9A5 /* EMClient.h in Sources */,
 				04109BA81D9265C100E5F6F7 /* KDChatViewController+SubViews.swift in Sources */,
 				189E885D1D8D65F30007C9A5 /* EMOptions.h in Sources */,
@@ -873,7 +889,6 @@
 				04109BA61D92658400E5F6F7 /* KDChatViewController+Keyboard.swift in Sources */,
 				18953D221D94268600F52F1E /* ChatBarButton+UI.swift in Sources */,
 				04109BAA1D9265F300E5F6F7 /* KDChatViewController+ChatCells.swift in Sources */,
-				18452CA71D819E9100D4B2BE /* AppDelegate.swift in Sources */,
 				1845A9621D83E9BA008BD883 /* UIView+Frame.swift in Sources */,
 				0485591D1D9A0BBB001A076A /* TSChatEmojiDictionary.swift in Sources */,
 				1845A9641D83E9F0008BD883 /* UIColor+Extension.swift in Sources */,
@@ -882,6 +897,7 @@
 				04109BA41D92569200E5F6F7 /* ChatBarButton.swift in Sources */,
 				048559221D9A1E27001A076A /* ChatTimeTableCell.swift in Sources */,
 				047263311D8FCAB600D9380C /* ChatShareCollectionCell.swift in Sources */,
+				047F8EF61D9E188500022544 /* AppDelegate+LeanCloud.swift in Sources */,
 				1845A9551D83D33D008BD883 /* KDContactsViewController.swift in Sources */,
 				04B6B20C1D98F3C400BCBDE7 /* ChatModel.swift in Sources */,
 				04B6B2051D98BE0A00BCBDE7 /* ChatLocationTableCell.swift in Sources */,

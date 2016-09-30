@@ -6,7 +6,7 @@
 //  Copyright © 2016年 kaideyi.com. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 // MARK: - 聊天Cell
 extension MessageContentType {
