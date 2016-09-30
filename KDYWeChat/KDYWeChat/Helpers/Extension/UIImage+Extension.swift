@@ -12,6 +12,7 @@ import Photos
 
 public extension UIImage {
     //https://github.com/melvitax/AFImageHelper/blob/master/AFImageHelper%2FAFImageExtension.swift
+    
     public enum UIImageContentMode {
         case ScaleToFill, ScaleAspectFit, ScaleAspectFill
     }

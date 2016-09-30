@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -12,7 +12,7 @@
             <rect key="frame" x="0.0" y="0.0" width="338" height="65"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="338" height="64.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="338" height="64"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Hx-Vm-Q7b" userLabel="avatorImage">
@@ -23,31 +23,31 @@
                             <constraint firstAttribute="height" constant="50" id="hZz-c9-7YS"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qz-V4-8tf" userLabel="unReadMsgLabel">
-                        <rect key="frame" x="43" y="3" width="22" height="22"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qz-V4-8tf" userLabel="unReadMsgLabel">
+                        <rect key="frame" x="43" y="3" width="20" height="20"/>
                         <color key="backgroundColor" red="1" green="0.27759637819999999" blue="0.081415476530000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="22" id="9Qt-X9-hV6"/>
-                            <constraint firstAttribute="height" constant="22" id="ztB-8F-lpz"/>
+                            <constraint firstAttribute="width" constant="20" id="9Qt-X9-hV6"/>
+                            <constraint firstAttribute="height" constant="20" id="ztB-8F-lpz"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="用户名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Too-CW-TBe" userLabel="userNameLabel">
-                        <rect key="frame" x="67" y="13" width="48" height="19.5"/>
+                        <rect key="frame" x="65" y="13" width="48" height="20"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最后一条用户的消息信息..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3M1-oB-fim" userLabel="lastMessageLabel">
-                        <rect key="frame" x="67" y="35" width="243" height="16"/>
+                        <rect key="frame" x="67" y="36" width="243" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="2016-9-10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lt8-w5-iaZ" userLabel="lastMsgDateLabel">
-                        <rect key="frame" x="260.5" y="13" width="64.5" height="16"/>
+                        <rect key="frame" x="260" y="13" width="65" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -62,25 +62,19 @@
                     <constraint firstItem="4qz-V4-8tf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="35" id="QQ2-GB-kNN"/>
                     <constraint firstItem="Too-CW-TBe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="Te6-HO-qBP"/>
                     <constraint firstItem="4qz-V4-8tf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-5" id="VST-6K-QS6"/>
-                    <constraint firstAttribute="bottom" secondItem="4Hx-Vm-Q7b" secondAttribute="bottom" constant="7.5" id="bdM-S7-mjF"/>
                     <constraint firstItem="Lt8-w5-iaZ" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-5" id="f1B-H2-zHI"/>
                     <constraint firstItem="3M1-oB-fim" firstAttribute="top" secondItem="Too-CW-TBe" secondAttribute="bottom" constant="3" id="nOs-Qw-WnQ"/>
                     <constraint firstItem="Lt8-w5-iaZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="oQO-Rk-GmX"/>
                 </constraints>
-                <variation key="default">
-                    <mask key="constraints">
-                        <exclude reference="bdM-S7-mjF"/>
-                    </mask>
-                </variation>
             </tableViewCellContentView>
             <connections>
-                <outlet property="avatorImage" destination="4Hx-Vm-Q7b" id="WgN-Oy-wQ3"/>
+                <outlet property="avatorImageView" destination="4Hx-Vm-Q7b" id="Gxm-gh-x0a"/>
                 <outlet property="lastMessageLabel" destination="3M1-oB-fim" id="Pnz-4a-ogF"/>
                 <outlet property="lastMsgDateLabel" destination="Lt8-w5-iaZ" id="FnJ-rO-1Hs"/>
                 <outlet property="unReadMsgLabel" destination="4qz-V4-8tf" id="XaE-75-kZw"/>
                 <outlet property="userNameLabel" destination="Too-CW-TBe" id="cZ2-1M-SjU"/>
             </connections>
-            <point key="canvasLocation" x="209" y="139"/>
+            <point key="canvasLocation" x="212" y="98.5"/>
         </tableViewCell>
     </objects>
 </document>

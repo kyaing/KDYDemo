@@ -97,7 +97,7 @@
                 <outlet property="recordButton" destination="F32-0Y-Pcz" id="TNt-ww-vU1"/>
                 <outlet property="shareButton" destination="8xg-Wj-EkV" id="JLL-nL-lYl"/>
             </connections>
-            <point key="canvasLocation" x="151" y="234"/>
+            <point key="canvasLocation" x="206" y="230"/>
         </view>
     </objects>
     <resources>

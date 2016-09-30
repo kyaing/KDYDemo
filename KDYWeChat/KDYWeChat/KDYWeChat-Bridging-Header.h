@@ -4,4 +4,5 @@
 
 // Swift中的桥接文件
 #import "EMSDK.h"
+#import <YYText/YYText.h>
 

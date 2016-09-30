@@ -9,18 +9,6 @@
 import UIKit
 import LeanCloud
 
-// 环信参数
-let emAppKey         = "kdy#kdywechat"
-let emClinetId       = "YXA6Y7mEEHfkEeaj5e2MKO4LDw"
-let emClientSecret   = "YXA6s_ZXqJD7UKFkvubKfv1_9BXDIKI"
-let emApnsDevCerName = "kdychat_devleop"
-let emUserName       = "kdy"
-let emPassword       = "121307"
-
-// LeanCloud参数
-let leanCloudAppId   = "9xLAs694OFHJzICKslhWMW33-gzGzoHsz"
-let leanCloudAppKey  = "dRVEtbHyPLhNEwKT3oneVnHw"
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -30,14 +18,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - AppDelegate
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        // 设置根视图
-        setupRootController()
-        
         // 配置环信
         setupEmSDK()
         
         // 配置后端服务
         setupLeanCloud()
+        
+        // 设置根视图
+        setupRootController()
         
         return true
     }
@@ -76,6 +64,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func setupLeanCloud() {
         LeanCloud.initialize(applicationID: leanCloudAppId, applicationKey: leanCloudAppKey)
         
+        // for test
         let post = LCObject(className: "TestObject")
         post.set("word", object: "hello world!")
         post.save()

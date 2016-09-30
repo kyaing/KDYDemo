@@ -78,9 +78,8 @@ class ChatTextTableCell: ChatBaseTableCell {
         super.layoutSubviews()
         
         guard let model = self.model else { return }
-        
+
         self.contentLabel.size = model.textLayout!.textBoundingSize
-        
         if model.fromMe {
             // value = 屏幕宽 - 头像的边距10 - 头像宽 - 气泡距离头像的 gap 值 - (文字宽 - 2倍的文字和气泡的左右距离 , 或者是最小的气泡图片距离)
             self.bubbleImageView.left = UIScreen.width - kChatAvatarMarginLeft - kChatAvatarWidth - kChatBubbleMaginLeft - max(self.contentLabel.width + kChatBubbleWidthBuffer, kChatBubbleImageViewWidth)
