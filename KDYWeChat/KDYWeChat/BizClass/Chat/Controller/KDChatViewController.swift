@@ -40,7 +40,7 @@ final class KDChatViewController: UIViewController {
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.lightGrayColor()
+        self.view.backgroundColor = UIColor(colorHex: KDYColor.tableViewBackgroundColor)
         
         // 添加子视图
         setupChildViews()
@@ -56,7 +56,8 @@ final class KDChatViewController: UIViewController {
         let model1 = ChatModel(text: "我是测试，哈哈...我是测试我1234543，哈哈...我是测试我是测试，哈哈...我是测试我是测试，..我是测试我是测试，哈哈...我是测试，哈哈魂牵梦萦fdafdaa dafdas32323##____@#4q56r，哈哈...我是测试，哈哈...我是测试，哈哈...")
         let model2 = ChatModel(text: "不知道要写什么。。。哈哈，，测试测试。。。")
         let model3 = ChatModel(text: "今天风实在太大了，头疼！！！[头疼][大笑]000000####%%%%fdaf暮云春树革【|、·1234567")
-        let array = [model0, model1, model2, model3]
+        let model4 = ChatModel(text: "000000####%%%%fdaf暮云春树革【|、·1234567")
+        let array = [model0, model1, model2, model3, model4]
         itemDataSouce.addObjectsFromArray(array)
     }
 }

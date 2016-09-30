@@ -85,10 +85,13 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-KDYWeChat/Alamofire.framework"
+  install_framework "Pods-KDYWeChat/Bolts.framework"
   install_framework "Pods-KDYWeChat/KVOController.framework"
   install_framework "Pods-KDYWeChat/Kingfisher.framework"
+  install_framework "Pods-KDYWeChat/LeanCloud.framework"
   install_framework "Pods-KDYWeChat/Moya.framework"
   install_framework "Pods-KDYWeChat/ObjectMapper.framework"
+  install_framework "Pods-KDYWeChat/Parse.framework"
   install_framework "Pods-KDYWeChat/Result.framework"
   install_framework "Pods-KDYWeChat/RxCocoa.framework"
   install_framework "Pods-KDYWeChat/RxDataSources.framework"
@@ -101,10 +104,13 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-KDYWeChat/Alamofire.framework"
+  install_framework "Pods-KDYWeChat/Bolts.framework"
   install_framework "Pods-KDYWeChat/KVOController.framework"
   install_framework "Pods-KDYWeChat/Kingfisher.framework"
+  install_framework "Pods-KDYWeChat/LeanCloud.framework"
   install_framework "Pods-KDYWeChat/Moya.framework"
   install_framework "Pods-KDYWeChat/ObjectMapper.framework"
+  install_framework "Pods-KDYWeChat/Parse.framework"
   install_framework "Pods-KDYWeChat/Result.framework"
   install_framework "Pods-KDYWeChat/RxCocoa.framework"
   install_framework "Pods-KDYWeChat/RxDataSources.framework"

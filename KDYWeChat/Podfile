@@ -24,6 +24,10 @@ target 'KDYWeChat' do
     pod 'SVProgressHUD'
     pod 'YYText'
     pod 'KVOController'
+    
+    # 选择后端服务，由于Parse即将关闭，则转向LeanCloud(Swift版本)
+    pod 'Parse'
+    pod 'LeanCloud', '~> 1.0.0-beta.2'
 
 end
 

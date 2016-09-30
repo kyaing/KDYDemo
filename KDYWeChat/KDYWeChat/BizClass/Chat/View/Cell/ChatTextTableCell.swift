@@ -52,8 +52,6 @@ class ChatTextTableCell: ChatBaseTableCell {
     // 设置文本内容
     override func setupCellContent(model: ChatModel) {
         super.setupCellContent(model)
-    
-        print("setupCellContent")
         
         if let textLinePositionModifier = model.textLinePositionModifier {
             self.contentLabel.linePositionModifier = textLinePositionModifier
@@ -78,8 +76,6 @@ class ChatTextTableCell: ChatBaseTableCell {
     // MARK: - Layout
     override func layoutSubviews() {
         super.layoutSubviews()
-        
-        print("layoutSubviews")
         
         guard let model = self.model else { return }
         

@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Bolts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>KVOController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -19,12 +24,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>LeanCloud.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Moya.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>ObjectMapper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Parse.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -87,22 +102,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>24BA8C7AA97386BCAA71185589E2E6BE</key>
+		<key>21E48E60F815A9FC45DFD36964E840E1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3224D00302D7FDDF3553A050CFD6FC84</key>
+		<key>27C3220A34851C8A236FFC571FAC6509</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4607C87B60CDA2FD3589FE5FBD0F1196</key>
+		<key>2C8AA1BAF35413BDB954A1DF93576ED1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5F2450F6DCE28B76A9B36C3E86930550</key>
+		<key>57138E82C30F14E268BBB9B75039AE98</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7129FAB61478FA70223DADF4921468CD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -112,7 +132,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8AC82E475C4CA5F02B779ED254909D4D</key>
+		<key>831E1D0B722ADBCE8E8976ACE340223A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8599A08DA8C5BFCFBA0C564F54992668</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8ED34D6D2DF474CBC14C22F2FE192BF5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -122,22 +152,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>9DCF23EFEFDE922F11265CE40E2D6F92</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A0933FC1307AD48F89C9FB7CEA3C29C5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B1F4E78BF1577AF3923A2AD18FE89D63</key>
+		<key>A12ECBCDCA48C26113CC225AD84FC7AA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>C31A540DD6DB56404A28511F9FCEB0D2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DCB009578335707F1BA8AD169FC5AAEE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -152,7 +182,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F0608558D26ABCD66A06AD20120BD777</key>
+		<key>F3EDA826B449589336E5A6F49ABAE07D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
