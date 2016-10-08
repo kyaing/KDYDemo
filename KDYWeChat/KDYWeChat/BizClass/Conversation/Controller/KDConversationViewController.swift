@@ -94,6 +94,8 @@ final class KDConversationViewController: UIViewController {
         
         let messageBody = model.conversation.latestMessage.body
         switch messageBody.type {
+            
+        // 只有文本消息，才有最后一条数据，其它都是自已拼
         case EMMessageBodyTypeText:
             let textBody = messageBody as! EMTextMessageBody
             latestMsgTitle = textBody.text
@@ -115,7 +117,14 @@ final class KDConversationViewController: UIViewController {
      */
     func getlastMessageTimeForConversation(model: MessageModel) -> String {
         let lastMessage = model.conversation.latestMessage
-        return "\(lastMessage.timestamp)"
+        
+        // 得到时间戳，把微秒转化成具体时间
+        let seconds = Double(lastMessage.timestamp) / 1000
+        let timeInterval: NSTimeInterval = NSTimeInterval(seconds)
+        let date = NSDate(timeIntervalSince1970: timeInterval)
+        let timeString = NSDate.messageAgoSinceDate(date)
+        
+        return timeString
     }
     
     func registerChatDelegate() {
@@ -152,9 +161,10 @@ extension KDConversationViewController: UITableViewDataSource {
         
         let model = msgDataArray.objectAtIndex(indexPath.row) as! MessageModel
         
-        // 设置cell的数据
+        // 设置Cell的数据
         let lastMessage     = self.getLastMessageForConversation(model)
         let lastMessageTime = self.getlastMessageTimeForConversation(model)
+        
         cell.avatorImageView.image  = model.avatarImage
         cell.unReadMsgLabel.text    = String("\(model.conversation.unreadMessagesCount)")
         cell.userNameLabel.text     = model.title

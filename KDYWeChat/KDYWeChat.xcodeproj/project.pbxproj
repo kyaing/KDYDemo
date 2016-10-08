@@ -433,7 +433,6 @@
 				047F8EF21D9E187000022544 /* Main */,
 				1845A9351D83D127008BD883 /* BizClass */,
 				1845A9501D83D223008BD883 /* Helpers */,
-				1845A95A1D83DE88008BD883 /* Manager */,
 				1845A9511D83D223008BD883 /* Vendor */,
 				1845A9451D83D1AB008BD883 /* Base.lproj */,
 				1845A94A1D83D1AB008BD883 /* Info.plist */,
@@ -534,13 +533,6 @@
 				180F3BD81D8BDC6300D79668 /* HyphenateFullSDK */,
 			);
 			path = Vendor;
-			sourceTree = "<group>";
-		};
-		1845A95A1D83DE88008BD883 /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Manager;
 			sourceTree = "<group>";
 		};
 		1845A95B1D83E034008BD883 /* Base */ = {
