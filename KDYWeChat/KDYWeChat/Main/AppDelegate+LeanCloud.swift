@@ -8,7 +8,6 @@
 
 import Foundation
 
-// MARK: - LeanCloud
 extension AppDelegate {
     
 }

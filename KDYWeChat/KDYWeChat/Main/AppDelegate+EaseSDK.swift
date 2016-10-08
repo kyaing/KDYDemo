@@ -8,8 +8,22 @@
 
 import Foundation
 
-// MARK: - EaseSDK
 extension AppDelegate {
     
+    /**
+     *  配置环信sdk
+     */
+    func easemobApplication(application: UIApplication,
+                            launchOptions: [NSObject: AnyObject]?,
+                            appKey: NSString,
+                            apnsCerName: NSString,
+                            otherConfig: [NSObject: AnyObject]?) {
+        
+        EaseSDKHelper.shareInstance.hyphenateApplication(application,
+                                                         launchOptions: launchOptions,
+                                                         appkey: appKey,
+                                                         apnsCerName: apnsCerName,
+                                                         otherConfig: nil)
+    }
 }
 

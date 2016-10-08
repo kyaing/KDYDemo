@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         // 配置环信
-        setupEmSDK()
+        setupEmSDK(application, launchOptions: launchOptions)
         
         // 配置后端服务
         setupLeanCloud()
@@ -50,12 +50,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
     }
     
-    func setupEmSDK() {
+    func setupEmSDK(application: UIApplication, launchOptions: [NSObject: AnyObject]?) {
         // 注册的 AppKey，和推送证书名
         let options = EMOptions(appkey: emAppKey)
-        options.apnsCertName = emApnsDevCerName
         
-        EMClient.sharedClient().initializeSDKWithOptions(options)
+        #if DEBUG
+            options.apnsCertName = emApnsDevCerName
+        #else
+            options.apnsCertName = emApnsProCerName
+        #endif
+        
+        self.easemobApplication(application,
+                                launchOptions: launchOptions,
+                                appKey: emAppKey,
+                                apnsCerName: emApnsDevCerName,
+                                otherConfig: nil)
         
         // 登录环信
         loginEmSDK(emUserName, password: emPassword)

@@ -26,6 +26,7 @@
 		047263311D8FCAB600D9380C /* ChatShareCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472632F1D8FCAB600D9380C /* ChatShareCollectionCell.swift */; };
 		047263321D8FCAB600D9380C /* ChatShareCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047263301D8FCAB600D9380C /* ChatShareCollectionCell.xib */; };
 		0475467F1D9E7415008076F1 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0475467E1D9E7415008076F1 /* NSDate+Extension.swift */; };
+		047546841DA8E38A008076F1 /* EaseSDKHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047546831DA8E38A008076F1 /* EaseSDKHelper.swift */; };
 		047F8EF41D9E187000022544 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047F8EF31D9E187000022544 /* AppDelegate.swift */; };
 		047F8EF61D9E188500022544 /* AppDelegate+LeanCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047F8EF51D9E188500022544 /* AppDelegate+LeanCloud.swift */; };
 		047F8EF81D9E189200022544 /* AppDelegate+EaseSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047F8EF71D9E189200022544 /* AppDelegate+EaseSDK.swift */; };
@@ -125,6 +126,7 @@
 		0472632F1D8FCAB600D9380C /* ChatShareCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatShareCollectionCell.swift; sourceTree = "<group>"; };
 		047263301D8FCAB600D9380C /* ChatShareCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatShareCollectionCell.xib; sourceTree = "<group>"; };
 		0475467E1D9E7415008076F1 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
+		047546831DA8E38A008076F1 /* EaseSDKHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EaseSDKHelper.swift; sourceTree = "<group>"; };
 		047F8EF31D9E187000022544 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		047F8EF51D9E188500022544 /* AppDelegate+LeanCloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+LeanCloud.swift"; sourceTree = "<group>"; };
 		047F8EF71D9E189200022544 /* AppDelegate+EaseSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+EaseSDK.swift"; sourceTree = "<group>"; };
@@ -316,6 +318,14 @@
 				042FFE791D9E394E0096CDF2 /* Macro.swift */,
 			);
 			path = Macro;
+			sourceTree = "<group>";
+		};
+		047546821DA8E38A008076F1 /* EaseSDK */ = {
+			isa = PBXGroup;
+			children = (
+				047546831DA8E38A008076F1 /* EaseSDKHelper.swift */,
+			);
+			path = EaseSDK;
 			sourceTree = "<group>";
 		};
 		047F8EF21D9E187000022544 /* Main */ = {
@@ -521,8 +531,9 @@
 			isa = PBXGroup;
 			children = (
 				18ABF8181D995C4900F305EB /* Chat */,
-				042FFE781D9E393F0096CDF2 /* Macro */,
+				047546821DA8E38A008076F1 /* EaseSDK */,
 				1845A95E1D83E956008BD883 /* Extension */,
+				042FFE781D9E393F0096CDF2 /* Macro */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -884,6 +895,7 @@
 				048559191D99273B001A076A /* UIScreen+Frame.swift in Sources */,
 				049CCDAE1D8F92C400CC6394 /* ChatBaseTableCell.swift in Sources */,
 				04B6B2091D98BE4000BCBDE7 /* ChatRedEnvelopeCell.swift in Sources */,
+				047546841DA8E38A008076F1 /* EaseSDKHelper.swift in Sources */,
 				04109BA61D92658400E5F6F7 /* KDChatViewController+Keyboard.swift in Sources */,
 				18953D221D94268600F52F1E /* ChatBarButton+UI.swift in Sources */,
 				04109BAA1D9265F300E5F6F7 /* KDChatViewController+ChatCells.swift in Sources */,

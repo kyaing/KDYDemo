@@ -56,47 +56,47 @@ extension NSDate {
             ], fromDate: earliest, toDate: latest, options: NSCalendarOptions())
         
         if (components.year >= 2) {
-            return "\(components.year) 年前"
-        } else if (components.year >= 1){
+            return "\(components.year)年前"
+        } else if (components.year >= 1) {
             if (numericDates){
-                return "1 年前"
+                return "1年前"
             } else {
                 return "去年"
             }
         } else if (components.month >= 2) {
-            return "\(components.month) 月前"
-        } else if (components.month >= 1){
+            return "\(components.month)月前"
+        } else if (components.month >= 1) {
             if (numericDates){
-                return "1 个月前"
+                return "1个月前"
             } else {
                 return "上个月"
             }
         } else if (components.weekOfYear >= 2) {
-            return "\(components.weekOfYear) 周前"
-        } else if (components.weekOfYear >= 1){
+            return "\(components.weekOfYear)周前"
+        } else if (components.weekOfYear >= 1) {
             if (numericDates){
-                return "1 周前"
+                return "1周前"
             } else {
                 return "上一周"
             }
         } else if (components.day >= 2) {
-            return "\(components.day) 天前"
-        } else if (components.day >= 1){
+            return "\(components.day)天前"
+        } else if (components.day >= 1) {
             if (numericDates){
-                return "1 天前"
+                return "1天前"
             } else {
                 return "昨天"
             }
         } else if (components.hour >= 2) {
-            return "\(components.hour) 小时前"
-        } else if (components.hour >= 1){
-            return "1 小时前"
+            return "\(components.hour)小时前"
+        } else if (components.hour >= 1) {
+            return "1小时前"
         } else if (components.minute >= 2) {
-            return "\(components.minute) 分钟前"
+            return "\(components.minute)分钟前"
         } else if (components.minute >= 1){
-            return "1 分钟前"
+            return "1分钟前"
         } else if (components.second >= 3) {
-            return "\(components.second) 秒前"
+            return "\(components.second)秒前"
         } else {
             return "刚刚"
         }
