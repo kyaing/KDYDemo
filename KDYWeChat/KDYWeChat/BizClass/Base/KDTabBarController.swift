@@ -11,6 +11,10 @@ import UIKit
 /// TabBar
 final class KDTabBarController: UITabBarController {
     
+    /// 默认播放声音的间隔
+    let kDefaultPlaySoundInterval = 3.0
+    var lastPlaySoundDate: NSDate = NSDate()
+    
     /// 联网状态
     var connectionState: EMConnectionState = EMConnectionDisconnected
     
@@ -113,6 +117,20 @@ final class KDTabBarController: UITabBarController {
     func networkStateChanged(connectionState: EMConnectionState) {
         self.connectionState = connectionState
         self.conversationVC.networkStateChanged(connectionState)
+    }
+    
+    /**
+     *  播放声音或振动(有新消息时)
+     */
+    func playSoundAndVibration() {        
+        let timeInterval: NSTimeInterval = NSDate().timeIntervalSinceDate(self.lastPlaySoundDate)
+        if timeInterval < kDefaultPlaySoundInterval {
+            // 如果距离上次响铃和震动时间太短, 则跳过响铃
+            print("skip ringing & vibration \(NSDate()), \(self.lastPlaySoundDate)")
+            return;
+        }
+        
+        self.lastPlaySoundDate = NSDate()
     }
     
     /**

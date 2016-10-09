@@ -19,11 +19,32 @@ extension AppDelegate {
                             apnsCerName: String,
                             otherConfig: [NSObject: AnyObject]?) {
         
+        
+        KDYChatHelper.shareInstance.asyncPushOptions()
+        
         EaseSDKHelper.shareInstance.hyphenateApplication(application,
                                                          launchOptions: launchOptions,
                                                          appkey: appKey,
                                                          apnsCerName: apnsCerName,
                                                          otherConfig: nil)
+    }
+    
+    // MARK: - AppDelegate
+    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
+        // 注册远程通知成功，交给SDK并绑定
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) { 
+            EMClient.sharedClient().bindDeviceToken(deviceToken)
+        }
+    }
+    
+    func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
+        // 注册远程通知失败，若有失败看看环境配置或证书是否有误！
+        let alertView = UIAlertView.init(title: "注册APN失败",
+                                         message: error.debugDescription,
+                                         delegate: nil,
+                                         cancelButtonTitle: "确定"
+                                         )
+        alertView.show()
     }
 }
 

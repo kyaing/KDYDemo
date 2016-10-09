@@ -40,6 +40,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         EMClient.sharedClient().applicationWillEnterForeground(application)
     }
     
+    // App准备激活
+    func applicationDidBecomeActive(application: UIApplication) {
+        
+    }
+    
+    // 接收远程通知
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
+        
+    }
+    
+    // 接收本地通知
+    func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
+        
+    }
+    
     // MARK: - Private Methods
     func setupRootController() {
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
@@ -52,13 +67,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func setupEmSDK(application: UIApplication, launchOptions: [NSObject: AnyObject]?) {
         
-        let apnsCerName: String
-        #if DEBUG
-            apnsCerName = emApnsDevCerName
-        #else
-            apnsCerName = emApnsProCerName
-        #endif
-        
+        let apnsCerName: String = emApnsDevCerName
         self.easemobApplication(application,
                                 launchOptions: launchOptions,
                                 appKey: emAppKey,

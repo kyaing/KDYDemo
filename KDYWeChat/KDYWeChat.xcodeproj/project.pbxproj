@@ -50,6 +50,9 @@
 		04B6B2091D98BE4000BCBDE7 /* ChatRedEnvelopeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B6B2071D98BE4000BCBDE7 /* ChatRedEnvelopeCell.swift */; };
 		04B6B20A1D98BE4000BCBDE7 /* ChatRedEnvelopeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B6B2081D98BE4000BCBDE7 /* ChatRedEnvelopeCell.xib */; };
 		04B6B20C1D98F3C400BCBDE7 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B6B20B1D98F3C400BCBDE7 /* ChatModel.swift */; };
+		04FEF9D11DAA37E6001812D1 /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FEF9CE1DAA37E6001812D1 /* MBProgressHUD+Add.m */; };
+		04FEF9D21DAA37E6001812D1 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FEF9D01DAA37E6001812D1 /* MBProgressHUD.m */; };
+		04FEF9D41DAA5148001812D1 /* KDYChatHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEF9D31DAA5148001812D1 /* KDYChatHelper.swift */; };
 		0F14BC22BF7D951731B7F2E7 /* Pods_KDYWeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8489D9432F2FD343DF22B8D /* Pods_KDYWeChat.framework */; };
 		180F3BC71D8BDB7100D79668 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180F3BC61D8BDB7100D79668 /* CoreMedia.framework */; };
 		180F3BC91D8BDB8E00D79668 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180F3BC81D8BDB8E00D79668 /* AudioToolbox.framework */; };
@@ -150,6 +153,11 @@
 		04B6B2071D98BE4000BCBDE7 /* ChatRedEnvelopeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRedEnvelopeCell.swift; sourceTree = "<group>"; };
 		04B6B2081D98BE4000BCBDE7 /* ChatRedEnvelopeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatRedEnvelopeCell.xib; sourceTree = "<group>"; };
 		04B6B20B1D98F3C400BCBDE7 /* ChatModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		04FEF9CD1DAA37E6001812D1 /* MBProgressHUD+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Add.h"; sourceTree = "<group>"; };
+		04FEF9CE1DAA37E6001812D1 /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
+		04FEF9CF1DAA37E6001812D1 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		04FEF9D01DAA37E6001812D1 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		04FEF9D31DAA5148001812D1 /* KDYChatHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDYChatHelper.swift; sourceTree = "<group>"; };
 		16CA1DDC17CA1B044E7B84D5 /* Pods-KDYWeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KDYWeChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-KDYWeChat/Pods-KDYWeChat.release.xcconfig"; sourceTree = "<group>"; };
 		180F3BC61D8BDB7100D79668 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		180F3BC81D8BDB8E00D79668 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -324,6 +332,7 @@
 			isa = PBXGroup;
 			children = (
 				047546831DA8E38A008076F1 /* EaseSDKHelper.swift */,
+				04FEF9D31DAA5148001812D1 /* KDYChatHelper.swift */,
 			);
 			path = EaseSDK;
 			sourceTree = "<group>";
@@ -351,6 +360,17 @@
 				047263291D8FC60100D9380C /* ChatShareMoreView.xib */,
 			);
 			path = Bar;
+			sourceTree = "<group>";
+		};
+		04FEF9CC1DAA37E6001812D1 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				04FEF9CD1DAA37E6001812D1 /* MBProgressHUD+Add.h */,
+				04FEF9CE1DAA37E6001812D1 /* MBProgressHUD+Add.m */,
+				04FEF9CF1DAA37E6001812D1 /* MBProgressHUD.h */,
+				04FEF9D01DAA37E6001812D1 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 		180F3BD81D8BDC6300D79668 /* HyphenateFullSDK */ = {
@@ -542,6 +562,7 @@
 			isa = PBXGroup;
 			children = (
 				180F3BD81D8BDC6300D79668 /* HyphenateFullSDK */,
+				04FEF9CC1DAA37E6001812D1 /* MBProgressHUD */,
 			);
 			path = Vendor;
 			sourceTree = "<group>";
@@ -742,7 +763,7 @@
 				TargetAttributes = {
 					18452CA21D819E9100D4B2BE = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = VXQWC7SN3H;
+						DevelopmentTeam = 36D935N6NX;
 					};
 					18452CB61D819E9100D4B2BE = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -902,6 +923,7 @@
 				1845A9621D83E9BA008BD883 /* UIView+Frame.swift in Sources */,
 				0485591D1D9A0BBB001A076A /* TSChatEmojiDictionary.swift in Sources */,
 				1845A9641D83E9F0008BD883 /* UIColor+Extension.swift in Sources */,
+				04FEF9D11DAA37E6001812D1 /* MBProgressHUD+Add.m in Sources */,
 				042FFE751D9E35630096CDF2 /* MessageModel.swift in Sources */,
 				04109BCC1D9534F200E5F6F7 /* UIScrollView+ChatAdditions.swift in Sources */,
 				04B6B2011D98BDE400BCBDE7 /* ChatImageTableCell.swift in Sources */,
@@ -910,6 +932,7 @@
 				047263311D8FCAB600D9380C /* ChatShareCollectionCell.swift in Sources */,
 				047F8EF61D9E188500022544 /* AppDelegate+LeanCloud.swift in Sources */,
 				1845A9551D83D33D008BD883 /* KDContactsViewController.swift in Sources */,
+				04FEF9D41DAA5148001812D1 /* KDYChatHelper.swift in Sources */,
 				04B6B20C1D98F3C400BCBDE7 /* ChatModel.swift in Sources */,
 				04B6B2051D98BE0A00BCBDE7 /* ChatLocationTableCell.swift in Sources */,
 				04B6B1F91D98BD3B00BCBDE7 /* ChatTextTableCell.swift in Sources */,
@@ -928,6 +951,7 @@
 				18953D201D941E9900F52F1E /* KDChatViewController+ChatBarView.swift in Sources */,
 				042FFE741D9E35630096CDF2 /* KDConversationViewController.swift in Sources */,
 				0472632C1D8FC64200D9380C /* ChatEmotionView.swift in Sources */,
+				04FEF9D21DAA37E6001812D1 /* MBProgressHUD.m in Sources */,
 				188B05611D85306200393752 /* KDNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1083,8 +1107,10 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/KDYWeChat/Vendor/HyphenateFullSDK/lib",
+					"$(PROJECT_DIR)/KDYWeChat/Vendor/DeviceHelper/VoiceConvert/opencore-amrnb",
+					"$(PROJECT_DIR)/KDYWeChat/Vendor/DeviceHelper/VoiceConvert/opencore-amrwb",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kaideyi.com.KDYWeChat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaideyi.wechat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "KDYWeChat/KDYWeChat-Bridging-Header.h";
@@ -1107,8 +1133,10 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/KDYWeChat/Vendor/HyphenateFullSDK/lib",
+					"$(PROJECT_DIR)/KDYWeChat/Vendor/DeviceHelper/VoiceConvert/opencore-amrnb",
+					"$(PROJECT_DIR)/KDYWeChat/Vendor/DeviceHelper/VoiceConvert/opencore-amrwb",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kaideyi.com.KDYWeChat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaideyi.wechat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "KDYWeChat/KDYWeChat-Bridging-Header.h";
