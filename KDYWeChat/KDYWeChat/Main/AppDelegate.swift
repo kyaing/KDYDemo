@@ -46,7 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     // 接收远程通知
-    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject: AnyObject]) {
         
     }
     

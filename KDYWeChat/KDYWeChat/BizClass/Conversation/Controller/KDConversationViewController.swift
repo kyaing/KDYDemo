@@ -45,7 +45,6 @@ final class KDConversationViewController: UIViewController {
     
     override func viewDidDisappear(animated: Bool) {
         super.viewDidDisappear(animated)
-        
         unRegisterChatDelegate()
     }
     

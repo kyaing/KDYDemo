@@ -19,14 +19,14 @@ extension AppDelegate {
                             apnsCerName: String,
                             otherConfig: [NSObject: AnyObject]?) {
         
-        
-        KDYChatHelper.shareInstance.asyncPushOptions()
-        
+        // 初始化sdk
         EaseSDKHelper.shareInstance.hyphenateApplication(application,
                                                          launchOptions: launchOptions,
                                                          appkey: appKey,
                                                          apnsCerName: apnsCerName,
                                                          otherConfig: nil)
+        
+        KDYChatHelper.shareInstance.asyncPushOptions()
     }
     
     // MARK: - AppDelegate

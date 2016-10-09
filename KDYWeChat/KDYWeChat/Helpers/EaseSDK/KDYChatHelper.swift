@@ -43,8 +43,8 @@ class KDYChatHelper: NSObject,
     // MARK: - Public Methods
     func asyncPushOptions() {
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) { 
-            var error = EMError()
-            EMClient.sharedClient().getPushOptionsFromServerWithError(error)
+            var error: EMError?
+            EMClient.sharedClient().getPushOptionsFromServerWithError(&error)
         }
     }
     
