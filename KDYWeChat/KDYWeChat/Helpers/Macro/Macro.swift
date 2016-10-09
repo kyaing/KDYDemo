@@ -12,8 +12,10 @@ import Foundation
 let emAppKey         = "kdy#kdywechat"
 let emClinetId       = "YXA6Y7mEEHfkEeaj5e2MKO4LDw"
 let emClientSecret   = "YXA6s_ZXqJD7UKFkvubKfv1_9BXDIKI"
+
 let emApnsDevCerName = "kdychat_devleop"
 let emApnsProCerName = ""
+
 let emUserName       = "kdy"
 let emPassword       = "121307"
 

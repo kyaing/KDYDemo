@@ -15,8 +15,8 @@ extension AppDelegate {
      */
     func easemobApplication(application: UIApplication,
                             launchOptions: [NSObject: AnyObject]?,
-                            appKey: NSString,
-                            apnsCerName: NSString,
+                            appKey: String,
+                            apnsCerName: String,
                             otherConfig: [NSObject: AnyObject]?) {
         
         EaseSDKHelper.shareInstance.hyphenateApplication(application,

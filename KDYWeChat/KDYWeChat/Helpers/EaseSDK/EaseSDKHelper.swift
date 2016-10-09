@@ -20,14 +20,20 @@ class EaseSDKHelper: NSObject, EMClientDelegate {
     // MARK: - Init SDK
     func hyphenateApplication(application: UIApplication,
                               launchOptions: [NSObject: AnyObject]?,
-                              appkey: NSString,
-                              apnsCerName: NSString,
+                              appkey: String,
+                              apnsCerName: String,
                               otherConfig: [NSObject: AnyObject]?) {
         
         self.setupAppDelegateNotifiction()
         self.registerRemoteNotification()
         
-        
+        // 配置SDK
+        let options = EMOptions(appkey: appkey)
+        options.apnsCertName = apnsCerName
+        options.isAutoAcceptGroupInvitation = false
+        options.enableConsoleLog = true
+
+        EMClient.sharedClient().initializeSDKWithOptions(options)
     }
     
     // MARK: - Private Methods
@@ -60,7 +66,37 @@ class EaseSDKHelper: NSObject, EMClientDelegate {
      *  注册远程通知
      */
     func registerRemoteNotification() {
-        
+        let application = UIApplication.sharedApplication()
+        application.applicationIconBadgeNumber = 0
+
+        if application.respondsToSelector(#selector(UIApplication.registerUserNotificationSettings(_:))) {
+            let notificationTypes: UIUserNotificationType =
+                UIUserNotificationType(rawValue: UIUserNotificationType.Badge.rawValue |
+                UIUserNotificationType.Sound.rawValue |
+                UIUserNotificationType.Alert.rawValue)
+            
+            let settting: UIUserNotificationSettings = UIUserNotificationSettings.init(forTypes: notificationTypes, categories: nil)
+            application.registerUserNotificationSettings(settting)
+            
+            if application.respondsToSelector(#selector(UIApplication.registerForRemoteNotifications)) {
+                application.registerForRemoteNotifications()
+            }
+            
+            //    #if !TARGET_IPHONE_SIMULATOR
+            //        if application.respondsToSelector(#selector(UIApplication.registerForRemoteNotifications)) {
+            //            application.registerForRemoteNotifications()
+            //            
+            //        } else {
+            //            let notificationTypes: UIRemoteNotificationType =
+            //                UIRemoteNotificationType(rawValue: UIRemoteNotificationType.Badge.rawValue |
+            //                UIRemoteNotificationType.Sound.rawValue |
+            //                UIRemoteNotificationType.Alert.rawValue)
+            //            
+            //            UIApplication.sharedApplication().registerForRemoteNotificationTypes(notificationTypes)
+            //        }
+            //        
+            //    #endif
+        }
     }
     
     // MARK: - Send Message
@@ -74,23 +110,86 @@ class EaseSDKHelper: NSObject, EMClientDelegate {
      
      - returns: 返回 EmMessage 的文本消息
      */
-    func sendTextMessage(text: NSString,
-                         toUser: NSString,
+    func sendTextMessage(text: String,
+                         toUser: String,
                          messageType: EMChatType,
-                         messageExt: NSDictionary) -> EMMessage? {
+                         messageExt: [NSObject: AnyObject]!) -> EMMessage? {
         
-        return nil
+        let textBody         = EMTextMessageBody(text: text)
+        let from             = EMClient.sharedClient().currentUsername
+        let textMessage      = EMMessage(conversationID: toUser,
+                                         from: from,
+                                         to: toUser,
+                                         body: textBody,
+                                         ext: messageExt)
+        textMessage.chatType = messageType
+
+        return textMessage
     }
     
     /**
      *  发送图片消息
      */
-    func sendImageMessage(text: NSString,
-                          toUser: NSString,
-                          messageType: EMChatType,
-                          messageExt: NSDictionary) -> EMMessage? {
+    func sendImageMessageWithImage(image: UIImage,
+                                   toUser: String,
+                                   messageType: EMChatType,
+                                   messageExt: [NSObject: AnyObject]!) -> EMMessage? {
         
-        return nil
+        let data              = UIImageJPEGRepresentation(image, 1)
+        let imageBody         = EMImageMessageBody(data: data, displayName: "image.png")
+        let from              = EMClient.sharedClient().currentUsername
+        let imageMessage      = EMMessage(conversationID: toUser,
+                                          from: from,
+                                          to: toUser,
+                                          body: imageBody,
+                                          ext: messageExt)
+        imageMessage.chatType = messageType
+        
+        return imageMessage
+    }
+    
+    /**
+     *  发送语音消息
+     */
+    func sendVoiceMessageWithLocalPath(path: String,
+                                       duration: Int32,
+                                       toUser: String,
+                                       messageType: EMChatType,
+                                       messageExt: [NSObject: AnyObject]!) -> EMMessage? {
+    
+        let vocieBody         = EMVoiceMessageBody(localPath: path, displayName: "voice")
+        let from              = EMClient.sharedClient().currentUsername
+        let vocieMessage      = EMMessage(conversationID: toUser,
+                                          from: from,
+                                          to: toUser,
+                                          body: vocieBody,
+                                          ext: messageExt)
+        vocieBody.duration    = duration
+        vocieMessage.chatType = messageType
+        
+        return vocieMessage
+    }
+    
+    /**
+     *  发送位置消息
+     */
+    func sendLocationMessageWithLatitude(latitude: Double,
+                                         longitude: Double,
+                                         address: String,
+                                         toUser: String,
+                                         messageType: EMChatType,
+                                         messageExt: [NSObject: AnyObject]!) -> EMMessage? {
+        
+        let locationBody = EMLocationMessageBody(latitude: latitude, longitude: longitude, address: address)
+        let from = EMClient.sharedClient().currentUsername
+        let locationMessage = EMMessage(conversationID: toUser,
+                                        from: from,
+                                        to: toUser,
+                                        body: locationBody,
+                                        ext: messageExt)
+        locationMessage.chatType = messageType
+        
+        return locationMessage
     }
 }
 

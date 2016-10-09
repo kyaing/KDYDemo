@@ -51,19 +51,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func setupEmSDK(application: UIApplication, launchOptions: [NSObject: AnyObject]?) {
-        // 注册的 AppKey，和推送证书名
-        let options = EMOptions(appkey: emAppKey)
         
+        let apnsCerName: String
         #if DEBUG
-            options.apnsCertName = emApnsDevCerName
+            apnsCerName = emApnsDevCerName
         #else
-            options.apnsCertName = emApnsProCerName
+            apnsCerName = emApnsProCerName
         #endif
         
         self.easemobApplication(application,
                                 launchOptions: launchOptions,
                                 appKey: emAppKey,
-                                apnsCerName: emApnsDevCerName,
+                                apnsCerName: apnsCerName,
                                 otherConfig: nil)
         
         // 登录环信
