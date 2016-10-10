@@ -42,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // App准备激活
     func applicationDidBecomeActive(application: UIApplication) {
-        
+        UIApplication.sharedApplication().applicationIconBadgeNumber = 0
     }
     
     // 接收远程通知

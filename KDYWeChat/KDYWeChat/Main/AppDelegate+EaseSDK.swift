@@ -19,6 +19,12 @@ extension AppDelegate {
                             apnsCerName: String,
                             otherConfig: [NSObject: AnyObject]?) {
         
+        // 登录状态通知
+        NSNotificationCenter.defaultCenter().addObserver(self,
+                                                         selector: #selector(AppDelegate.loginStateChanged(_:)),
+                                                         name: "loginStateChanged",
+                                                         object: nil)
+        
         // 初始化sdk
         EaseSDKHelper.shareInstance.hyphenateApplication(application,
                                                          launchOptions: launchOptions,
@@ -26,7 +32,27 @@ extension AppDelegate {
                                                          apnsCerName: apnsCerName,
                                                          otherConfig: nil)
         
-        KDYChatHelper.shareInstance.asyncPushOptions()
+        // 根据用户是否自动登录，来发送登录状态的通知
+        let isAutoLogin = EMClient.sharedClient().isAutoLogin
+        if isAutoLogin {
+            NSNotificationCenter.defaultCenter().postNotificationName("loginStateChanged", object: NSNumber(bool: true))
+        } else {
+            NSNotificationCenter.defaultCenter().postNotificationName("loginStateChanged", object: NSNumber(bool: false))
+        }
+    }
+    
+    /**
+     *  登录状态改变
+     */
+    func loginStateChanged(notification: NSNotification) {
+        let loginState = (notification.object?.boolValue)!
+        if loginState {  // 登录成功
+            KDYChatHelper.shareInstance.asyncPushOptions()
+            KDYChatHelper.shareInstance.asyncConversationFromDB()
+            
+        } else {
+            
+        }
     }
     
     // MARK: - AppDelegate

@@ -16,7 +16,7 @@ final class KDTabBarController: UITabBarController {
     var lastPlaySoundDate: NSDate = NSDate()
     
     /// 联网状态
-    var connectionState: EMConnectionState = EMConnectionDisconnected
+    var connectionState: EMConnectionState = EMConnectionConnected
     
     let conversationVC = KDConversationViewController()
     let contactVC      = KDContactsViewController()

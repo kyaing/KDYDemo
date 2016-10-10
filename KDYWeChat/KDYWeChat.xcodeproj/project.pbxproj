@@ -331,8 +331,8 @@
 		047546821DA8E38A008076F1 /* EaseSDK */ = {
 			isa = PBXGroup;
 			children = (
-				047546831DA8E38A008076F1 /* EaseSDKHelper.swift */,
 				04FEF9D31DAA5148001812D1 /* KDYChatHelper.swift */,
+				047546831DA8E38A008076F1 /* EaseSDKHelper.swift */,
 			);
 			path = EaseSDK;
 			sourceTree = "<group>";
@@ -764,6 +764,11 @@
 					18452CA21D819E9100D4B2BE = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 36D935N6NX;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					18452CB61D819E9100D4B2BE = {
 						CreatedOnToolsVersion = 7.3.1;

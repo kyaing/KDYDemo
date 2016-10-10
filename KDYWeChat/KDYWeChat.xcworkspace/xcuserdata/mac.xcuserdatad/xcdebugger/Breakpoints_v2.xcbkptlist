@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "KDYWeChat/Main/AppDelegate+EaseSDK.swift"
-            timestampString = "497702201.396223"
+            filePath = "KDYWeChat/BizClass/Conversation/Controller/KDConversationViewController.swift"
+            timestampString = "497788101.074407"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "application(_:didRegisterForRemoteNotificationsWithDeviceToken:)"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "networkStateChanged(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "KDYWeChat/Helpers/EaseSDK/KDYChatHelper.swift"
-            timestampString = "497702158.766887"
+            filePath = "KDYWeChat/BizClass/Conversation/Controller/KDConversationViewController.swift"
+            timestampString = "497788344.385457"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "initHeapler()"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KDYWeChat/BizClass/Base/KDTabBarController.swift"
+            timestampString = "497788436.629068"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "networkStateChanged(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

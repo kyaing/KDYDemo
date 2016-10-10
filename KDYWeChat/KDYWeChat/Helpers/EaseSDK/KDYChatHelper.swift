@@ -8,18 +8,17 @@
 
 import Foundation
 
-class KDYChatHelper: NSObject,
-                     EMClientDelegate, EMChatManagerDelegate, EMContactManagerDelegate,
-                     EMGroupManagerDelegate,EMChatroomManagerDelegate {
+class KDYChatHelper: NSObject {
     
     let conversationVC = KDConversationViewController()
+    let chatVC         = KDChatViewController()
     let contactVC      = KDContactsViewController()
     let discoveryVC    = KDDiscoveryViewController()
     let meVC           = KDMeViewController()
     let mainTabbarVC   = KDTabBarController()
     
     // MARK: - Life Cycle
-    // 单例
+    // 单例类
     static let shareInstance = KDYChatHelper()
     private override init() {
         super.init()
@@ -49,7 +48,49 @@ class KDYChatHelper: NSObject,
     }
     
     func asyncConversationFromDB() {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
+            let conversations: NSArray = EMClient.sharedClient().chatManager.getAllConversations()
+            conversations.enumerateObjectsUsingBlock({ (conversation, idx, stop) in
+    
+                let conversation = conversation as! EMConversation
+                if conversation.latestMessage == nil {
+                    // 当会话最后一条信息为空，则删除此会话
+                    EMClient.sharedClient().chatManager.deleteConversation(conversation.conversationId,
+                        isDeleteMessages: false, completion: nil)
+                }
+            })
+        }
         
+        dispatch_async(dispatch_get_main_queue()) {
+            // 刷新会话数据
+            self.conversationVC.refreshConversations()
+            
+            // 设置未读消息数
+            self.mainTabbarVC.setupUnReadMessageCount()
+        }
     }
+}
+
+// MARK: - EMClientDelegate
+extension KDYChatHelper: EMClientDelegate {
+    // 监测sdk的网络状态
+    func connectionStateDidChange(aConnectionState: EMConnectionState) {
+        self.mainTabbarVC.networkStateChanged(aConnectionState)
+    }
+}
+
+// MARK: - EMChatManagerDelegate
+extension KDYChatHelper: EMChatManagerDelegate {
+    
+}
+
+// MARK: - EMContactManagerDelegate
+extension KDYChatHelper: EMContactManagerDelegate {
+    
+}
+
+// MARK: - EMGroupManagerDelegate
+extension KDYChatHelper: EMGroupManagerDelegate {
+    
 }
 
