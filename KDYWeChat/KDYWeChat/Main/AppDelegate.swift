@@ -32,6 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // App进入后台
     func applicationDidEnterBackground(application: UIApplication) {
+        UIApplication.sharedApplication().applicationIconBadgeNumber = 0
         EMClient.sharedClient().applicationDidEnterBackground(application)
     }
     

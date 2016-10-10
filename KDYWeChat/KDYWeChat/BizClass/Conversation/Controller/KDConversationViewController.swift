@@ -24,22 +24,24 @@ final class KDConversationViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         
+        self.view.addSubview(tableView)
+        
         return tableView
     }()
     
     // 断网状态的头视图
     lazy var networkFailHeaderView: UIView = {
-        let networkFailHeaderView: UIView = UIView(frame: CGRectMake(0, 0, self.conversationTableView.width, 44))
-        networkFailHeaderView.backgroundColor = UIColor.redColor()
+        let networkFailHeaderView: UIView = UIView(frame: CGRectMake(0, 0, self.conversationTableView.width, 40))
+        networkFailHeaderView.backgroundColor = UIColor(red: 255/255.0, green: 200/255.0, blue: 200/255.0, alpha: 1.0)
         
-        let tipLabel = UILabel()
+        let tipLabel = UILabel(frame: CGRectMake(0, 10, 300, 20))
         tipLabel.textColor = UIColor.grayColor()
         tipLabel.backgroundColor = UIColor.clearColor()
         tipLabel.text = "当前网络有问题，请您检查网络"
-        tipLabel.font = UIFont.systemFontOfSize(15)
+        tipLabel.font = UIFont.systemFontOfSize(14)
         tipLabel.textAlignment = .Center
         networkFailHeaderView.addSubview(tipLabel)
-        
+
         return networkFailHeaderView
     }()
     
@@ -50,11 +52,10 @@ final class KDConversationViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        
-        view.addSubview(self.conversationTableView)
-        
-        registerChatDelegate()
-        refreshConversations()
+
+        self.networkIsConnected()
+        self.registerChatDelegate()
+        self.refreshConversations()
     }
     
     override func viewDidDisappear(animated: Bool) {
@@ -72,7 +73,7 @@ final class KDConversationViewController: UIViewController {
             self.conversationTableView.tableHeaderView = self.networkFailHeaderView
             
         } else {
-            self.conversationTableView.tableHeaderView = UIView()
+            self.conversationTableView.tableHeaderView = nil
         }
     }
     
@@ -86,7 +87,12 @@ final class KDConversationViewController: UIViewController {
      *  网络是否连接
      */
     func networkIsConnected() {
-        
+        let isConnected = EMClient.sharedClient().isConnected
+        if !isConnected {
+            self.conversationTableView.tableHeaderView = self.networkFailHeaderView
+        } else {
+            self.conversationTableView.tableHeaderView = nil
+        }
     }
     
     /**
