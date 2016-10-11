@@ -15,6 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var tabbarController: KDTabBarController?
 
+    var mainTabbarVC = KDTabBarController()
+    
     // MARK: - AppDelegate
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
@@ -48,7 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // 接收远程通知
     func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject: AnyObject]) {
-        
+        self.mainTabbarVC.jumpToConversationListVC()
     }
     
     // 接收本地通知

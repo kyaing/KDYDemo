@@ -10,12 +10,12 @@ import Foundation
 
 class KDYChatHelper: NSObject {
     
+    let mainTabbarVC   = KDTabBarController()
     let conversationVC = KDConversationViewController()
     let chatVC         = KDChatViewController()
     let contactVC      = KDContactsViewController()
     let discoveryVC    = KDDiscoveryViewController()
     let meVC           = KDMeViewController()
-    let mainTabbarVC   = KDTabBarController()
     
     // MARK: - Life Cycle
     // 单例类
@@ -73,15 +73,63 @@ class KDYChatHelper: NSObject {
 
 // MARK: - EMClientDelegate
 extension KDYChatHelper: EMClientDelegate {
-    // 监测sdk的网络状态
+    /**
+     *  监测sdk的网络状态
+     */
     func connectionStateDidChange(aConnectionState: EMConnectionState) {
         self.mainTabbarVC.networkStateChanged(aConnectionState)
+    }
+    
+    /**
+     *  自动登录失败时的回调
+     */
+    func autoLoginDidCompleteWithError(aError: EMError!) {
+        
+    }
+    
+    /**
+     *  账号被从服务器删除
+     */
+    func userAccountDidRemoveFromServer() {
+        
+    }
+    
+    /**
+     *  账号在其它设备登录
+     */
+    func userAccountDidLoginFromOtherDevice() {
+        
     }
 }
 
 // MARK: - EMChatManagerDelegate
 extension KDYChatHelper: EMChatManagerDelegate {
+    /**
+     *  会话列表发生更新
+     */
+    func conversationListDidUpdate(aConversationList: [AnyObject]!) {
+        
+        self.mainTabbarVC.setupUnReadMessageCount()
+        self.conversationVC.refreshConversations()
+    }
     
+    /**
+     *  收到EMMessage消息
+     */
+    func messagesDidReceive(aMessages: [AnyObject]!) {
+        for message in aMessages as! [EMMessage] {
+            let needPushnotification: Bool = (message.chatType != EMChatTypeChat)
+            if needPushnotification {
+                let applicationState = UIApplication.sharedApplication().applicationState
+                switch applicationState {
+                case .Active, .Inactive:
+                    self.mainTabbarVC.playSoundAndVibration()
+                case .Background:
+                    self.mainTabbarVC.showNotificationWithMessage(message)
+                }
+            }
+        }
+    }
 }
 
 // MARK: - EMContactManagerDelegate

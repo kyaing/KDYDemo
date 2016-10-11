@@ -32,6 +32,9 @@ extension AppDelegate {
                                                          apnsCerName: apnsCerName,
                                                          otherConfig: nil)
         
+        // 初始化 KDYChatHelper 单例类
+        KDYChatHelper.shareInstance.initHeapler()
+        
         // 根据用户是否自动登录，来发送登录状态的通知
         let isAutoLogin = EMClient.sharedClient().isAutoLogin
         if isAutoLogin {
