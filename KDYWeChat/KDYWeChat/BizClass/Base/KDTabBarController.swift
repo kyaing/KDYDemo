@@ -85,6 +85,14 @@ final class KDTabBarController: UITabBarController {
     // MARK: - Public Methods
     
     /**
+     *  进入到会话列表首页
+     */
+    func jumpToConversationListVC() {
+        self.navigationController?.popToViewController(self, animated: false)
+        self.selectedViewController = self.conversationVC
+    }
+    
+    /**
      *  设置未读消息数目
      */
     func setupUnReadMessageCount() {
@@ -131,6 +139,13 @@ final class KDTabBarController: UITabBarController {
         }
         
         self.lastPlaySoundDate = NSDate()
+    }
+    
+    /**
+     *  显示推送消息(通过环信发过来的最新消息)
+     */
+    func showNotificationWithMessage(message: EMMessage) {
+        
     }
     
     /**

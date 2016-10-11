@@ -24,19 +24,21 @@ final class KDConversationViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         
+        self.view.addSubview(tableView)
+        
         return tableView
     }()
     
     // 断网状态的头视图
     lazy var networkFailHeaderView: UIView = {
-        let networkFailHeaderView: UIView = UIView(frame: CGRectMake(0, 0, self.conversationTableView.width, 44))
-        networkFailHeaderView.backgroundColor = UIColor.redColor()
+        let networkFailHeaderView: UIView = UIView(frame: CGRectMake(0, 0, self.conversationTableView.width, 40))
+        networkFailHeaderView.backgroundColor = UIColor.init(red: 255/255.0, green: 200/255.0, blue: 200/255.0, alpha: 1.0)
         
-        let tipLabel = UILabel()
+        let tipLabel = UILabel(frame: CGRectMake(0, 10, 300, 20))
         tipLabel.textColor = UIColor.grayColor()
         tipLabel.backgroundColor = UIColor.clearColor()
         tipLabel.text = "当前网络有问题，请您检查网络"
-        tipLabel.font = UIFont.systemFontOfSize(15)
+        tipLabel.font = UIFont.systemFontOfSize(14)
         tipLabel.textAlignment = .Center
         networkFailHeaderView.addSubview(tipLabel)
         
@@ -51,6 +53,7 @@ final class KDConversationViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
+        networkIsConnected()
         view.addSubview(self.conversationTableView)
         
         registerChatDelegate()
@@ -86,7 +89,14 @@ final class KDConversationViewController: UIViewController {
      *  网络是否连接
      */
     func networkIsConnected() {
-        
+        let isConnected = EMClient.sharedClient().isConnected
+        if !isConnected {   // 断网状态
+            self.conversationTableView.tableHeaderView = self.networkFailHeaderView
+            view.addSubview(self.conversationTableView)
+            
+        } else {
+            self.conversationTableView.tableHeaderView = UIView()
+        }
     }
     
     /**
