@@ -11,7 +11,7 @@ import UIKit
 let messageIdentifier: String = "messageCell"
 
 /// 会话界面
-final class KDConversationViewController: UIViewController {
+final class KDConversationViewController: UIViewController, EMChatManagerDelegate {
     
     var messageDataSource = NSMutableArray()
     
@@ -53,20 +53,18 @@ final class KDConversationViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        networkIsConnected()
-        view.addSubview(self.conversationTableView)
-        
-        registerChatDelegate()
-        refreshConversations()
+        self.networkIsConnected()
+        self.registerChatDelegate()
+        self.refreshConversations()
     }
     
     override func viewDidDisappear(animated: Bool) {
         super.viewDidDisappear(animated)
-        unRegisterChatDelegate()
+        self.unRegisterChatDelegate()
     }
     
     deinit {
-        unRegisterChatDelegate()
+        self.unRegisterChatDelegate()
     }
     
     // MARK: - Public Methods
@@ -79,8 +77,10 @@ final class KDConversationViewController: UIViewController {
         }
     }
     
+    /**
+     *  获取用户会话列表
+     */
     func refreshConversations() {
-        // 获取用户会话
         getAllConversation()
     }
     
@@ -117,13 +117,14 @@ final class KDConversationViewController: UIViewController {
         }
         
         messageDataSource.removeAllObjects()
-        
         for conversation in sortedConversations as! [EMConversation] {
             let model = MessageModel(conversation: conversation)
             self.messageDataSource.addObject(model)
         }
         
-        conversationTableView.reloadData()
+        dispatch_async(dispatch_get_main_queue()) { 
+            self.conversationTableView.reloadData()
+        }
     }
     
     /**
@@ -183,7 +184,9 @@ extension KDConversationViewController: UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.messageDataSource.count > 0 ? self.messageDataSource.count : 0
+        print("rowCount = \(self.messageDataSource.count)")
+        //return self.messageDataSource.count > 0 ? self.messageDataSource.count : 0
+        return 1
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -217,13 +220,6 @@ extension KDConversationViewController: UITableViewDelegate {
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 65
-    }
-}
-
-// MARK: - EMChatManagerDelegate
-extension KDConversationViewController: EMChatManagerDelegate {
-    func conversationListDidUpdate(aConversationList: [AnyObject]!) {
-        
     }
 }
 

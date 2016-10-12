@@ -118,8 +118,10 @@ extension KDYChatHelper: EMChatManagerDelegate {
      */
     func messagesDidReceive(aMessages: [AnyObject]!) {
         for message in aMessages as! [EMMessage] {
+            
             let needPushnotification = (message.chatType == EMChatTypeChat)
             if needPushnotification {
+#if !TARGET_IPHONE_SIMULATOR
                 let applicationState = UIApplication.sharedApplication().applicationState
                 
                 switch applicationState {
@@ -128,7 +130,11 @@ extension KDYChatHelper: EMChatManagerDelegate {
                 case .Background:
                     self.mainTabbarVC.showNotificationWithMessage(message)
                 }
+#endif
             }
+        
+            self.conversationVC.refreshConversations()
+            self.mainTabbarVC.setupUnReadMessageCount()
         }
     }
 }
