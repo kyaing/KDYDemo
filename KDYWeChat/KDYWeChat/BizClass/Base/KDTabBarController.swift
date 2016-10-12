@@ -36,8 +36,8 @@ final class KDTabBarController: UITabBarController {
         setupNotification()
         
         // 未读消息数和未通过数
-        setupUnReadMessageCount()
-        setupUntreatedApplyCount()
+        // setupUnReadMessageCount()
+        // setupUntreatedApplyCount()
     }
 
     private func setupViewControllers() {
@@ -83,7 +83,6 @@ final class KDTabBarController: UITabBarController {
     }
     
     // MARK: - Public Methods
-    
     /**
      *  进入到会话列表首页
      */
@@ -96,10 +95,10 @@ final class KDTabBarController: UITabBarController {
      *  设置未读消息数目
      */
     func setupUnReadMessageCount() {
-        let conversations: NSArray = EMClient.sharedClient().chatManager.getAllConversations()
+        let conversations: [AnyObject]? = EMClient.sharedClient().chatManager.getAllConversations()
         var unReadMsgCount: Int32 = 0
         
-        for conversation in conversations {
+        for conversation in conversations! {
             unReadMsgCount += conversation.unreadMessagesCount
         }
         
@@ -145,14 +144,48 @@ final class KDTabBarController: UITabBarController {
      *  显示推送消息(通过环信发过来的最新消息)
      */
     func showNotificationWithMessage(message: EMMessage) {
+        let pushOptions: EMPushOptions = EMClient.sharedClient().pushOptions
         
+        // 发送本地推送
+        let localNotification = UILocalNotification()
+        localNotification.fireDate = NSDate()
+        
+        let title = EMClient.sharedClient().currentUsername
+        if pushOptions.displayStyle == EMPushDisplayStyleMessageSummary {  // 显示推送具体内容
+            let messageBody = message.body
+    
+            var pushMessageStr: String? = nil
+            switch messageBody.type {
+            case EMMessageBodyTypeText:
+                pushMessageStr = (messageBody as! EMTextMessageBody).text
+            case EMMessageBodyTypeImage:
+                pushMessageStr = "图片"
+            case EMMessageBodyTypeVideo:
+                pushMessageStr = "视频"
+            case EMMessageBodyTypeLocation:
+                pushMessageStr = "位置"
+            case EMMessageBodyTypeVoice:
+                pushMessageStr = "语音"
+            default:
+                pushMessageStr = ""
+            }
+            
+            localNotification.alertBody = "\(title): \(pushMessageStr)"
+            
+        } else {   // 不显示推送内容
+            localNotification.alertBody = "您有一条新消息"
+        }
+        
+        UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
+        UIApplication.sharedApplication().applicationIconBadgeNumber += 1
     }
     
     /**
      *  接收本地通知
      */
     func didReceviedLocalNotification(localNotification: UILocalNotification) {
-        
+        self.navigationController?.popToViewController(self, animated: false)
+        self.selectedViewController = self.conversationVC
     }
 }
 

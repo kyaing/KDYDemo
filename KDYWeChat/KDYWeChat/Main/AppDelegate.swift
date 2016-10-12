@@ -55,7 +55,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // 接收本地通知
     func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
-        
+        UIApplication.sharedApplication().cancelAllLocalNotifications()
+     
+        //self.mainTabbarVC.didReceviedLocalNotification(notification)
     }
     
     // MARK: - Private Methods

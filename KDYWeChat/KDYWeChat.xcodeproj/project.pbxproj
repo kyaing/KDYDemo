@@ -306,6 +306,7 @@
 		042FFE701D9E35630096CDF2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				049234CD1DAE422800FD0B29 /* titleView */,
 				042FFE711D9E35630096CDF2 /* Cell */,
 			);
 			path = View;
@@ -345,6 +346,13 @@
 				047F8EF51D9E188500022544 /* AppDelegate+LeanCloud.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		049234CD1DAE422800FD0B29 /* titleView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = titleView;
 			sourceTree = "<group>";
 		};
 		049CCDC61D8F95E300CC6394 /* Bar */ = {

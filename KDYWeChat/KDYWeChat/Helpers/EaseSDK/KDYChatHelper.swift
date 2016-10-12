@@ -118,9 +118,10 @@ extension KDYChatHelper: EMChatManagerDelegate {
      */
     func messagesDidReceive(aMessages: [AnyObject]!) {
         for message in aMessages as! [EMMessage] {
-            let needPushnotification: Bool = (message.chatType != EMChatTypeChat)
+            let needPushnotification = (message.chatType == EMChatTypeChat)
             if needPushnotification {
                 let applicationState = UIApplication.sharedApplication().applicationState
+                
                 switch applicationState {
                 case .Active, .Inactive:
                     self.mainTabbarVC.playSoundAndVibration()
