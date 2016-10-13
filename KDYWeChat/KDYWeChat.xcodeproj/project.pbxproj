@@ -65,6 +65,8 @@
 		180F3BD31D8BDBD400D79668 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 180F3BD21D8BDBD400D79668 /* libc++.tbd */; };
 		180F3BD51D8BDBDB00D79668 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 180F3BD41D8BDBDB00D79668 /* libstdc++.6.0.9.tbd */; };
 		180F3BD71D8BDBE400D79668 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 180F3BD61D8BDBE400D79668 /* libsqlite3.tbd */; };
+		1838A6691DAFC34D0019A8AD /* KDRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838A6671DAFC34D0019A8AD /* KDRegisterViewController.swift */; };
+		1838A66A1DAFC34D0019A8AD /* KDRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1838A6681DAFC34D0019A8AD /* KDRegisterViewController.xib */; };
 		18452CBC1D819E9100D4B2BE /* KDYWeChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18452CBB1D819E9100D4B2BE /* KDYWeChatTests.swift */; };
 		18452CC71D819E9100D4B2BE /* KDYWeChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18452CC61D819E9100D4B2BE /* KDYWeChatUITests.swift */; };
 		1845A94D1D83D1AB008BD883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1845A9481D83D1AB008BD883 /* Main.storyboard */; };
@@ -211,6 +213,8 @@
 		180F3BFE1D8BDC6300D79668 /* IEMGroupManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEMGroupManager.h; sourceTree = "<group>"; };
 		180F3BFF1D8BDC6300D79668 /* OpenGLView20.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLView20.h; sourceTree = "<group>"; };
 		180F3C011D8BDC6300D79668 /* libHyphenateFullSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libHyphenateFullSDK.a; sourceTree = "<group>"; };
+		1838A6671DAFC34D0019A8AD /* KDRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDRegisterViewController.swift; sourceTree = "<group>"; };
+		1838A6681DAFC34D0019A8AD /* KDRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KDRegisterViewController.xib; sourceTree = "<group>"; };
 		18452CA31D819E9100D4B2BE /* KDYWeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KDYWeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18452CB71D819E9100D4B2BE /* KDYWeChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KDYWeChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18452CBB1D819E9100D4B2BE /* KDYWeChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDYWeChatTests.swift; sourceTree = "<group>"; };
@@ -374,7 +378,9 @@
 			isa = PBXGroup;
 			children = (
 				049234D21DAF33B100FD0B29 /* KDLoginViewController.swift */,
+				1838A6671DAFC34D0019A8AD /* KDRegisterViewController.swift */,
 				049234D31DAF33B100FD0B29 /* KDLoginViewController.xib */,
+				1838A6681DAFC34D0019A8AD /* KDRegisterViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -867,6 +873,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1838A66A1DAFC34D0019A8AD /* KDRegisterViewController.xib in Resources */,
 				049CCDCA1D8F961300CC6394 /* ChatBottomBarView.xib in Resources */,
 				049234D51DAF33B100FD0B29 /* KDLoginViewController.xib in Resources */,
 				1845A94D1D83D1AB008BD883 /* Main.storyboard in Resources */,
@@ -994,6 +1001,7 @@
 				04FEF9D11DAA37E6001812D1 /* MBProgressHUD+Add.m in Sources */,
 				042FFE751D9E35630096CDF2 /* MessageModel.swift in Sources */,
 				04109BCC1D9534F200E5F6F7 /* UIScrollView+ChatAdditions.swift in Sources */,
+				1838A6691DAFC34D0019A8AD /* KDRegisterViewController.swift in Sources */,
 				04B6B2011D98BDE400BCBDE7 /* ChatImageTableCell.swift in Sources */,
 				04109BA41D92569200E5F6F7 /* ChatBarButton.swift in Sources */,
 				048559221D9A1E27001A076A /* ChatTimeTableCell.swift in Sources */,
