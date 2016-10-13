@@ -10,14 +10,18 @@ import UIKit
 import UIColor_Hex_Swift
 
 /// 导航栏
-class KDNavigationController: UINavigationController {
+class KDNavigationController: UINavigationController, UINavigationControllerDelegate, UIGestureRecognizerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupNavigationBar()
+        
+        self.setupNavigationBar()
+        self.interactivePopGestureRecognizer?.delegate = self
     }
 
     override func pushViewController(viewController: UIViewController, animated: Bool) {
+        // 添加返回手势
+        self.interactivePopGestureRecognizer?.enabled = true
         
         if self.viewControllers.count > 0 {
             viewController.hidesBottomBarWhenPushed = true

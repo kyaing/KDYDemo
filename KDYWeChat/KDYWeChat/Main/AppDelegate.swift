@@ -55,9 +55,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // 接收本地通知
     func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
+        
         UIApplication.sharedApplication().cancelAllLocalNotifications()
-     
-        //self.mainTabbarVC.didReceviedLocalNotification(notification)
+        self.mainTabbarVC.didReceviedLocalNotification(notification)
     }
     
     // MARK: - Private Methods
@@ -84,12 +84,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func setupLeanCloud() {
-        LeanCloud.initialize(applicationID: leanCloudAppId, applicationKey: leanCloudAppKey)
         
-        // for test
-        let post = LCObject(className: "TestObject")
-        post.set("word", object: "hello world!")
-        post.save()
     }
     
     func loginEmSDK(userName: NSString, password: NSString) {

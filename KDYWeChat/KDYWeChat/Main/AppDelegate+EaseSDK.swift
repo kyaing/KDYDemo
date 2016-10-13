@@ -50,10 +50,10 @@ extension AppDelegate {
     func loginStateChanged(notification: NSNotification) {
         let loginState = (notification.object?.boolValue)!
         if loginState {  // 登录成功
-            // KDYChatHelper.shareInstance.asyncPushOptions()
+            KDYChatHelper.shareInstance.asyncPushOptions()
             KDYChatHelper.shareInstance.asyncConversationFromDB()
             
-        } else {
+        } else {   // 登录失败
             
         }
     }

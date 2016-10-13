@@ -185,21 +185,25 @@ extension KDConversationViewController: UITableViewDataSource {
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         print("rowCount = \(self.messageDataSource.count)")
-        //return self.messageDataSource.count > 0 ? self.messageDataSource.count : 0
-        return 1
+        return self.messageDataSource.count > 0 ? self.messageDataSource.count : 0
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(messageIdentifier, forIndexPath: indexPath) as! MessageTableCell
         
-        let model = messageDataSource.objectAtIndex(indexPath.row) as! MessageModel
+        let model = self.messageDataSource.objectAtIndex(indexPath.row) as! MessageModel
         
         // 设置Cell的数据
         let lastMessage     = self.getLastMessageForConversation(model)
         let lastMessageTime = self.getlastMessageTimeForConversation(model)
         
         cell.avatorImageView.image  = model.avatarImage
-        cell.unReadMsgLabel.text    = String("\(model.conversation.unreadMessagesCount)")
+        let unreadMessageCount = model.conversation.unreadMessagesCount
+        if unreadMessageCount > 9 {  
+            cell.unReadMsgLabel.font = UIFont.systemFontOfSize(11)
+        }
+        cell.unReadMsgLabel.text    = String(unreadMessageCount)
+        
         cell.userNameLabel.text     = model.title
         cell.lastMessageLabel?.text = lastMessage
         cell.lastMsgDateLabel.text  = lastMessageTime

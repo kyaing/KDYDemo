@@ -27,16 +27,16 @@ class KDYChatHelper: NSObject {
     
     func initHeapler() {
         EMClient.sharedClient().addDelegate(self, delegateQueue: nil)
-        EMClient.sharedClient().groupManager.addDelegate(self, delegateQueue: nil)
-        EMClient.sharedClient().contactManager.addDelegate(self, delegateQueue: nil)
         EMClient.sharedClient().chatManager.addDelegate(self, delegateQueue: nil)
+        EMClient.sharedClient().contactManager.addDelegate(self, delegateQueue: nil)
+        EMClient.sharedClient().groupManager.addDelegate(self, delegateQueue: nil)
     }
     
     deinit {
         EMClient.sharedClient().removeDelegate(self)
-        EMClient.sharedClient().groupManager.removeDelegate(self)
-        EMClient.sharedClient().contactManager.removeDelegate(self)
         EMClient.sharedClient().chatManager.removeDelegate(self)
+        EMClient.sharedClient().contactManager.removeDelegate(self)
+        EMClient.sharedClient().groupManager.removeDelegate(self)
     }
     
     // MARK: - Public Methods

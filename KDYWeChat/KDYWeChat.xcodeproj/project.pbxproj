@@ -36,6 +36,8 @@
 		0485591F1D9A0C14001A076A /* Expression.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0485591E1D9A0C14001A076A /* Expression.bundle */; };
 		048559221D9A1E27001A076A /* ChatTimeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048559201D9A1E27001A076A /* ChatTimeTableCell.swift */; };
 		048559231D9A1E27001A076A /* ChatTimeTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048559211D9A1E27001A076A /* ChatTimeTableCell.xib */; };
+		049234D41DAF33B100FD0B29 /* KDLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049234D21DAF33B100FD0B29 /* KDLoginViewController.swift */; };
+		049234D51DAF33B100FD0B29 /* KDLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049234D31DAF33B100FD0B29 /* KDLoginViewController.xib */; };
 		049CCDAE1D8F92C400CC6394 /* ChatBaseTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049CCDAD1D8F92C400CC6394 /* ChatBaseTableCell.swift */; };
 		049CCDC81D8F95E300CC6394 /* ChatBottomBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049CCDC71D8F95E300CC6394 /* ChatBottomBarView.swift */; };
 		049CCDCA1D8F961300CC6394 /* ChatBottomBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049CCDC91D8F961300CC6394 /* ChatBottomBarView.xib */; };
@@ -139,6 +141,8 @@
 		0485591E1D9A0C14001A076A /* Expression.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Expression.bundle; sourceTree = "<group>"; };
 		048559201D9A1E27001A076A /* ChatTimeTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTimeTableCell.swift; sourceTree = "<group>"; };
 		048559211D9A1E27001A076A /* ChatTimeTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatTimeTableCell.xib; sourceTree = "<group>"; };
+		049234D21DAF33B100FD0B29 /* KDLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDLoginViewController.swift; sourceTree = "<group>"; };
+		049234D31DAF33B100FD0B29 /* KDLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KDLoginViewController.xib; sourceTree = "<group>"; };
 		049CCDAD1D8F92C400CC6394 /* ChatBaseTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatBaseTableCell.swift; sourceTree = "<group>"; };
 		049CCDC71D8F95E300CC6394 /* ChatBottomBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatBottomBarView.swift; sourceTree = "<group>"; };
 		049CCDC91D8F961300CC6394 /* ChatBottomBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatBottomBarView.xib; sourceTree = "<group>"; };
@@ -355,6 +359,39 @@
 			path = titleView;
 			sourceTree = "<group>";
 		};
+		049234CE1DAF32EF00FD0B29 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				049234D01DAF330F00FD0B29 /* Model */,
+				049234D11DAF330F00FD0B29 /* View */,
+				049234CF1DAF330F00FD0B29 /* Controller */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		049234CF1DAF330F00FD0B29 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				049234D21DAF33B100FD0B29 /* KDLoginViewController.swift */,
+				049234D31DAF33B100FD0B29 /* KDLoginViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		049234D01DAF330F00FD0B29 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		049234D11DAF330F00FD0B29 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		049CCDC61D8F95E300CC6394 /* Bar */ = {
 			isa = PBXGroup;
 			children = (
@@ -502,6 +539,7 @@
 			isa = PBXGroup;
 			children = (
 				1845A95B1D83E034008BD883 /* Base */,
+				049234CE1DAF32EF00FD0B29 /* Login */,
 				042FFE6B1D9E35630096CDF2 /* Conversation */,
 				1845A9361D83D127008BD883 /* Chat */,
 				1845A9371D83D127008BD883 /* Contacts */,
@@ -814,6 +852,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				049CCDCA1D8F961300CC6394 /* ChatBottomBarView.xib in Resources */,
+				049234D51DAF33B100FD0B29 /* KDLoginViewController.xib in Resources */,
 				1845A94D1D83D1AB008BD883 /* Main.storyboard in Resources */,
 				042FFE771D9E35630096CDF2 /* MessageTableCell.xib in Resources */,
 				1845A94F1D83D1AB008BD883 /* Assets.xcassets in Resources */,
@@ -956,6 +995,7 @@
 				189E88661D9028090007C9A5 /* UIView+Nib.swift in Sources */,
 				04B6B1FD1D98BDB300BCBDE7 /* ChatAudioTableCell.swift in Sources */,
 				0475467F1D9E7415008076F1 /* NSDate+Extension.swift in Sources */,
+				049234D41DAF33B100FD0B29 /* KDLoginViewController.swift in Sources */,
 				047263281D8FC43D00D9380C /* ChatShareMoreView.swift in Sources */,
 				042FFE7A1D9E394E0096CDF2 /* Macro.swift in Sources */,
 				0485591B1D9A0B81001A076A /* TSChatTextParser.swift in Sources */,
