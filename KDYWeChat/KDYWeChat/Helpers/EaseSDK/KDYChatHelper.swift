@@ -10,7 +10,7 @@ import Foundation
 
 class KDYChatHelper: NSObject {
     
-    let mainTabbarVC   = KDTabBarController()
+    var mainTabbarVC: KDTabBarController? = nil
     let conversationVC = KDConversationViewController()
     let chatVC         = KDChatViewController()
     let contactVC      = KDContactsViewController()
@@ -66,7 +66,7 @@ class KDYChatHelper: NSObject {
             self.conversationVC.refreshConversations()
             
             // 设置未读消息数
-            self.mainTabbarVC.setupUnReadMessageCount()
+            self.mainTabbarVC!.setupUnReadMessageCount()
         }
     }
 }
@@ -77,7 +77,7 @@ extension KDYChatHelper: EMClientDelegate {
      *  监测sdk的网络状态
      */
     func connectionStateDidChange(aConnectionState: EMConnectionState) {
-        self.mainTabbarVC.networkStateChanged(aConnectionState)
+        self.mainTabbarVC!.networkStateChanged(aConnectionState)
     }
     
     /**
@@ -109,7 +109,7 @@ extension KDYChatHelper: EMChatManagerDelegate {
      */
     func conversationListDidUpdate(aConversationList: [AnyObject]!) {
         
-        self.mainTabbarVC.setupUnReadMessageCount()
+        self.mainTabbarVC!.setupUnReadMessageCount()
         self.conversationVC.refreshConversations()
     }
     
@@ -126,15 +126,15 @@ extension KDYChatHelper: EMChatManagerDelegate {
                 
                 switch applicationState {
                 case .Active, .Inactive:
-                    self.mainTabbarVC.playSoundAndVibration()
+                    self.mainTabbarVC!.playSoundAndVibration()
                 case .Background:
-                    self.mainTabbarVC.showNotificationWithMessage(message)
+                    self.mainTabbarVC!.showNotificationWithMessage(message)
                 }
 #endif
             }
         
             self.conversationVC.refreshConversations()
-            self.mainTabbarVC.setupUnReadMessageCount()
+            self.mainTabbarVC!.setupUnReadMessageCount()
         }
     }
 }

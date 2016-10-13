@@ -363,6 +363,7 @@
 			isa = PBXGroup;
 			children = (
 				049234D01DAF330F00FD0B29 /* Model */,
+				049234D61DAF389100FD0B29 /* ViewModel */,
 				049234D11DAF330F00FD0B29 /* View */,
 				049234CF1DAF330F00FD0B29 /* Controller */,
 			);
@@ -390,6 +391,20 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		049234D61DAF389100FD0B29 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		049234D71DAF4C3700FD0B29 /* LeanClound */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LeanClound;
 			sourceTree = "<group>";
 		};
 		049CCDC61D8F95E300CC6394 /* Bar */ = {
@@ -599,6 +614,7 @@
 				18ABF8181D995C4900F305EB /* Chat */,
 				047546821DA8E38A008076F1 /* EaseSDK */,
 				1845A95E1D83E956008BD883 /* Extension */,
+				049234D71DAF4C3700FD0B29 /* LeanClound */,
 				042FFE781D9E393F0096CDF2 /* Macro */,
 			);
 			path = Helpers;

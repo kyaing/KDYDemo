@@ -48,14 +48,23 @@ extension AppDelegate {
      *  登录状态改变
      */
     func loginStateChanged(notification: NSNotification) {
+        var navigationController: UINavigationController?
+        
+        // 根据登录状态的不同，切换 rootController
         let loginState = (notification.object?.boolValue)!
-        if loginState {  // 登录成功
+        if loginState {  // 登录成功后到tabbar
+            navigationController = UINavigationController(rootViewController: self.mainTabbarVC)
+            
+            KDYChatHelper.shareInstance.mainTabbarVC = self.mainTabbarVC
             KDYChatHelper.shareInstance.asyncPushOptions()
             KDYChatHelper.shareInstance.asyncConversationFromDB()
             
-        } else {   // 登录失败
-            
+        } else {   // 登录失败后到登录页面
+            let loginController = KDLoginViewController(nibName: "KDLoginViewController", bundle: nil)
+            navigationController = UINavigationController(rootViewController: loginController)
         }
+        
+        self.window?.rootViewController = navigationController
     }
     
     // MARK: - AppDelegate
