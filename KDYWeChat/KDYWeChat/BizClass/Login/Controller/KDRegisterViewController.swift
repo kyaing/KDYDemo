@@ -30,8 +30,14 @@ class KDRegisterViewController: UIViewController {
         self.registerButton.enabled = false
         self.registerButton.layer.cornerRadius = 5
         self.registerButton.layer.masksToBounds = true
-        self.registerButton.backgroundColor = UIColor(colorHex: KDYColor.tabbarSelectedTextColor)
+        self.registerButton.backgroundColor = UIColor(red: 168/255.0, green: 233/255.0, blue: 128/255.0, alpha: 0.8)
+        
         self.cancelButton.setTitleColor(UIColor(colorHex: KDYColor.tabbarSelectedTextColor), forState: .Normal)
+        
+        // 修改光标颜色
+        self.mailTextField.tintColor    = UIColor(colorHex: KDYColor.tabbarSelectedTextColor)
+        self.accountTextField.tintColor = self.mailTextField.tintColor
+        self.passwordTextFiled.tintColor = self.mailTextField.tintColor
     }
 
     // MARK: - Event Responses

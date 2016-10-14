@@ -25,10 +25,18 @@ class KDLoginViewController: UIViewController {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.hideKeyboard))
         self.view.addGestureRecognizer(tapGesture)
         
+        self.setupViewsUI()
+    }
+    
+    func setupViewsUI() {
         self.loginButton.enabled = false
         self.loginButton.layer.cornerRadius = 5
         self.loginButton.layer.masksToBounds = true
-        self.loginButton.backgroundColor = UIColor(colorHex: KDYColor.tabbarSelectedTextColor)
+        self.loginButton.backgroundColor = UIColor(red: 168/255.0, green: 233/255.0, blue: 128/255.0, alpha: 0.8)
+        
+        // 修改光标颜色
+        self.accountTextFiled.tintColor  = UIColor(colorHex: KDYColor.tabbarSelectedTextColor)
+        self.passwordTextField.tintColor = UIColor(colorHex: KDYColor.tabbarSelectedTextColor)
     }
     
     // MARK: - Event Responses
