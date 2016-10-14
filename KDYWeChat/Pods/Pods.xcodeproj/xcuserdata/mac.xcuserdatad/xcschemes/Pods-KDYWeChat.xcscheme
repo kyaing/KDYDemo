@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '7864C481C2DCE6B86EE32353'
+               BlueprintIdentifier = '7CDD9098D16A54CC2DE420BB'
                BlueprintName = 'Pods-KDYWeChat'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_KDYWeChat.framework'>

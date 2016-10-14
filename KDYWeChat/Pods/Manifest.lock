@@ -1,10 +1,8 @@
 PODS:
   - Alamofire (3.4.2)
-  - Bolts/Tasks (1.8.4)
+  - AVOSCloudDynamic (3.3.5)
   - Kingfisher (2.5.0)
   - KVOController (1.1.0)
-  - LeanCloud (1.0.0-beta.2):
-    - Alamofire (~> 3.4)
   - Moya (7.0.0):
     - Moya/Core (= 7.0.0)
   - Moya/Core (7.0.0):
@@ -14,8 +12,6 @@ PODS:
     - Moya/Core
     - RxSwift (~> 2.0)
   - ObjectMapper (1.4.0)
-  - Parse (1.14.2):
-    - Bolts/Tasks (~> 1.8)
   - Result (2.1.3)
   - RxCocoa (2.5.0):
     - RxSwift (~> 2.5)
@@ -31,13 +27,12 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 3.4.0)
+  - AVOSCloudDynamic (~> 3.3.5)
   - Kingfisher
   - KVOController
-  - LeanCloud (~> 1.0.0-beta.2)
   - Moya
   - Moya/RxSwift
   - ObjectMapper
-  - Parse
   - RxCocoa (~> 2.5.0)
   - RxDataSources (~> 0.8.1)
   - RxSwift (~> 2.5.0)
@@ -49,13 +44,11 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: 6aa33201d20d069e1598891cf928883ff1888c7a
-  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  AVOSCloudDynamic: 82df67e1c48c00dfbe7b7d8c61b4634c597b8aba
   Kingfisher: d467bd710907ec9aa94aaddecaa5390aa3559819
   KVOController: 321b5fc59300fcaabd42c0f679baa7a27efbb2fd
-  LeanCloud: bdad56c37274f343dd20d78f1ca380f5495d9c00
   Moya: f004b82418fb8165ee1fc9f86190db4b3611fda9
   ObjectMapper: a07ad0462c5adf014adc0f89ef04c29b626e855e
-  Parse: 4335d65f40cb3d43190d723144bbe1afb9c38230
   Result: 18e1a7597fbcca5923c565b40a25a98afafdee02
   RxCocoa: e1b1562e57a554d0fb2aabf9d71b637f177257c7
   RxDataSources: 4a87345847d66ef84ecc10bdfa189190f3cd6b12

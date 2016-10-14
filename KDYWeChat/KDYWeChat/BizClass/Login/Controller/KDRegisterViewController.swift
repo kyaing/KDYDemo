@@ -20,6 +20,13 @@ class KDRegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.hideKeyboard))
+        self.view.addGestureRecognizer(tapGesture)
+        
+        self.setupViewsUI()
+    }
+    
+    func setupViewsUI() {
         self.registerButton.enabled = false
         self.registerButton.layer.cornerRadius = 5
         self.registerButton.layer.masksToBounds = true
@@ -30,6 +37,12 @@ class KDRegisterViewController: UIViewController {
     // MARK: - Event Responses
     @IBAction func cancelButtonAction(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func hideKeyboard() {
+        self.phoneTextFiled.resignFirstResponder()
+        self.verifiTextField.resignFirstResponder()
+        self.passwordTextFiled.resignFirstResponder()
     }
 }
 

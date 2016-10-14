@@ -19,6 +19,8 @@
 		042FFE761D9E35630096CDF2 /* MessageTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042FFE721D9E35630096CDF2 /* MessageTableCell.swift */; };
 		042FFE771D9E35630096CDF2 /* MessageTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042FFE731D9E35630096CDF2 /* MessageTableCell.xib */; };
 		042FFE7A1D9E394E0096CDF2 /* Macro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042FFE791D9E394E0096CDF2 /* Macro.swift */; };
+		044620371DB0CAF5001D13B1 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044620361DB0CAF5001D13B1 /* CoreTelephony.framework */; };
+		044620391DB0CAFF001D13B1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044620381DB0CAFF001D13B1 /* CoreLocation.framework */; };
 		047263281D8FC43D00D9380C /* ChatShareMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047263271D8FC43D00D9380C /* ChatShareMoreView.swift */; };
 		0472632A1D8FC60100D9380C /* ChatShareMoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047263291D8FC60100D9380C /* ChatShareMoreView.xib */; };
 		0472632C1D8FC64200D9380C /* ChatEmotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472632B1D8FC64200D9380C /* ChatEmotionView.swift */; };
@@ -126,6 +128,8 @@
 		042FFE721D9E35630096CDF2 /* MessageTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableCell.swift; sourceTree = "<group>"; };
 		042FFE731D9E35630096CDF2 /* MessageTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageTableCell.xib; sourceTree = "<group>"; };
 		042FFE791D9E394E0096CDF2 /* Macro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Macro.swift; sourceTree = "<group>"; };
+		044620361DB0CAF5001D13B1 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		044620381DB0CAFF001D13B1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		047263271D8FC43D00D9380C /* ChatShareMoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatShareMoreView.swift; sourceTree = "<group>"; };
 		047263291D8FC60100D9380C /* ChatShareMoreView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatShareMoreView.xib; sourceTree = "<group>"; };
 		0472632B1D8FC64200D9380C /* ChatEmotionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatEmotionView.swift; sourceTree = "<group>"; };
@@ -253,12 +257,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				189E88621D8D66DD0007C9A5 /* libiconv.tbd in Frameworks */,
-				189E88601D8D66C50007C9A5 /* SystemConfiguration.framework in Frameworks */,
 				189E885E1D8D665E0007C9A5 /* libHyphenateFullSDK.a in Frameworks */,
 				180F3BD71D8BDBE400D79668 /* libsqlite3.tbd in Frameworks */,
 				180F3BD51D8BDBDB00D79668 /* libstdc++.6.0.9.tbd in Frameworks */,
 				180F3BD31D8BDBD400D79668 /* libc++.tbd in Frameworks */,
 				180F3BD11D8BDBBE00D79668 /* libz.tbd in Frameworks */,
+				044620391DB0CAFF001D13B1 /* CoreLocation.framework in Frameworks */,
+				044620371DB0CAF5001D13B1 /* CoreTelephony.framework in Frameworks */,
+				189E88601D8D66C50007C9A5 /* SystemConfiguration.framework in Frameworks */,
 				180F3BCF1D8BDBB500D79668 /* ImageIO.framework in Frameworks */,
 				180F3BCD1D8BDBAC00D79668 /* MobileCoreServices.framework in Frameworks */,
 				180F3BCB1D8BDBA200D79668 /* AVFoundation.framework in Frameworks */,
@@ -734,6 +740,8 @@
 		67602AFFD9847F1AC4068B5A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				044620381DB0CAFF001D13B1 /* CoreLocation.framework */,
+				044620361DB0CAF5001D13B1 /* CoreTelephony.framework */,
 				189E88611D8D66DD0007C9A5 /* libiconv.tbd */,
 				189E885F1D8D66C50007C9A5 /* SystemConfiguration.framework */,
 				180F3BD61D8BDBE400D79668 /* libsqlite3.tbd */,
@@ -1125,6 +1133,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1165,6 +1174,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import LeanCloud
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
