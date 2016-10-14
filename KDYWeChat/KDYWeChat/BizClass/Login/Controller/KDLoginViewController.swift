@@ -25,9 +25,10 @@ class KDLoginViewController: UIViewController {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.hideKeyboard))
         self.view.addGestureRecognizer(tapGesture)
         
-        loginButton.enabled = false
-        loginButton.layer.cornerRadius = 5
-        loginButton.layer.masksToBounds = true
+        self.loginButton.enabled = false
+        self.loginButton.layer.cornerRadius = 5
+        self.loginButton.layer.masksToBounds = true
+        self.loginButton.backgroundColor = UIColor(colorHex: KDYColor.tabbarSelectedTextColor)
     }
     
     // MARK: - Event Responses
@@ -35,17 +36,26 @@ class KDLoginViewController: UIViewController {
         // 登录环信，并将用户信息存储于leanCloud
         //loginEmSDK(emUserName, password: emPassword)
         
-        
     }
     
     @IBAction func moreButtonAction(sender: AnyObject) {
         let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .ActionSheet)
       
-        let changeAction   = UIAlertAction(title: "切换账号", style: .Default, handler: nil)
-        let registerAction = UIAlertAction(title: "注册", style: .Default, handler: nil)
+        let changeAction   = UIAlertAction(title: "切换账号", style: .Default) { alertAction in
+        
+        }
+        
+        let registerAction = UIAlertAction(title: "注册", style: .Default) { alertAction in
+            let registerController = KDRegisterViewController(nibName: "KDRegisterViewController", bundle: nil)
+            self.navigationController?.presentViewController(registerController, animated: true, completion: nil)
+        }
+        
         let cancelAction   = UIAlertAction(title: "取消", style: .Cancel, handler: nil)
         
-        // 修改显示的字体大小和颜色
+        /**
+         *  修改显示的字体颜色 
+         *  (仍然没有找到如何改变字体大小的方法！)
+         */
         changeAction.setValue(UIColor(rgba: "#2a2a2a"), forKey: "_titleTextColor")
         registerAction.setValue(UIColor(rgba: "#2a2a2a"), forKey: "_titleTextColor")
         cancelAction.setValue(UIColor(rgba: "#7d7d7d"), forKey: "_titleTextColor")
