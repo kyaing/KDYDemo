@@ -38,6 +38,7 @@
 		0485591F1D9A0C14001A076A /* Expression.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0485591E1D9A0C14001A076A /* Expression.bundle */; };
 		048559221D9A1E27001A076A /* ChatTimeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048559201D9A1E27001A076A /* ChatTimeTableCell.swift */; };
 		048559231D9A1E27001A076A /* ChatTimeTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048559211D9A1E27001A076A /* ChatTimeTableCell.xib */; };
+		048E1CE41DB0EA0F0049571C /* UserInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E1CE31DB0EA0F0049571C /* UserInfoManager.swift */; };
 		049234D41DAF33B100FD0B29 /* KDLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049234D21DAF33B100FD0B29 /* KDLoginViewController.swift */; };
 		049234D51DAF33B100FD0B29 /* KDLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049234D31DAF33B100FD0B29 /* KDLoginViewController.xib */; };
 		049CCDAE1D8F92C400CC6394 /* ChatBaseTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049CCDAD1D8F92C400CC6394 /* ChatBaseTableCell.swift */; };
@@ -147,6 +148,7 @@
 		0485591E1D9A0C14001A076A /* Expression.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Expression.bundle; sourceTree = "<group>"; };
 		048559201D9A1E27001A076A /* ChatTimeTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTimeTableCell.swift; sourceTree = "<group>"; };
 		048559211D9A1E27001A076A /* ChatTimeTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatTimeTableCell.xib; sourceTree = "<group>"; };
+		048E1CE31DB0EA0F0049571C /* UserInfoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoManager.swift; sourceTree = "<group>"; };
 		049234D21DAF33B100FD0B29 /* KDLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDLoginViewController.swift; sourceTree = "<group>"; };
 		049234D31DAF33B100FD0B29 /* KDLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KDLoginViewController.xib; sourceTree = "<group>"; };
 		049CCDAD1D8F92C400CC6394 /* ChatBaseTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatBaseTableCell.swift; sourceTree = "<group>"; };
@@ -415,6 +417,7 @@
 		049234D71DAF4C3700FD0B29 /* LeanClound */ = {
 			isa = PBXGroup;
 			children = (
+				048E1CE31DB0EA0F0049571C /* UserInfoManager.swift */,
 			);
 			path = LeanClound;
 			sourceTree = "<group>";
@@ -1011,6 +1014,7 @@
 				04109BCC1D9534F200E5F6F7 /* UIScrollView+ChatAdditions.swift in Sources */,
 				1838A6691DAFC34D0019A8AD /* KDRegisterViewController.swift in Sources */,
 				04B6B2011D98BDE400BCBDE7 /* ChatImageTableCell.swift in Sources */,
+				048E1CE41DB0EA0F0049571C /* UserInfoManager.swift in Sources */,
 				04109BA41D92569200E5F6F7 /* ChatBarButton.swift in Sources */,
 				048559221D9A1E27001A076A /* ChatTimeTableCell.swift in Sources */,
 				047263311D8FCAB600D9380C /* ChatShareCollectionCell.swift in Sources */,

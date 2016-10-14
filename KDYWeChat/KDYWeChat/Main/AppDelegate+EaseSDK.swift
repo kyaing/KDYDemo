@@ -76,6 +76,7 @@ extension AppDelegate {
     }
     
     func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
+#if TARGET_IPHONE_SIMULATOR
         // 注册远程通知失败，若有失败看看环境配置或证书是否有误！
         let alertView = UIAlertView.init(title: "注册APN失败",
                                          message: error.debugDescription,
@@ -83,6 +84,7 @@ extension AppDelegate {
                                          cancelButtonTitle: "确定"
                                          )
         alertView.show()
+#endif
     }
 }
 

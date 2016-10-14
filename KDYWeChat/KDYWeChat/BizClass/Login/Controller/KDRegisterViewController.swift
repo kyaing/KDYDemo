@@ -11,8 +11,8 @@ import UIKit
 class KDRegisterViewController: UIViewController {
 
     @IBOutlet weak var cancelButton: UIButton!
-    @IBOutlet weak var phoneTextFiled: UITextField!
-    @IBOutlet weak var verifiTextField: UITextField!
+    @IBOutlet weak var mailTextField: UITextField!
+    @IBOutlet weak var accountTextField: UITextField!
     @IBOutlet weak var passwordTextFiled: UITextField!
     @IBOutlet weak var registerButton: UIButton!
     
@@ -39,9 +39,16 @@ class KDRegisterViewController: UIViewController {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
+    @IBAction func registerButtonAction(sender: AnyObject) {
+        /**
+         *  注册环信，并同时注册LeanClound，建立 _User表
+         */
+        
+    }
+    
     func hideKeyboard() {
-        self.phoneTextFiled.resignFirstResponder()
-        self.verifiTextField.resignFirstResponder()
+        self.mailTextField.resignFirstResponder()
+        self.accountTextField.resignFirstResponder()
         self.passwordTextFiled.resignFirstResponder()
     }
 }

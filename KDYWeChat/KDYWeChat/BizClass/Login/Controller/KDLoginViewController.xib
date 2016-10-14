@@ -20,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用账号和密码登录" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08J-1Y-6ud" userLabel="titleLabel">
-                    <rect key="frame" x="0.0" y="69" width="320" height="24"/>
+                    <rect key="frame" x="0.0" y="54" width="320" height="24"/>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -38,7 +38,7 @@
                         <constraint firstAttribute="height" constant="30" id="VuP-RB-i2w"/>
                     </constraints>
                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                     <connections>
                         <outlet property="delegate" destination="-1" id="OQS-A9-opY"/>
@@ -101,7 +101,7 @@
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="VX8-o3-QuX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0Yx-aB-gNN"/>
                 <constraint firstItem="A2G-Fr-2Lh" firstAttribute="top" secondItem="AAc-vM-Ki4" secondAttribute="bottom" constant="30" id="15W-3h-AAH"/>
@@ -121,7 +121,7 @@
                 <constraint firstItem="AAc-vM-Ki4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="Tvz-yV-nHh"/>
                 <constraint firstAttribute="trailing" secondItem="08J-1Y-6ud" secondAttribute="trailing" id="UZk-LP-gjd"/>
                 <constraint firstItem="Ekz-Nv-p6d" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="bB1-Xv-fzt"/>
-                <constraint firstItem="Ekz-Nv-p6d" firstAttribute="top" secondItem="08J-1Y-6ud" secondAttribute="bottom" constant="35" id="bX2-Mi-qok"/>
+                <constraint firstItem="Ekz-Nv-p6d" firstAttribute="top" secondItem="08J-1Y-6ud" secondAttribute="bottom" constant="50" id="bX2-Mi-qok"/>
                 <constraint firstItem="IWa-aJ-srq" firstAttribute="trailing" secondItem="5K6-1B-nkd" secondAttribute="trailing" id="n1p-JS-AY2"/>
                 <constraint firstAttribute="trailing" secondItem="5K6-1B-nkd" secondAttribute="trailing" constant="17" id="nDj-SG-RjV"/>
                 <constraint firstItem="AAc-vM-Ki4" firstAttribute="top" secondItem="IWa-aJ-srq" secondAttribute="bottom" constant="3" id="pkJ-lF-1ld"/>
@@ -131,7 +131,7 @@
                 <constraint firstItem="IWa-aJ-srq" firstAttribute="leading" secondItem="4FA-UE-Lxm" secondAttribute="trailing" constant="20" id="z3N-Es-kkK"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-            <point key="canvasLocation" x="-72" y="-48"/>
+            <point key="canvasLocation" x="-156" y="-54"/>
         </view>
     </objects>
 </document>
