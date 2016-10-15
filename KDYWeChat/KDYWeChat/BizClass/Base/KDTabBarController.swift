@@ -95,10 +95,10 @@ final class KDTabBarController: UITabBarController {
      *  设置未读消息数目
      */
     func setupUnReadMessageCount() {
-        let conversations: [AnyObject]? = EMClient.sharedClient().chatManager.getAllConversations()
+        let conversations = EMClient.sharedClient().chatManager.getAllConversations()
         var unReadMsgCount: Int32 = 0
         
-        for conversation in conversations! {
+        for conversation in conversations {
             unReadMsgCount += conversation.unreadMessagesCount
         }
         

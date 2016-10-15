@@ -22,7 +22,7 @@ extension AppDelegate {
         // 登录状态通知
         NSNotificationCenter.defaultCenter().addObserver(self,
                                                          selector: #selector(AppDelegate.loginStateChanged(_:)),
-                                                         name: "loginStateChanged",
+                                                         name: kLoginStateChangedNoti,
                                                          object: nil)
         
         // 初始化sdk
@@ -38,9 +38,9 @@ extension AppDelegate {
         // 根据用户是否自动登录，来发送登录状态的通知
         let isAutoLogin = EMClient.sharedClient().isAutoLogin
         if isAutoLogin {
-            NSNotificationCenter.defaultCenter().postNotificationName("loginStateChanged", object: NSNumber(bool: true))
+            NSNotificationCenter.defaultCenter().postNotificationName(kLoginStateChangedNoti, object: NSNumber(bool: true))
         } else {
-            NSNotificationCenter.defaultCenter().postNotificationName("loginStateChanged", object: NSNumber(bool: false))
+            NSNotificationCenter.defaultCenter().postNotificationName(kLoginStateChangedNoti, object: NSNumber(bool: false))
         }
     }
     
@@ -48,20 +48,30 @@ extension AppDelegate {
      *  登录状态改变
      */
     func loginStateChanged(notification: NSNotification) {
-        var navigationController: UINavigationController?
+        var navigationController: KDNavigationController?
         
         // 根据登录状态的不同，切换 rootController
         let loginState = (notification.object?.boolValue)!
         if loginState {  // 登录成功后到tabbar
-            navigationController = UINavigationController(rootViewController: self.mainTabbarVC)
+            if self.mainTabbarVC == nil {
+                self.mainTabbarVC = KDTabBarController()
+                navigationController = KDNavigationController(rootViewController: self.mainTabbarVC!)
+                
+            } else {
+                navigationController  = self.mainTabbarVC!.navigationController as? KDNavigationController
+            }
             
             KDYChatHelper.shareInstance.mainTabbarVC = self.mainTabbarVC
+            
             KDYChatHelper.shareInstance.asyncPushOptions()
             KDYChatHelper.shareInstance.asyncConversationFromDB()
             
         } else {   // 登录失败后到登录页面
+            self.mainTabbarVC = nil
+            KDYChatHelper.shareInstance.mainTabbarVC = nil
+            
             let loginController = KDLoginViewController(nibName: "KDLoginViewController", bundle: nil)
-            navigationController = UINavigationController(rootViewController: loginController)
+            navigationController = KDNavigationController(rootViewController: loginController)
         }
         
         self.window?.rootViewController = navigationController

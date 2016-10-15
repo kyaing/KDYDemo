@@ -13,8 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var tabbarController: KDTabBarController?
-
-    var mainTabbarVC = KDTabBarController()
+    var mainTabbarVC: KDTabBarController?
     
     // MARK: - AppDelegate
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
@@ -35,7 +34,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // App进入后台
     func applicationDidEnterBackground(application: UIApplication) {
-        UIApplication.sharedApplication().applicationIconBadgeNumber = 0
         EMClient.sharedClient().applicationDidEnterBackground(application)
     }
     
@@ -46,19 +44,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // App准备激活
     func applicationDidBecomeActive(application: UIApplication) {
-        UIApplication.sharedApplication().applicationIconBadgeNumber = 0
+        
     }
     
     // 接收远程通知
     func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject: AnyObject]) {
-        self.mainTabbarVC.jumpToConversationListVC()
+        if (self.mainTabbarVC != nil) {
+            self.mainTabbarVC!.jumpToConversationListVC()
+        }
     }
     
     // 接收本地通知
     func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
-        
         UIApplication.sharedApplication().cancelAllLocalNotifications()
-        self.mainTabbarVC.didReceviedLocalNotification(notification)
+        
+        if (self.mainTabbarVC != nil) {
+            self.mainTabbarVC!.didReceviedLocalNotification(notification)
+        }
     }
     
     // MARK: - Private Methods

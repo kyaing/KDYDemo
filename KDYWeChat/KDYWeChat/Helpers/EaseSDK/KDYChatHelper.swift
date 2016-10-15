@@ -10,7 +10,8 @@ import Foundation
 
 class KDYChatHelper: NSObject {
     
-    var mainTabbarVC: KDTabBarController? = nil
+    var mainTabbarVC: KDTabBarController?
+    
     let conversationVC = KDConversationViewController()
     let chatVC         = KDChatViewController()
     let contactVC      = KDContactsViewController()
@@ -77,7 +78,9 @@ extension KDYChatHelper: EMClientDelegate {
      *  监测sdk的网络状态
      */
     func connectionStateDidChange(aConnectionState: EMConnectionState) {
-        self.mainTabbarVC!.networkStateChanged(aConnectionState)
+        if (self.mainTabbarVC != nil) {
+            self.mainTabbarVC!.networkStateChanged(aConnectionState)
+        }
     }
     
     /**
@@ -108,8 +111,10 @@ extension KDYChatHelper: EMChatManagerDelegate {
      *  会话列表发生更新
      */
     func conversationListDidUpdate(aConversationList: [AnyObject]!) {
+        if (self.mainTabbarVC != nil) {
+            self.mainTabbarVC!.setupUnReadMessageCount()
+        }
         
-        self.mainTabbarVC!.setupUnReadMessageCount()
         self.conversationVC.refreshConversations()
     }
     
@@ -126,15 +131,21 @@ extension KDYChatHelper: EMChatManagerDelegate {
                 
                 switch applicationState {
                 case .Active, .Inactive:
-                    self.mainTabbarVC!.playSoundAndVibration()
+                    if (self.mainTabbarVC != nil) {
+                        self.mainTabbarVC!.playSoundAndVibration()
+                    }
                 case .Background:
-                    self.mainTabbarVC!.showNotificationWithMessage(message)
+                    if (self.mainTabbarVC != nil) {
+                        self.mainTabbarVC!.showNotificationWithMessage(message)
+                    }
                 }
 #endif
             }
         
             self.conversationVC.refreshConversations()
-            self.mainTabbarVC!.setupUnReadMessageCount()
+            if (self.mainTabbarVC != nil) {
+                self.mainTabbarVC!.setupUnReadMessageCount()
+            }
         }
     }
 }
