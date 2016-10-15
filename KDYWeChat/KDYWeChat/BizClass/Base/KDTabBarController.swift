@@ -18,8 +18,8 @@ final class KDTabBarController: UITabBarController {
     /// 联网状态
     var connectionState: EMConnectionState = EMConnectionConnected
     
-    let conversationVC = KDConversationViewController()
-    let contactVC      = KDContactsViewController()
+    let conversationVC = KDConversationViewController()  // 会话列表
+    let contactVC      = KDContactsViewController()      // 通讯录列表
     let discoveryVC    = KDDiscoveryViewController()
     let meVC           = KDMeViewController()
     
@@ -30,14 +30,17 @@ final class KDTabBarController: UITabBarController {
         super.viewDidLoad()
         
         // 创建子控制器
-        setupViewControllers()
+        self.setupViewControllers()
         
         // 监听通知
-        setupNotification()
+        self.setupNotification()
         
-        // 未读消息数和未通过数
-        // setupUnReadMessageCount()
-        // setupUntreatedApplyCount()
+        // 统计未读消息数，和请求添加人数
+        self.setupUnReadMessageCount()
+        self.setupUntreatedApplyCount()
+        
+        KDYWeChatHelper.shareInstance.conversationVC = self.conversationVC
+        KDYWeChatHelper.shareInstance.contactVC = self.contactVC
     }
 
     private func setupViewControllers() {
@@ -145,6 +148,7 @@ final class KDTabBarController: UITabBarController {
      */
     func showNotificationWithMessage(message: EMMessage) {
         let pushOptions: EMPushOptions = EMClient.sharedClient().pushOptions
+        pushOptions.displayStyle = EMPushDisplayStyleMessageSummary
         
         // 发送本地推送
         let localNotification = UILocalNotification()

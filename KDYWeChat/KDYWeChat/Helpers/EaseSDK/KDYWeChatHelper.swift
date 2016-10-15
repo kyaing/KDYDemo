@@ -1,5 +1,5 @@
 //
-//  KDYChatHelper.swift
+//  KDYWeChatHelper.swift
 //  KDYWeChat
 //
 //  Created by mac on 16/10/9.
@@ -8,19 +8,17 @@
 
 import Foundation
 
-class KDYChatHelper: NSObject {
+class KDYWeChatHelper: NSObject {
     
     var mainTabbarVC: KDTabBarController?
-    
-    let conversationVC = KDConversationViewController()
-    let chatVC         = KDChatViewController()
-    let contactVC      = KDContactsViewController()
-    let discoveryVC    = KDDiscoveryViewController()
-    let meVC           = KDMeViewController()
+    var conversationVC: KDConversationViewController?
+    var contactVC: KDContactsViewController?
+    var chatVC: KDChatViewController?
     
     // MARK: - Life Cycle
     // 单例类
-    static let shareInstance = KDYChatHelper()
+    static let shareInstance = KDYWeChatHelper()
+    
     private override init() {
         super.init()
         self.initHeapler()
@@ -38,6 +36,10 @@ class KDYChatHelper: NSObject {
         EMClient.sharedClient().chatManager.removeDelegate(self)
         EMClient.sharedClient().contactManager.removeDelegate(self)
         EMClient.sharedClient().groupManager.removeDelegate(self)
+    }
+    
+    func clearHeapler() {
+        self.mainTabbarVC = nil
     }
     
     // MARK: - Public Methods
@@ -63,17 +65,21 @@ class KDYChatHelper: NSObject {
         }
         
         dispatch_async(dispatch_get_main_queue()) {
-            // 刷新会话数据
-            self.conversationVC.refreshConversations()
-            
             // 设置未读消息数
-            self.mainTabbarVC!.setupUnReadMessageCount()
+            if (self.mainTabbarVC != nil) {
+                self.mainTabbarVC!.setupUnReadMessageCount()
+            }
+            
+            // 刷新会话数据
+            if (self.conversationVC != nil) {
+                self.conversationVC!.refreshConversations()
+            }
         }
     }
 }
 
 // MARK: - EMClientDelegate
-extension KDYChatHelper: EMClientDelegate {
+extension KDYWeChatHelper: EMClientDelegate {
     /**
      *  监测sdk的网络状态
      */
@@ -106,7 +112,7 @@ extension KDYChatHelper: EMClientDelegate {
 }
 
 // MARK: - EMChatManagerDelegate
-extension KDYChatHelper: EMChatManagerDelegate {
+extension KDYWeChatHelper: EMChatManagerDelegate {
     /**
      *  会话列表发生更新
      */
@@ -115,7 +121,9 @@ extension KDYChatHelper: EMChatManagerDelegate {
             self.mainTabbarVC!.setupUnReadMessageCount()
         }
         
-        self.conversationVC.refreshConversations()
+        if (self.conversationVC != nil) {
+            self.conversationVC!.refreshConversations()
+        }
     }
     
     /**
@@ -142,7 +150,10 @@ extension KDYChatHelper: EMChatManagerDelegate {
 #endif
             }
         
-            self.conversationVC.refreshConversations()
+            if (self.conversationVC != nil) {
+                self.conversationVC!.refreshConversations()
+            }
+            
             if (self.mainTabbarVC != nil) {
                 self.mainTabbarVC!.setupUnReadMessageCount()
             }
@@ -151,12 +162,12 @@ extension KDYChatHelper: EMChatManagerDelegate {
 }
 
 // MARK: - EMContactManagerDelegate
-extension KDYChatHelper: EMContactManagerDelegate {
+extension KDYWeChatHelper: EMContactManagerDelegate {
     
 }
 
 // MARK: - EMGroupManagerDelegate
-extension KDYChatHelper: EMGroupManagerDelegate {
+extension KDYWeChatHelper: EMGroupManagerDelegate {
     
 }
 

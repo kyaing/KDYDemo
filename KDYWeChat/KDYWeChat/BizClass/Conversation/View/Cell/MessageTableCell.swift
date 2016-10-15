@@ -26,7 +26,7 @@ class MessageTableCell: UITableViewCell {
         avatorImageView.layer.cornerRadius  = 5
         avatorImageView.layer.masksToBounds = true
 
-        unReadMsgLabel.layer.cornerRadius   = 11
+        unReadMsgLabel.layer.cornerRadius   = 10
         unReadMsgLabel.layer.masksToBounds  = true
         
         lastMessageLabel.textColor = UIColor.grayColor()

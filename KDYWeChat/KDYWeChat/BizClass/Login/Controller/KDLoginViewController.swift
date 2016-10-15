@@ -110,8 +110,8 @@ class KDLoginViewController: UIViewController {
                 EMClient.sharedClient().options.isAutoLogin = true
                 
                 dispatch_async(dispatch_get_main_queue(), { 
-                    KDYChatHelper.shareInstance.asyncPushOptions()
-                    KDYChatHelper.shareInstance.asyncConversationFromDB()
+                    KDYWeChatHelper.shareInstance.asyncPushOptions()
+                    KDYWeChatHelper.shareInstance.asyncConversationFromDB()
                     
                     // 发送自动登录的通知
                     NSNotificationCenter.defaultCenter().postNotificationName(kLoginStateChangedNoti, object: NSNumber(bool: EMClient.sharedClient().isLoggedIn))

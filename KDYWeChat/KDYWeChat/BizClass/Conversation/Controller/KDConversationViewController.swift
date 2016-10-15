@@ -31,18 +31,18 @@ final class KDConversationViewController: UIViewController, EMChatManagerDelegat
     
     // 断网状态的头视图
     lazy var networkFailHeaderView: UIView = {
-        let networkFailHeaderView: UIView = UIView(frame: CGRectMake(0, 0, self.conversationTableView.width, 40))
-        networkFailHeaderView.backgroundColor = UIColor.init(red: 255/255.0, green: 200/255.0, blue: 200/255.0, alpha: 1.0)
+        let headerView: UIView = UIView(frame: CGRectMake(0, 0, self.conversationTableView.width, 40))
+        headerView.backgroundColor = UIColor.init(red: 255/255.0, green: 200/255.0, blue: 200/255.0, alpha: 1.0)
         
-        let tipLabel = UILabel(frame: CGRectMake(0, 10, 300, 20))
+        let tipLabel = UILabel(frame: CGRectMake((headerView.width - 300)/2.0, 10, 300, 20))
         tipLabel.textColor = UIColor.grayColor()
         tipLabel.backgroundColor = UIColor.clearColor()
         tipLabel.text = "当前网络有问题，请您检查网络"
         tipLabel.font = UIFont.systemFontOfSize(14)
         tipLabel.textAlignment = .Center
-        networkFailHeaderView.addSubview(tipLabel)
+        headerView.addSubview(tipLabel)
         
-        return networkFailHeaderView
+        return headerView
     }()
     
     // MARK: - Life Cycle

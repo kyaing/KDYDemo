@@ -32,8 +32,8 @@ extension AppDelegate {
                                                          apnsCerName: apnsCerName,
                                                          otherConfig: nil)
         
-        // 初始化 KDYChatHelper 单例类
-        KDYChatHelper.shareInstance.initHeapler()
+        // 初始化 KDYWeChatHelper 单例类
+        KDYWeChatHelper.shareInstance.initHeapler()
         
         // 根据用户是否自动登录，来发送登录状态的通知
         let isAutoLogin = EMClient.sharedClient().isAutoLogin
@@ -50,31 +50,33 @@ extension AppDelegate {
     func loginStateChanged(notification: NSNotification) {
         var navigationController: KDNavigationController?
         
-        // 根据登录状态的不同，切换 rootController
+        // 根据登录状态的不同，设置不同的 rootController
         let loginState = (notification.object?.boolValue)!
-        if loginState {  // 登录成功后到tabbar
+        if loginState {   // 登录成功，切换到tabbar
             if self.mainTabbarVC == nil {
                 self.mainTabbarVC = KDTabBarController()
-                navigationController = KDNavigationController(rootViewController: self.mainTabbarVC!)
-                
-            } else {
-                navigationController  = self.mainTabbarVC!.navigationController as? KDNavigationController
             }
             
-            KDYChatHelper.shareInstance.mainTabbarVC = self.mainTabbarVC
+            KDYWeChatHelper.shareInstance.mainTabbarVC = self.mainTabbarVC
             
-            KDYChatHelper.shareInstance.asyncPushOptions()
-            KDYChatHelper.shareInstance.asyncConversationFromDB()
+            KDYWeChatHelper.shareInstance.asyncPushOptions()
+            KDYWeChatHelper.shareInstance.asyncConversationFromDB()
             
-        } else {   // 登录失败后到登录页面
+            self.window?.rootViewController = self.mainTabbarVC
+            
+        } else {   // 登录失败，切换到登录页面
+            if self.mainTabbarVC != nil {
+                self.mainTabbarVC?.navigationController?.popToRootViewControllerAnimated(false)
+            }
+            
             self.mainTabbarVC = nil
-            KDYChatHelper.shareInstance.mainTabbarVC = nil
+            KDYWeChatHelper.shareInstance.mainTabbarVC = nil
             
             let loginController = KDLoginViewController(nibName: "KDLoginViewController", bundle: nil)
             navigationController = KDNavigationController(rootViewController: loginController)
+            
+            self.window?.rootViewController = navigationController
         }
-        
-        self.window?.rootViewController = navigationController
     }
     
     // MARK: - AppDelegate
