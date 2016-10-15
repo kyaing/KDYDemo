@@ -188,8 +188,7 @@ final class KDTabBarController: UITabBarController {
      *  接收本地通知
      */
     func didReceviedLocalNotification(localNotification: UILocalNotification) {
-        self.navigationController?.popToViewController(self, animated: false)
-        self.selectedViewController = self.conversationVC
+        
     }
 }
 

@@ -199,9 +199,6 @@ extension KDConversationViewController: UITableViewDataSource {
         
         cell.avatorImageView.image  = model.avatarImage
         let unreadMessageCount = model.conversation.unreadMessagesCount
-        if unreadMessageCount > 9 {  
-            cell.unReadMsgLabel.font = UIFont.systemFontOfSize(11)
-        }
         cell.unReadMsgLabel.text    = String(unreadMessageCount)
         
         cell.userNameLabel.text     = model.title

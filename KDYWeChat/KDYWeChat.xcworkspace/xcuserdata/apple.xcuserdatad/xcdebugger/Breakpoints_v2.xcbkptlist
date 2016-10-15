@@ -9,22 +9,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "KDYWeChat/BizClass/Login/Controller/KDRegisterViewController.swift"
-            timestampString = "498201407.169691"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "registerButtonAction(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "KDYWeChat/Helpers/EaseSDK/KDYChatHelper.swift"
             timestampString = "498226930.645984"
             startingColumnNumber = "9223372036854775807"
@@ -48,6 +32,22 @@
             startingLineNumber = "119"
             endingLineNumber = "119"
             landmarkName = "conversationListDidUpdate(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KDYWeChat/Helpers/EaseSDK/KDYWeChatHelper.swift"
+            timestampString = "498234002.589837"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
+            landmarkName = "messagesDidReceive(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
