@@ -21,7 +21,9 @@ final class KDTabBarController: UITabBarController {
     let conversationVC = KDConversationViewController()  // 会话列表
     let contactVC      = KDContactsViewController()      // 通讯录列表
     let discoveryVC    = KDDiscoveryViewController()
-    let meVC           = KDMeViewController()
+    
+    // 从 stroryboard 中加载我界面
+    let meVC = UIStoryboard(name: "Me", bundle: nil).instantiateViewControllerWithIdentifier("KDMeViewController")
     
     var navigationControllers: NSMutableArray = []
     

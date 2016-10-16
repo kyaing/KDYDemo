@@ -68,6 +68,10 @@
 		180F3BD31D8BDBD400D79668 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 180F3BD21D8BDBD400D79668 /* libc++.tbd */; };
 		180F3BD51D8BDBDB00D79668 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 180F3BD41D8BDBDB00D79668 /* libstdc++.6.0.9.tbd */; };
 		180F3BD71D8BDBE400D79668 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 180F3BD61D8BDBE400D79668 /* libsqlite3.tbd */; };
+		1833DCCF1DB34F20008B036B /* MeHeaderTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1833DCCD1DB34F20008B036B /* MeHeaderTableCell.swift */; };
+		1833DCD01DB34F20008B036B /* MeHeaderTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1833DCCE1DB34F20008B036B /* MeHeaderTableCell.xib */; };
+		1833DCD51DB3788C008B036B /* KDMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1833DCD31DB3788C008B036B /* KDMeViewController.swift */; };
+		1833DCDB1DB37AFF008B036B /* Me.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1833DCD91DB37AFF008B036B /* Me.storyboard */; };
 		1838A6691DAFC34D0019A8AD /* KDRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838A6671DAFC34D0019A8AD /* KDRegisterViewController.swift */; };
 		1838A66A1DAFC34D0019A8AD /* KDRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1838A6681DAFC34D0019A8AD /* KDRegisterViewController.xib */; };
 		18452CBC1D819E9100D4B2BE /* KDYWeChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18452CBB1D819E9100D4B2BE /* KDYWeChatTests.swift */; };
@@ -77,7 +81,6 @@
 		1845A94F1D83D1AB008BD883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1845A94B1D83D1AB008BD883 /* Assets.xcassets */; };
 		1845A9551D83D33D008BD883 /* KDContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845A9541D83D33D008BD883 /* KDContactsViewController.swift */; };
 		1845A9571D83DD86008BD883 /* KDDiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845A9561D83DD86008BD883 /* KDDiscoveryViewController.swift */; };
-		1845A9591D83DE36008BD883 /* KDMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845A9581D83DE36008BD883 /* KDMeViewController.swift */; };
 		1845A95D1D83E05A008BD883 /* KDTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845A95C1D83E05A008BD883 /* KDTabBarController.swift */; };
 		1845A9601D83E99B008BD883 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845A95F1D83E99B008BD883 /* UIViewController+Extension.swift */; };
 		1845A9621D83E9BA008BD883 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845A9611D83E9BA008BD883 /* UIView+Frame.swift */; };
@@ -219,6 +222,10 @@
 		180F3BFE1D8BDC6300D79668 /* IEMGroupManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEMGroupManager.h; sourceTree = "<group>"; };
 		180F3BFF1D8BDC6300D79668 /* OpenGLView20.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLView20.h; sourceTree = "<group>"; };
 		180F3C011D8BDC6300D79668 /* libHyphenateFullSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libHyphenateFullSDK.a; sourceTree = "<group>"; };
+		1833DCCD1DB34F20008B036B /* MeHeaderTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeHeaderTableCell.swift; sourceTree = "<group>"; };
+		1833DCCE1DB34F20008B036B /* MeHeaderTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeHeaderTableCell.xib; sourceTree = "<group>"; };
+		1833DCD31DB3788C008B036B /* KDMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDMeViewController.swift; sourceTree = "<group>"; };
+		1833DCDA1DB37AFF008B036B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Me.storyboard; sourceTree = "<group>"; };
 		1838A6671DAFC34D0019A8AD /* KDRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDRegisterViewController.swift; sourceTree = "<group>"; };
 		1838A6681DAFC34D0019A8AD /* KDRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KDRegisterViewController.xib; sourceTree = "<group>"; };
 		18452CA31D819E9100D4B2BE /* KDYWeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KDYWeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -233,7 +240,6 @@
 		1845A94B1D83D1AB008BD883 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1845A9541D83D33D008BD883 /* KDContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDContactsViewController.swift; sourceTree = "<group>"; };
 		1845A9561D83DD86008BD883 /* KDDiscoveryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDDiscoveryViewController.swift; sourceTree = "<group>"; };
-		1845A9581D83DE36008BD883 /* KDMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDMeViewController.swift; sourceTree = "<group>"; };
 		1845A95C1D83E05A008BD883 /* KDTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDTabBarController.swift; sourceTree = "<group>"; };
 		1845A95F1D83E99B008BD883 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		1845A9611D83E9BA008BD883 /* UIView+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
@@ -510,6 +516,38 @@
 			path = lib;
 			sourceTree = "<group>";
 		};
+		1833DCC71DB34EB0008B036B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1833DCD31DB3788C008B036B /* KDMeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1833DCC91DB34EB0008B036B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1833DCCA1DB34EB0008B036B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1833DCCC1DB34ECD008B036B /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1833DCCC1DB34ECD008B036B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1833DCCD1DB34F20008B036B /* MeHeaderTableCell.swift */,
+				1833DCCE1DB34F20008B036B /* MeHeaderTableCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		18452C9A1D819E9100D4B2BE = {
 			isa = PBXGroup;
 			children = (
@@ -609,7 +647,9 @@
 		1845A9391D83D127008BD883 /* Me */ = {
 			isa = PBXGroup;
 			children = (
-				1845A9581D83DE36008BD883 /* KDMeViewController.swift */,
+				1833DCC91DB34EB0008B036B /* Model */,
+				1833DCCA1DB34EB0008B036B /* View */,
+				1833DCC71DB34EB0008B036B /* Controller */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -618,6 +658,7 @@
 			isa = PBXGroup;
 			children = (
 				1845A9481D83D1AB008BD883 /* Main.storyboard */,
+				1833DCD91DB37AFF008B036B /* Me.storyboard */,
 			);
 			path = Base.lproj;
 			sourceTree = "<group>";
@@ -886,6 +927,7 @@
 			files = (
 				1838A66A1DAFC34D0019A8AD /* KDRegisterViewController.xib in Resources */,
 				049CCDCA1D8F961300CC6394 /* ChatBottomBarView.xib in Resources */,
+				1833DCDB1DB37AFF008B036B /* Me.storyboard in Resources */,
 				049234D51DAF33B100FD0B29 /* KDLoginViewController.xib in Resources */,
 				1845A94D1D83D1AB008BD883 /* Main.storyboard in Resources */,
 				042FFE771D9E35630096CDF2 /* MessageTableCell.xib in Resources */,
@@ -895,6 +937,7 @@
 				04B6B20A1D98BE4000BCBDE7 /* ChatRedEnvelopeCell.xib in Resources */,
 				04B6B1FE1D98BDB300BCBDE7 /* ChatAudioTableCell.xib in Resources */,
 				0472632E1D8FC66A00D9380C /* ChatEmotionView.xib in Resources */,
+				1833DCD01DB34F20008B036B /* MeHeaderTableCell.xib in Resources */,
 				047263321D8FCAB600D9380C /* ChatShareCollectionCell.xib in Resources */,
 				04B6B2061D98BE0A00BCBDE7 /* ChatLocationTableCell.xib in Resources */,
 				04B6B2021D98BDE400BCBDE7 /* ChatImageTableCell.xib in Resources */,
@@ -990,6 +1033,7 @@
 				047F8EF41D9E187000022544 /* AppDelegate.swift in Sources */,
 				047F8EF81D9E189200022544 /* AppDelegate+EaseSDK.swift in Sources */,
 				042FFE761D9E35630096CDF2 /* MessageTableCell.swift in Sources */,
+				1833DCD51DB3788C008B036B /* KDMeViewController.swift in Sources */,
 				189E885C1D8D65F30007C9A5 /* EMClient.h in Sources */,
 				04109BA81D9265C100E5F6F7 /* KDChatViewController+SubViews.swift in Sources */,
 				189E885D1D8D65F30007C9A5 /* EMOptions.h in Sources */,
@@ -1031,11 +1075,11 @@
 				04B6B1FD1D98BDB300BCBDE7 /* ChatAudioTableCell.swift in Sources */,
 				0475467F1D9E7415008076F1 /* NSDate+Extension.swift in Sources */,
 				049234D41DAF33B100FD0B29 /* KDLoginViewController.swift in Sources */,
+				1833DCCF1DB34F20008B036B /* MeHeaderTableCell.swift in Sources */,
 				047263281D8FC43D00D9380C /* ChatShareMoreView.swift in Sources */,
 				042FFE7A1D9E394E0096CDF2 /* Macro.swift in Sources */,
 				18F878DF1DB1EF3C00A32BF0 /* NSString+Validate.swift in Sources */,
 				0485591B1D9A0B81001A076A /* TSChatTextParser.swift in Sources */,
-				1845A9591D83DE36008BD883 /* KDMeViewController.swift in Sources */,
 				18ABF80B1D96C61200F305EB /* UIImage+Extension.swift in Sources */,
 				18953D201D941E9900F52F1E /* KDChatViewController+ChatBarView.swift in Sources */,
 				042FFE741D9E35630096CDF2 /* KDConversationViewController.swift in Sources */,
@@ -1077,6 +1121,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		1833DCD91DB37AFF008B036B /* Me.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1833DCDA1DB37AFF008B036B /* Base */,
+			);
+			name = Me.storyboard;
+			sourceTree = "<group>";
+		};
 		1845A9481D83D1AB008BD883 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

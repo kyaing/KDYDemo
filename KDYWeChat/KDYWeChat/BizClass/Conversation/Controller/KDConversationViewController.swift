@@ -199,7 +199,11 @@ extension KDConversationViewController: UITableViewDataSource {
         
         cell.avatorImageView.image  = model.avatarImage
         let unreadMessageCount = model.conversation.unreadMessagesCount
-        cell.unReadMsgLabel.text    = String(unreadMessageCount)
+        cell.unReadMsgLabel.text = String(unreadMessageCount)
+        // 气泡大小的处理，要优化
+        if unreadMessageCount > 9 {
+            cell.unReadMsgLabel.font = UIFont.systemFontOfSize(11)
+        }
         
         cell.userNameLabel.text     = model.title
         cell.lastMessageLabel?.text = lastMessage
