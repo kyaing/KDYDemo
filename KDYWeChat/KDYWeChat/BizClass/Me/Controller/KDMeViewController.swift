@@ -36,31 +36,38 @@ class KDMeViewController: UITableViewController {
             baseCell?.separatorInset = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 0)
             
             // 为什么在storyboard设置的没有显示出来？
-            if indexPath.section == 1 {
-                if indexPath.row == 0 {
-                    baseCell?.textLabel?.text = "相册"
-                    baseCell?.imageView?.image = UIImage(named: "MoreMyAlbum")
-                } else if indexPath.row == 1 {
-                    baseCell?.textLabel?.text = "收藏"
-                    baseCell?.imageView?.image = UIImage(named: "MoreMyFavorites")
-                } else if indexPath.row == 2 {
-                    baseCell?.textLabel?.text = "钱包"
-                    baseCell?.imageView?.image = UIImage(named: "MoreMyBankCard")
-                } else {
-                    baseCell?.textLabel?.text = "卡包"
-                    baseCell?.imageView?.image = UIImage(named: "MyCardPackageIcon")
-                }
-                
-            } else if indexPath.section == 2 {
-                baseCell?.textLabel?.text = "表情"
-                baseCell?.imageView?.image = UIImage(named: "MoreExpressionShops")
-                
-            } else {
-                baseCell?.textLabel?.text = "设置"
-                baseCell?.imageView?.image = UIImage(named: "MoreSetting")
-            }
+            self.configBaseCell(baseCell!, indexPath: indexPath)
             
             return baseCell!
+        }
+    }
+    
+    func configBaseCell(baseCell: UITableViewCell, indexPath: NSIndexPath) {
+        // 统一改变下字体大小
+        baseCell.textLabel?.font = UIFont.systemFontOfSize(16)
+        
+        if indexPath.section == 1 {
+            if indexPath.row == 0 {
+                baseCell.textLabel?.text = "相册"
+                baseCell.imageView?.image = UIImage(named: "MoreMyAlbum")
+            } else if indexPath.row == 1 {
+                baseCell.textLabel?.text = "收藏"
+                baseCell.imageView?.image = UIImage(named: "MoreMyFavorites")
+            } else if indexPath.row == 2 {
+                baseCell.textLabel?.text = "钱包"
+                baseCell.imageView?.image = UIImage(named: "MoreMyBankCard")
+            } else {
+                baseCell.textLabel?.text = "卡包"
+                baseCell.imageView?.image = UIImage(named: "MyCardPackageIcon")
+            }
+            
+        } else if indexPath.section == 2 {
+            baseCell.textLabel?.text = "表情"
+            baseCell.imageView?.image = UIImage(named: "MoreExpressionShops")
+            
+        } else {
+            baseCell.textLabel?.text = "设置"
+            baseCell.imageView?.image = UIImage(named: "MoreSetting")
         }
     }
     
