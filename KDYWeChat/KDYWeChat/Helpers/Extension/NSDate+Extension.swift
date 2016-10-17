@@ -1,12 +1,18 @@
 //
 //  NSDate+Extension.swift
-//  TSWeChat
+//
 //
 //  Created by Hilen on 2/22/16.
 //  Copyright © 2016 Hilen. All rights reserved.
 //
 
 import Foundation
+
+let D_MINUTE: Int =	60
+let D_HOUR: Int	  =	3600
+let D_DAY: Int	  =	86400
+let D_WEEK: Int	  =	604800
+let D_YEAR: Int	  =	31556926
 
 extension NSDate {
     class var milliseconds: NSTimeInterval {
@@ -100,6 +106,36 @@ extension NSDate {
         } else {
             return "刚刚"
         }
+    }
+    
+    class func formattedTimeFromTimeInterval(milliSeconds: Int64) -> String {
+        var seconds = milliSeconds
+        if milliSeconds > 140000000000 {
+            seconds = milliSeconds / 1000
+        }
+        let timeInterval: NSTimeInterval = NSTimeInterval(seconds)
+        
+        let date = NSDate(timeIntervalSince1970: timeInterval)
+        let timeString = NSDate.formattedDateTime(date)
+        
+        return timeString
+    }
+    
+    class func formattedDateTime(date: NSDate) -> String {
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        
+        let dateNow = dateFormatter.stringFromDate(NSDate()) as NSString
+        let components = NSDateComponents()
+        
+        components.day   = NSInteger(dateNow.substringWithRange(NSMakeRange(8, 2)))!
+        components.month = NSInteger(dateNow.substringWithRange(NSMakeRange(5, 2)))!
+        components.year  = NSInteger(dateNow.substringWithRange(NSMakeRange(0, 4)))!
+        
+        let calendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)
+        let date = calendar?.dateFromComponents(components)
+     
+        return ""
     }
 }
 

@@ -60,8 +60,8 @@ class KDLoginViewController: UIViewController {
     
     @IBAction func moreButtonAction(sender: AnyObject) {
         let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .ActionSheet)
-      
-        let changeAction   = UIAlertAction(title: "切换账号", style: .Default) { alertAction in
+
+        let changeAction = UIAlertAction(title: "切换账号", style: .Default) { alertAction in
         
         }
         
@@ -70,7 +70,7 @@ class KDLoginViewController: UIViewController {
             self.navigationController?.presentViewController(registerController, animated: true, completion: nil)
         }
         
-        let cancelAction   = UIAlertAction(title: "取消", style: .Cancel, handler: nil)
+        let cancelAction = UIAlertAction(title: "取消", style: .Cancel, handler: nil)
         
         /**
          *  修改显示的字体颜色 

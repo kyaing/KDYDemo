@@ -18,6 +18,10 @@ extension UIViewController {
         self.navigationController?.pushViewController(viewController, animated: animated)
     }
     
+    public func ky_pushViewController(viewController: UIViewController, animated: Bool) {
+        self.navigationController?.pushViewController(viewController, animated: animated)
+    }
+    
     // Pop 
     public func ky_popController() {
         self.navigationController?.popViewControllerAnimated(true)

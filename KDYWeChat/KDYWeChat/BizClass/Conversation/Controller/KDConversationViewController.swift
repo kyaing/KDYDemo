@@ -32,7 +32,7 @@ final class KDConversationViewController: UIViewController, EMChatManagerDelegat
     // 断网状态的头视图
     lazy var networkFailHeaderView: UIView = {
         let headerView: UIView = UIView(frame: CGRectMake(0, 0, self.conversationTableView.width, 40))
-        headerView.backgroundColor = UIColor.init(red: 255/255.0, green: 200/255.0, blue: 200/255.0, alpha: 1.0)
+        headerView.backgroundColor = UIColor(red: 255/255.0, green: 200/255.0, blue: 200/255.0, alpha: 1.0)
         
         let tipLabel = UILabel(frame: CGRectMake((headerView.width - 300)/2.0, 10, 300, 20))
         tipLabel.textColor = UIColor.grayColor()
@@ -160,6 +160,7 @@ final class KDConversationViewController: UIViewController, EMChatManagerDelegat
         let lastMessage = model.conversation.latestMessage
         
         // 得到时间戳，把微秒转化成具体时间
+        // let timeString = NSDate.formattedTimeFromTimeInterval(lastMessage.timestamp)
         let seconds = Double(lastMessage.timestamp) / 1000
         let timeInterval: NSTimeInterval = NSTimeInterval(seconds)
         let date = NSDate(timeIntervalSince1970: timeInterval)
