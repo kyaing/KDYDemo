@@ -51,7 +51,7 @@ class KDRegisterViewController: UIViewController {
          */
         
         let mail     = self.mailTextField.text
-        let username  = self.accountTextField.text
+        let username = self.accountTextField.text
         let password = self.passwordTextFiled.text
         
         EMClient.sharedClient().registerWithUsername(username, password: password) { (account, error) in

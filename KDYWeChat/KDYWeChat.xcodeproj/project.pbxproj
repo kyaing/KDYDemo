@@ -81,6 +81,7 @@
 		1833DCD01DB34F20008B036B /* MeHeaderTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1833DCCE1DB34F20008B036B /* MeHeaderTableCell.xib */; };
 		1833DCD51DB3788C008B036B /* KDMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1833DCD31DB3788C008B036B /* KDMeViewController.swift */; };
 		1833DCDB1DB37AFF008B036B /* Me.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1833DCD91DB37AFF008B036B /* Me.storyboard */; };
+		1833DCDE1DB665E8008B036B /* KDEditInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1833DCDC1DB665E8008B036B /* KDEditInfoViewController.swift */; };
 		1838A6691DAFC34D0019A8AD /* KDRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838A6671DAFC34D0019A8AD /* KDRegisterViewController.swift */; };
 		1838A66A1DAFC34D0019A8AD /* KDRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1838A6681DAFC34D0019A8AD /* KDRegisterViewController.xib */; };
 		18452CBC1D819E9100D4B2BE /* KDYWeChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18452CBB1D819E9100D4B2BE /* KDYWeChatTests.swift */; };
@@ -243,6 +244,7 @@
 		1833DCCE1DB34F20008B036B /* MeHeaderTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeHeaderTableCell.xib; sourceTree = "<group>"; };
 		1833DCD31DB3788C008B036B /* KDMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDMeViewController.swift; sourceTree = "<group>"; };
 		1833DCDA1DB37AFF008B036B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Me.storyboard; sourceTree = "<group>"; };
+		1833DCDC1DB665E8008B036B /* KDEditInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDEditInfoViewController.swift; sourceTree = "<group>"; };
 		1838A6671DAFC34D0019A8AD /* KDRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDRegisterViewController.swift; sourceTree = "<group>"; };
 		1838A6681DAFC34D0019A8AD /* KDRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KDRegisterViewController.xib; sourceTree = "<group>"; };
 		18452CA31D819E9100D4B2BE /* KDYWeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KDYWeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -573,6 +575,7 @@
 				1833DCD31DB3788C008B036B /* KDMeViewController.swift */,
 				048E1CE91DB4A3340049571C /* KDSettingViewController.swift */,
 				04B45B211DB62438005C7A83 /* KDPersonInfoViewController.swift */,
+				1833DCDC1DB665E8008B036B /* KDEditInfoViewController.swift */,
 				048E1CEA1DB4A3340049571C /* KDSettingViewController.xib */,
 			);
 			path = Controller;
@@ -1122,6 +1125,7 @@
 				04B6B2011D98BDE400BCBDE7 /* ChatImageTableCell.swift in Sources */,
 				048E1CE41DB0EA0F0049571C /* UserInfoManager.swift in Sources */,
 				04109BA41D92569200E5F6F7 /* ChatBarButton.swift in Sources */,
+				1833DCDE1DB665E8008B036B /* KDEditInfoViewController.swift in Sources */,
 				048559221D9A1E27001A076A /* ChatTimeTableCell.swift in Sources */,
 				047263311D8FCAB600D9380C /* ChatShareCollectionCell.swift in Sources */,
 				047F8EF61D9E188500022544 /* AppDelegate+LeanCloud.swift in Sources */,

@@ -21,6 +21,7 @@ final class KDContactsViewController: UIViewController {
         let tableView = UITableView(frame: self.view.bounds, style: .Plain)
         tableView.registerNib(UINib(nibName: "ContactsTableCell", bundle: nil), forCellReuseIdentifier: contactsIdentifier)
         tableView.separatorInset = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 0)
+        tableView.separatorColor = UIColor(red: 220/255.0, green: 220/255.0, blue: 220/255.0, alpha: 1.0)
         tableView.sectionIndexBackgroundColor = UIColor.clearColor()
         tableView.sectionIndexColor = UIColor.darkGrayColor()
         tableView.tableFooterView = UIView()
@@ -213,6 +214,17 @@ extension KDContactsViewController: UITableViewDelegate {
         }
         
         return [noteRowAction]
+    }
+    
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if section == 0 {
+            return 10
+        }
+        
+        let objsInSection = sectionsArray[section]
+        guard objsInSection.count > 0 else { return 0 }
+        
+        return 20
     }
 }
 
