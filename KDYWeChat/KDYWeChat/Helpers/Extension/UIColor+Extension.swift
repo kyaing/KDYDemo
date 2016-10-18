@@ -10,7 +10,7 @@ import Foundation
 
 typealias KDYColor = UIColor.AppColorName
 
-extension UIColor {
+extension UIColor {    
     enum AppColorName: String {
         case barTintColor             = "#1A1A1A"
         case tabbarSelectedTextColor  = "#68BB1E"

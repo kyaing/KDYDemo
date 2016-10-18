@@ -49,6 +49,7 @@
 		04B45B041DB4D7FD005C7A83 /* KDContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B45B011DB4D7FD005C7A83 /* KDContactsViewController.swift */; };
 		04B45B071DB4DB1A005C7A83 /* ContactsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B45B051DB4DB1A005C7A83 /* ContactsTableCell.swift */; };
 		04B45B081DB4DB1A005C7A83 /* ContactsTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B45B061DB4DB1A005C7A83 /* ContactsTableCell.xib */; };
+		04B45B0A1DB5C67E005C7A83 /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B45B091DB5C67E005C7A83 /* ContactModel.swift */; };
 		04B6B1F91D98BD3B00BCBDE7 /* ChatTextTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B6B1F71D98BD3B00BCBDE7 /* ChatTextTableCell.swift */; };
 		04B6B1FA1D98BD3B00BCBDE7 /* ChatTextTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B6B1F81D98BD3B00BCBDE7 /* ChatTextTableCell.xib */; };
 		04B6B1FD1D98BDB300BCBDE7 /* ChatAudioTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B6B1FB1D98BDB300BCBDE7 /* ChatAudioTableCell.swift */; };
@@ -166,6 +167,7 @@
 		04B45B011DB4D7FD005C7A83 /* KDContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDContactsViewController.swift; sourceTree = "<group>"; };
 		04B45B051DB4DB1A005C7A83 /* ContactsTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableCell.swift; sourceTree = "<group>"; };
 		04B45B061DB4DB1A005C7A83 /* ContactsTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactsTableCell.xib; sourceTree = "<group>"; };
+		04B45B091DB5C67E005C7A83 /* ContactModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
 		04B6B1F71D98BD3B00BCBDE7 /* ChatTextTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTextTableCell.swift; sourceTree = "<group>"; };
 		04B6B1F81D98BD3B00BCBDE7 /* ChatTextTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatTextTableCell.xib; sourceTree = "<group>"; };
 		04B6B1FB1D98BDB300BCBDE7 /* ChatAudioTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatAudioTableCell.swift; sourceTree = "<group>"; };
@@ -462,6 +464,7 @@
 		04B45B021DB4D7FD005C7A83 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				04B45B091DB5C67E005C7A83 /* ContactModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1073,6 +1076,7 @@
 				042FFE761D9E35630096CDF2 /* MessageTableCell.swift in Sources */,
 				1833DCD51DB3788C008B036B /* KDMeViewController.swift in Sources */,
 				189E885C1D8D65F30007C9A5 /* EMClient.h in Sources */,
+				04B45B0A1DB5C67E005C7A83 /* ContactModel.swift in Sources */,
 				04B45B071DB4DB1A005C7A83 /* ContactsTableCell.swift in Sources */,
 				04109BA81D9265C100E5F6F7 /* KDChatViewController+SubViews.swift in Sources */,
 				189E885D1D8D65F30007C9A5 /* EMOptions.h in Sources */,
