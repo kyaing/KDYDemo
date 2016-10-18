@@ -21,6 +21,7 @@ final class KDConversationViewController: UIViewController, EMChatManagerDelegat
         tableView.registerNib(UINib(nibName: "MessageTableCell", bundle: nil), forCellReuseIdentifier: messageIdentifier)
         tableView.separatorInset = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 0)
         tableView.tableFooterView = UIView()
+        tableView.rowHeight = 65
         tableView.dataSource = self
         tableView.delegate = self
         
@@ -224,8 +225,21 @@ extension KDConversationViewController: UITableViewDelegate {
         self.ky_pushAndHideTabbar(chatController)
     }
     
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 65
+    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle {
+        return .Delete
+    }
+    
+    func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
+        // 添加备注按钮
+        let noteRowAction = UITableViewRowAction(style: .Default, title: "删除") { (rowAction, indexPath) in
+            print(">>> 删除聊天 <<<")
+        }
+        
+        return [noteRowAction]
     }
 }
 

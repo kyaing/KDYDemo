@@ -32,19 +32,18 @@ class KDMeViewController: UITableViewController {
                 baseCell = UITableViewCell(style: .Default, reuseIdentifier: "baseCell")
             }
             
-            baseCell?.accessoryType = .DisclosureIndicator
-            baseCell?.separatorInset = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 0)
-            
             // 为什么在storyboard设置的没有显示出来？
-            self.configBaseCell(baseCell!, indexPath: indexPath)
+            self.configureCells(baseCell!, indexPath: indexPath)
             
             return baseCell!
         }
     }
     
-    func configBaseCell(baseCell: UITableViewCell, indexPath: NSIndexPath) {
+    func configureCells(baseCell: UITableViewCell, indexPath: NSIndexPath) {
         // 统一改变下字体大小
         baseCell.textLabel?.font = UIFont.systemFontOfSize(16)
+        baseCell.accessoryType = .DisclosureIndicator
+        baseCell.separatorInset = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 0)
         
         if indexPath.section == 1 {
             if indexPath.row == 0 {
@@ -65,7 +64,7 @@ class KDMeViewController: UITableViewController {
             baseCell.textLabel?.text = "表情"
             baseCell.imageView?.image = UIImage(named: "MoreExpressionShops")
             
-        } else {
+        } else if indexPath.section == 3 {
             baseCell.textLabel?.text = "设置"
             baseCell.imageView?.image = UIImage(named: "MoreSetting")
         }
@@ -75,7 +74,10 @@ class KDMeViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
-        if indexPath.section == 3 {
+        if indexPath.section == 0 {
+            self.ky_pushViewController(KDPersonInfoViewController(), animated: true)
+            
+        } else if indexPath.section == 3 {
             self.ky_pushViewController(KDSettingViewController(), animated: true)
         }
     }

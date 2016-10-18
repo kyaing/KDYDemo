@@ -47,9 +47,12 @@
 		049CCDC81D8F95E300CC6394 /* ChatBottomBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049CCDC71D8F95E300CC6394 /* ChatBottomBarView.swift */; };
 		049CCDCA1D8F961300CC6394 /* ChatBottomBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049CCDC91D8F961300CC6394 /* ChatBottomBarView.xib */; };
 		04B45B041DB4D7FD005C7A83 /* KDContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B45B011DB4D7FD005C7A83 /* KDContactsViewController.swift */; };
-		04B45B071DB4DB1A005C7A83 /* ContactsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B45B051DB4DB1A005C7A83 /* ContactsTableCell.swift */; };
-		04B45B081DB4DB1A005C7A83 /* ContactsTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B45B061DB4DB1A005C7A83 /* ContactsTableCell.xib */; };
 		04B45B0A1DB5C67E005C7A83 /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B45B091DB5C67E005C7A83 /* ContactModel.swift */; };
+		04B45B101DB60E12005C7A83 /* ContactsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B45B0E1DB60E12005C7A83 /* ContactsTableCell.swift */; };
+		04B45B111DB60E12005C7A83 /* ContactsTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B45B0F1DB60E12005C7A83 /* ContactsTableCell.xib */; };
+		04B45B1B1DB620C0005C7A83 /* KDNewFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B45B191DB620C0005C7A83 /* KDNewFriendsViewController.swift */; };
+		04B45B1C1DB620C0005C7A83 /* KDNewFriendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B45B1A1DB620C0005C7A83 /* KDNewFriendsViewController.xib */; };
+		04B45B231DB62438005C7A83 /* KDPersonInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B45B211DB62438005C7A83 /* KDPersonInfoViewController.swift */; };
 		04B6B1F91D98BD3B00BCBDE7 /* ChatTextTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B6B1F71D98BD3B00BCBDE7 /* ChatTextTableCell.swift */; };
 		04B6B1FA1D98BD3B00BCBDE7 /* ChatTextTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B6B1F81D98BD3B00BCBDE7 /* ChatTextTableCell.xib */; };
 		04B6B1FD1D98BDB300BCBDE7 /* ChatAudioTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B6B1FB1D98BDB300BCBDE7 /* ChatAudioTableCell.swift */; };
@@ -165,9 +168,12 @@
 		049CCDC71D8F95E300CC6394 /* ChatBottomBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatBottomBarView.swift; sourceTree = "<group>"; };
 		049CCDC91D8F961300CC6394 /* ChatBottomBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatBottomBarView.xib; sourceTree = "<group>"; };
 		04B45B011DB4D7FD005C7A83 /* KDContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDContactsViewController.swift; sourceTree = "<group>"; };
-		04B45B051DB4DB1A005C7A83 /* ContactsTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableCell.swift; sourceTree = "<group>"; };
-		04B45B061DB4DB1A005C7A83 /* ContactsTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactsTableCell.xib; sourceTree = "<group>"; };
 		04B45B091DB5C67E005C7A83 /* ContactModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
+		04B45B0E1DB60E12005C7A83 /* ContactsTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableCell.swift; sourceTree = "<group>"; };
+		04B45B0F1DB60E12005C7A83 /* ContactsTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactsTableCell.xib; sourceTree = "<group>"; };
+		04B45B191DB620C0005C7A83 /* KDNewFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDNewFriendsViewController.swift; sourceTree = "<group>"; };
+		04B45B1A1DB620C0005C7A83 /* KDNewFriendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KDNewFriendsViewController.xib; sourceTree = "<group>"; };
+		04B45B211DB62438005C7A83 /* KDPersonInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDPersonInfoViewController.swift; sourceTree = "<group>"; };
 		04B6B1F71D98BD3B00BCBDE7 /* ChatTextTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTextTableCell.swift; sourceTree = "<group>"; };
 		04B6B1F81D98BD3B00BCBDE7 /* ChatTextTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatTextTableCell.xib; sourceTree = "<group>"; };
 		04B6B1FB1D98BDB300BCBDE7 /* ChatAudioTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatAudioTableCell.swift; sourceTree = "<group>"; };
@@ -457,6 +463,8 @@
 			isa = PBXGroup;
 			children = (
 				04B45B011DB4D7FD005C7A83 /* KDContactsViewController.swift */,
+				04B45B191DB620C0005C7A83 /* KDNewFriendsViewController.swift */,
+				04B45B1A1DB620C0005C7A83 /* KDNewFriendsViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -472,10 +480,18 @@
 		04B45B031DB4D7FD005C7A83 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				04B45B051DB4DB1A005C7A83 /* ContactsTableCell.swift */,
-				04B45B061DB4DB1A005C7A83 /* ContactsTableCell.xib */,
+				04B45B0D1DB60E12005C7A83 /* Cell */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		04B45B0D1DB60E12005C7A83 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				04B45B0E1DB60E12005C7A83 /* ContactsTableCell.swift */,
+				04B45B0F1DB60E12005C7A83 /* ContactsTableCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		04FEF9CC1DAA37E6001812D1 /* MBProgressHUD */ = {
@@ -556,6 +572,7 @@
 			children = (
 				1833DCD31DB3788C008B036B /* KDMeViewController.swift */,
 				048E1CE91DB4A3340049571C /* KDSettingViewController.swift */,
+				04B45B211DB62438005C7A83 /* KDPersonInfoViewController.swift */,
 				048E1CEA1DB4A3340049571C /* KDSettingViewController.xib */,
 			);
 			path = Controller;
@@ -967,7 +984,8 @@
 				048E1CEC1DB4A3340049571C /* KDSettingViewController.xib in Resources */,
 				1838A66A1DAFC34D0019A8AD /* KDRegisterViewController.xib in Resources */,
 				049CCDCA1D8F961300CC6394 /* ChatBottomBarView.xib in Resources */,
-				04B45B081DB4DB1A005C7A83 /* ContactsTableCell.xib in Resources */,
+				04B45B111DB60E12005C7A83 /* ContactsTableCell.xib in Resources */,
+				04B45B1C1DB620C0005C7A83 /* KDNewFriendsViewController.xib in Resources */,
 				1833DCDB1DB37AFF008B036B /* Me.storyboard in Resources */,
 				049234D51DAF33B100FD0B29 /* KDLoginViewController.xib in Resources */,
 				1845A94D1D83D1AB008BD883 /* Main.storyboard in Resources */,
@@ -1077,7 +1095,6 @@
 				1833DCD51DB3788C008B036B /* KDMeViewController.swift in Sources */,
 				189E885C1D8D65F30007C9A5 /* EMClient.h in Sources */,
 				04B45B0A1DB5C67E005C7A83 /* ContactModel.swift in Sources */,
-				04B45B071DB4DB1A005C7A83 /* ContactsTableCell.swift in Sources */,
 				04109BA81D9265C100E5F6F7 /* KDChatViewController+SubViews.swift in Sources */,
 				189E885D1D8D65F30007C9A5 /* EMOptions.h in Sources */,
 				18ABF81A1D995C6B00F305EB /* TSYYTextLinePositionModifier.swift in Sources */,
@@ -1096,6 +1113,7 @@
 				1845A9621D83E9BA008BD883 /* UIView+Frame.swift in Sources */,
 				0485591D1D9A0BBB001A076A /* TSChatEmojiDictionary.swift in Sources */,
 				1845A9641D83E9F0008BD883 /* UIColor+Extension.swift in Sources */,
+				04B45B1B1DB620C0005C7A83 /* KDNewFriendsViewController.swift in Sources */,
 				04FEF9D11DAA37E6001812D1 /* MBProgressHUD+Add.m in Sources */,
 				042FFE751D9E35630096CDF2 /* MessageModel.swift in Sources */,
 				048E1CEB1DB4A3340049571C /* KDSettingViewController.swift in Sources */,
@@ -1125,6 +1143,8 @@
 				18F878DF1DB1EF3C00A32BF0 /* NSString+Validate.swift in Sources */,
 				0485591B1D9A0B81001A076A /* TSChatTextParser.swift in Sources */,
 				18ABF80B1D96C61200F305EB /* UIImage+Extension.swift in Sources */,
+				04B45B101DB60E12005C7A83 /* ContactsTableCell.swift in Sources */,
+				04B45B231DB62438005C7A83 /* KDPersonInfoViewController.swift in Sources */,
 				18953D201D941E9900F52F1E /* KDChatViewController+ChatBarView.swift in Sources */,
 				042FFE741D9E35630096CDF2 /* KDConversationViewController.swift in Sources */,
 				0472632C1D8FC64200D9380C /* ChatEmotionView.swift in Sources */,

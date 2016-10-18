@@ -152,7 +152,6 @@
 
 //设置右边索引值
 - (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
-    
     return [collation sectionIndexTitles];
 }
 
