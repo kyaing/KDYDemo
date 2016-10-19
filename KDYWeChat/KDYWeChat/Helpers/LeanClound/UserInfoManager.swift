@@ -33,15 +33,16 @@ class UserInfoManager: NSObject {
         }
         
         if imageData != nil {
-            let userObject = AVObject(className: "_user")
-            userObject.fetchInBackgroundWithBlock({ (object, error) in
-//                let avatorFile = AVFile(name: "test.png", data: imageData)
-                let currentId = AVUser.currentUser().objectId
-                
-                if (object != nil) {
-                    if currentId == object.objectId {
-                        print("1234567890-=")
-                    }
+            let currentUser = AVUser.currentUser()
+            let avatorFile = AVFile(data: imageData)
+            avatorFile.saveInBackground()
+            
+            currentUser.setObject(avatorFile, forKey: "avatorImage")
+            currentUser.saveInBackgroundWithBlock({ (success, error) in
+                if success {
+                    print("上传头像成功")
+                } else {
+                    print("上传头像失败：\(error.description)")
                 }
             })
         }
