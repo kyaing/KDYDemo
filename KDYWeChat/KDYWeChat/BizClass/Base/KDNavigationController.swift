@@ -37,6 +37,8 @@ class KDNavigationController: UINavigationController, UINavigationControllerDele
         
         super.pushViewController(viewController, animated: animated)
     }
+    
+    
 
     func setupNavigationBar() {
         UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)

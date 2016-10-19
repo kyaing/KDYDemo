@@ -93,9 +93,16 @@ class KDPersonInfoViewController: UIViewController {
         let cameraAction = UIAlertAction(title: "拍照", style: .Default) { (alertAction) in
             
         }
+        
         let photoAction = UIAlertAction(title: "从手机相册选择", style: .Default) { (alertAction) in
-            
+            // 选择图片
+            AuthorityManager.shareInstance.choosePhotos({ (imagePicker) in
+                self.presentViewController(imagePicker, animated: true, completion: nil)
+            }, alertAction: { (resource) in
+                self.alertNoPermissionToAccess(resource)
+            })
         }
+        
         let cancelAction = UIAlertAction(title: "取消", style: .Cancel, handler: nil)
         
         cameraAction.setValue(UIColor(rgba: "#2a2a2a"), forKey: "_titleTextColor")

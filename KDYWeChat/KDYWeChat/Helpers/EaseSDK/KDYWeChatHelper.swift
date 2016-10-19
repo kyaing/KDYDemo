@@ -18,7 +18,6 @@ class KDYWeChatHelper: NSObject {
     // MARK: - Life Cycle
     // 单例类
     static let shareInstance = KDYWeChatHelper()
-    
     private override init() {
         super.init()
         self.initHeapler()
