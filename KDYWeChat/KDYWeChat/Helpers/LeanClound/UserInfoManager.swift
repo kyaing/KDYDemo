@@ -17,17 +17,34 @@ class UserInfoManager: NSObject {
         super.init()
     }
     
-    typealias successAction = () -> Bool
+    typealias successAction = (success: Bool) -> Void
     typealias failureAction = (error: NSError) -> Void
     
     /**
      *  上传用户头像
      */
-    func uploadUserAvatorInBackground(imageData: NSData,
-                                      success: successAction,
-                                      failure: failureAction) {
+    func uploadUserAvatorInBackground(image: UIImage, success: successAction, failure: failureAction) {
         
+        var imageData: NSData?
+        if UIImagePNGRepresentation(image) == nil {
+            imageData = UIImageJPEGRepresentation(image, 1.0)!
+        } else {
+            imageData = UIImagePNGRepresentation(image)!
+        }
         
+        if imageData != nil {
+            let userObject = AVObject(className: "_user")
+            userObject.fetchInBackgroundWithBlock({ (object, error) in
+//                let avatorFile = AVFile(name: "test.png", data: imageData)
+                let currentId = AVUser.currentUser().objectId
+                
+                if (object != nil) {
+                    if currentId == object.objectId {
+                        print("1234567890-=")
+                    }
+                }
+            })
+        }
     }
     
     /**

@@ -98,6 +98,7 @@ class KDPersonInfoViewController: UIViewController {
             // 选择图片
             AuthorityManager.shareInstance.choosePhotos({ (imagePicker) in
                 self.presentViewController(imagePicker, animated: true, completion: nil)
+                
             }, alertAction: { (resource) in
                 self.alertNoPermissionToAccess(resource)
             })

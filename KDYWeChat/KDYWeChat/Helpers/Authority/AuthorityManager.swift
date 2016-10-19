@@ -77,8 +77,15 @@ class AuthorityManager: NSObject, UINavigationControllerDelegate, UIImagePickerC
     
     // MARK: - UIImagePickerControllerDelegate
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
-        // 上传用户头像
         
+        picker.dismissViewControllerAnimated(true, completion: nil)
+        
+        // 上传用户头像
+        UserInfoManager.shareInstance.uploadUserAvatorInBackground(image, success: { (success) in
+            
+        }) { (error) in
+            
+        }
     }
     
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
