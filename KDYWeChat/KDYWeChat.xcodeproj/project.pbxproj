@@ -40,6 +40,8 @@
 		048559221D9A1E27001A076A /* ChatTimeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048559201D9A1E27001A076A /* ChatTimeTableCell.swift */; };
 		048559231D9A1E27001A076A /* ChatTimeTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048559211D9A1E27001A076A /* ChatTimeTableCell.xib */; };
 		048D477F1DB76A8000BDE27D /* UIViewController+Proposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D477E1DB76A8000BDE27D /* UIViewController+Proposer.swift */; };
+		048D47821DB8735C00BDE27D /* KDAddFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D47801DB8735C00BDE27D /* KDAddFriendViewController.swift */; };
+		048D47831DB8735C00BDE27D /* KDAddFriendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048D47811DB8735C00BDE27D /* KDAddFriendViewController.xib */; };
 		048E1CE41DB0EA0F0049571C /* UserInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E1CE31DB0EA0F0049571C /* UserInfoManager.swift */; };
 		048E1CEB1DB4A3340049571C /* KDSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E1CE91DB4A3340049571C /* KDSettingViewController.swift */; };
 		048E1CEC1DB4A3340049571C /* KDSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048E1CEA1DB4A3340049571C /* KDSettingViewController.xib */; };
@@ -164,6 +166,8 @@
 		048559201D9A1E27001A076A /* ChatTimeTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTimeTableCell.swift; sourceTree = "<group>"; };
 		048559211D9A1E27001A076A /* ChatTimeTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatTimeTableCell.xib; sourceTree = "<group>"; };
 		048D477E1DB76A8000BDE27D /* UIViewController+Proposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Proposer.swift"; sourceTree = "<group>"; };
+		048D47801DB8735C00BDE27D /* KDAddFriendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDAddFriendViewController.swift; sourceTree = "<group>"; };
+		048D47811DB8735C00BDE27D /* KDAddFriendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KDAddFriendViewController.xib; sourceTree = "<group>"; };
 		048E1CE31DB0EA0F0049571C /* UserInfoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoManager.swift; sourceTree = "<group>"; };
 		048E1CE91DB4A3340049571C /* KDSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDSettingViewController.swift; sourceTree = "<group>"; };
 		048E1CEA1DB4A3340049571C /* KDSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KDSettingViewController.xib; sourceTree = "<group>"; };
@@ -478,7 +482,9 @@
 			children = (
 				04B45B011DB4D7FD005C7A83 /* KDContactsViewController.swift */,
 				04B45B191DB620C0005C7A83 /* KDNewFriendsViewController.swift */,
+				048D47801DB8735C00BDE27D /* KDAddFriendViewController.swift */,
 				04B45B1A1DB620C0005C7A83 /* KDNewFriendsViewController.xib */,
+				048D47811DB8735C00BDE27D /* KDAddFriendViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1020,6 +1026,7 @@
 				048559231D9A1E27001A076A /* ChatTimeTableCell.xib in Resources */,
 				0485591F1D9A0C14001A076A /* Expression.bundle in Resources */,
 				1845A94E1D83D1AB008BD883 /* Info.plist in Resources */,
+				048D47831DB8735C00BDE27D /* KDAddFriendViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1113,6 +1120,7 @@
 				189E885C1D8D65F30007C9A5 /* EMClient.h in Sources */,
 				04B45B0A1DB5C67E005C7A83 /* ContactModel.swift in Sources */,
 				04109BA81D9265C100E5F6F7 /* KDChatViewController+SubViews.swift in Sources */,
+				048D47821DB8735C00BDE27D /* KDAddFriendViewController.swift in Sources */,
 				189E885D1D8D65F30007C9A5 /* EMOptions.h in Sources */,
 				18ABF81A1D995C6B00F305EB /* TSYYTextLinePositionModifier.swift in Sources */,
 				18EA8CB01D8552BA00B4E274 /* KDChatViewController.swift in Sources */,

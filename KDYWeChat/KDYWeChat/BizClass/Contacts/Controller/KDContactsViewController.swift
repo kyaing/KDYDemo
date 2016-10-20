@@ -15,6 +15,8 @@ final class KDContactsViewController: UIViewController {
 
     var contactsDataSource: NSMutableArray = []
     var sectionsArray: NSMutableArray = []
+    var sectionTitlesArray: NSMutableArray = []
+    
     var collation: UILocalizedIndexedCollation!
     
     lazy var contactsTableView: UITableView = {
@@ -34,42 +36,76 @@ final class KDContactsViewController: UIViewController {
         return tableView
     }()
     
-    lazy var rightIndexLabel: UILabel = {
-        let indexLabel = UILabel()
-        indexLabel.userInteractionEnabled = true
-        indexLabel.font = UIFont.systemFontOfSize(13)
-        indexLabel.backgroundColor = UIColor.clearColor()
-        indexLabel.textColor = UIColor.darkGrayColor()
-        indexLabel.textAlignment = .Center
-        indexLabel.numberOfLines = 0
+    lazy var rightBarItem: UIBarButtonItem = {
+        let rightBarItem = UIBarButtonItem(image: UIImage(named: "barbuttonicon_addfriends"), style: .Plain, target: self, action: #selector(self.addFrinedAction))
         
-        self.view.addSubview(indexLabel)
+        return rightBarItem
+    }()
+    
+    lazy var tableFooterLabel: UILabel = {
+        let label = UILabel(frame: CGRectMake(0, 0, 0, 44))
+        label.font = UIFont.systemFontOfSize(15)
+        label.textColor = UIColor.grayColor()
+        label.textAlignment = .Center
         
-        return indexLabel
+        return label
     }()
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let model1 = ContactModel()
-        let model2 = ContactModel()
+        self.navigationItem.rightBarButtonItem = rightBarItem
+        self.reloadDataArray()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         
-        model1.username = "我是谁"
-        model2.username = "qqewewe"
+    }
+    
+    // MARK: - Public Methods
+    /**
+     *  获取好友列表
+     */
+    func reloadDataArray() {
+        let friendsName = EMClient.sharedClient().contactManager.getContacts()
+        print("friendsName = \(friendsName)")
         
-        contactsDataSource.addObject(model1)
-        contactsDataSource.addObject(model2)
+        for friend in friendsName {
+            let model = ContactModel()
+            model.username = friend as? String
+            self.contactsDataSource.addObject(model)
+        }
         
-        self.configureSections()
+        let userModel = ContactModel()
+        let currentName = EMClient.sharedClient().currentUsername
+        userModel.username = currentName
+        self.contactsDataSource.addObject(userModel)
+        
+        // 配置分组
+        self.configureSections(contactsDataSource)
+        
+        self.tableFooterLabel.text = String("\(friendsName.count+1)位联系人")
+        self.contactsTableView.tableFooterView = self.tableFooterLabel
+        
+        self.contactsTableView.reloadData()
+    }
+
+    /**
+     *  处理好友申请操作
+     */
+    func handleFrinedRequest() {
+        
     }
     
     // MARK: - Private Methods
     /**
      *  配置分组的内容
      */
-    func configureSections() {
+    func configureSections(dataArray: NSMutableArray) {
         self.collation = UILocalizedIndexedCollation.currentCollation()
+        self.sectionTitlesArray = NSMutableArray(array: collation.sectionTitles)
         
         let index = collation.sectionTitles.count
         let sectionTitlesCount = index
@@ -94,8 +130,15 @@ final class KDContactsViewController: UIViewController {
             newSectionArray.replaceObjectAtIndex(index, withObject: sortedUserObjsArrayForSection)
         }
 
+        // 去除空的section
+        //    for _ in 0..<index {
+        //        let array = newSectionArray.objectAtIndex(index)
+        //        if array.count == 0 {
+        //            self.sectionTitlesArray.removeObjectAtIndex(index)
+        //        }
+        //    }
+        
         self.sectionsArray = newSectionArray
-        self.contactsTableView.reloadData()
     }
     
     /**
@@ -143,6 +186,10 @@ final class KDContactsViewController: UIViewController {
             
         }
     }
+    
+    func addFrinedAction() {
+        
+    }
 }
 
 // MARK: - UITableViewDataSource
@@ -189,6 +236,13 @@ extension KDContactsViewController: UITableViewDataSource {
     
     func sectionIndexTitlesForTableView(tableView: UITableView) -> [String]? {
         return collation.sectionIndexTitles
+        
+        //    var indexTitles: [String]? = nil
+        //    for item in sectionTitlesArray {
+        //        indexTitles!.append(item as! String)
+        //    }
+        //    
+        //    return indexTitles
     }
 }
 

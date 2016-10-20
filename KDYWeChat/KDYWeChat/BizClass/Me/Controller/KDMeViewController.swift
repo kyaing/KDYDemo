@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVOSCloud
 
 /// 我界面
 class KDMeViewController: UITableViewController {
@@ -24,7 +25,18 @@ class KDMeViewController: UITableViewController {
     // MARK: - UITableViewDataSoure
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
-            let meHeaderCell = tableView.dequeueReusableCellWithIdentifier("MeHeaderTableCell", forIndexPath: indexPath)
+            let meHeaderCell = tableView.dequeueReusableCellWithIdentifier("MeHeaderTableCell", forIndexPath: indexPath) as! MeHeaderTableCell
+            
+            let user = AVUser.currentUser()
+            let avatorFile = user.objectForKey("avatorImage") as? AVFile
+            if avatorFile != nil {
+                let imageData = avatorFile?.getData()
+                let imageUrl = avatorFile?.url
+                print("\(imageUrl, imageData)")
+                
+                meHeaderCell.avatorImageView.image = UIImage(data: imageData!)
+            }
+            
             return meHeaderCell
             
         } else {

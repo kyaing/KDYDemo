@@ -41,6 +41,7 @@ class UserInfoManager: NSObject {
             currentUser.saveInBackgroundWithBlock({ (success, error) in
                 if success {
                     print("上传头像成功")
+                    
                 } else {
                     print("上传头像失败：\(error.description)")
                 }

@@ -16,7 +16,6 @@ class KDYWeChatHelper: NSObject {
     var chatVC: KDChatViewController?
     
     // MARK: - Life Cycle
-    // 单例类
     static let shareInstance = KDYWeChatHelper()
     private override init() {
         super.init()
@@ -163,6 +162,44 @@ extension KDYWeChatHelper: EMChatManagerDelegate {
 // MARK: - EMContactManagerDelegate
 extension KDYWeChatHelper: EMContactManagerDelegate {
     
+    /**
+     *  对方同意加好友
+     */
+    func friendRequestDidApproveByUser(aUsername: String!) {
+        let messageStr = "\(aUsername)同意了您加好友的申请"
+        let alertView = UIAlertView(title: nil, message: messageStr, delegate: nil, cancelButtonTitle: "确定")
+        alertView.show()
+    }
+    
+    /**
+     *  对方拒绝加好友
+     */
+    func friendRequestDidDeclineByUser(aUsername: String!) {
+        let messageStr = "\(aUsername)拒绝了您加好友的申请"
+        let alertView = UIAlertView(title: nil, message: messageStr, delegate: nil, cancelButtonTitle: "确定")
+        alertView.show()
+    }
+    
+    /**
+     *  建立双方好友关系
+     */
+    func friendshipDidAddByUser(aUsername: String!) {
+        
+    }
+    
+    /**
+     *  解除双方好友关系
+     */
+    func friendshipDidRemoveByUser(aUsername: String!) {
+        
+    }
+    
+    /**
+     *  收到对方申请加好友的消息
+     */
+    func friendRequestDidReceiveFromUser(aUsername: String!, message aMessage: String!) {
+        
+    }
 }
 
 // MARK: - EMGroupManagerDelegate

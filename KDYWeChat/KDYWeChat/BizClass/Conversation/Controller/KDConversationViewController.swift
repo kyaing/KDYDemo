@@ -47,9 +47,16 @@ final class KDConversationViewController: UIViewController, EMChatManagerDelegat
         return headerView
     }()
     
+    lazy var rightBarItem: UIBarButtonItem = {
+        let rightBarItem = UIBarButtonItem(image: UIImage(named: "barbuttonicon_add"), style: .Plain, target: self, action: #selector(self.handleAddViewAction))
+        
+        return rightBarItem
+    }()
+    
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.rightBarButtonItem = rightBarItem
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -84,6 +91,10 @@ final class KDConversationViewController: UIViewController, EMChatManagerDelegat
      */
     func refreshConversations() {
         getAllConversation()
+    }
+    
+    func handleAddViewAction() {
+        
     }
     
     // MARK: - Private Methods
