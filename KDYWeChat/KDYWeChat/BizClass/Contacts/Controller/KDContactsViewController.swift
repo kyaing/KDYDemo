@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVOSCloud
 
 let contactsIdentifier: String = "contactsCell"
 
@@ -62,6 +63,12 @@ final class KDContactsViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
+        // 查询 _User表里的数据
+        let query = AVQuery(className: "_User")
+        query.getObjectInBackgroundWithId(AVUser.currentUser().objectId) { (object, error) in
+            let dic = object.dictionaryForObject()
+            print("dic = \(dic)")
+        }
     }
     
     // MARK: - Public Methods

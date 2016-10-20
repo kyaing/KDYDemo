@@ -19,7 +19,8 @@ class UserInfoManager: NSObject {
     
     typealias successAction = (success: Bool) -> Void
     typealias failureAction = (error: NSError) -> Void
-    
+
+    // MARK: - Public Methods
     /**
      *  上传用户头像
      */
@@ -56,5 +57,14 @@ class UserInfoManager: NSObject {
     /**
      *  获取用户信息
      */
+    
+    /**
+     *  获取好友列表信息
+     */
+    func getUserInBackgroundWithFriends(friends: NSMutableArray, success: successAction, failure: failureAction) {
+        
+    }
+    
+    // MARK: - Private Methods
 }
 
