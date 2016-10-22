@@ -76,8 +76,13 @@ final class KDContactsViewController: UIViewController {
      *  获取好友列表
      */
     func reloadDataArray() {
+        
         let friendsName = EMClient.sharedClient().contactManager.getContacts()
         print("friendsName = \(friendsName)")
+        
+        EMClient.sharedClient().contactManager.getContactsFromServerWithCompletion { (friends, error) in
+            
+        }
         
         for friend in friendsName {
             let model = ContactModel()
